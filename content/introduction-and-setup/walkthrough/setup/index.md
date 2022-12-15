@@ -56,12 +56,25 @@ A summary of the relationship between the code you write in C# and tools provide
 Fortunately for us, .NET can be installed along with Visual Studio IDE.
 
 ## Windows Users vs. Mac Users
+
 Windows users will setup their C# development environment with a community version of Visual Studio. Mac users need to download and install a different version of Visual Studio called Visual Studio for Mac. While the names of these two programs are very similar, the user-experiences are quite different.
 
 An important note for this class: The content of this book is designed to inform both Windows and Mac users on the basics of web programming in C#. There are sometimes significant, and other times more minor, discrepancies between how to use the IDE tools provided in Visual Studio on Windows machines and Visual Studio for Mac. We will do our best to provide either instructions that are application neutral, or instructions that are tailored to the development experiences on both operating systems. There may be times when your C# project view will not look exactly like that in the book because you are on a different operating system and are therefore using a different Visual Studio application. The actions you take or buttons to click may be slightly different from what you see in the book.
 
-## Check Your Understanding
+## C# Naming Conventions
 
+C# has some very straightforward [naming conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions#naming-conventions). These are universally used by C# programmers, and differ in some cases from conventions commonly used in Python or other coding languages.
+
+Again, these are conventions. Not following them will not prevent your code from running, as long as you are following [C#’s naming rules](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names).
+
+| Identifier Type | Convention | Examples |
+|------|------|-----|
+| Method parameters, local variables, and fields | Start with a lowercase letter and use camelCase | `id`, `firstName` |
+| Methods, properties, and class names | Start with an uppercase letter and capitalize each word; do not use hyphens or underscores (aka PascalCase) | `Program`, `HelloWorld`, `TempConverter` |
+
+Microsoft provides [more detailed naming guidelines here](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines?redirectedfrom=MSDN).
+
+## Check Your Understanding
 
 1. True or false: Visual Studio is a framework.
 1. .NET contains: (Select all that apply)
