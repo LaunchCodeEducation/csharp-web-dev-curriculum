@@ -31,7 +31,7 @@ Following the “Hello World” trend, let’s create a new Visual Studio projec
 1. To see the other files inside this solution, you will need to view either the Solution (Mac Users) or the Solution Explorer (Windows Users). You’ll see the project file tree containing a file called `Program.cs` in a pane called Solution Explorer.
 1. You are new to C# and we’ll go over the syntax present in Program.cs in time. For now, can you guess what line 2 accomplishes?
 
-   {{< highlight csharp "linenos=table" >}}
+   {{< highlight csharp "linenos=true" >}}
       // See https://aka.ms/new-console-template for more information
       Console.WriteLine("Hello, World!");
    {{< / highlight >}}
@@ -68,10 +68,10 @@ Now that you have more than one project in your solution, you need to select whi
 
 The two questions will use the following code:
 
-{{< highlight csharp "linenos=table" >}}
-      // See https://aka.ms/new-console-template for more information
-      Console.WriteLine("Hello, World!");
-   {{< / highlight >}}
+```csharp {linenos = true}
+// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
+```
 
 1. Given the code above, which line is responsible for printing a message?
    1. Line 1

@@ -24,7 +24,11 @@ Beyond the basics of programming in C#, you’ll learn some key object oriented 
 
 Upon completing the content within this course you will be capable of building a web application with ASP.NET Core MVC that can store data in a local database. 
 
-The next step is to complete Liftoff, our job-readiness program.
+After completing this course, you are ready to begin our Liftoff program.
+
+While you are entering a new career in technology, we hope you use the tools you learned in this program to learn new skills.
+You may find yourself wanting to learn more about the cloud, advanced testing tools, or building bigger and better APIs.
+Whatever it is, now that you have conquered the foundations of computer programming, we know you are ready for the challenge!
 
 ## Chapters
 

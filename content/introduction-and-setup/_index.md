@@ -14,7 +14,11 @@ lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Major Concepts & Key Terminology
 
-Visual Studio install, what is C#
+The learning objectives for this chapter are:
+
+* Install and configure Visual Studio and the .NET SDK
+* Create and run a "Hello World!" console app within Visual Studio
+* Import a C# project from GitHub into Visual Studio
 
 ## Content Links
 
