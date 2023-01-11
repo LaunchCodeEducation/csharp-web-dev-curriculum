@@ -286,7 +286,7 @@ Open the class file. This time the constructors are done. Sally’s comments dir
 
 #### Run TestTask2 tests
 
-Uncomment `TestTask2`.  Look for the `TODO`s to help you find the multi-line comments marks.
+Uncomment the tests inside the `TestTask2`class.  Look for the `TODO`s to help you find the multi-line comments marks.
 
 Run your `TestTask2` unit tests. 
 
@@ -298,5 +298,30 @@ Do not start Task 3 until you have passed all of Task 2’s auto-grading unit te
 Now would be a good time to save, `commit`, and `push` your work up to GitHub.
 {{% /notice %}}
 
+### Task 3: Complete the `Job` Class
 
+{{% notice orange "Warning" "rocket" %}}
+Due to the fact that this code is being auto-graded as you work through it, make sure that you use any and all names for classes, variables, methods, etc provided to you in these directions.
+{{% /notice %}}
 
+Now open the Job file and follow the TODO prompts to remove the comment markers. 
+
+OOF! There are a lot of fields and properties declared and not much else.
+
+1. Code a constructor to initialize the `id` field with a unique value. This constructor should take no parameters.
+1. Code a second constructor that takes 5 parameters and assigns values to `name`, `employerName`, `employerLocation`, `jobType`, and `jobCoreCompetency`. Also, this constructor should call the first in order to initialize the `id` field.
+1. Generate the `Equals()` and `GetHashCode()` methods. Consider two `Job` objects equal when their id fields match.
+
+#### Run TestTask3 tests
+
+Uncomment the tests inside the `TestTask3`class.  Look for the `TODO`s to help you find the multi-line comments marks.
+
+Run your `TestTask3` unit tests. 
+
+Refactor your code as needed. 
+
+Do not start Task 4 until you have passed all of Task 3’s auto-grading unit tests.
+
+{{% notice green "Tip" "rocket" %}}
+Now would be a good time to save, `commit`, and `push` your work up to GitHub.
+{{% /notice %}}
