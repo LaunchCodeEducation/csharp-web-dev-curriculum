@@ -1,8 +1,8 @@
 ---
-title: "Exercise Example 2"
+title: "Reading: Data Types"
 date: 2023-01-17T16:28:22-06:00
 draft: false
-weight: 2
+weight: 1
 originalAuthor: <no value> # to be set by page creator
 originalAuthorGitHub: <no value> # to be set by page creator
 reviewer: # to be set by the page reviewer
@@ -12,4 +12,4 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-## Example-2
+{{% children %}}

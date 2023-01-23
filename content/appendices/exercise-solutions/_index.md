@@ -1,10 +1,8 @@
 ---
-title: "Slides: Fullscreen"
-date: 2023-01-17T16:28:22-06:00
+title: "Exercise Solutions"
+date: 2023-01-20T08:49:09-06:00
 draft: false
-hidden: true
-type: "slides"
-weight: 1
+weight: 3
 originalAuthor: <no value> # to be set by page creator
 originalAuthorGitHub: <no value> # to be set by page creator
 reviewer: # to be set by the page reviewer
@@ -14,22 +12,6 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-<!-- Copy everything between open and closing slide tags from _index.md -->
+## Exercises
 
-## Slide Deck Title
-
----
-
-## Slide 1
-
-___
-
-### Slide 1 Vertical Slide
-
----
-
-## Slide 2
-
-___
-
-### Slide 2 Verticial Slide
+{{% children %}}
