@@ -31,7 +31,11 @@ Be sure to note the Target Folder where this repo is saved.
 {{% /notice %}}
 
 ## Exploring the Cloned Repo in Your Terminal
-Once you have cloned it into Visual Studio, locate the repo using your terminal.
+
+While you can do this through the Visual Studio interface, you should practice using the terminal as well.
+The interface may change or some places may test your comfort with the terminal. Keep practicing those command line skills!
+
+Once you have cloned it in Visual Studio, locate the repo using your terminal.
 
 On a Windows machine, it is a path you saved your repo at. On a Mac, it’s in the Target Folder.
 
@@ -43,7 +47,7 @@ HelloMethods                 csharp-web-dev-datatypes.sln
 TempConverter
 ```
 
-{{% notice orange "Note" "rocket" %}}
+{{% notice blue "Note" "rocket" %}}
 The `csharp-web-dev-datatype` solution contains 2 separate projects: `HelloMethods` and `TempConverter`. A single solution can hold multiple projects.
 {{% /notice %}}
 
@@ -52,6 +56,10 @@ Try to open the solution using the command line prompt:
 Windows Users: `start *.sln`
 
 Mac Users: `open *.sln`
+
+{{% notice blue "Note" "rocket" %}}
+It may take a while for Visual Studio to start up. Be patient! Sometimes just clicking on the icon can help bring the solution pane to the forefront of your screen.
+{{% /notice %}}
 
 Return to the terminal. Locate your `Program.cs` file for the `HelloMethods` project. This will be contained in the project directory of the same name.
 
