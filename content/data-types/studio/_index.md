@@ -35,8 +35,8 @@ Here’s an example of how your program should work:
 
 Some questions to ask yourself:
 
-#. What data type should the radius be?
-#. What is the best way to get user input into a variable ``radius`` of
+1. What data type should the radius be?
+1. What is the best way to get user input into a variable ``radius`` of
    that type?
 
 {{% notice blue "Note" "rocket" %}}
@@ -48,18 +48,18 @@ Some questions to ask yourself:
 
 ## More Calculations
 
-#. Using the same radius, calculate the circumference (``2*pi*r``) and diameter of the circle (``2*r``).
-#. Output the results.
+1. Using the same radius, calculate the circumference (``2*pi*r``) and diameter of the circle (``2*r``).
+1. Output the results.
 
 Road Trip!
 ----------
 
-#. Ask the user for the miles per gallon of their car. 
-#. If the radius that they entered is in miles, output how many gallons of gas they will use to go around this circle. 
+1. Ask the user for the miles per gallon of their car. 
+1. If the radius that they entered is in miles, output how many gallons of gas they will use to go around this circle. 
 
 Bonus Missions
 --------------
 
-#. Think about how we could make this program more modular by breaking out some of the code into a separate class. For example, we could pull out the circle information into a ``Circle`` class and leave the user questions and console messages in ``Program``. Take a look at :ref:`the using statement <using-statement>` for a refresher on how to reference another class file.
-#. Extend your program further by using a `while or do-while loop <https://www.w3schools.com/cs/cs_while_loop.asp>`__, so that when the user enters a negative number they are re-prompted for a radius.
-#. Add additional validation to your program. If the user enters a non-numeric character or a empty string? Print an error message and quit. You’ll need to peek ahead to learn about `conditional syntax in C# <https://www.w3schools.com/cs/cs_conditions.asp>`__.
+1. Think about how we could make this program more modular by breaking out some of the code into a separate class. For example, we could pull out the circle information into a ``Circle`` class and leave the user questions and console messages in ``Program``. Take a look at :ref:`the using statement <using-statement>` for a refresher on how to reference another class file.
+1. Extend your program further by using a `while or do-while loop <https://www.w3schools.com/cs/cs_while_loop.asp>`__, so that when the user enters a negative number they are re-prompted for a radius.
+1. Add additional validation to your program. If the user enters a non-numeric character or a empty string? Print an error message and quit. You’ll need to peek ahead to learn about `conditional syntax in C# <https://www.w3schools.com/cs/cs_conditions.asp>`__.
