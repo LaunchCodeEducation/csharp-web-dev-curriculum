@@ -14,33 +14,27 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 Before you start the installation guide, read through each step below. You will find the recommended features and functionality to install listed in each step.
 
-{{% notice red "Warning" "rocket" %}}
+{{% notice orange "Warning" "rocket" %}}
 Allow at least **an hour** for the installation process.
 {{% /notice %}}
 
 ## Installation Steps
 
-Walk through the installation process by following Microsoft’s [Install Visual Studio for Mac](https://learn.microsoft.com/en-us/visualstudio/mac/installation?view=vsmac-2022) guide.
-
 ### Prerequisites
 
-Check out that you can install this on your computer.
+Before you start installing anything, you should first make sure that you can install this on your computer.
 
 ### Install Visual Studio
 
-1. Download the installer.
-1. Install using the `.dmg` file.
-1. Open the application.
-1. Continue if you agree with the privacy statements and license terms.
-1. The only component required for this course is **.NET**. You can modify this later as you gain more coding experience.
-1. Select the *Install* button.
-1. Assist the installer as needed. This may take a while, but stick around. You may be asked to enter your password a few times.
+Walk through the installation process by following Microsoft’s [Install Visual Studio for Mac](https://learn.microsoft.com/en-us/visualstudio/mac/installation?view=vsmac-2022) guide.
+
+As you install Visual Studio, keep these things in mind:
+
+1. You will have to assist the installer as needed. This may take a while, but stick around. You may be asked to enter your password a few times.
 1. To personalize or not? This is up to you.
 
    1. Microsoft Account: Creating a Microsoft account is optional.
    1. Keyboard Shortcuts: The default is Visual Studio for Mac and that is a good starting option. You can change this later.
-
-1. Launch Visual Studio and start developing
 
 ## A Tour of Your New IDE
 

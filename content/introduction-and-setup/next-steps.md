@@ -14,4 +14,10 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Next Steps
 
-Now that you have Visual Studio set up, you are ready to start programming in C#. The first step is to learn more about C# treats data and variables.
+Now that you have Visual Studio set up, you are ready to start programming in C#. The next chapter is on how data types and variables work in C#. Before you start reading up on the next topic, here are a couple extensions you might enjoy experimenting with:
+
+1. [Spell Checker](https://marketplace.visualstudio.com/items?itemName=EWoodruff.VisualStudioSpellChecker)
+1. [Visual Studio Theme Pack](https://marketplace.visualstudio.com/items?itemName=idex.vsthemepack)
+1. [Developer News](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.DeveloperNews2022)
+
+If you are struggling with your new install of Visual Studio, don't hesitate to reach out to course staff for assistance so you can code along with the examples in the next chapter.

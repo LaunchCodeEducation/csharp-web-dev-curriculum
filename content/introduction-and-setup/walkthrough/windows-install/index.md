@@ -14,63 +14,41 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 Before you start the installation guide, read through each step below. You will find the recommended features and functionality to install listed in each step.
 
-{{% notice red "Warning" "rocket" %}}
-Allow at least an hour for the installation process.
+{{% notice orange "Warning" "rocket" %}}
+Allow at least **an hour** for the installation process.
 {{% /notice %}}
 
 ## Installation Steps
 
+### Prerequisites
+
+Before you start installing anything, you should first make sure that you can install this on your computer.
+
+### Install Visual Studio
+
 Walk through the installation process by following Microsoft’s [Install Visual Studio](https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022) guide.
 
-1. Verify that your computer can run Visual Studio 2022.
+Here are some things you should keep in mind as you install Visual Studio:
+
 1. Download the *Community* version of Visual Studio 2022.
+1. To personalize or not? This is up to you.
 
-   {{% notice orange "Note" "rocket" %}}
-   Make sure you select Visual Studio 2022.
-   You will see multiple options for software downloads, such as Visual Studio Code and Visual Studio for Mac, on this page. Do NOT select either of these options!
-   {{% /notice %}}
+   1. *Optional*. Choose individual components
 
-1. Install the Visual Studio Installer
-1. Chose your **Workloads**:
+      {{% notice blue "Note" "rocket" %}}
+      If you are customizing your **Individual components**, make sure that you are installing .NET 6.0 Runtime. This is a default setting. Do not uncheck the box.
+      {{% /notice %}}
 
-   1. Select the following packages from the Workloads pane:
-
-      1. ASP.NET and web development
-      1. Azure development
-      1. Data storage and processing
-      1. .NET core cross-platform development
-
-      You may need to scroll down to find all of the recommended workloads.
-
-   {{% notice orange "Note" "rocket" %}}
-   Steps 5 - 7 are for customizing your Visual Studio. They are optional, and will use the default setting if applicable. This is perfectly acceptable and will work well for this course.
-
-   If you do NOT want to customize your installation process skip to Step 8.
-   {{% /notice %}}
-
-1. *Optional*. Choose individual components
-
-   {{% notice orange "Note" "rocket" %}}
-   If you are customizing your **Individual components**, make sure that you are installing .NET 6.0 Runtime. This is a default setting. Do not uncheck the box.
-   {{% /notice %}}
-
-1. *Optional*. Install language packs
-1. *Optional*. Select installation location
-1. Start developing
+   1. *Optional*. Install language packs
+   1. *Optional*. Select installation location
 
 ## A Tour of Your New IDE
 
 Microsoft has created a [walkthrough](https://learn.microsoft.com/en-us/visualstudio/ide/quickstart-ide-orientation?view=vs-2022) of the Visual Studio 2022. We recommend you read through this to learn the location of key components within your new IDE.
 
-## Visual Studio Extensions
-
-Extensions can help make your workflow smoother. These are usually add-ons that you can add or remove from your IDE as you grow in your coding skills.
-
-### Connect to GitHub for Windows Users
-
-In this course, we will continue to use GitHub and GitHub Classroom for code storage. Visual Studio has an extension for making it easier to connect with GitHub. Visit this page to download and install the [GitHub Extension for Visual Studio](https://visualstudio.microsoft.com/vs/github/).
-
 ## Troubleshooting Your Install
+
+If you need to troubleshoot your install, first check out the [documentation](https://learn.microsoft.com/en-us/visualstudio/install/troubleshooting-installation-issues?view=vs-2022). If this does not help, check out the below sections and consult your TA if something is still off.
 
 ### Missing or Wrong Components?
 

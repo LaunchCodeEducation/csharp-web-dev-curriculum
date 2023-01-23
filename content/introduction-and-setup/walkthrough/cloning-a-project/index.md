@@ -12,7 +12,7 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-Follow along with the provided walkthroughs to learn how to clone repos into Visual Studio. Try it out on your own by cloning the [LaunchCodeEducation/csharp-web-dev-datatypes](https://github.com/LaunchCodeEducation/csharp-web-dev-datatypes) repository page and fork the repository into your own GitHub account by selecting Fork from the top right of the page.
+Follow along with the provided walkthroughs to learn how to clone repos into Visual Studio. Try it out on your own by forking and cloning the [LaunchCodeEducation/csharp-web-dev-datatypes](https://github.com/LaunchCodeEducation/csharp-web-dev-datatypes) repository page. First, fork the repository into your own GitHub account by selecting Fork from the top right of the page and then clone the repository to your own machine to start working on it locally.
 
 ## Windows Users
 
@@ -25,6 +25,10 @@ Note the path where you save this repo.
 [Cloning an Existing Repo](https://learn.microsoft.com/en-us/visualstudio/mac/set-up-git-repository?view=vsmac-2022#clone-an-existing-repository)
 
 Be sure to note the Target Folder where this repo is saved.
+
+{{% notice blue "Note" "rocket" %}}
+   You can also find the option to clone a Git repository under *File*.
+{{% /notice %}}
 
 ## Exploring the Cloned Repo in Your Terminal
 Once you have cloned it into Visual Studio, locate the repo using your terminal.
