@@ -1,8 +1,8 @@
 ---
-title: "Exercises"
+title: "Studio"
 date: 2023-01-25T13:44:27-06:00
 draft: false
-weight: 7
+weight: 8
 originalAuthor: <no value> # to be set by page creator
 originalAuthorGitHub: <no value> # to be set by page creator
 reviewer: # to be set by the page reviewer
