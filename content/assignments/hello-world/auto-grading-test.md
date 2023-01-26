@@ -74,7 +74,7 @@ Let’s learn how to run the tests in Visual Studio.
 
    Now that you have run the tests, you should see that one of the tests has failed and the other passed. We have not touched any code yet. Use the Test Results Pane to navigate into which specific test has failed.
 
-   In this case, the `TestIfSayHelloReturnsCorrectValue()` test, expected our code to output `Hello, World!` Instead, the method is returning is `&&&` causing the test to fail. Be sure to explore your test output. The output will show you what was expected and what was actually received.  Often messages will be provided for a failed test. In this test, the message is "Incorrect message displayed".
+   In this case, the `TestIfSayHelloReturnsCorrectValue()` test, expected our code to output `Hello, World!` Instead, the method is returning `&&&` causing the test to fail. Be sure to explore your test output. The output will show you what was expected and what was actually received.  Often messages will be provided for a failed test. In this test, the message is "Incorrect message displayed".
 
    The `TestSayHelloReturnTypeIsString()` test passed. This should pass because the `SayHello()` method is a string method. You can verify this in line 8 of the `SayHelloClass.cs`. Use this test to help you explore the Test Results Pane and testing process. 
 
