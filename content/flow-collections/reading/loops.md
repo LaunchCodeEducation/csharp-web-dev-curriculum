@@ -12,6 +12,8 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
+You can practice loop syntax in the `LoopsExamples` project in [csharp-web-dev-examples repo](https://github.com/LaunchCodeEducation/csharp-web-dev-examples).
+
 ## `for` Loop
 
 In C#, we write a **definite** loop (aka a `for` loop) as:
@@ -68,14 +70,14 @@ C# also provides a syntax to iterate over any sequence or collection, such as an
 ```csharp
 int[] nums = {1, 1, 2, 3, 5, 8, 13, 21};
 
-foreach (int i in nums) {
-   Console.WriteLine(i);
+foreach (int n in nums) {
+   Console.WriteLine(n);
 }
 ```
-Here, the loop variable moves through the items in the array of integers, `nums`. The syntax here uses the word, in. This type of loop is known as a **foreach loop**.
+Here, the loop variable moves through the items in the array of integers, `nums`. The syntax here uses the word, `in`. This type of loop is known as a **foreach loop**.
 
 {{% notice green "Tip" "rocket" %}} 
-   When considering this structure, it can be helpful to read the code sample above to yourself as “For each integer in array `nums`…”.
+   When considering this structure, it can be helpful to read the code sample above to yourself as “For each integer `n` in array `nums`…”.
 {{% /notice %}}
 
 This loop version also works with a string, where we can convert the string to an array of characters:
@@ -94,9 +96,9 @@ As you see, to iterate through a string in this way, C# requires an extra string
 C# also supports the while loop, or indefinite loop. A while loop in C#:
 
 ```csharp
-int i = 0;
-while (i < 3) {
-   i++;
+int w = 0;
+while (w < 3) {
+   w++;
 }
 ```
 
@@ -117,7 +119,7 @@ Hello, World
 ```
 Above, the message prints despite the condition never being met.
 
-## Break Statements in Loops
+## `break` Statements in Loops
 There are instances where you may want to terminate a loop if a given condition is met. In these instances, the `break` statement comes in handy. For example, say you want to loop through an array of integers to search for a given value. Once that number is found, you want to quit the loop. You can do the following:
 
 ```csharp
@@ -139,10 +141,10 @@ Note that the `break` statement terminates the innermost loop that it is contain
 The `continue` statement is similar to, but importantly different from, the break statement. Like `break`, it interrupts the normal flow of control of the loop. But unlike `break`, the `continue` statement only terminates the current iteration of the loop. So the loop will continue to run from the top after a continue statement. Here is an example:
 
 ```csharp
-int[] someInts = {1, 10, 2, 3, 5, 8, 10};
-int searchTerm = 10;
-foreach (int oneInt in someInts) {
-   if (oneInt == searchTerm) {
+int[] someOtherInts = {1, 10, 2, 3, 5, 8, 10};
+int newSearchTerm = 10;
+foreach (int oneNewInt in someOtherInts) {
+   if (oneNewInt == newSearchTerm) {
       Console.WriteLine("Found it!");
       continue;
    }
@@ -194,10 +196,10 @@ This code would work well for this situation. However, because strings are immut
 If we wanted to use a `StringBuilder` object instead of a simple string in the above code, we would modify it like so:
 
 ```csharp
-StringBuilder finalSentence = new StringBuilder();
+StringBuilder newFinalSentence = new StringBuilder();
 
 foreach (string word in arrayOfWords) {
-   finalSentence.Append(word);
+   newFinalSentence.Append(word);
 }
 ```
 

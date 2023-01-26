@@ -15,7 +15,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ## Data Structures
 A **data structure** lets us hold on to lots of data in a single place. It is a programming construct to aggregate many values into one value. Many types of data structures exist in various languages. A few examples are lists, dictionaries, arrays, tuples, etc.
 
-## C# Collections Namespace  REVISE THIS
+## C# Collections Namespace
 C# provides powerful and flexible structures to store data, known as **collections**. The **C# collections namespace** refers to the various interfaces the language provides for implementing collection types.  When working with collection types, we often have to use the collections namespace.  
 
 Here, we’ll discuss a collection called `List` and compare it to the `Array` class. We’ll then introduce a third collection type called `Dictionary`. These three collection types will be sufficient for our basic C# needs. For more, refer to the official C# documentation on [collections](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections).

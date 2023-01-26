@@ -16,7 +16,7 @@ To write a `List` version of the program, we will have to introduce several new 
 
 <!-- TODO: create repo for these examples  && Link to chapter 1's how to clone a project. -->
 
-Before going any further, we suggest you run the `ListGradebook` program in Visual Studio. This program is in `*** LINK TO REPO ***`. Once you’ve forked and cloned the repository following the directions on how to [clone a C# project](LINK TO CHAPTER 1), let’s look at what is happening in the source code.
+Before going any further, we suggest you run the `ListGradebook` program in Visual Studio. This program is in [csharp-web-dev-examples](https://github.com/LaunchCodeEducation/csharp-web-dev-examples) repository. Once you’ve forked and cloned the repository following the directions on how to [clone a C# project](LINK TO CHAPTER 1), let’s look at what is happening in the source code.
 
 ```csharp{linenos=table}
 List<string> students = new List<string>();
@@ -166,12 +166,12 @@ Thus, the first item in this table:
 
 ### List Methods in C#
 
-| C# Syntax | Description | Example |
-|:----------|:------------|:------------|
-| `Add()`   | Adds an item to the List | `planets.Add("Pluto")` adds `Pluto` to `planets` | 
-| `Contains()` | Checks to see if the List contains a given item, returning a Boolean | `planets.Contains("Earth")` returns `true` |
+| C# Syntax   | Description    | Example        |
+| :---------: | :------------: | :------------: |
+| `Add()`     | Adds an item to the List | `planets.Add("Pluto")` adds `Pluto` to `planets` | 
+| `Contains()`| Checks to see if the List contains a given item, returning a Boolean | `planets.Contains("Earth")` returns `true` |
 | `IndexOf()` | Looks for an item in a List, returns the index of the first occurrence of the item if it exists, returns -1 otherwise | `planets.IndexOf("Jupiter")` returns `4` |
-| `Sort()` | Rearranges the elements of an `List` into ascending order. | `planets.Sort()` produces `{"Earth", "Jupiter", "Mars", "Mercury", "Neptune", "Pluto", "Saturn", "Uranus", "Venus"}` |
+| `Sort()`    | Rearranges the elements of an `List` into ascending order. | `planets.Sort()` produces `{"Earth", "Jupiter", "Mars", "Mercury", "Neptune", "Pluto", "Saturn", "Uranus", "Venus"}` |
 | `ToArray()` | Returns an Array containing the elements of the `List` | `planets.ToArray()` returns `{"Earth", "Jupiter", "Mars", "Mercury", "Neptune", "Pluto", "Saturn", "Uranus", "Venus"}` |
 
 {{% notice blue "Example" "rocket" %}} 

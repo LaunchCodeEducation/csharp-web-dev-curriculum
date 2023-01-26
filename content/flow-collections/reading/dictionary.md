@@ -18,8 +18,7 @@ Considering the gradebook example, we can improve our program using a dictionary
 
 As with the other collection structures, in C# we must specify the types of the objects we’ll be storing when we declare a variable or parameter to be a dictionary. This means specifying both key and value data types, which are allowed to be different types for a given dictionary.
 
- <!-- TODO link to this repo -->
-We suggest you run another version of the gradebook program called `DictionaryGradebook` in Visual Studio. This program lives in the `csharp-web-dev-controlflowandcollections` repository. If you haven’t forked and cloned the repository, you should do so now.
+We suggest you run another version of the gradebook program called `DictionaryGradebook` in Visual Studio. This program lives in the [csharp-web-dev-examples](https://github.com/LaunchCodeEducation/csharp-web-dev-examples) repository. If you haven’t forked and cloned the repository, you should do so now.
 
 ```csharp{linenos=table}
 Dictionary<string, double> students = new Dictionary<string, double>();
@@ -67,7 +66,7 @@ Dictionary<string, double> students = new Dictionary<string, double>();
 
 Here, `<string, double>` defines the data types for this dictionary’s` <key, value>` pairs.
 
-We can add a new item with a .Add() method, specifying both key and value:
+We can add a new item with a `.Add()` method, specifying both key and value:
 
 
 ```csharp{linenos=table,hl_lines=[],linenostart=18}
@@ -180,7 +179,7 @@ What is the syntax to get the key names?
 1. `moons.Keys();`
 1. `moons.Keys;`
 1. `moons.KeySet();`
-
+<!-- ans - `moons.Keys;` -->
 {{% /notice %}}
 
 {{% notice green "Question" "rocket" %}} 
@@ -204,7 +203,7 @@ What will moons["Mars"]; return?
 1. `{Mars: 2}`
 1. `2.0`
 1. `"Mars"`
-
+<!-- ans - ``2`` -->
 {{% /notice %}}
 
 

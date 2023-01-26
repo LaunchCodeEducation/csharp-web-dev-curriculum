@@ -19,7 +19,7 @@ We learned about arrays in C# in a [previous lesson](LINK TO CHAPTER 2), so letâ
 Why does C# have both `Arrays` and `Lists`? The answer is historical, at least in part. C# is a C-style language, and arrays are the most basic data structure in C. 
 Using an `Array` over a `List` might be preferred in some circumstances, primarily for performance reasons (array operations are generally faster than `List` operations). Also note that `Arrays` are of fixed size. You cannot expand or contract an `Array` after it is created, so you must know exactly how many elements it will need to hold when you create it. This fact is reason enough to use `Lists` in most scenarios.
 
-To illustrate `Array` usage, here is a version of the `Gradebook` program using `Arrays` instead of `Lists`:
+To illustrate `Array` usage, here is a version of the `Gradebook` program using `Arrays` instead of `Lists`.  The `ArrayGradebook` program is in [csharp-web-dev-examples](https://github.com/LaunchCodeEducation/csharp-web-dev-examples) repository.
 
 ```csharp{linenos=table}
 // Allow for at most 30 students
