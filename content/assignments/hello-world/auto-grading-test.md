@@ -62,7 +62,7 @@ Let’s learn how to run the tests in Visual Studio.
       1. **View** > **Tests**  
       1. Select the green triangle on the left of the Test Explorer Window. 
       1. In the Test Explorer, step through the file tree until you find the failed test. 
-      1. If you need more help running the tests, checkout this [guide](https://learn.microsoft.com/en-us/visualstudio/mac/testing?view=vsmac-2022#running-tests) for running tests in Visual Studio for Mac
+      1. If you need more help running the tests, checkout this [guide](https://learn.microsoft.com/en-us/visualstudio/mac/testing?view=vsmac-2022#running-tests) for running tests in Visual Studio for Mac.
    1. Windows Users 
       1. **Test** > **Windows** > **Test Explorer**
       1. Select the `Run All` icon to run all of your tests. 
