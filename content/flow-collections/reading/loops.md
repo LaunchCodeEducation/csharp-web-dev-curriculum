@@ -243,4 +243,3 @@ How many times does the message print and why?
 
 <!-- ans: 1 --- The print statement is evaluated before the conditional. -->
 {{% /notice %}}
-

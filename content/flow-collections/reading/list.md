@@ -4,15 +4,13 @@ date: 2023-01-25T13:44:27-06:00
 draft: false
 weight: 4
 originalAuthor: Courtney # to be set by page creator
-originalAuthorGitHub: <no value> # to be set by page creator
+originalAuthorGitHub: speudusa # to be set by page creator
 reviewer: # to be set by the page reviewer
 reviewerGitHub: # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
-
-## `List`
 
 To write a `List` version of the program, we will have to introduce several new C# concepts, including the class `List`. We will also review different kinds of `for` loops used in C#.
 

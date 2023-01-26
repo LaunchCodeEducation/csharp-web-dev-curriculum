@@ -22,7 +22,7 @@ After completing everything in this chapter, you should be able to do the follow
    - `switch`, `break`, and `continue` statements
 1. Create loops and know when to use them
    - `for`, `foreach`, `while`, and `do...while`
-1. How and when to use list, array, and dictionary collections.
+1. Know how and when to use list, array, and dictionary collections.
 
 ## Key Terminology
 
