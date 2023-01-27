@@ -12,8 +12,6 @@ lastEditorGitHub: speudusa # update any time edits are made after review
 lastMod: copy edits and links for the debugger added, created separate page for this section
 ---
 
-##  Your Task: 
-
 Make the program print out the string `Hello, World!`. Edit the code in the `SayHelloClass` class, within the `SayHello()` method. Verify your code with the auto-grading tests. 
 
   {{% notice orange "Warning" "rocket" %}}
@@ -29,5 +27,5 @@ Visual Studio has a built-in Debugger feature to help you troubleshoot your code
 - **Mac Uses:** [Debugging with Visual Studio for Mac](https://learn.microsoft.com/en-us/visualstudio/mac/debugging?view=vsmac-2022)
 
 
-### Next Steps
+
 You are now ready to move on to [Task 4: Submitting Your Code]({{< relref "../hello-world/submit-your-code.md" >}}).

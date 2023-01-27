@@ -56,5 +56,5 @@ Let’s set up the assignment on our computer and learn about its basic structur
    ```
 1. You are ready to run the auto-grading tests.
 
-### Next Steps
+
 You are now ready to move on to [Task 2: Running the Auto-grading Tests]({{< relref "../hello-world/auto-grading-test.md" >}}).

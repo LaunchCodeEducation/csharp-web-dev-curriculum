@@ -83,5 +83,5 @@ Let’s learn how to run the tests in Visual Studio.
    You will still have the same results as before, but now you have the skills to run tests all together or one at a time. This is something that may come in handy as you work on larger assignments that may have many tests.
 
 
-### Next Steps
+
 You are now ready to move on to [Task 3: Start Coding]({{< relref "../hello-world/start-coding.md" >}}).
