@@ -151,7 +151,7 @@ Ok, we’ve got an empty List. We need to use the class’s .Add() method to pop
 
 Using `.Add()` to populate `planets`:
 
-```
+```csharp
 planets.Add("Mercury");
 planets.Add("Venus");
 planets.Add("Earth");
@@ -166,13 +166,61 @@ Thus, the first item in this table:
 
 ### List Methods in C#
 
-| C# Syntax   | Description    | Example        |
-| :---------: | :------------: | :------------: |
-| `Add()`     | Adds an item to the List | `planets.Add("Pluto")` adds `Pluto` to `planets` | 
-| `Contains()`| Checks to see if the List contains a given item, returning a Boolean | `planets.Contains("Earth")` returns `true` |
-| `IndexOf()` | Looks for an item in a List, returns the index of the first occurrence of the item if it exists, returns -1 otherwise | `planets.IndexOf("Jupiter")` returns `4` |
-| `Sort()`    | Rearranges the elements of an `List` into ascending order. | `planets.Sort()` produces `{"Earth", "Jupiter", "Mars", "Mercury", "Neptune", "Pluto", "Saturn", "Uranus", "Venus"}` |
-| `ToArray()` | Returns an Array containing the elements of the `List` | `planets.ToArray()` returns `{"Earth", "Jupiter", "Mars", "Mercury", "Neptune", "Pluto", "Saturn", "Uranus", "Venus"}` |
+{{% expand `IndexOf()` %}}
+   Looks for an item in a `List`, returns the index of the first occurrence of the item if it exists, returns -1 otherwise.
+
+   ```csharp
+   planets.IndexOf("Jupiter");
+   ```
+   Returns `4` while
+   ```csharp
+   planets.IndexOf("Pluto");
+   ```
+   Returns `-1`.
+{{% /expand %}}
+
+{{% expand `Add()` %}}
+   Adds an item to the List 
+
+   ```csharp
+   planets.Add("Pluto");
+   ```
+   adds `Pluto` to `planets`
+{{% /expand %}}
+
+{{% expand `Contains()` %}}
+   Checks to see if the `List` contains a given item, returning a `Boolean`.
+
+   ```csharp
+   planets.Contains("Earth"); 
+   ```
+   Returns `true`.
+{{% /expand %}}
+
+{{% expand `Sort()` %}}
+   Rearranges the elements of an `List` into ascending order.
+
+   ```csharp
+   planets.Sort(); 
+   ```
+   Produces
+   `{"Earth", "Jupiter", "Mars", "Mercury", "Neptune", "Pluto", "Saturn", "Uranus", "Venus"}`
+{{% /expand %}}
+
+{{% expand `ToArray()` %}}
+   Returns an `Array` containing the elements of the `List`
+   ```csharp
+   planets.ToArray();
+   ```
+   Returns
+   `{"Earth", "Jupiter", "Mars", "Mercury", "Neptune", "Pluto", "Saturn", "Uranus", "Venus"}`
+{{% /expand %}}
+
+
+
+
+
+
 
 {{% notice blue "Example" "rocket" %}} 
 In order to use `ToArray()`, we could first declare a `planetsArray` of the same size as `planets` or do it in one line of code.

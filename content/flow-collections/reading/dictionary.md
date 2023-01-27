@@ -133,26 +133,70 @@ For the purposes of this table, we’ll create a dictionary to hold our solar sy
 
 ```csharp
 Dictionary<string, int> moons = new Dictionary<string, int>();
-moons.Add("Mercury", 0);
-moons.Add("Venus", 0);
-moons.Add("Earth", 1);
-moons.Add("Mars", 2);
-moons.Add("Jupiter", 79);
-moons.Add("Saturn", 82);
-moons.Add("Uranus", 27);
-moons.Add("Neptune", 14);
+   moons.Add("Mercury", 0);
+   moons.Add("Venus", 0);
+   moons.Add("Earth", 1);
+   moons.Add("Mars", 2);
+   moons.Add("Jupiter", 79);
+   moons.Add("Saturn", 82);
+   moons.Add("Uranus", 27);
+   moons.Add("Neptune", 14);
 ```
 
 ### Dictionary Methods and Properties
 
-| C# Syntax         | Description                                               | Example                   |
-| :---------------: | :-------------------------------------------------------: | :-----------------------: |
-| `Count`           | Returns the number of items in the dictionary, as an int. | `moons.Count` returns `8` |
-| `Keys`            | Returns a collection containing all keys in the dictionary. This collection may be used in a `foreach` loop just as lists are, but the dictionary may not be modified within such a loop. | `moons.Keys` returns `{"Earth", "Mars", "Neptune", "Jupiter", "Saturn", "Venus", "Uranus", "Mercury"}` |
-| `Values`          | Returns a collection containing all values in the dictionary. This collection may be used in a foreach loop just as lists are. | `moons.Values` returns `{1, 2, 14, 79, 82, 0, 27, 0}` |
-| `Add()`           | Add a key/value pair to a dictionary. | `moons.Add("Pluto", 5)` adds `"Pluto": 5` to the `moons` |
-| `ContainsKey()`   | Returns a boolean indicating whether or not the dictionary contains a given key.      | `moons.ContainsKey("Earth")` returns `true` |
-| `ContainsValue()` | Returns a boolean indicating whether or not the dictionary contains a given value.    | `moons.ContainsValue(79)` returns `true` |
+{{% expand `Count` %}}
+   Returns the number of items in the dictionary, as an `int`.
+
+   ```csharp
+   moons.Count
+   ```
+   Returns `8`.
+{{% /expand %}}
+
+{{% expand `Keys` %}}
+   Returns a collection containing all keys in the dictionary. This collection may be used in a `foreach` loop just as lists are, but the dictionary may not be modified within such a loop.
+
+   ```csharp
+   moons.Keys
+   ``` 
+   Returns `{"Earth", "Mars", "Neptune", "Jupiter", "Saturn", "Venus", "Uranus", "Mercury"}`
+
+{{% /expand %}}
+
+{{% expand `Values` %}}
+   Returns a collection containing all values in the dictionary. This collection may be used in a foreach loop just as lists are. 
+   ```csharp
+   moons.Values
+   ``` 
+   Returns `{1, 2, 14, 79, 82, 0, 27, 0}` 
+{{% /expand %}}
+
+{{% expand `Add()` %}}
+   Add a key/value pair to a dictionary. 
+   ```csharp
+   moons.Add("Pluto", 5)
+   ```
+   adds `"Pluto": 5` to the `moons`
+{{% /expand %}}
+
+{{% expand `ContainsKey()` %}}
+   Returns a boolean indicating whether or not the dictionary contains a given key.       
+   ```csharp
+   moons.ContainsKey("Earth")
+   ``` 
+   Returns `true`
+{{% /expand %}}
+
+{{% expand `ContainsValue()` %}}
+   Returns a boolean indicating whether or not the dictionary contains a given value.
+   ```csharp
+   moons.ContainsValue(79)
+   ```
+   Returns `true` 
+{{% /expand %}}
+
+
 
 We have only brushed the surface of how arrays, `Lists`, and dictionaries work. We leave it to you to refer to the official documentation linked below for more details. You’ll certainly be using `Lists` and dictionaries in more ways than those covered in this lesson, but with the knowledge you have now, you should be able to use C# collections and learn new uses as you go.
 

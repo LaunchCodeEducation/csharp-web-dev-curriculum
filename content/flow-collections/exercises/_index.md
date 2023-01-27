@@ -134,7 +134,7 @@ Remember: this is not the only way to loop through an array.
 
 
 ## Dictionary Practice
-1. Make a program similar to GradebookDictionary that does the following:
+1. Make a program similar to `GradebookDictionary` that does the following:
 1. It takes in student names and ID numbers (as integers) instead of names and grades.
 1. The keys should be the IDs and the values should be the names.
 1. Modify the roster printing code accordingly.
