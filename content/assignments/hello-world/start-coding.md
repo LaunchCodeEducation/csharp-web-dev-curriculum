@@ -12,7 +12,7 @@ lastEditorGitHub: speudusa # update any time edits are made after review
 lastMod: copy edits and links for the debugger added, created separate page for this section
 ---
 
-Make the program print out the string `Hello, World!`. Edit the code in the `SayHelloClass` class, within the `SayHello()` method. Verify your code with the auto-grading tests. 
+According to the tests we just ran, we expected the string `Hello, World!` to be printed. Edit the code in the `SayHelloClass` class, within the `SayHello()` method to reflect this. Verify your code with the auto-grading tests. 
 
   {{% notice orange "Warning" "rocket" %}}
    The auto-grading tests are VERY exacting. A difference of a single character will result in a failed test. The tests are also case-sensitive. You’ll need to pay attention to detail to correctly complete your assignments.
