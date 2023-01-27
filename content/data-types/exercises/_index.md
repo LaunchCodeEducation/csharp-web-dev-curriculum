@@ -49,7 +49,15 @@ For each part of the exercises, create a new project in your solution. When you 
 
    d. Run your program.
 
-[Check your solution]({{< relref "../../appendices/exercise-solutions/data-types/#inputoutput" >}})
+{{% expand "Click Here for Answer" %}}
+
+   ```csharp {linenos = table}
+      Console.WriteLine("What is your name?");
+      string myName = Console.ReadLine();
+      Console.WriteLine("Hello " + myName + "!");
+   ```
+
+{{% /expand %}}
 
 ## Numeric Types
 
@@ -59,19 +67,38 @@ For each part of the exercises, create a new project in your solution. When you 
 
    a. Add a print line to prompt the user for the length of the rectangle.
 
-      [Check your solution]({{< relref "../../appendices/exercise-solutions/data-types/#numeric-types" >}})
+   {{% expand "Click Here for Answer" %}}
+
+   ```csharp
+      Console.WriteLine("What is the length of your rectangle?");
+   ```
+
+   {{% /expand %}}
 
    b. Define a variable to handle the user's response.
 
    c. Repeat the previous two steps to ask for and store the rectangle's width.
 
-      [Check your solution]({{< relref "../../appendices/exercise-solutions/data-types/#numeric-types" >}})
+   {{% expand "Click Here for Answer" %}}
+
+   ```csharp
+      Console.WriteLine("What is the width of your rectangle?");
+      string width = Console.ReadLine();
+   ```
+
+   {{% /expand %}}
 
    d. Use the length and width values to calculate the rectangle's area.
 
    e. Print a statement using concatenation to communicate to the user what the area of their rectangle is.
    
-      [Check your solution]({{< relref "../../appendices/exercise-solutions/data-types/#numeric-types" >}})
+   {{% expand "Click Here for Answer" %}}
+
+   ```csharp
+      Console.WriteLine("The area of the rectangle is: " + area);
+   ```
+
+   {{% /expand %}}
 
    f. Run the program to verify your code.
 
@@ -81,7 +108,22 @@ For each part of the exercises, create a new project in your solution. When you 
    miles they have driven and the amount of gas they’ve consumed (in
    gallons), and print their miles-per-gallon.
 
-[Check your solution]({{< relref "../../appendices/exercise-solutions/data-types/#more-on-numeric-types" >}})
+{{% expand "Click Here for Answer" %}}
+
+   ```csharp {linenos=table}
+      Console.WriteLine("How many miles did you drive on your trip?");
+      string mi = Console.ReadLine();
+      int miles = Int32.Parse(mi);
+
+      Console.WriteLine("How many gallons of gas did you use?");
+      string gal = Console.ReadLine();
+      int gallons = Int32.Parse(gal);
+
+      int mpg = miles / gallons;
+      Console.WriteLine("The MPG for the trip was: " + mpg);
+   ```
+
+{{% /expand %}}
 
 ## Strings
 
@@ -98,6 +140,31 @@ For each part of the exercises, create a new project in your solution. When you 
       conversation?'
       ```
 
-   [Check your solution]({{< relref "../../appendices/exercise-solutions/data-types/#strings" >}})
+   {{% expand "Click Here for Answer" %}}
+
+   ```csharp {linenos=table} 
+      string alice = @"Alice was beginning to get very tired of sitting by her sister on the
+      bank, and of having nothing to do: once or twice she had peeped into the
+      book her sister was reading, but it had no pictures or conversations in
+      it, 'and what is the use of a book,' thought Alice 'without pictures or
+      conversation?'";
+      
+      Console.WriteLine(alice);
+      Console.WriteLine("What sentence would you like to look for in the sentence above?");
+      string searchTerm = Console.ReadLine();
+      string compSearchTerm = searchTerm.ToLower();
+      string compAlice = alice.ToLower();
+
+      if (compAlice.IndexOf(compSearchTerm, 0) != -1)
+      {
+         Console.WriteLine("true");
+      }
+      else 
+      {
+         Console.WriteLine("false");
+      }
+   ```
+
+   {{% /expand %}}
 
 1. Extend the previous exercise. Assume the user enters a word that is in the sentence. Print out its index within the string and its length. Next, remove the word from the string and print the sentence again to confirm your code. Remember that strings are *immutable*, so you will need to reassign the old sentence variable or create a new one to store the updated phrase.
