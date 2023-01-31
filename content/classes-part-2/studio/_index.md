@@ -41,10 +41,9 @@ While your partner is presenting their design, ask questions about why they made
 
 ## Implementation
 
-1. In Visual Studio, open your `Restaurant Menu` project. Create a branch in your repository for your Lesson 4 Studio solution. For the studio, make sure all of your work is in that branch.
+1. In Visual Studio, open your `RestaurantMenu` project. Create a branch in your repository for your Lesson 4 Studio solution. For the studio, make sure all of your work is in that branch.
 1. Within the project, add the methods you designed to your `Menu` and `MenuItem` classes.
-1. Create a class called `Restaurant`, and add a ``Main`` method.
-1. Use the `Main` method to test your classes:
+1. Use the `Program.cs` method to test your classes:
    1. Create several items and add them to a menu.
    1. Print the entire, updated menu to the screen.
    1. Print an individual menu item to the screen.
