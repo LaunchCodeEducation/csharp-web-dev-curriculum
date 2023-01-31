@@ -122,8 +122,8 @@ questions:
 
 ## The TechJobs Class
 
-The `TechJobs` class contains the method that will drive our
-program's functionality. It contains three methods:
+The `TechJobs` class contains three methods that will drive our
+program's functionality:
 
 1. `RunProgram()` - The main application runner.
 1. `GetUserSelection()` - A utility method that displays a menu of choices and
