@@ -133,10 +133,9 @@ program's functionality. It contains three methods:
 1. `GetUserSelection()` - A utility method that displays a menu of choices and
    returns the user's selection.
 1. `PrintJobs()` - This is meant to print a list of jobs to the console in a
-   nicely formatted manner, but hasn't been implemented yet. This will be part
-   of your job.
+   nicely formatted manner, but hasn't been implemented yet. 
 
-Let's look at each of these.
+Let's take a closer look at the first two methods, `RunProgram()` and `GetUserSelection()`.
 
 ### The `RunProgram()` Method
 
@@ -158,7 +157,7 @@ user wants to quit our app, they can enter `x` at the initial `View jobs by` pro
    There are two ways to stop a running app. Either option works so you can pick the one that works best for you!
    
    1. Use the IDE.  Click Visual Studio's *Stop* icon.  The light red square that replaces the green *Run* triangle once an app is running.
-   1. Use the terminal. Press *ctrl+C* (a widely-known command to kill a console application). This will work in any terminal context, and not just for our console program in Visual Studio
+   1. In the terminal, press *ctrl+C*. This will work in any terminal context, and not just for our console program in Visual Studio
 
 {{% /notice %}}
 
@@ -197,7 +196,7 @@ line of the main `while loop`:
 What is this `Dictionary` named `actionChoices`? If we look a few lines
 above, we see:
 
-```csharp {linenos=true,linenostart=13}
+```csharp {linenos=true,linenostart=11}
    // Top-level menu options
    Dictionary<string, string> actionChoices = new Dictionary<string, string>();
    actionChoices.Add("search", "Search");
@@ -212,17 +211,16 @@ when running the program.
 
 The second usage of `GetUserSelection()` is a few lines below:
 
-```csharp {linenos=table,linenostart = 39}
+```csharp {linenos=table,linenostart = 38}
    string columnChoice = GetUserSelection("List", columnChoices);
 ```
 
-This references `columnChoices`, which is declared at the top of
-`RunProgram()` and has a similar structure to `actionChoices` (they're the
-same data type and are used in calls to the same method, so this
-shouldn't be surprising). Most of the entries in `columnChoices`
+This references `columnChoices`, which is declared in the 
+`RunProgram()`method and has a similar structure to `actionChoices` (they're the
+same data type and are used in calls to the same method). Most of the entries in `columnChoices`
 correspond to columns in the jobs data set, but there's one additional
 entry with key/value pair `"all"`/ `"All"`. These entries will help
-us present to the user the options for searching our data, which will
+us present the user with the options for searching our data, which will
 correspond to searching within a given column, or searching all columns
 at once.
 
@@ -249,16 +247,15 @@ to the caller. This `string` corresponds to the chosen key (from
 re-prompts the user.
 
 The local variable `choiceKeys` is used to easily enumerate the
-`choices` `Dictionary`. In other words, it gives us a simple way to
+`choices` `Dictionary`. This gives us a simple way to
 provide an ordering to `choices`, which doesn't have an ordering of
 its own.
 
-## The `JobData` Class
+## The `JobData` Class `JobData.cs`
 
 The `JobData` class is responsible for importing the data from the CSV
 file and parsing it into a C#-friendly format, that is, into
-`Dictionary` and `List` form. Look toward the bottom of the class
-and you will see a method named `LoadData()`, which does just what it
+`Dictionary` and `List` form. Look for the method named `LoadData()` (line 85), which does just what it
 advertises. After parsing the file data, it stores the data in the
 private property `AllJobs` which is of type
 `List<Dictionary<string, string>>`.
@@ -266,7 +263,7 @@ private property `AllJobs` which is of type
 {{% notice blue "Note" "rocket"%}}
 
    We haven't covered static properties and methods in-depth yet. For this
-   assignment, know simply that they allow us to use properties and methods
+   assignment, know that they allow us to use properties and methods
    of a class without creating an object from that class. For example, we
    can call `JobData.FindAll()` from the `TechJob` class.
 
@@ -317,7 +314,7 @@ Note that there are two methods named `FindAll()`, but this is allowed in
 C# via a feature called **overloading**. Overloading happens when
 multiple methods have the same name, but they each have different input
 parameters (also called argument lists). Read more about
-[overloading](https://www.geeksforgeeks.org/c-sharp-method-overloading/).
+[overloading](https://www.geeksforgeeks.org/c-sharp-method-overloading/) here.
 
 Here are some questions to ask yourself while reading this code:
 
@@ -333,11 +330,11 @@ Here are some questions to ask yourself while reading this code:
 
 <!-- TODO: Add reference back to Assignment 0 -->
 
-Before diving into your tasks, review Assignment 0 for details on running the autograding tests for this assignment. This assignment has multiple tests, and we highly recommend the following workflow:
+Before diving into your tasks, review Assignment 0 for details on running autograding tests in C#. This assignment has multiple tests, and we recommend the following workflow:
 
-1. Write the code for the task, verifying manually that it works by running the `TechJobsConsoleAutograded` project.
+1. Write the code for the task, verify manually that your code works by running the `TechJobsConsoleAutograded` project.
 1. When you think you've completed a task, run the individual test that corresponds to the task. 
-1. If the test fails, review the test output and go back to your code to try to fix it.
+1. If the test fails, review the test output and go back to your code to fix the bug.
 1. Once the single test passes, run *all* of the tests to make sure you didn't break any tests that previously passed.
 1. Repeat this process until all tests pass. 
 
@@ -350,7 +347,7 @@ hopefully noticed that there's some work to do in the `PrintJobs()`
 method. As it stands, it currently just prints a message:
 `"PrintJobs is not implemented yet"`.
 
-Complete this method. It should print out jobs *in this precise format*:
+Complete this method. Print out jobs *matching the below format*:
 
 ```bash
    *****
@@ -380,7 +377,7 @@ If there are no results, it should print `No results`. Again, you should use thi
 
 {{% /notice %}}
 
-Using the `Environment.NewLine`  will allow the autograding unit tests pass regardless of your operating system.  `\n` is a new line in Mac OS, but will be read as `\r\n` in Windows.    Read about the differences in line breaks [here](https://dev.to/pieter/why-windows-uses-rn-newlines-instead-of-n-126l).  Read more about how `Environment.NewLine` [works](https://www.dotnetperls.com/newline).
+Traditionally `\n` is a new line in Mac OS and `\r\n` is new line in Windows. `Environment.NewLine`  is the universal way to create a new line and works regardless of your operating system.  Allowing code written on a Mac to pass unit tests when the same code is run on Windows.
 
 {{% notice blue "Note" "rocket" %}}
 
@@ -403,19 +400,19 @@ Test this method before moving on to your next step:
    "0" to search and then "3" to search for a location. Then enter a location
    that is not in the data (e.g. "Cancun"). Your message should be displayed.
 
-### Create Method `FindByValue()`
+### Complete the `FindByValue()` Method
 
 At this stage, the application will allow users to search a *given
 column* of the data for a given string. Your next task is to enable a
 search that looks for the search term in *all* of the columns.
 
 In the `JobData` class, find the method `FindByValue()`. This method has been outlined
-for you but contains none of the code needed to work (you should leave the `LoadData()` call as the first line of the method, however). Here are a few observations:
+for you but contains none of the code needed to work (leave the `LoadData()` call as the first line of the method). Here are a few observations:
 
-1. The code that you write should not contain duplicate jobs. So, for example, if a listing has position type "Web - Front End" and name "Front end web dev" then searching for "web" should not include the listing twice.
-1. As with `PrintJobs()`, you should write your code in a way that if a new column is added to the data, your code will automatically search the new column as well.
-1. You should NOT write code that calls `FindByColumnAndValue()` once for each column. Rather, utilize loops and collection methods as you did above.
-1. You *should*, on the other hand, read and understand `FindByColumnAndValue()`, since your code will look similar in some ways.
+1. The code that you write should not return duplicate jobs. For example, if a listing has position type "Web - Front End" and name "Front end web dev" then searching for "web" should not include the listing twice.
+1. As with `PrintJobs()`, write your code in a way that if a new column is added to the data, your code will automatically search the new column as well.
+1. Do NOT write code that calls `FindByColumnAndValue()` once for each column. Rather, utilize loops and collection methods.
+1. Reading and understanding `FindByColumnAndValue()`, will help as your code will look similar in some ways.
 
 You'll need to call `FindByValue()` from somewhere in `RunProgram()`. We'll
 leave it up to you to find where. You might have noticed that when you
@@ -450,7 +447,7 @@ Here are some questions to ask yourself as you get started:
 You might find it useful to review the String methods listed in the
 chapter.
 
-When this task is completed, you're done!
+When this task is completed, you're ready to submit your assignment.
 
 ## Sanity Check
 
@@ -469,9 +466,8 @@ To turn in your assignment and get credit, follow the submission instructions.
 ## Bonus Missions
 
 If you want to take your learning a few steps further, here are some
-additional problems you can try to solve. We're not providing you much
-guidance here, but we have confidence that you can figure these problems
-out!
+additional features the company team thinks would be nice to have in our app. We're not providing you much
+guidance here, but we have confidence that you can figure how to implement these enhanced features!
 
 1. **Sorting list results**: When a user asks for a list of employers, locations, position types, etc., it would be nice if results were sorted alphabetically. Make this happen.
 1. **Returning a copy of AllJobs**: Look at `JobData.FindAll()`. Notice that it's returning the `AllJobs` property, which is a static property of the `JobData` class. In general, this is not a great thing to do, since the person calling our `FindAll()` method could then mess with the data that `AllJobs` contains. Fix this by creating a copy of `AllJobs`. *Hint:* Look at the methods of the `List` class listed in the Microsoft documentation.
