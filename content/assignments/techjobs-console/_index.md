@@ -24,8 +24,7 @@ help them easily manage data for currently available jobs. Over the next few
 weeks, you will help them build this application alongside mentors from the
 Tech Team.
 
-This first project will be a simple proof-of-concept prototype. It won't be
-pretty or have lots of features, but it will give you a chance to work through
+This first project will be a simple prototype. A prototype in software development is a basic working version of a proposed product. Software developers build prototypes to get feedback on proposed features and adjust the project timeline, as needed. This prototype won't be pretty or have lots of features, but it will give you a chance to work through
 some initial concepts and get feedback from LaunchCode staff.
 
 Your mentor on this project is Blake.
@@ -65,9 +64,6 @@ employers, or all locations).
 Blake has now handed the task off to you. You must add a couple of features and
 then get feedback from the Company Team.
 
-After you work through the tasks Blake has laid out for you, tackle one
-or more of the [bonus missions]({{< relref "./#bonus-missions" >}}).
-
 ## Getting Started
 
 <!-- TODO: Add link back to Assignment 0 -->
@@ -77,12 +73,12 @@ In Canvas, **Graded Assignment #1: TechJobs Console** contains a GitHub Classroo
 Before diving in and starting to code, make sure you understand what the code
 you've been given does. Since you're starting with a functioning---albeit
 unfinished---program, go ahead and run it to get an idea of how it works. To do
-this, right-click on the project that contains the `TechJobs` class and select *Run Project*.
+this, explore the two projects in the solution. Right-click on the project that contains the `TechJobs` class and select *Run Project*.
 
 {{% notice orange "Warning" "rocket" %}}
 
    The application will run until you force it to quit, re-prompting time
-   after time. To kill it, press the "stop" icon in the Run pane. We'll learn precisely how the program manages to work this way below.
+   after time. To kill it, press the "stop" icon in the upper corner the Run pane. We'll learn precisely how the program manages to work this way below.
 
 {{% /notice %}}
 
@@ -156,7 +152,7 @@ user wants to quit our app, they can enter `x` at the initial `View jobs by` pro
 
    There are two ways to stop a running app. Either option works so you can pick the one that works best for you!
    
-   1. Use the IDE.  Click Visual Studio's *Stop* icon.  The light red square that replaces the green *Run* triangle once an app is running.
+   1. Use the IDE.  Click Visual Studio's *Stop* icon, the square that replaces the *Run* triangle once an app is running.
    1. In the terminal, press *ctrl+C*. This will work in any terminal context, and not just for our console program in Visual Studio
 
 {{% /notice %}}
@@ -189,7 +185,7 @@ References*. This will open a pane and display each location in the program
 where `GetUserSelection()` is called. The first such usage is the first
 line of the main `while loop`:
 
-```csharp
+```csharp {linenos=table, linenostart=30}
    string actionChoice = GetUserSelection("View Jobs", actionChoices);
 ```
 
@@ -371,26 +367,24 @@ For the autograding script to correctly grade your code, you'll need to match th
 
 If there are no results, it should print `No results`. Again, you should use this *exact* message.
 
-{{% notice orange "Warning" "rocket" %}}
-
-   To create new lines for your output, use `Environment.NewLine`.  
-
-{{% /notice %}}
-
-Traditionally `\n` is a new line in Mac OS and `\r\n` is new line in Windows. `Environment.NewLine`  is the universal way to create a new line and works regardless of your operating system.  Allowing code written on a Mac to pass unit tests when the same code is run on Windows.
-
-{{% notice blue "Note" "rocket" %}}
+{{% notice green "Tip" "rocket" %}}
 
    To do this, you'll need to iterate over a `List` of jobs. Each
    job is itself a `Dictionary`. While you can get each of the items out of
    the `Dictionary` using the known keys (`employer`, `location`, etc.),
    think instead about creating a nested loop to loop over each
    `Dictionary`. If a new field is added to the job records, this approach
-   will print out the new field without any updates to `PrintJobs()`.
+   will print out the new field without any manual updates to `PrintJobs()`.
 
 {{% /notice %}}
 
-Test this method before moving on to your next step:
+{{% notice orange "Warning" "rocket" %}}
+
+   To create new lines for your output, use `Environment.NewLine`. Traditionally `\n` is a new line in Mac OS and `\r\n` is new line in Windows. `Environment.NewLine`  is the universal way to create a new line and works regardless of your operating system.  Allowing code written on a Mac to pass unit tests when the same code is run on Windows. 
+
+{{% /notice %}}
+
+Test this method manually before moving on to your next task:
 
 1. Save your changes.
 1. Run the project.
@@ -456,6 +450,7 @@ Before submitting, make sure that your application:
 1. Prints each field of a job when using search functionality, and when listing all columns. If there are no search results, a descriptive message is displayed.
 1. Allows the user to search for a string across all columns.
 1. Returns case-insensitive results.
+1. Run the autograding tests to ensure that the tests pass.
 
 ## How to Submit
 

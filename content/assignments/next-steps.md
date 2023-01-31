@@ -14,4 +14,5 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Next Steps
 
-After completing the assignments for this course, you will be ready to make your own project in Liftoff!
+After completing the assignments for this course, you will be ready to make your own project as part of the next unit.
+The next unit focuses on interviewing, resumes, and how you can expand upon the skills you learned throughout the first two units to build a personal project to share with potential employers.
