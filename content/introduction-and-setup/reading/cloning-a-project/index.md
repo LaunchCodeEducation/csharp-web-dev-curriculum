@@ -12,7 +12,7 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-Follow along with the provided walkthroughs to learn how to clone repos into Visual Studio. Try it out on your own by forking and cloning the [LaunchCodeEducation/csharp-web-dev-datatypes](https://github.com/LaunchCodeEducation/csharp-web-dev-datatypes) repository page. First, fork the repository into your own GitHub account by selecting Fork from the top right of the page and then clone the repository to your own machine to start working on it locally.
+Follow along with the provided walkthroughs to learn how to clone repos into Visual Studio. Try it out on your own by forking and cloning the [LaunchCodeEducation/csharp-web-dev-examples](https://github.com/LaunchCodeEducation/csharp-web-dev-examples) repository page. First, fork the repository into your own GitHub account by selecting Fork from the top right of the page and then clone the newly-created repository to your own machine to start working on it locally.
 
 ## Windows Users
 
@@ -42,13 +42,13 @@ On a Windows machine, it is a path you saved your repo at. On a Mac, it’s in t
 Once you find the repo, `cd` into it. Look for the Solution file which uses the `.sln` file type.
 
 ```bash-session
-students-computer:csharp-web-dev-datatypes student$ ls
-HelloMethods                 csharp-web-dev-datatypes.sln
+students-computer:csharp-web-development-examples student$ ls
+HelloMethods                 csharp-web-development-examples.sln
 TempConverter
 ```
 
 {{% notice blue "Note" "rocket" %}}
-The `csharp-web-dev-datatype` solution contains 2 separate projects: `HelloMethods` and `TempConverter`. A single solution can hold multiple projects.
+The `csharp-web-development-examples` solution contains 2 separate projects: `HelloMethods` and `TempConverter`. A single solution can hold multiple projects.
 {{% /notice %}}
 
 Try to open the solution using the command line prompt:
@@ -64,11 +64,11 @@ It may take a while for Visual Studio to start up. Be patient! Sometimes just cl
 Return to the terminal. Locate your `Program.cs` file for the `HelloMethods` project. This will be contained in the project directory of the same name.
 
 ```bash-session
-students-computer:csharp-web-dev-datatypes student$ ls
-HelloMethods                 csharp-web-dev-datatypes.sln
+students-computer:csharp-web-development-examples student$ ls
+HelloMethods                 csharp-web-development-examples.sln
 TempConverter
-students-computer:csharp-web-dev-datatypes student$ cd HelloMethods
-students-computer:csharp-web-dev-datatypes student$ ls
+students-computer:csharp-web-development-examples student$ cd HelloMethods
+students-computer:csharp-web-development-examples student$ ls
 HelloMethods.csproj  Message.cs              Program.cs
 ```
 
@@ -93,14 +93,14 @@ Open the solution file tree in Visual Studio. If you see multiple projects, you 
    Which file is the solution?
 
    ```bash-session
-   students-computer:csharp-web-dev-datatypes student$ ls
-   HelloMethods                      csharp-web-dev-datatypes.sln
+   students-computer:csharp-web-development-examples student$ ls
+   HelloMethods                      csharp-web-development-examples.sln
    TempConverter
    ```
 
    1. `TempConverter`
    1. `HelloMethods`
-   1. `csharp-web-dev-datatypes.sln`
+   1. `csharp-web-development-examples.sln`
    1. `Program.cs`
 {{% /notice %}}
 
@@ -108,13 +108,13 @@ Open the solution file tree in Visual Studio. If you see multiple projects, you 
    Where would Willow find the `Program.cs` file for the `TempConverter` project?
 
    ```bash-session
-   students-computer:csharp-web-dev-datatypes student$ ls
-   HelloMethods                      csharp-web-dev-datatypes.sln
+   students-computer:csharp-web-development-examples student$ ls
+   HelloMethods                      csharp-web-development-examples.sln
    TempConverter
    ```
 
    1. Inside the `TempConverter` project
    1. Inside the `HelloMethods` project
-   1. Inside `csharp-web-dev-datatypes.sln`
+   1. Inside `csharp-web-development-examples.sln`
    1. None of the above
 {{% /notice %}}
