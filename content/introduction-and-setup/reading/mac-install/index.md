@@ -31,9 +31,9 @@ Walk through the installation process by following Microsoft’s [Install Visual
 As you install Visual Studio, keep these things in mind:
 
 1. You will have to assist the installer as needed. This may take a while, but stick around. You may be asked to enter your password a few times.
-1. To personalize or not? This is up to you.
+1. How to personalize your install is up to you. Visual Studio may require the following personalizations.
 
-   1. Microsoft Account: Creating a Microsoft account is optional.
+   1. Microsoft Account: You may be required to sign in with a Microsoft account. Creating a Microsoft account is free and it can be used for other Microsoft products. For more information on how to connect your Microsoft account to Visual Studio, check out the [documentation](https://learn.microsoft.com/en-us/visualstudio/mac/signing-in?view=vsmac-2022).
    1. Keyboard Shortcuts: The default is Visual Studio for Mac and that is a good starting option. You can change this later.
 
 ## A Tour of Your New IDE

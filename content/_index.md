@@ -1,16 +1,12 @@
 ---
-title: "Home"
+title: "C# Web Development"
 date: 2021-10-01T09:28:27-05:00
 draft: false
 ---
 
 # C# Web Development
 
-## What is this Course
-
-This course is an introduction to object-oriented programming in C#. Students will then move on to building web applications with the industry-grade framework, ASP.NET Core MVC.
-
-## Why take this Course
+## Course Summary
 
 This course is an introduction to **C#** and the .NET framework. C# is a programming language developed by Microsoft and used in almost all of its products.
 
@@ -22,9 +18,7 @@ Beyond the basics of programming in C#, you’ll learn some key object oriented 
 
 ## Where this Course Leads
 
-Upon completing the content within this course you will be capable of building a web application with ASP.NET Core MVC that can store data in a local database. 
-
-After completing this course, you are ready to begin our Liftoff program.
+Upon completion of the content within this course you will be capable of building a web application with ASP.NET Core MVC that can store data in a local database. You will also be ready to start reviewing the Liftoff materials, which focus on career-readiness and building a personal project.
 
 While you are entering a new career in technology, we hope you use the tools you learned in this program to learn new skills.
 You may find yourself wanting to learn more about the cloud, advanced testing tools, or building bigger and better APIs.
@@ -38,4 +32,4 @@ Whatever it is, now that you have conquered the foundations of computer programm
 
 You should already have completed Unit 1 of our Web Development program, *Introduction to Professional Web Development in JavaScript*.
 
-The first steps you will take in programming in C# is set up your programming environment. 
+The first steps you will take in programming in C# is setting up your programming environment. 

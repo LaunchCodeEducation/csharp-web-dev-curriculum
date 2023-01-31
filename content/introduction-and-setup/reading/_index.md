@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough"
+title: "Setup for C#"
 date: 2022-12-15T09:16:07-06:00
 draft: false
 weight: 2
@@ -84,6 +84,6 @@ Microsoft provides [more detailed naming guidelines here](https://learn.microsof
    1. Visual Studio IDE
    1. C# class library
 
-## Walkthrough
+## Reading Links
 
 {{% children %}}

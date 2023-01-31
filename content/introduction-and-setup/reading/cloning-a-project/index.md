@@ -27,7 +27,7 @@ Note the path where you save this repo.
 Be sure to note the Target Folder where this repo is saved.
 
 {{% notice blue "Note" "rocket" %}}
-   You can also find the option to clone a Git repository under *File*.
+   If you do not have an *Open With Visual Studio* button on Github, that is okay! On the documentation page above, they provide instructions in case you are using an alternate Git provider. Follow these instructions to clone your repository using menu options without having to go through Github.
 {{% /notice %}}
 
 ## Exploring the Cloned Repo in Your Terminal
@@ -89,7 +89,8 @@ Open the solution file tree in Visual Studio. If you see multiple projects, you 
 
 ## Check Your Understanding
 
-1. Which file is the solution?
+{{% notice green "Question" "rocket" %}}
+   Which file is the solution?
 
    ```bash-session
    students-computer:csharp-web-dev-datatypes student$ ls
@@ -101,8 +102,10 @@ Open the solution file tree in Visual Studio. If you see multiple projects, you 
    1. `HelloMethods`
    1. `csharp-web-dev-datatypes.sln`
    1. `Program.cs`
+{{% /notice %}}
 
-1. Where would Willow find the `Program.cs` file for the `TempConverter` project?
+{{% notice green "Question" "rocket" %}}
+   Where would Willow find the `Program.cs` file for the `TempConverter` project?
 
    ```bash-session
    students-computer:csharp-web-dev-datatypes student$ ls
@@ -114,3 +117,4 @@ Open the solution file tree in Visual Studio. If you see multiple projects, you 
    1. Inside the `HelloMethods` project
    1. Inside `csharp-web-dev-datatypes.sln`
    1. None of the above
+{{% /notice %}}

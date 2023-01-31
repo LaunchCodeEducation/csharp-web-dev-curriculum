@@ -35,9 +35,9 @@ Here are some things you should keep in mind as you install Visual Studio:
 
    1. *Optional*. Choose individual components
 
-      {{% notice blue "Note" "rocket" %}}
-      If you are customizing your **Individual components**, make sure that you are installing .NET 6.0 Runtime. This is a default setting. Do not uncheck the box.
-      {{% /notice %}}
+   {{% notice blue "Note" "rocket" %}}
+   If you are customizing your **Individual components**, make sure that you are installing .NET 6.0 Runtime. This is a default setting. Do not uncheck the box.
+   {{% /notice %}}
 
    1. *Optional*. Install language packs
    1. *Optional*. Select installation location

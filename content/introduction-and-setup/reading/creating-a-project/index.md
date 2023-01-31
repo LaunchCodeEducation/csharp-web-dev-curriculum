@@ -40,7 +40,7 @@ Following the “Hello World” trend, let’s create a new Visual Studio projec
 
 1. A console window should pop up with the line “Hello World” printed. That’s it. You have created and executed your first C# application!
 
-{{% notice blue "Tip" "rocket" %}}
+{{% notice green "Tip" "rocket" %}}
 The first time you run a console app in Visual Studio, you may be prompted to allow VS to access the terminal. This is ok.
 This may also take longer than a few seconds to run the very first time.
 {{% /notice %}}
@@ -59,6 +59,12 @@ If you would like more instructions on creating and running this project check o
 
 You’ve just created your first C# project. Congrats! In fact, you’ve also just created your own C# solution. A solution is a container that holds different projects like a folder that contains subfolders. Your `HelloWorld` project is nested within a solution called `HelloWorld`. It is normal for a project to have the same name as the solution.
 
+{{% notice green "Tip" "rocket" %}}
+
+   In the Solution Explorer, you may notice that next to the solution name is the name of the current branch in parantheses. As you create more branches, you may find this a helpful tip to keep track of which branch you are currently working on.
+
+{{% /notice %}} 
+
 A C# project contains all the code to run a particular application. Along with the `Program.cs` file you ran just a moment ago, you may have also noticed a `Dependencies` folder. Many applications require extra code like access to another project in the same solution or other compiling configurations, such as testing libraries, to execute.
 
 You can create another project inside of the `HelloWorld` solution very easily. Right click on the solution name to add a new project, another console app as above, and name it `Hello<YourName>`. Change the starter code in `Program.cs` to greet you by name.
@@ -74,13 +80,17 @@ The two questions will use the following code:
 Console.WriteLine("Hello, World!");
 ```
 
-1. Given the code above, which line is responsible for printing a message?
+{{% notice green "Question" "rocket" %}}
+   Given the code above, which line is responsible for printing a message?
    1. Line 1
    1. Line 2
    1. None of the above
+{{% /notice %}}
 
-1. Where does the code above print out?
-   1. In line 3 of the Program.cs file
+{{% notice green "Question" "rocket" %}}
+   Where does the code above print out?
+   1. In line 3 of the `Program.cs` file
    1. In the browser
    1. In the terminal
    1. None of the above
+{{% /notice %}}
