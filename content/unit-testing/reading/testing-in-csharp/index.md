@@ -82,9 +82,9 @@ Below are some best practices to keep in mind when writing unit tests, in any la
    The AAAs of unit testing refers to the pattern to follow when 
    writing your unit tests. 
 
-   1. Arrange the variables your test requires
-   1. Act on the methods your test requires
-   1. Assert the anticipated comparison of the expected and actual values
+   1. Arrange the variables your test requires.
+   1. Act on the methods your test requires.
+   1. Assert the anticipated comparison of the expected and actual values.
 
 1. Deterministic
 

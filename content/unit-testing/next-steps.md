@@ -13,3 +13,8 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Next Steps
+
+The next lesson dives into how C# handles inheritance. If you would like additional resources on unit testing and MSTest, check out these resources:
+
+1. [Microsoft Walkthrough](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest)
+1. [Unit Testing Best Practices](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)

@@ -14,21 +14,31 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Learning Objectives
 
+By the end of this lesson, you should be comfortable with the following:
+
+1. Writing unit tests to verify the behavior of methods.
+1. Identifying proper behaviors for which a test should be written.
+1. The importance of testing in creating well-functioning code.
+1. Using test-driven development to define the behavior of code before writing it, and to ensure that code is properly tested.
+1. Using MSTest to create unit tests.
+
 ## Key Terminology
 
-1. automated testing
-1. unit testing
+As you work through this chapter, you should make note of the following terms:
+
+1. Automated Testing
+1. Unit Testing
 1. `MSTest`
-1. refactor
-1. test-driven development
+1. Refactor
+1. Test-driven Development
 1. TDD
-1. TestClass
-1. TestMethod
-1. attributes
-1. dependency
-1. test runner
-1. [TestInitialize]
-1. [TestCleanup]
+1. `TestClass`
+1. `TestMethod`
+1. Attributes
+1. Dependency
+1. Test Runner
+1. `[TestInitialize]`
+1. `[TestCleanup]`
 
 ## Content Links
 

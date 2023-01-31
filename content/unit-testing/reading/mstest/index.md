@@ -31,7 +31,7 @@ describe how to use these in the examples that follow.
 To test a simple .NET Core console project, we add an MSTest project into the same solution. An MSTest 
 project is a console project with an added MSTest dependency.
 
-Fork and clone `this repo <https://github.com/LaunchCodeEducation/csharp-web-dev-unittesting>`__. Inside the solution, we have two projects,
+Turn your attention to the [reading examples repo](https://github.com/LaunchCodeEducation/csharp-web-dev-examples). Inside the solution, we have two projects,
 `Car` and `CarTests`. The `Car` project is a simple .NET Console app like the others you have encountered
 in this course so far. `CarTests` is a new type of project, MSTest Project. 
 
@@ -39,13 +39,9 @@ On a Mac, to select this type of project looks like so:
 
 ![MAC: User selects MSTest project template in Visual Studio](pictures/mac-create-mstest-project.png)
 
-   MAC: Creating MSTest project in Visual Studio
-
 On a Windows:
 
 ![WINDOWS: User selects MSTest project template in Visual Studio](pictures/windows-create-mstest-project.png)
-
-   WINDOWS: Creating MSTest project in Visual Studio
 
 MSTest is a C# testing framework. When we create a Visual Studio MSTest Project, the 
 necessary API and classes are added as **dependencies** of the `CarTests` project. A dependency 
@@ -55,23 +51,27 @@ uses to carry out its function. Our C# tests will *depend* on MSTest code.
 Along the same lines, since `CarTests` tests the methods inside of `Car`, we must add the 
 `Car` project as a dependency of `CarTests`.
 
-Right click on the `Dependencies` directory in `CarTests` and add a reference to 
+Right click on the `Dependencies` directory in `CarTests` and add a project reference to 
 the `Car` project.
 
 ![User selects project to add as a dependency reference to test project](pictures/vs-add-dependency-reference.png)
-
-   Add main project as dependency for test project
 
 ### `Car` and `CarTests`
 
 Open the `Car` class and look around. Here, we provide a class, `Car`, with basic 
 information about a make, model, gas level, and mileage. We also give it getters, setters, and a few other methods. 
 
-In the same project, the `Program` class contains a main method that prints the
+In the same project, the `Program` class prints the
 `make` and `model` of a given `Car` object. Run the project to verify it works.
 Now, open `CarTests`. It's empty, save for a few TODOs. Let's tackle the
 first TODO to make a new empty test. Starting with an empty test lets us validate that we can 
 use MSTest in our current environment.
+
+{{% notice blue "Note" "rocket" %}}
+
+   You may notice that we have instantiated a `Car` object by calling it `Car.Car`. This is because our namespace is also called `Car`. If you remove the namespace name, you will get an error because a namespace cannot be instantiated as an object.
+
+{{% /notice %}}
 
 ## `[TestClass]` and `[TestMethod]`
 
@@ -85,8 +85,6 @@ In `CarTests`, on top of `public class CarTests`, add `[TestClass]`. Then, creat
 test underneath the first TODO. As usual, be sure write this code rather than copy/paste it:
 
 ```csharp {linenos=table}
-   using Microsoft.VisualStudio.TestTools.UnitTesting;
-
    namespace CarTests
    {
       [TestClass]
@@ -135,8 +133,6 @@ with an accepted `.001` variance.
 
    ![User hovers mouse over a function to see its parameter names](pictures/function-parameters-tooltip.png)
 
-      Hover over a function to see its parameters
-
 {{% /notice %}}
 
 Of course, `10` equals `10`. But let's run it so 
@@ -163,8 +159,6 @@ you can find it listed in the top *Test* menu.
 
 ![WINDOWS: User selecting Test Explorer option in Visual Studio Test Menu](pictures/vs-windows-test-explorer.png)
 
-   WINDOWS: Visual Studio open Test Explorer
-
 With the panel open, select the *Run All Tests* option.
 
 {{% notice blue "Note" "rocket" %}}
@@ -173,8 +167,6 @@ With the panel open, select the *Run All Tests* option.
    64bit processing.
 
    ![WINDOWS: User selecting x64 option from Test Explorer/Settings/Processor Architecture for AnyCPU Projects in Visual Studio](pictures/vs-windows-process-architecture-setting.png)
-
-   WINDOWS: Set Test Explorer to use x64 process
 
    You may also need to update some of the testing packages. Right click on the 
    `CarTests` project and select *Manage NuGet Packages...*. If you see some items
@@ -206,8 +198,8 @@ constructor sets the `gasTankLevel` field.
 
 {{% notice blue "Note" "rocket" %}}
 
-   To test the `Car` class, we must make it available to us by adding `using CarNS;` to the top of your 
-   file. `CarNS` is the **namespace** we have assigned to the `Car` class. Namespaces are used in C# to 
+   To test the `Car` class, we must make it available to us by adding `using Car;` to the top of your 
+   file. `Car` is the **namespace** we have assigned to the `Car` class. Namespaces are used in C# to 
    organize code. You've seen them before in other using statements.
 
 {{% /notice %}}
