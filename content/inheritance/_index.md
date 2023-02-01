@@ -2,7 +2,7 @@
 title: "Inheritance"
 date: 2023-01-31T15:39:38-06:00
 draft: false
-weight: 100
+weight: 1
 originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
 reviewer: # to be set by the page reviewer
@@ -20,28 +20,34 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Key Terminology
 
-1. Inheritance
-1. Subtyping
-1. Extends
-1. Subclass
-1. Derived class
-1. Child class
-1. Superclass
-1. Base class
-1. Parent class
-1. no-argument constructor 
-1. no-arg constructor
-1. method overriding
-1. Abstraction
-1. `abstract`
-1. Abstract class
-1. Abstract method
-1. Runtime exception 
-1. Polymorphism
-1. Class diagrams
-1. One-to-One Relationship
-1. One-to-Many Relationship
+As you read through this chapter, look for the following key words.
 
-## Content Links
+### Inheritance
+ 
+ - Inheritance, Subtyping
+
+### Inheritance in C#
+
+- Extends, Subclass, Derived class, Child class, Superclass, Base class, Parent class
+
+### A Tale of Two Cats
+
+- `base`, no-argument constructor , no-arg constructor, `override`, method overriding
+
+### Inheriting from Abstraction
+
+- Abstraction, `abstract`, Abstract class, Abstract method
+
+### Casting
+
+- Runtime exception, Polymorphism
+
+### Testing Inheritance
+
+### Class Diagrams
+
+- Class diagrams, One-to-One Relationship, One-to-Many Relationship
+
+## Table of Contents
 
 {{% children %}}
