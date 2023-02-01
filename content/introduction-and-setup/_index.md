@@ -2,7 +2,7 @@
 title: "Introduction and Setup"
 date: 2022-12-15T09:16:07-06:00
 draft: false
-weight: 100
+weight: 1
 originalAuthor: Sally Steuterman # to be set by page creator
 originalAuthorGitHub: gildedgardenia # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer
