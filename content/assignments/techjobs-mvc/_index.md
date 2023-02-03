@@ -79,9 +79,9 @@ Throughout your work, refer to our [demo app](https://csharp-mvc.launchcodetechn
 
 Set up a local copy of the project:
 
-<!-- TODO: Add links back to assignment 0 and assignment 2 -->
+<!-- TODO: Add link back to assignment 2 -->
 
-1. In Canvas, **Graded Assignment #3: TechJobs (MVC Edition)** contains a GitHub Classroom assignment invitation link, accept the assignment, and then set up the project in Visual Studio. Refer back to the GitHub Classroom instructions from Assignment 0 for details. 
+1. In Canvas, **Graded Assignment #3: TechJobs (MVC Edition)** contains a GitHub Classroom assignment invitation link, accept the assignment, and then set up the project in Visual Studio. Refer back to the [GitHub Classroom instructions]({{< relref "../hello-world/getting-started/" >}}) from Assignment 0 for details. 
 1. Launch the application to make sure it starts up properly. Then shut it down.
 1. Run the autograding tests. The tests for this assignment are set up the same way as for Assignment 2. There are four tasks for this assignment, but the first doesn't require any coding on your part. Therefore, there are 3 tests files (for tasks 2-4). As with assignment 2, we recommend that you only run the tests for the task you are currently working on.
 
@@ -325,9 +325,7 @@ At this point, all autograding tests should be passing. To be sure, run all the 
 
 ## How to Submit
 
-<!-- TODO: Add link back to Assignment 0 -->
-
-To turn in your assignment and get credit, follow the submission instructions.
+To turn in your assignment and get credit, follow the [submission instructions]({{< relref "../hello-world/submit-your-code/" >}}).
 
 ## Bonus Missions
 
