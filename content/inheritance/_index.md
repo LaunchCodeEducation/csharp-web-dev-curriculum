@@ -42,8 +42,6 @@ As you read through this chapter, look for the following key words.
 
 - Runtime exception, Polymorphism
 
-### Testing Inheritance
-
 ### Class Diagrams
 
 - Class diagrams, One-to-One Relationship, One-to-Many Relationship
