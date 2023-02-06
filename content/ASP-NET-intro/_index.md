@@ -2,9 +2,9 @@
 title: "Introduction to ASP.NET"
 date: 2023-02-06T14:44:12-06:00
 draft: false
-weight: 1
-originalAuthor: <no value> # to be set by page creator
-originalAuthorGitHub: <no value> # to be set by page creator
+weight: 10
+originalAuthor: Courtney Frey # to be set by page creator
+originalAuthorGitHub: speudusa # to be set by page creator
 reviewer: # to be set by the page reviewer
 reviewerGitHub: # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
@@ -29,8 +29,6 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 1. Controller
 1. ASP.NET
 1. ASP.NET Core
-
-
 
 ## Content Links
 

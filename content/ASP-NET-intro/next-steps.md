@@ -13,3 +13,10 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Next Steps
+
+https://dotnet.microsoft.com/en-us/apps/aspnet/mvc
+
+https://www.geeksforgeeks.org/mvc-framework-introduction/
+
+https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/overview/understanding-models-views-and-controllers-cs
+
