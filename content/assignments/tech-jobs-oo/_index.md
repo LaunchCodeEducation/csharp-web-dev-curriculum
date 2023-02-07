@@ -5,11 +5,11 @@ draft: false
 weight: 1
 originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
-lastEditor: # update any time edits are made after review
-lastEditorGitHub: # update any time edits are made after review
-lastMod: # UPDATE ANY TIME CHANGES ARE MADE
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
+lastEditor: Courtney Frey # update any time edits are made after review
+lastEditorGitHub: speudusa # update any time edits are made after review
+lastMod: 2023-02-07  # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Introduction
@@ -19,7 +19,9 @@ Your last task was to get the prototype Tech Jobs app in good shape. Now it’s 
 
 Your mentor on this project is Sally, one of the developers at LaunchCode. She regularly supports coders who are just getting started with their careers.
 
-<!-- TODO: Insert Image Here -->
+{{< rawhtml >}}
+   <img src="pictures/LC-Sally.png" alt="LaunchCode Mentor Sally" width=20% />
+{{< /rawhtml >}}
 
 After seeing your strong work with your last project, Blake reported that you performed well and learned quickly. Because of your success, he and Sally feel comfortable assigning you to a set of tasks that are a notch up in difficulty.
 
