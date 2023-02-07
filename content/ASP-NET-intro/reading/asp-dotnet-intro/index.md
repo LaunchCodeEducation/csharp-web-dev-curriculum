@@ -16,7 +16,9 @@ So far, we have been designing our applications by diagramming classes, drawing 
 
 **Model-View-Controller** (MVC) is a design pattern where the programming logic behind the application is broken down into 3 components: models, views, and controllers. A **model** handles the data and business logic of the application. A **view** handles the user interface elements. A **controller** passes information from the models to the views. Controllers are the traffic cops of the application, capable of passing data back and forth to the browser in MVC web applications. This process will be covered in depth later on in this chapter.
 
-[IMAGE]
+{{< rawhtml >}}
+   <img src="pictures/mvcOverview.png" alt="MVC diagram" />
+{{< /rawhtml >}}
 
 Because MVC breaks down all of the programming logic of an application into three digestable components, we can use this particular design pattern to make extensible applications. We also use MVC because it separates the components of the programs that the user interacts with from the underlying business logic.
 
@@ -36,4 +38,4 @@ The following section is the first of many videos we will be using to demonstrat
 
 ## Intro to ASP.NET - Video
 
-[VIDEO]
+[VIDEO LINK]
