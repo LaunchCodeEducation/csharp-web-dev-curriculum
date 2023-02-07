@@ -2,7 +2,7 @@
 title: "Assignment 2: TechJobs (Object-Oriented Edition)"
 date: 2023-01-11T13:15:59-06:00
 draft: false
-weight: 1
+weight: 3
 originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer
@@ -38,9 +38,7 @@ In this project, you’ll show that you can:
 
 ### Getting Started
 
-<!-- TODO: add links for Canvas and A0 -->
-
-1. Get the Starter Code.  In *Canvas, Graded Assignment #2: TechJobs (Object-Oriented Edition)* contains a GitHub Classroom assignment invitation link, and then set up the project in Visual Studio. Refer back to the GitHub Classroom instructions from *Assignment #0: Hello, World!* for details.
+1. Get the Starter Code.  In Canvas, **Graded Assignment #2: TechJobs (Object-Oriented Edition)** contains a GitHub Classroom assignment invitation link, and then set up the project in Visual Studio. Refer back to the GitHub Classroom instructions from [Assignment #0: Hello, World!]({{< relref "../hello-world/_index.md" >}}) for details.
 1. Open Visual Studio.
 1. If the app opens up to an existing project, close it.
 1. From the Visual Studio dialog box, open your copy of the starter code.
@@ -154,8 +152,8 @@ To help you keep track of your tasks, Sally added many `TODO` tasks.  Use the Ta
 [Mac Users](https://learn.microsoft.com/en-us/visualstudio/ide/reference/task-list-environment-options-dialog-box?view=vs-2022): To open Task List, select **View** > **Tasks**
 
 ### Running the Auto-grading Tests
-<!-- TODO: Add link for A0 -->
-If you need a refresher on running auto-graded tests, review _Assignment #0: Hello, World!_ 
+
+If you need a refresher on running auto-graded tests, review [Assignment #0: Hello, World!]({{< relref "../hello-world/_index.md" >}}). 
 
 Each task of the assignment will prompt you to uncomment and run the auto-graded tests.  Once you have completed the task you can leave the tests active.  They should all continue to pass as you continue through this assignment.
 

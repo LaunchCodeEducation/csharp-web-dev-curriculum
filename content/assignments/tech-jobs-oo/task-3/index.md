@@ -16,7 +16,7 @@ lastMod: 2023-02-07  # UPDATE ANY TIME CHANGES ARE MADE
 Due to the fact that this code is being auto-graded as you work through it, make sure that you use any and all names for classes, variables, methods, etc provided to you in these directions.
 {{% /notice %}}
 
-Now open the Job file and follow the TODO prompts to remove the comment markers. 
+Now open the `Job` file and follow the `TODO` prompts to remove the comment markers. 
 
 OOF! There are a lot of fields and properties declared and not much else.
 

@@ -49,5 +49,11 @@ Excellent! You successfully shifted the old console app into a more useful objec
 Now that the new structure is ready, another team member can refactor the import and display methods from the previous assignment to use the new classes. Once these are ready, our team will refine the search features and move the app online to provide a better user interface.
 
 ## How to Submit
-To turn in your assignment and get credit, follow the _submission instructions_.
-<!-- TODO: add link to submission instructions in A0 -->
+
+1. Stage, Commit, and Push to GitHub Classroom.
+
+1. Verify the results of your submission.  Continue to work on your code until you pass all of the tests.
+
+## Congrats! 
+
+You have successfully completed C# Graded Assignment 2: Tech Jobs Object-Oriented Edition! 
