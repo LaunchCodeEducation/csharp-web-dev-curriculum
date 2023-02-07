@@ -38,4 +38,4 @@ Do not start Task 4 until you have passed all of Task 3’s auto-grading unit te
 Now would be a good time to save, `commit`, and `push` your work up to GitHub.
 {{% /notice %}}
 
-On to [Task 4]({{< relref "../tech-jobs-oo/task-4.md" >}}).
+On to [Task 4]({{< relref "../task-4/index.md" >}}).

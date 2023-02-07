@@ -51,4 +51,4 @@ public class Employer {
 By adding `: this()` to the signature of the second `Employer` constructor, we are using a new technique called constructor chaining. For more info on how this chaining technique works, check out this [blog post](https://www.codecompiled.com/csharp/constructor-chaining-c/)!
 {{% /notice %}}
 
-On to [Task 2]({{< relref "../tech-jobs-oo/task-2.md" >}}).
+On to [Task 2]({{< relref "../task-2/index.md" >}}).

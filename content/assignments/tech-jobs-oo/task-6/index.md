@@ -70,4 +70,4 @@ Submit your assignment once you have passed all of Task 6’s auto-graded unit t
 Now would be a good time to save, `commit`, and `push` your work up to GitHub.
 {{% /notice %}}
 
-On to [your final steps]({{< relref "../tech-jobs-oo/final-steps.md" >}}).
+On to [your final steps]({{< relref "../final-steps/index.md" >}}).

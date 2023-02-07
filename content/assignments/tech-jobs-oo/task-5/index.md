@@ -93,4 +93,4 @@ Do not start Task 6 until you have passed all of Task 5’s auto-grading unit te
 Now would be a good time to save, `commit`, and `push` your work up to GitHub.
 {{% /notice %}}
 
-On to [Task 6]({{< relref "../tech-jobs-oo/task-6.md" >}}).
+On to [Task 6]({{< relref "../task-6/index.md" >}}).

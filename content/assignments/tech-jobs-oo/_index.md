@@ -173,4 +173,4 @@ The list below provides a general overview of your assigned tasks. Specific deta
 1. Use TDD to design and code a custom `ToString()` method for the `Job` class.
 1. Use inheritance to DRY the code within `Employer`, `Location`, `CoreCompetency`, and `PositionType`.
 
-On to [Task 1]({{< relref "../tech-jobs-oo/task-1.md" >}}).
+On to [Task 1]({{< relref "../tech-jobs-oo/task-1/index.md" >}}).
