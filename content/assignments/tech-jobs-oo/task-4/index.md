@@ -25,7 +25,7 @@ Inside JobTests,
 1. Initialize 4 job objects starting at line 7. This will save you a lot of time while creating your unit tests.
 
 <!-- this is not a very pretty codeblock -->
-```csharp {linenos=true,linenostart=7}
+```csharp 
 //Testing objects
 Job job1 = new Job();
 
