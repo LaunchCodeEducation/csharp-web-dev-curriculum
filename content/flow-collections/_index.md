@@ -14,7 +14,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Learning Objectives
 
-After completing everything in this chapter, you should be able to do the following:
+After completing this chapter, you should be able to do the following:
 1. Become familiar with C# Operators
    - `==`, `!=`, `<`, `>`, `<=`, and `>=`
 1. Write conditionals using:
@@ -27,34 +27,15 @@ After completing everything in this chapter, you should be able to do the follow
 ## Key Terminology
 
 Throughout this lesson, you will see lots of new vocabulary. Here is everything that you should make note of:
-- `==`
-- `!=`
-- `<`
-- `>`
-- `<=`
-- `>=`
-- `if` 
-- `else` 
-- `if else`
-- `else if`
-- `switch`
-- `case`
-- `break`
-- `default`
-- fallthrough
-- loop
-- `for` loop
-- `foreach` loop
-- `in`
-- `while` loop
-- `do-while` loop
-- `continue`
-- `StringBuilder`
-- data structure
-- `List`
-- `Dictionary`
-- `KeyValuePair`
-- `Array`
+
+### Conditionals
+- `==`, `!=`, `<`, `>`, `<=`, `>=`, `if` , `else`, `if else`, `else if`, `switch`, `case`, `break`, `default`, fallthrough
+
+### Loops
+- `for` loop, `foreach` loop, `in`, `while` loop, `do-while` loop, `continue`, `StringBuilder`
+
+### Collctions
+- data structure, `List`, `Dictionary`, `KeyValuePair`, `Array`
 
 
 

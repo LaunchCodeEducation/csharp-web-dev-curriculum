@@ -12,6 +12,10 @@ lastEditorGitHub: speudusa # update any time edits are made after review
 lastMod: 2023-02-07 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
+Before you start this chapter, fork and clone the [csharp-web-dev-examples](https://github.com/LaunchCodeEducation/csharp-web-dev-examples) repository. This repository contains the example projects in the reading section. 
+
+For the Conditionals section, be sure to explore the `Conditionals` project in the repo.
+
 ## Operators
 Before we review the syntax for conditionals, let’s go over the comparison and logical operators that we need to use in control flow statements.
 

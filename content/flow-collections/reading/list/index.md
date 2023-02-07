@@ -14,9 +14,7 @@ lastMod: 2023-02-07 # UPDATE ANY TIME CHANGES ARE MADE
 
 To write a `List` version of the program, we will have to introduce several new C# concepts, including the class `List`. We will also review different kinds of `for` loops used in C#.
 
-<!-- TODO: create repo for these examples  && Link to chapter 1's how to clone a project. -->
-
-Before going any further, we suggest you run the `ListGradebook` program in Visual Studio. This program is in [csharp-web-dev-examples](https://github.com/LaunchCodeEducation/csharp-web-dev-examples) repository. Once you’ve forked and cloned the repository following the directions on how to [clone a C# project](LINK TO CHAPTER 1), let’s look at what is happening in the source code.
+You will find the `ListGradebook` project in [csharp-web-dev-examples repo](https://github.com/LaunchCodeEducation/csharp-web-dev-examples).  Run the program, explore the code, and enter some grades.
 
 ```csharp{linenos=table}
 List<string> students = new List<string>();

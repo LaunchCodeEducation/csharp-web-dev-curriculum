@@ -18,7 +18,7 @@ Considering the gradebook example, we can improve our program using a dictionary
 
 As with the other collection structures, in C# we must specify the types of the objects we’ll be storing when we declare a variable or parameter to be a dictionary. This means specifying both key and value data types, which are allowed to be different types for a given dictionary.
 
-We suggest you run another version of the gradebook program called `DictionaryGradebook` in Visual Studio. This program lives in the [csharp-web-dev-examples](https://github.com/LaunchCodeEducation/csharp-web-dev-examples) repository. If you haven’t forked and cloned the repository, you should do so now.
+You can find the `DictionaryGradebook` project in the [csharp-web-dev-examples](https://github.com/LaunchCodeEducation/csharp-web-dev-examples) repository. Explore it, run it, and notice how it differs from the `ListGradebook` and the `ArrayGradebook`. 
 
 ```csharp{linenos=table}
 Dictionary<string, double> students = new Dictionary<string, double>();
