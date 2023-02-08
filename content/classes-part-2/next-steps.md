@@ -13,3 +13,13 @@ lastMod: 2023-08-02 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Next Steps
+
+This lesson covered the basics of static fields, static methods, the ToSting method, and the Equals method.  Check out these resources if you want a deeper learning journey on these topics.
+
+[Working with Static Classes and Static Methods in C#](https://www.codeguru.com/csharp/static-classes-methods-c-sharp/)
+
+[Object.ToString Method](https://learn.microsoft.com/en-us/dotnet/api/system.object.tostring?view=net-6.0)
+
+[Object.Equals Method](https://learn.microsoft.com/en-us/dotnet/api/system.object.equals?view=net-6.0)
+
+[Casting and type conversions (C# Programming Guide)](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
