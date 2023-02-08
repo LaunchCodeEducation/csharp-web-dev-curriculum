@@ -12,7 +12,7 @@ lastEditorGitHub: speudusa # update any time edits are made after review
 lastMod: 2023-08-02 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-## Major Concepts  
+## Learning Objectives  
 
 By the end of this chapter, you should understand:
 
