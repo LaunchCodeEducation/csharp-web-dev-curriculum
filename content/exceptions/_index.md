@@ -14,9 +14,20 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Learning Objectives
 
+After completing this chapter, you should understand: 
+1. How to handle an exception in C#
+1. Common exceptions in C#
+
 ## Key Terminology
 
+### Introduction to Exceptions
+- Exceptions, null pointer, `ArgumentOutOfRangeException`
 
+### Handling Exceptions
+- `ArgumentOutOfRange`, exception swallowing, `NullReferenceException`
+
+### Handling Exceptions
+- checked exceptions, unchecked exceptions, try/catch/finally, 
 
 ## Content Links
 

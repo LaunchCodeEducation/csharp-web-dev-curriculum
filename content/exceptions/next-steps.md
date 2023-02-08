@@ -3,8 +3,8 @@ title: "Next Steps"
 date: 2023-02-08T10:27:25-06:00
 draft: false
 weight: 4
-originalAuthor: <no value> # to be set by page creator
-originalAuthorGitHub: <no value> # to be set by page creator
+originalAuthor: Courtney Frey # to be set by page creator
+originalAuthorGitHub: speudusa # to be set by page creator
 reviewer: # to be set by the page reviewer
 reviewerGitHub: # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
@@ -13,6 +13,8 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Next Steps
+
+Now that you have created a few exceptions, here are some resources to explore.  
 
 [Replace Error Code with Exception](https://refactoring.guru/replace-error-code-with-exception)
 
