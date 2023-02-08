@@ -12,7 +12,11 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-## Major Concepts & Key Terminology
+## Learning Objectives
+
+## Key Terminology
+
+
 
 ## Content Links
 

@@ -13,3 +13,9 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Next Steps
+
+[Replace Error Code with Exception](https://refactoring.guru/replace-error-code-with-exception)
+
+[Exception messages are for programmers](https://blog.ploeh.dk/2014/12/23/exception-messages-are-for-programmers/)
+
+[Exceptions and Exception Handling](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)
