@@ -5,11 +5,11 @@ draft: false
 weight: 2
 originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
-lastEditor: # update any time edits are made after review
-lastEditorGitHub: # update any time edits are made after review
-lastMod: # UPDATE ANY TIME CHANGES ARE MADE
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
+lastEditor: Courtney Frey # update any time edits are made after review
+lastEditorGitHub: speudusa # update any time edits are made after review
+lastMod: 2023-08-02 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 We explored configuring data within classes with fields and properties. Now let’s turn our attention back to class behavior (methods).
@@ -116,7 +116,7 @@ Now let’s examine them in the context of what we’ve recently learned about c
 Just like static fields, **static methods** belong to the class as a whole, and not to any of the specific instances of the class. Thus, they are sometimes also called **class methods**. A static method is essentially the opposite of an instance method, since the two cases are mutually exclusive. *Instance methods* rely on each object’s specific data, while static methods must NOT rely on data from a specific object.
 
 We call a static method by preceding it with the class name and using dot-notation. Here’s an example that we looked at [previously](LINK).
-<!-- TODO: link to chapter 2 static methods. -->
+<!-- TODO: link to chapter 4 static methods. -->
 
 {{% notice blue "Example" "rocket" %}} 
 `HelloMethods/Program.cs`:
