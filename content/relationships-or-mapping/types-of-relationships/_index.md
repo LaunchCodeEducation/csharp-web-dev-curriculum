@@ -15,7 +15,7 @@ lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 ## Types of Relationships
 
 <!-- TODO: Need to Correct Link here below to mysql-part-2 chapter/relationships -->
-Just as database tables `can relate <https://education.launchcode.org/SQL/chapters/mysql-part-2/relationships.html#one-to-many-relationships>`_ to each other, so can classes and objects. In fact, ORM translates relationships between objects into relationships between database rows.
+Just as database tables [can relate]() to each other, so can classes and objects. In fact, ORM translates relationships between objects into relationships between database rows.
 
 This chapter introduces the tools needed to create meaningful relationships using ORM. Let's consider the different types of relationships at a conceptual level. In later sections, we will learn how to implement these relationships using EntityFrameworkCore.
 
@@ -71,9 +71,9 @@ In this case, we say that A has a one-to-many relationship to B. A category can 
 {{% notice blue "Examples" %}}
 The following pairs of things generally have one-to-many relationships:
 
-1. Birth dates / people
-1. States / U.S. Representatives
-1. Model numbers / iPhones
+1. `Birth dates / people`
+1. `States / U.S. Representatives`
+1. `Model numbers / iPhones`
 {{% /notice %}}
 
 When discussing the inverse relationship, we say that B has a **many-to-one** relationship to A.
@@ -82,62 +82,61 @@ When discussing the inverse relationship, we say that B has a **many-to-one** re
 
 A many-to-one relationship between `Event` and `EventCategory` objects
 
-A many-to-one relationship operates in the opposite direction of a one-to-many relationship. The difference between the two is which side of the relationship *knows about* the objects on the other side. In C# terms, this will translate into a property on one class that references the other.
+A many-to-one relationship operates in the opposite direction of a one-to-many relationship. 
 
-.. admonition:: Examples
+The difference between the two is which side of the relationship *knows about* the objects on the other side. 
 
-   Many-to-one relationships are simply the opposite direction of one-to-many. Therefore, each of the following pairs has a many-to-one relationship.
+In C# terms, this will translate into a property on one class that references the other.
 
-   #. People / birth dates
-   #. U.S. Representatives / states
-   #. iPhones / model numbers
+{{% notice blue "Examples" %}}
+Many-to-one relationships are simply the opposite direction of one-to-many. Therefore, each of the following pairs has a many-to-one relationship.
 
+1. `People / birth dates`
+1. `U.S. Representatives / states`
+1. `iPhones / model numbers`
+{{% /notice %}}
 
 ### Many-to-Many
 
 **Many-to-many** relationships occur when each instance of type A can be related to multiple instances of type B, and vice versa. 
 
-.. _many-to-many-figure:
+![Three Event objects on the left, with various relationships to three Tag objects on the right](pictures/many-to-many.png?classes=border)
 
-.. figure:: figures/many-to-many.png
-   :alt: Three Event objects on the left, with various relationships to three Tag objects on the right
-   :width: 800px
-
-   A many-to-many relationship between Event and Tag objects
+A many-to-many relationship between Event and Tag objects
 
 An event can have multiple tags, and a tag may be associated with multiple events. Thus, we have a many-to-many relationship.
 
-.. admonition:: Examples
+{{% notice blue "Examples" %}}
+The following pairs of things generally have many-to-many relationships:
 
-   The following pairs of things generally have many-to-many relationships:
-
-   #. Books / authors
-   #. Recipes / ingredients
-   #. Actors / movies
+1. `Books / authors`
+1. `Recipes / ingredients`
+1. `Actors / movies`
+{{% /notice %}}
 
 ### Check Your Understanding
 
-.. admonition:: Question
+{{% notice orange "Question" %}}
+Match the following pairs with the appropriate relationship type:
 
-   Match the following pairs with the appropriate relationship type:
+a. `car / manufacturer`
 
-   #. car / manufacturer
-   #. car / title
-   #. car / driver 
-   #. car / tire
+b. `car / title`
 
-.. ans: a. many-to-one, b. one-to-one, c. many-to-many, d. one-to-many
+c. `car / driver`
 
-.. admonition:: Question
+d. `car / tire`
+{{% /notice %}}
 
-   True/False: Suppose two C# classes, A and B, are in a one-to-many relationship. Then class A must 
-   contain a property for instances of B and B must have a property for instances of A.
+<!-- TODO: Add answers?: a. many-to-one, b. one-to-one, c. many-to-many, d. one-to-many --> 
 
-   #. True
-   #. False
+{{% notice orange "Question" %}}
+`True/False`: Suppose two C# classes, A and B, are in a one-to-many relationship. Then class A must 
+contain a property for instances of B and B must have a property for instances of A.
 
-.. ans: False, A one-to-many relationship may be present without B containing a property A.
+a. `True`
 
-## Content Links
+b. `False`
+{{% /notice %}}
 
-{{% children %}}
+<!-- TODO: Add answers?: False, A one-to-many relationship may be present without B containing a property A. -->
