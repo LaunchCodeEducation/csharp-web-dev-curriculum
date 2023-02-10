@@ -147,53 +147,35 @@ Using the `Lists` project in the Exercises repo complete the following:
 Using the `Dictionaries` project in the Exercises repo complete the following:
 
 1. Make a program similar to `GradebookDictionary` that does the following:
-
-   1. It takes in student names and ID numbers (as integers) instead of names and grades.
-   {{% expand "Check your solution" %}}
-   ```csharp
-      Console.WriteLine("Enter your students' names and ID numbers (or ENTER to finish):");
-
-      Console.WriteLine("Student Name: ");
-      newStudent = Console.ReadLine();
-
-      if (newStudent!= "")
-      {
-         Console.WriteLine("ID: ");
-         int newID = int.Parse(Console.ReadLine());
-         students.Add(newID, newStudent);
-      }
-   ```
-   {{% /expand %}}
    
-
    1. It takes in student names and ID numbers (as integers) instead of names and grades.
    {{% expand "Check your solution" %}}
    ```csharp
-      Console.WriteLine("Enter your students' names and ID numbers (or ENTER to finish):");
+   Console.WriteLine("Enter your students' names and ID numbers (or ENTER to finish):");
 
-      Console.WriteLine("Student Name: ");
-      newStudent = Console.ReadLine();
+   Console.WriteLine("Student Name: ");
+   newStudent = Console.ReadLine();
 
-      if (newStudent!= "")
-      {
-         Console.WriteLine("ID: ");
-         int newID = int.Parse(Console.ReadLine());
-         students.Add(newID, newStudent);
-      }
+   if (newStudent!= "")
+   {
+      Console.WriteLine("ID: ");
+      int newID = int.Parse(Console.ReadLine());
+      students.Add(newID, newStudent);
+   }
    ```
    {{% /expand %}}
 
    1. The keys should be the IDs and the values should be the names.
    {{% expand "Check your solution" %}}
    ```csharp
-      Console.WriteLine("\nClass roster:");
+   Console.WriteLine("\nClass roster:");
 
-      foreach (KeyValuePair<int, string> student in students)
-      {
-         Console.WriteLine(student.Value + "'s ID: " + student.Key);
-      }
+   foreach (KeyValuePair<int, string> student in students)
+   {
+      Console.WriteLine(student.Value + "'s ID: " + student.Key);
+   }
 
-      Console.WriteLine("Number of students in roster: " + students.Count);
+   Console.WriteLine("Number of students in roster: " + students.Count);
    ```
    Review the `Array` and `List` Gradebooks to see how they used loops
    {{% /expand %}}
