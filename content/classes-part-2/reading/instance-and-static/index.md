@@ -34,7 +34,7 @@ In the [last chapter](LINK), we learned that:
 Let’s take a closer look at two different types of methods, both of which we have used in earlier examples.
 
 ## Instance Methods
-
+<!-- TODO: link to chapter 4's instance methods -->
 As we learned in the last chapter, [instance methods](LINK) define the behaviors that are *unique* or *specialized* to each class. Every object created from a class will carry a copy of these methods.
 
 Instance methods depend on the data stored in an individual object. If two objects call the same method, the results will vary when the objects contain different data.

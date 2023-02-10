@@ -13,7 +13,7 @@ lastMod: 2023-08-02 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 <!-- TODO: Link to repo -->
-Work on these exercises in your [csharp-web-dev-classespart1and2](LINK) project. Be sure to checkout the `classes2-exercises-start` branch. You will update your `Student.cs` file by implementing the `AddGrade` and `GetGradeLevel` methods that were sketched out in the [Instance Methods]({{< relref "../reading/instance-and-static/#instance-methods" >}}) section.
+You will find these exercises in `Classes-Part-2` project of the exercises repo. You will update your `Student.cs` file by implementing the `AddGrade` and `GetGradeLevel` methods that were sketched out in the [Instance Methods]({{< relref "../reading/instance-and-static/#instance-methods" >}}) section.
 
 ## The `GetGradeLevel` Method
 This method returns the student’s level based on the number of credits they have earned: Freshman (0-29 credits), Sophomore (30-59 credits), Junior (60-89 credits), or Senior (90+ credits).
