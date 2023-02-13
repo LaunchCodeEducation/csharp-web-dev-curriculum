@@ -1,8 +1,8 @@
 ---
-title: "Assignment #1: Tech Jobs Console"
+title: "Assignment 1: Tech Jobs Console"
 date: 2023-01-03T10:42:56-06:00
 draft: false
-weight: 3
+weight: 2
 originalAuthor: Sally Steuterman # to be set by page creator
 originalAuthorGitHub: gildedgardenia # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer
@@ -69,8 +69,6 @@ then get feedback from the Company Team.
 In Canvas, **Graded Assignment #1: TechJobs Console** contains a GitHub Classroom assignment invitation link and then set up the project in Visual Studio. Refer back to the GitHub Classroom instructions from [Assignment 0]({{< relref "../hello-world/_index.md" >}}) for details. 
 
 ## Your Tasks
-
-<!-- TODO: Add reference back to Assignment 0 -->
 
 Before diving into your tasks, review [Assignment 0]({{< relref "../hello-world/_index.md" >}}) for details on running autograding tests in C#. This assignment has multiple tests, and we recommend the following workflow:
 

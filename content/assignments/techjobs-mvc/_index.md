@@ -2,7 +2,7 @@
 title: "Assignment 3: TechJobs MVC"
 date: 2023-01-05T13:58:39-06:00
 draft: false
-weight: 3
+weight: 4
 originalAuthor: Sally Steuterman # to be set by page creator
 originalAuthorGitHub: gildedgardenia # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer
@@ -83,7 +83,7 @@ Set up a local copy of the project:
 
 1. In Canvas, **Graded Assignment #3: TechJobs (MVC Edition)** contains a GitHub Classroom assignment invitation link, accept the assignment, and then set up the project in Visual Studio. Refer back to the [GitHub Classroom instructions]({{< relref "../hello-world/getting-started/" >}}) from Assignment 0 for details. 
 1. Launch the application to make sure it starts up properly. Then shut it down.
-1. Run the autograding tests. The tests for this assignment are set up the same way as for Assignment 2. There are four tasks for this assignment, but the first doesn't require any coding on your part. Therefore, there are 3 tests files (for tasks 2-4). As with assignment 2, we recommend that you only run the tests for the task you are currently working on.
+1. Run the autograding tests. The tests for this assignment are set up the same way as for Assignment 2. There are four tasks for this assignment, but the first doesn't require any coding on your part. Therefore, there are 3 tests files (for tasks 2-4). As with [Assignment 2]({{< relref "../tech-jobs-oo/#getting-started" >}}), we recommend that you only run the tests for the task you are currently working on.
 
 Here are the tasks you need to complete:
 
