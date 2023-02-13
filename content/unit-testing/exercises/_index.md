@@ -13,14 +13,14 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 Work on these exercises in your local copy of the [csharp-web-dev-unittesting](https://github.com/LaunchCodeEducation/csharp-web-dev-unittesting) repo.
-You were directed to fork and clone this repo earlier in the chapter. If you have not done so, do so now!
+You were directed to fork and clone this repo earlier in the chapter. If you have not done so, do so now.
 Before starting work on the exercises, check out the `exercises-start` branch.
 
 {{% notice green "Tip" "rocket" %}}
 
    Earlier in the chapter, we instantiated an object of the `Car` class called `test_car`.
    Be sure to take note of the values of the `make`, `model`, `gasTankSize`, and `milesPerGallon` fields!
-   Having a note you can quickly reference of how big the gas tank is will you help you decide on values to use in your tests!
+   Having a note you can quickly reference of how big the gas tank is will help you decide on values to use in your tests!
 
 {{% /notice %}}
 

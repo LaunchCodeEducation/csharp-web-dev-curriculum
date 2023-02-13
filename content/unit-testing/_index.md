@@ -14,12 +14,12 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Learning Objectives
 
-By the end of this lesson, you should be comfortable with the following:
+After completing this chapter, you should be able to do the following:
 
-1. Writing unit tests to verify the behavior of methods.
-1. Identifying proper behaviors for which a test should be written.
-1. The importance of testing in creating well-functioning code.
-1. Using test-driven development to define the behavior of code before writing it, and to ensure that code is properly tested.
+1. Write unit tests to verify the behavior of methods.
+1. Identify proper behaviors for which a test should be written.
+1. Know the importance of testing in creating well-functioning code.
+1. Use test-driven development to define the behavior of code before writing it, and to ensure that code is properly tested.
 1. Using MSTest to create unit tests.
 
 ## Key Terminology
