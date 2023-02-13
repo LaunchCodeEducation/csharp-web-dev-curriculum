@@ -12,7 +12,9 @@ lastEditorGitHub: speudusa # update any time edits are made after review
 lastMod: 2023-02-07  # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-## Major Concepts & Key Terminology
+## What is a Graded Assignment?
+
+Graded Assignments will count towards your final grade in the course. Each assignment is graded pass-fail. While Assignment 0 is more of a tutorial to get you used to autograding in C#, you have to get a passing grade on the four TechJobs assignments in order for you to continue on to the next unit. Each assignment builds on concepts introduced over multiple lessons, so we encourage you to begin reviewing the assignment and working on the different tasks as soon as the assignment becomes available in Canvas.
 
 ## Content Links
 
