@@ -131,8 +131,8 @@ Console.WriteLine("Absolute zero in F is: " + temp.absoluteZeroFahrenheit);
 {{% /notice %}}
 
 ### A Student Example
-<!-- TODO: Link to chapter 4: classes part 1 -->
-In the next example, you may add on to the `Student` project you created in the [pervious chapter](LINK) or start coding along in `StudentExample` project found in the `Classes-Part-2` solution.
+
+In the next example, you may add on to the `Student` project you created in the pervious chapter or start coding along in `StudentExample` project found in the `Classes-Part-2` solution.
 
 {{% notice blue "Example" "rocket" %}} 
 

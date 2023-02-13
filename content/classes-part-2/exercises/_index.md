@@ -12,7 +12,6 @@ lastEditorGitHub: speudusa # update any time edits are made after review
 lastMod: 2023-08-02 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-<!-- TODO: Link to repo -->
 You will find these exercises in `Classes-Part-2` project of the exercises repo. You will update your `Student.cs` file by implementing the `AddGrade` and `GetGradeLevel` methods that were sketched out in the [Instance Methods]({{< relref "../reading/instance-and-static/#instance-methods" >}}) section.
 
 ## The `GetGradeLevel` Method
