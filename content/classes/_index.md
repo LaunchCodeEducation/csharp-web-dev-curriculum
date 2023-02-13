@@ -14,7 +14,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Learning Objectives
 
-After completing all of the work in this lesson, you should be able to:
+After completing this chapter, you should be able to do the following:
 
 1. Use access modifiers to customize fields and methods.
 1. Override built-in methods such as `ToString` and `Equals`.
