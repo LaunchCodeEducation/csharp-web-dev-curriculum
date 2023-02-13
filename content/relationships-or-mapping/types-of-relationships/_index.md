@@ -34,7 +34,7 @@ The simplest type of relationship is the **one-to-one relationship**.
 
 This occurs when each instance of type A may be related to only one instance of type B, and vice versa.
 
-{{% notice note %}}
+{{% notice blue "Note" %}}
 In the following examples, arrows point in the direction of the relationship. If A points to B, then you can say that A *knows about* B.
 
 While relationships in SQL are bidirectional, relationships in programming languages are unidirectional. In other words, if A knows about B, then B doesn't necessarily know about A.
@@ -116,7 +116,7 @@ The following pairs of things generally have many-to-many relationships:
 
 ### Check Your Understanding
 
-{{% notice orange "Question" %}}
+{{% notice green "Question" %}}
 Match the following pairs with the appropriate relationship type:
 
 a. `car / manufacturer`
@@ -130,7 +130,7 @@ d. `car / tire`
 
 <!-- TODO: Add answers?: a. many-to-one, b. one-to-one, c. many-to-many, d. one-to-many --> 
 
-{{% notice orange "Question" %}}
+{{% notice green "Question" %}}
 `True/False`: Suppose two C# classes, A and B, are in a one-to-many relationship. Then class A must 
 contain a property for instances of B and B must have a property for instances of A.
 
