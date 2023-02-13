@@ -98,7 +98,7 @@ class MainClass {
 
 In this example, the flow of execution of `Where` on line 7 is similar to that of `Select` above. The main difference is that instead of *transforming* every element of `nums`, it is filtered based on the lambda expression `x => (x % 2 == 0)`.
 
-{{% notice note %}}
+{{% notice blue " Note" %}}
 While the examples we have given use arrays, the ``Select`` and ``Where`` methods work with most collection types. 
 
 More generally, you'll find various specialized methods that use lambdas whenever you encounter a specialized collection type (such as `DbSet`, as we'll soon see).
@@ -106,7 +106,7 @@ More generally, you'll find various specialized methods that use lambdas wheneve
 
 ### Check Your Understanding
 
-{{% notice orange "Question" %}}
+{{% notice green "Question" %}}
 Suppose you have an array of first names, `firstNames`, of people each with the last name Smith. What lambda expression would you pass to `Select` in the following code so that each name is appended by its surname?
 
 ```C#
@@ -120,7 +120,7 @@ d. x => x == "Smith"
 {{% /notice %}}
 <!-- TODO: Add answer?: b. x => x + " Smith" -->
 
-{{% notice orange "Question" %}}
+{{% notice green "Question" %}}
 Given an array of numbers, ``nums``, what lambda expression would you pass to ``Where`` in the following code so that the resulting array consists of only the numbers greater than 42?
 
 ```C#
