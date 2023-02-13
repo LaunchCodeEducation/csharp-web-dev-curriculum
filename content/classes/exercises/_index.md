@@ -5,8 +5,8 @@ draft: false
 weight: 2
 originalAuthor: Sally Steuterman # to be set by page creator
 originalAuthorGitHub: gildedgardenia # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
@@ -17,7 +17,7 @@ We will be focusing on the project named `Classes`.
 
 1. Open up the file, `Student.cs`, and update the starter code to make use of auto-implemented properties.
 
-   {{% expand "Click Here for Answer" %}}
+   {{% expand "Check Your Solution" %}}
 
    ```csharp {linenos=table}
       public class Student
@@ -53,7 +53,7 @@ We will be focusing on the project named `Classes`.
 
    Test your  new `Student` object with print statements.  Are you able to get and set each field?
 
-   {{% expand "Click Here for Answer" %}}
+   {{% expand "Check Your Solution" %}}
 
    ```csharp {linenos=table}
       // TODO: Instantiate your objects and test your exercise solutions with print statements here.
@@ -69,7 +69,7 @@ We will be focusing on the project named `Classes`.
    what these might be. At least one of your fields should be a `List`
    or `Dictionary`, and you should use your `Student` class.
 
-   {{% expand "Click Here for Answer" %}}
+   {{% expand "Check Your Solution" %}}
 
    ```csharp {linenos = table}
       // Create a new file Course.cs

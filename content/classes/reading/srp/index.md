@@ -5,8 +5,8 @@ draft: false
 weight: 6
 originalAuthor: Sally Steuterman # to be set by page creator
 originalAuthorGitHub: gildedgardenia # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
@@ -41,5 +41,5 @@ time. The best way to improve is to write lots of code, ask lots of
 questions, and continue learning.
 
 If you are interested in learning more about the 
-[Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle), 
-you can check out the entry on Wikipedia.
+Single Responsibility Principle, 
+you can check out the entry on [Wikipedia](https://en.wikipedia.org/wiki/Single_responsibility_principle).

@@ -5,8 +5,8 @@ draft: false
 weight: 3
 originalAuthor: Sally Steuterman # to be set by page creator
 originalAuthorGitHub: gildedgardenia # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
@@ -39,9 +39,9 @@ type and access level for each. Also consider what constructors the classes migh
 
 {{% notice blue "Note" "rocket" %}}
 
-    For this studio, we are focusing on class design for these two classes.
-    You do not need to be concerned with how the classes would be used in an application. 
-    At this stage, don’t think about how the application will work or behave; you should focus on the way that data will be represented within these classes, and how they should relate to each other.
+For this studio, we are focusing on class design for these two classes.
+You do not need to be concerned with how the classes would be used in an application. 
+At this stage, don’t think about how the application will work or behave; you should focus on the way that data will be represented within these classes, and how they should relate to each other.
 
 {{% /notice %}}
 
