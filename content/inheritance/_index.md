@@ -14,6 +14,8 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Major Concepts 
 
+After completing this chapter, you should be able to do the following:
+
 1. Understand what inheritance is and how programmers can use it.
 1. Understand what abstract classes and methods are.
 1. Learn how to formally diagram classes and the relationships between classes.
