@@ -24,10 +24,15 @@ After completing this chapter, you should be able to do the following:
 
 ## Key Terminology
 
-As you work through this chapter, you should make note of the following terms:
+As you work through this chapter, you should make note of the terms on the following pages:
+
+### Testing in C#
 
 1. Automated Testing
 1. Unit Testing
+
+### `MSTest` 
+
 1. `MSTest`
 1. Refactor
 1. Test-driven Development
