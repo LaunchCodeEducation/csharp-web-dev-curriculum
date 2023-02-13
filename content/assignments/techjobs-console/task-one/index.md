@@ -69,3 +69,5 @@ Test this method manually before moving on to your next task:
 1. Test that it prints a descriptive message if no jobs are found by selecting
    "0" to search and then "3" to search for a location. Then enter a location
    that is not in the data (e.g. "Cancun"). Your message should be displayed.
+
+Finally, remember at the end of each task to review the autograding tests and run the appropriate one(s) to ensure that you are on the right track.
