@@ -23,9 +23,9 @@ Before submitting, make sure that your application:
 
 ## How to Submit
 
-<!-- TODO: Add link back to Assignment 0 -->
-
 To turn in your assignment and get credit, follow the submission instructions.
+
+Review [Assignment 0]({{< relref "../../hello-world/submit-your-code.md" >}}) if you need a refresher on this process.
 
 ## Bonus Missions
 

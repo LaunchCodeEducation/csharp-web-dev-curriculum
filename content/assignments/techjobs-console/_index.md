@@ -66,15 +66,13 @@ then get feedback from the Company Team.
 
 ## Getting Started
 
-<!-- TODO: Add link back to Assignment 0 -->
-
-In Canvas, **Graded Assignment #1: TechJobs Console** contains a GitHub Classroom assignment invitation link and then set up the project in Visual Studio. Refer back to the GitHub Classroom instructions from Assignment 0 for details. 
+In Canvas, **Graded Assignment #1: TechJobs Console** contains a GitHub Classroom assignment invitation link and then set up the project in Visual Studio. Refer back to the GitHub Classroom instructions from [Assignment 0]({{< relref "../hello-world/_index.md" >}}) for details. 
 
 ## Your Tasks
 
 <!-- TODO: Add reference back to Assignment 0 -->
 
-Before diving into your tasks, review Assignment 0 for details on running autograding tests in C#. This assignment has multiple tests, and we recommend the following workflow:
+Before diving into your tasks, review [Assignment 0]({{< relref "../hello-world/_index.md" >}}) for details on running autograding tests in C#. This assignment has multiple tests, and we recommend the following workflow:
 
 1. Write the code for the task, verify manually that your code works by running the `TechJobsConsoleAutograded` project.
 1. When you think you've completed a task, run the individual test that corresponds to the task. 
