@@ -38,6 +38,11 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 1. query string
 
+### Cleaning Up Your Controllers
+
+1. attribute routing
+1. attributes
+
 ## Content Links
 
 {{% children %}}

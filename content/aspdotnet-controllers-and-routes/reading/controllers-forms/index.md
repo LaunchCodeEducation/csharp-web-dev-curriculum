@@ -53,11 +53,9 @@ Once we hit *Greet Me*, the value of `name`, `"Tillie"`, is submitted to the `We
    The result of submitting the form
 
 With our form working, we can add some attribute routing to streamline our code and specify routes and request types.
-For the ``Index()`` method, we want the method to respond to a ``GET`` request at ``localhost:5001/helloworld``.
+For the `Index()` method, we want the method to respond to a `GET` request at `localhost:5001/helloworld`.
 
-.. sourcecode:: csharp
-   :linenos:
-
+```csharp {linenos=table}
    [HttpGet]
    [Route("/helloworld")]
    public IActionResult Index()
@@ -69,65 +67,66 @@ For the ``Index()`` method, we want the method to respond to a ``GET`` request a
 
       return Content(html, "text/html");
    }
+```
 
-Now we also want to add attributes to the ``Welcome()`` method.
-``Welcome()`` should respond to a ``POST`` request so we will add an ``[HttpPost]`` attribute.
-We also want to use a ``[Route("path")]`` attribute to specify the route to be ``localhost:5001/helloworld/welcome``.
+Now we also want to add attributes to the `Welcome()` method.
+`Welcome()` should respond to a `POST` request so we will add an `[HttpPost]` attribute.
+We also want to use a `[Route("path")]` attribute to specify the route to be `localhost:5001/helloworld/welcome`.
 
-.. sourcecode:: csharp
-   :linenos:
-
+```csharp {linenos = table}
    [HttpPost]
    [Route("/helloworld/welcome")]
    public IActionResult Welcome(string name = "World")
    {
       return Content("<h1>Welcome to my app, " + name + "!</h1>", "text/html");
    }
+```
 
-Now when we run our app, we can navigate to ``localhost:5001/helloworld`` and see our form.
-Once we fill out the form and hit *Greet Me!*, the app redirects to ``localhost:5001/hello/welcome`` and breaks.
-We didn't update ``action`` in our ``<form>`` tag in the ``Index()`` method.
-Once we change the value of ``action`` to ``/helloworld/welcome``, we can re-run our app and see it fully functioning.
+Now when we run our app, we can navigate to `localhost:5001/helloworld` and see our form.
+Once we fill out the form and hit *Greet Me!*, the app redirects to `localhost:5001/hello/welcome` and breaks.
+We didn't update `action` in our `<form>` tag in the `Index()` method.
+Once we change the value of `action` to `/helloworld/welcome`, we can re-run our app and see it fully functioning.
 
-.. admonition:: Note
+{{% notice blue "Note" "rocket" %}}
 
-   The ``Welcome()`` method can respond to a ``POST`` request and the ``Index()`` method can respond to a ``GET`` request at the same URL.
-   To make this happen, we change the route in the ``action`` attribute in the ``<form>`` tag and change the route in the ``[Route("path")]`` attribute above the ``Welcome()`` method to ``/helloworld``.
+   The `Welcome()` method can respond to a `POST` request and the `Index()` method can respond to a `GET` request at the same URL.
+   To make this happen, we change the route in the `action` attribute in the `<form>` tag and change the route in the `[Route("path")]` attribute above the `Welcome()` method to `/helloworld`.
    Re-running the app, we can submit the form and the page reloads to display our welcome message.
 
-Check Your Understanding
-------------------------
+{{% /notice %}}
 
-.. admonition:: Question
+## Check Your Understanding
 
-   Which type of request should the ``Index()`` method respond to?
+{{% notice green "Question" "rocket" %}}
+
+   Which type of request should the `Index()` method respond to?
  
-   a. ``GET`` request
-      
-   b. ``POST`` request
+   1. `GET` request
+   1. `POST` request
+   1. `PUT` request
+   1. `DELETE` request
 
-   c. ``PUT`` request
+{{% /notice %}}
 
-   d. ``DELETE`` request
+<!-- a -->
 
-.. ans: a
+{{% notice green "Question" "rocket" %}}
 
-.. admonition:: Question
-
-   Which type of request should the ``Welcome()`` method respond to?
+   Which type of request should the `Welcome()` method respond to?
  
-   a. ``GET`` request
-      
-   b. ``POST`` request
+   1. `GET` request
+   1. `POST` request
+   1. `PUT` request
+   1. `DELETE` request
 
-   c. ``PUT`` request
+{{% /notice %}}
 
-   d. ``DELETE`` request
+<!-- b -->
 
-.. ans: b
-
-.. admonition:: Question
+{{% notice green "Question" "rocket" %}}
 
    True/False: two different action methods cannot respond to different request types at the same URL.
 
-.. ans: False, they can!
+{{% /notice %}}
+
+<!-- False, they can! -->

@@ -46,16 +46,14 @@ Let's add a method called `Welcome()` to `HelloController.cs`.
 Right now, the `Welcome()` method is using conventional routing, so it will respond to requests at `localhost:5001/hello/welcome`.
 The `Welcome()` method has one argument, `name`. However, when we run the app and navigate to `localhost:5001/hello/welcome`, we can see that `name` has no value.
 
-.. figure:: figures/nodefaultvalue.png
-   :alt: Simple webpage that only displays Welcome to my app.
+![Simple webpage that only displays Welcome to my app](pictures/nodefaultvalue.png)
 
 `name` does not receive a value from anywhere, so to start, we need to pass `name` a value.
 We can do so with a query string. `name` will act as the key and the value will be `"Tillie"`.
 Let's navigate to `localhost:5001/hello/welcome?name=Tillie`. 
 Now the webpage displays a simple string of HTML that says "Welcome to my app, Tillie!".
 
-.. figure:: figures/valuegiventoname.png
-   :alt: Simple webpage that displays welcome to my app Tillie.
+![Simple webpage that displays welcome to my app Tillie](pictures/valuegiventoname.png)
 
 When we are adding arguments to an action method, we need to not only think about the request type and route, we need to think about where those variables are going to get values.
 Here we were able to give a value to that argument in the URL itself with a query string. 
@@ -77,10 +75,7 @@ Optional parameters are designated with a default value (in our case, `"World"`)
 When working with query strings, it is wise to make the key an optional parameter in case no value is provided for it.
 If a query string is not provided and we navigate to just `localhost:5001/hello/welcome`, then our webpage will display "Welcome to my app, World!".
 
-.. figure:: figures/queryparamdefault.png
-   :alt: Webpage displaying "Welcome to my app, World!"
-
-   Our webpage when we don't provide a query string.
+![Webpage displaying "Welcome to my app, World!"](pictures/queryparamdefault.png)
 
 Now, we can dive into using attribute routing to get `Welcome()` to respond at the same route and to a `GET` request.
 We know from our experiment above we can do this without attributes, but we want to be specific in our routes and the request type.
@@ -116,12 +111,7 @@ Adding the `?` in the curly braces after `name` designates that portion of the p
 If we don't provide a query string, the webpage will display the classic "Welcome to my app, World!".
 If we do provide a query string, we will see the resulting page:
 
-.. figure:: figures/queryparamused.png
-   :alt: Simple webpage displaying welcome to my app, Tillie
-
-   The end result
-
-.. index:: ! path variable, ! route parameter
+![Simple webpage displaying welcome to my app, Tillie](pictures/queryparamused.png)
 
 ### Path Variables
 
@@ -134,10 +124,7 @@ When using a path variable, instead of typing the name of a variable into the pa
 When we added the `[Route("/helloworld/welcome/{name?}")]` attribute to the `Welcome()` method, we made it possible for the `Welcome()` method to respond to requests at `localhost:5001/helloworld/welcome/Tillie`.
 In that route, `name` is used as a path variable and passed the value of `Tillie` in the path, displaying the following webpage.
 
-.. figure:: figures/pathvariables.png
-   :alt: Webpage displaying welcome to my app, Tillie
-
-   The result when we use ``name`` as a path variable
+![Webpage displaying welcome to my app, Tillie](pictures/pathvariables.png)
 
 Diving into the mechanics of how this worked, we remember that enclosing `name` in curly braces specifies that we want to use the value of `name`, not the word "name".
 While path variables and query strings are drastically different, the two share a similarity.

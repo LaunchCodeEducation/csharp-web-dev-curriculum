@@ -18,11 +18,7 @@ application's view and update model data accordingly. Conversely, changes to mod
 via controller methods. When the client issues an HTTP request via a URL, we want to make sure that the URL leads to the correct controller so we get an appropriate response.
 A **route** is the mechanism by which a request path gets assigned to a controller within our application.
 
-.. figure:: figures/mvcOverviewDetail.png
-      :scale: 50%
-      :alt: MVC Flow Diagram showing controllers in the middle passing data between the view and the model
-
-      MVC Flow
+![MVC Flow Diagram showing controllers in the middle passing data between the view and the model](pictures/mvcOverviewDetail.png)
 
 {{% notice blue "Note" "rocket" %}}
 
@@ -33,28 +29,6 @@ A **route** is the mechanism by which a request path gets assigned to a controll
    for reviewing the concepts.
 
 {{% /notice %}}
-
-Controllers and Static Responses - Video
-----------------------------------------
-
-.. youtube::
-   :video_id: wpk2q5zOIG0
-
-.. admonition:: Note 
-
-   If you ever want to verify what code you started this video with, the `starter code <https://github.com/LaunchCodeEducation/HelloASPDotNETDemo>`__ for this video is on the ``main`` branch.
-   If you ever want to verify what code you end this video with, the `final code <https://github.com/LaunchCodeEducation/HelloASPDotNETDemo/tree/static-responses>`__ for this video is on the ``static-responses`` branch.
-
-   If you are exploring the starter code and are not able to build a website by using the "Run" button in Visual Studio, 
-   try the following in your terminal:
-
-   #. Using the terminal, navigate into your project
-   #. Enter the command: ``dotnet run`` and follow the prompts in your terminal 
-
-.. admonition:: Tip
-
-	**Windows Users**: You might need to change some solution settings if you pull down this demo repository and run it on your computer.
-	Refer to :ref:`vs-troubleshooting` for help.
 
 ## Controllers and Static Responses
 
@@ -89,16 +63,6 @@ ASP.NET MVC has two different ways to map these routes: conventional routing and
 Routes in conventional routing are setup via endpoints in a configuration file called `Program.cs`.
 When an HTTP request comes in, routing matches the request with an endpoint.
 **Endpoints** designate the controller action that executes when the appropriate HTTP request comes into the application.
-
-   ASP.NET 6.0 combines the ``Program.cs`` and ``Startup.cs`` files.  
-   If you are following along with Sally's video, you will see the files are separated.  She is using ASP.NET 3.1 in her video.
-   This discrepancy between ASP.NET frameworks should not affect this project.  
-
-   If you started your project on your own in .NET 6.0, we recommend exploring `Sally's repo <https://github.com/LaunchCodeEducation/HelloASPDotNETDemo>`_  
-   and see if you can identify where and how these two files were combined.
-
-   This `documentation <https://learn.microsoft.com/en-us/aspnet/core/migration/50-to-60-samples?view=aspnetcore-6.0>`_ 
-   illustrates some of the changes between .NET 5.0 and .NET 6.0.
 
 When we created a new ASP.NET application, without adding any code, we were immediately able to run it.
 This is because the MVC application we start out with already has the routing and endpoints set up.
