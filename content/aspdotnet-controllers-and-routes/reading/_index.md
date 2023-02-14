@@ -2,7 +2,7 @@
 title: "Reading"
 date: 2023-02-06T14:09:15-06:00
 draft: false
-weight: 2
+weight: 1
 originalAuthor: Sally Steuterman # to be set by page creator
 originalAuthorGitHub: gildedgardenia # to be set by page creator
 reviewer: # to be set by the page reviewer

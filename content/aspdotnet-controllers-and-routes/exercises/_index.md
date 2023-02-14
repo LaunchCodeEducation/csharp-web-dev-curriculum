@@ -16,16 +16,13 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 While reading the chapter, you created a basic Hello, World application using ASP.NET
 called `HelloASPDotNET`. Open that project up in Visual Studio, and get ready to add some 
-features.
+features. Before you start working, create a new branch so you can revisit where you ended the reading at.
 
 Modify your `HelloController` class to display a form on a `GET`
 request that asks the user for both their name and the language they
 would like to be greeted in. It should look something like this:
 
-.. figure:: figures/form.png
-   :alt: Greeting Form
-
-   Greeting Form
+![Greeting Form](pictures/form.png)
 
 The resulting form submission should return and display the message,
 “Bonjour Chris”.
@@ -36,7 +33,29 @@ The resulting form submission should return and display the message,
    For more information about the `select` element and how it works, read the 
    [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select).
 
+{{% /notice %}}
+
 {{% expand "Check your solution" %}}
+
+```csharp {linenos=table}
+   [HttpGet]
+        public IActionResult Index()
+        {
+            string html = "<form method='post'>" +
+                "<input type='text' name='name' />" +
+                "<select name='language'><option value='english' selected>English</option>" +
+                "<option value='spanish'>Spanish</spanish>" +
+                "<option value='bosnian'>Bosnian</option>" +
+                "<option value='vietnamese'>Vietnamese</option>" +
+                "<option value='french'>French</option></select>" +
+                "<input type='submit' value='Greet Me!'/>" +
+                "</form>";
+
+            return Content(html, "text/html");
+
+        }
+
+```
 
 {{% /expand %}}
 
@@ -53,6 +72,33 @@ greeted in the selected language. Your new feature should:
    display the proper greeting.
 
    {{% expand "Check your solution" %}}
+
+   ```csharp {linenos=table}
+      public static string CreateMessage(string name, string language)
+        {
+            string helloTranslation = "";
+            switch (language)
+            {
+                case "french":
+                    helloTranslation = "Bonjour ";
+                    break;
+                case "spanish":
+                    helloTranslation = "Hola ";
+                    break;
+                case "bosnian":
+                    helloTranslation = "Zdravo ";
+                    break;
+                case "vietnamese":
+                    helloTranslation = "Xin Chao ";
+                    break;
+                case "english":
+                    helloTranslation = "Hello ";
+                    break;
+            }
+            return helloTranslation + name;
+
+        }
+   ```
 
    {{% /expand %}}
 

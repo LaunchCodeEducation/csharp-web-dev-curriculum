@@ -40,17 +40,11 @@ By giving the route to the `Welcome()` method in `action`, specifying `POST` as 
 
 With the `Index()` method rewritten and our `Welcome()` method handling form submission, we can run our app and see what happens!
 
-.. figure:: figures/filledoutform.png
-   :alt: Webpage with filled out form 
-
-   New form filled out with the name "Tillie"
+![Webpage with filled out form](pictures/filledoutform.png)
 
 Once we hit *Greet Me*, the value of `name`, `"Tillie"`, is submitted to the `Welcome()` method.
 
-.. figure:: figures/displayformresult.png
-   :alt: Webpage displaying the form result
-
-   The result of submitting the form
+![Webpage displaying the form result](pictures/displayformresult.png)
 
 With our form working, we can add some attribute routing to streamline our code and specify routes and request types.
 For the `Index()` method, we want the method to respond to a `GET` request at `localhost:5001/helloworld`.
