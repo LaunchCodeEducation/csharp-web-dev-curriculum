@@ -5,8 +5,8 @@ draft: false
 weight: 6
 originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
@@ -14,10 +14,9 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 Not sure you get the whole inheritance idea? Still not sure which fields and methods get inherited and which are overridden? Looking to test your understanding?
 
-<!-- TODO: add 1st Link => Chapter 6 TOC
-TODO: add 2nd Link => Chapter 7 TOC -->
+<!-- TODO: add 1st Link => Chapter 6 TOC -->
 
-Knowing what we know now about [Unit Testing](LINK) and [Inheritance](LINK), we can test that our subclasses extend their base classes.
+Knowing what we know now about [Unit Testing](LINK) and Inheritance, we can test that our subclasses extend their base classes.
 
 We can add a `CatTests` project to our `Cats` solution and write some code to ensure that `HouseCat` inherits what we expect it to.
 

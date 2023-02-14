@@ -5,8 +5,8 @@ draft: false
 weight: 2
 originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
@@ -33,7 +33,7 @@ We say that `HouseCat` is a **subclass**, **derived class**, or **child class** 
 In C#, a class may extend only one class. Classes may extend each other in turn, however. This creates hierarchies of classes. We often visualize these by drawing each class as a box, with an arrow pointing from the subclass to the base class. The image below show that `B` extends `A`.
 
    {{< rawhtml >}}
-   <img src="../pictures/inheritance-basic.png" alt="B extends A" width=60% />
+   <img src="../../pictures/inheritance-basic.png" alt="B extends A" width=60% />
    {{< /rawhtml >}}
 
    The shaded portion of these boxes can include additional information about each class. We’ll learn about what we might put here in a little bit.
@@ -43,7 +43,7 @@ Inheritance is an essential mechanism for sharing data and behavior between rela
 When this happens, we can visualize the inheritance structure with a slightly more complex diagram.
 
    {{< rawhtml >}}
-   <img src="../pictures/inheritance-tree.png" alt="Inheritance tree with many nodes" width=80% />
+   <img src="../../pictures/inheritance-tree.png" alt="Inheritance tree with many nodes" width=80% />
    {{< /rawhtml >}}
 
 You can see that classes `B`, `C`, and `D` all extend class `A`. And class `E` extends class `D` which itself extends class `A`. So class `E` involves an even greater specialization of behavior than class `D`.

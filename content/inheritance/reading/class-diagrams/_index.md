@@ -5,8 +5,8 @@ draft: false
 weight: 7
 originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
@@ -49,7 +49,7 @@ Suppose we are designing a program to track students and the classes that they h
 We can represent these three classes and their relationships to each other in the following diagram:
 
    {{< rawhtml >}}
-   <img src="../pictures/relationships.png" alt="Relationship class diagram" width=80% />
+   <img src="../../pictures/relationships.png" alt="Relationship class diagram" width=80% />
    {{< /rawhtml >}}
 
 
@@ -62,7 +62,7 @@ A line with an open diamond on the end indicates a **one-to-many relationship**.
 Another type of relationship that we have recently encountered is the is-a relationship of inheritance. This can be expressed via a class diagram by using an arrow, directed from the subclass to the base class.
 
    {{< rawhtml >}}
-   <img src="../pictures/inheritance-cat.png" alt="Inheritance class diagram" width=80% />
+   <img src="../../pictures/inheritance-cat.png" alt="Inheritance class diagram" width=80% />
    {{< /rawhtml >}}
 
 There are many more ways to express relationships in class diagrams, and you’ll even see slight variations in usage of lines and the decorators used to specify the type of relationship.

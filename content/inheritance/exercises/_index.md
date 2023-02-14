@@ -5,8 +5,8 @@ draft: false
 weight: 8
 originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
@@ -28,11 +28,11 @@ classDiagram
 
 {{% expand "Check your solution" %}}
 
-   The `Computer` class extends `Laptop` and `Smartphone`.  
+The `Computer` class extends `Laptop` and `Smartphone`.  
 
-   Arrows should point towards `Computer` class.
+Arrows should point towards `Computer` class.
 
-   Remember to add properties and methods to your diagram.
+Remember to add properties and methods to your diagram.
 
 {{% /expand %}}
 
@@ -81,27 +81,27 @@ classDiagram
 
 
    ```csharp
-      public class Laptop : Computer
+   public class Laptop : Computer
+   {
+      public double Weight { get; set; }
+
+      public Laptop(double ram, double storage, bool hasKeyboard, double weight) : base(ram, storage, hasKeyboard)
       {
-         public double Weight { get; set; }
+      Weight = weight;
+      }
 
-         public Laptop(double ram, double storage, bool hasKeyboard, double weight) : base(ram, storage, hasKeyboard)
+      public bool IsClunky()
+      {
+         if (Weight > 5.0)
          {
-         Weight = weight;
+            return true;
          }
-
-         public bool IsClunky()
+         else
          {
-            if (Weight > 5.0)
-            {
-               return true;
-            }
-            else
-            {
-               return false;
-            }
+            return false;
          }
       }
+   }
    ```
    {{% /expand %}}
 
@@ -111,20 +111,19 @@ classDiagram
    Here is a possible `Smartphone` class.
 
    ```csharp
-      
-      public class SmartPhone : Computer
+   public class SmartPhone : Computer
+   {
+      public int NumberOfSelfies { get; set; }
+      public SmartPhone(int ram, int storage, bool hasKeyboard, int numberOfSelfies) : base(ram, storage, hasKeyboard)
       {
-         public int NumberOfSelfies { get; set; }
-         public SmartPhone(int ram, int storage, bool hasKeyboard, int numberOfSelfies) : base(ram, storage, hasKeyboard)
-         {
-            NumberOfSelfies = numberOfSelfies;
-         }
-         
-         public void TakeSelfie()
-         {
-            NumberOfSelfies++;
-         }
+         NumberOfSelfies = numberOfSelfies;
       }
+      
+      public void TakeSelfie()
+      {
+         NumberOfSelfies++;
+      }
+   }
    ```
    {{% /expand %}}
 
@@ -134,23 +133,23 @@ classDiagram
    {{% expand "Check your solution" %}}
 
    ```csharp{linenos=table,hl_lines=[5],linenostart=1} 
-      public class Computer
-      {
-         public double Ram { get; set; }
-         public double Storage { get; set; }
-         public readonly bool hasKeyboard;
-   
-      // code continues
-      
+   public class Computer
+   {
+      public double Ram { get; set; }
+      public double Storage { get; set; }
+      public readonly bool hasKeyboard;
+
+   // code continues
    ```
    {{% /expand %}}
 
 ## Class implementation
 Implement your design and add unit tests to a new TechnologyTests MSTest project.
 
-Add a new MSTest project to your solution.
-{{% expand "Check your solution" %}}
-```csharp
+1. Add a new MSTest project to your solution.
+
+   {{% expand "Check your solution" %}}
+   ```csharp
    // one Computer class tests in the Computer Class
    [TestMethod]
    public void TestIncreasingRam()
@@ -165,18 +164,17 @@ Add a new MSTest project to your solution.
       Assert.AreEqual(2, testingComputer.Ram);
       Assert.AreEqual(5, testingComputer.Ram);
    }
-```
+   ```
+   {{% /expand %}}
 
-{{% /expand %}}
 
-
-Try to add three MSTests tests per class.
+1. Try to add three MSTests tests per class.
  
-{{% expand "Check your solution" %}}
+   {{% expand "Check your solution" %}}
 
-- One of the `Smartphone` class tests.  For ideas, verify if your methods work.  Test your fields.  
+   - One of the `Smartphone` class tests.  For ideas, verify if your methods work.  Test your fields.  
 
-```csharp
+   ```csharp
    //Smartphone Class
    [TestMethod]
    public void TestTakingSelfies()
@@ -193,18 +191,18 @@ Try to add three MSTests tests per class.
       //More tests for the Smartphone Class ...
 
    }   
-```
+   ```
 
-{{% /expand %}}
+   {{% /expand %}}
 
 ## Abstract Class Design
 
 Consider the group of classes that you designed. Suppose you have a web program that uses these classes and you need to assign a unique ID to every object created from them. Each class should have an id field, and no two objects created from any of the classes may have the same value for id.
 
 1. Create an abstract class, `AbstractEntity`, that contains the behavior for assigning and accessing such a unique ID for each class that extends it.
-{{% expand "Check your solution" %}}
-```CSHARP
-// AbstractEntity Class
+   {{% expand "Check your solution" %}}
+   ```CSHARP
+   // AbstractEntity Class
    public class AbstractEntity
    {
       public int Id { get; set; }
@@ -221,9 +219,9 @@ Consider the group of classes that you designed. Suppose you have a web program 
 
 1. Add this class to your `Technology` project above, and add `AbstractEntity` to the class hierarchy in the correct place.
 
-{{% expand "Check your solution" %}}
-```CSHARP
-// AbstractEntity Class
+   {{% expand "Check your solution" %}}
+   ```CSHARP
+   // AbstractEntity Class
    public class AbstractEntity
    {
       public int Id { get; set; }
@@ -236,9 +234,9 @@ Consider the group of classes that you designed. Suppose you have a web program 
       }
    }
    ```
-{{% /expand %}}
+   {{% /expand %}}
 
-{{% expand "Check your solution" %}}
+   {{% expand "Check your solution" %}}
    
    Update the Computer class. Remember Computer extends AbstractEntity.
    
@@ -248,40 +246,40 @@ Consider the group of classes that you designed. Suppose you have a web program 
    {{% /expand %}}
 
 
-{{% expand "Check your solution" %}}
-   
+   {{% expand "Check your solution" %}}
+      
    Testing `AbstractEntity` using MSTest:
 
    - Testing the `Computer` Class
 
-      ```csharp
-      //Computer Class
-      [TestMethod]
-      public void TestInheritsId()
-      {
-         //Arrange
-         Computer testingComputer = new Computer(2, 3, true);
-         Computer testingComputer2 = new Computer(4, 6, true);
+   ```csharp
+   //Computer Class
+   [TestMethod]
+   public void TestInheritsId()
+   {
+      //Arrange
+      Computer testingComputer = new Computer(2, 3, true);
+      Computer testingComputer2 = new Computer(4, 6, true);
 
-         //Assert
-         Assert.AreEqual(1, testingComputer.Id);
-         Assert.AreEqual(2, testingComputer2.Id);
-      }
-      ```
+      //Assert
+      Assert.AreEqual(1, testingComputer.Id);
+      Assert.AreEqual(2, testingComputer2.Id);
+   }
+   ```
 
    - Testing the `Smartphone` class
 
-      ```csharp
-      //Smartphone class
-      [TestMethod]
-      public void TestInheritingBaseConstructor()
-      {
-         //Arrange
-         SmartPhone testingSmartphone = new SmartPhone(2, 3, true, 800);
+   ```csharp
+   //Smartphone class
+   [TestMethod]
+   public void TestInheritingBaseConstructor()
+   {
+      //Arrange
+      SmartPhone testingSmartphone = new SmartPhone(2, 3, true, 800);
 
-         //Assert
-         Assert.IsNotNull(testingSmartphone.Id);
-         //...
-      }
+      //Assert
+      Assert.IsNotNull(testingSmartphone.Id);
+      //...
+   }
       ```
-{{% /expand %}}
+   {{% /expand %}}
