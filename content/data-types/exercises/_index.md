@@ -49,7 +49,7 @@ For each part of the exercises, create a new project in your solution. When you 
 
    d. Run your program.
 
-{{% expand "Click Here for Answer" %}}
+   {{% expand "Check your solution" %}}
 
    ```csharp {linenos = table}
       Console.WriteLine("What is your name?");
@@ -57,7 +57,7 @@ For each part of the exercises, create a new project in your solution. When you 
       Console.WriteLine("Hello " + myName + "!");
    ```
 
-{{% /expand %}}
+   {{% /expand %}}
 
 ## Numeric Types
 
@@ -67,7 +67,7 @@ For each part of the exercises, create a new project in your solution. When you 
 
    a. Add a print line to prompt the user for the length of the rectangle.
 
-   {{% expand "Click Here for Answer" %}}
+   {{% expand "Check your solution" %}}
 
    ```csharp
       Console.WriteLine("What is the length of your rectangle?");
@@ -79,7 +79,7 @@ For each part of the exercises, create a new project in your solution. When you 
 
    c. Repeat the previous two steps to ask for and store the rectangle's width.
 
-   {{% expand "Click Here for Answer" %}}
+   {{% expand "Check your solution" %}}
 
    ```csharp
       Console.WriteLine("What is the width of your rectangle?");
@@ -92,7 +92,7 @@ For each part of the exercises, create a new project in your solution. When you 
 
    e. Print a statement using concatenation to communicate to the user what the area of their rectangle is.
    
-   {{% expand "Click Here for Answer" %}}
+   {{% expand "Check your solution" %}}
 
    ```csharp
       Console.WriteLine("The area of the rectangle is: " + area);
@@ -108,7 +108,7 @@ For each part of the exercises, create a new project in your solution. When you 
    miles they have driven and the amount of gas they’ve consumed (in
    gallons), and print their miles-per-gallon.
 
-{{% expand "Click Here for Answer" %}}
+   {{% expand "Check your solution" %}}
 
    ```csharp {linenos=table}
       Console.WriteLine("How many miles did you drive on your trip?");
@@ -123,7 +123,7 @@ For each part of the exercises, create a new project in your solution. When you 
       Console.WriteLine("The MPG for the trip was: " + mpg);
    ```
 
-{{% /expand %}}
+   {{% /expand %}}
 
 ## Strings
 
@@ -140,7 +140,7 @@ For each part of the exercises, create a new project in your solution. When you 
       conversation?'
       ```
 
-   {{% expand "Click Here for Answer" %}}
+   {{% expand "Check your solution" %}}
 
    ```csharp {linenos=table} 
       string alice = @"Alice was beginning to get very tired of sitting by her sister on the

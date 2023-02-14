@@ -1,5 +1,5 @@
 ---
-title: "Reading: Data Types"
+title: "Reading"
 date: 2023-01-17T16:28:22-06:00
 draft: false
 weight: 1

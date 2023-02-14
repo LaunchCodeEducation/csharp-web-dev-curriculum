@@ -26,7 +26,9 @@ After completing this chapter, you should be able to do the following:
 
 ## Key Terminology
 
-Throughout this lesson, you will see lots of new vocabulary. Here is everything that you should make note of:
+Throughout this lesson, you will see lots of new vocabulary. Here is everything that you should make note of on the pages the term first appears:
+
+### Data Types
 
 1. dynamically typed
 1. statically typed
@@ -35,14 +37,23 @@ Throughout this lesson, you will see lots of new vocabulary. Here is everything 
 1. class
 1. boxing
 1. unboxing
+
+### Some C# Practice
+
 1. using 
 1. namespace
 1. assembly
 1. `Console.WriteLine`
 1. `Console.ReadLine`
 1. comments
+
+### Strings, Characters, and Arrays
+
 1. `char`
 1. array
+
+### Objects Primer
+
 1. object
 1. method
 1. static
