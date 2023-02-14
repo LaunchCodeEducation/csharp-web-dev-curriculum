@@ -14,7 +14,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Learning Objectives
 
-After completing everything in this chapter, you should be able to do the following:
+After completing this chapter, you should be able to do the following:
 
 1. Explain the difference between static and dynamic typing
 1. Write comments in C#
