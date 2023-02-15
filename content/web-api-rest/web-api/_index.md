@@ -14,10 +14,14 @@ lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Web APIs
 
-An **API**, or **application programming interface**, is a set of rules that allow one application to communicate with another application. **Web APIs** 
-are how applications communicate with other applications over a network. Throughout the remainder of this chapter, we will explore web APIs and a pattern 
-for organizing them called REST. REST is an application design pattern, not unlike MVC. **REST**, however, relies on an abstract concept called 
-*application state* that we'll cover in more detail on the following pages.
+An **API**, or **application programming interface**, is a set of rules that allow one application to communicate with another application.
+
+**Web APIs** 
+are how applications communicate with other applications over a network. Throughout the remainder of this chapter, we will explore web APIs and a pattern for organizing them called **REST**. 
+
+**REST** is an application design pattern, not unlike MVC. 
+
+**REST**, however, relies on an abstract concept called *application state* that we'll cover in more detail on the following pages.
 Here, we dive into what differentiates all web APIs from MVC applications.
 
 ### MVC Without the V
@@ -33,129 +37,118 @@ The separation between client and web API provides the following benefits:
 - Client and web API applications can be developed by different, specialized programming teams.
 - Client and web API applications can be hosted on separate infrastructure.
 
-.. admonition:: Note
+{{% notice blue "Note" "rocket" %}}
+Client applications involve User Interface (UI) and User Experience (UX) development.
+{{% /notice %}}
 
-   Client applications involve User Interface (UI) and User Experience (UX) development.
-
-Client Interacts With Data
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+#### Client Interacts With Data
 
 Despite being separated from each other, the client application still relies on interactions with application data through the web API. A front-end client 
 must ultimately present data to an end-user. This means the client must request a representation of the data from the web API. After the client receives the 
 representation, it is parsed, styled and rendered to the user. 
 
-.. admonition:: Note
-
-   A web API interacts with, or *is consumed by*, a client application. This process involves transferring data representations and instructions 
-   like creating, reading, updating and deleting.
+{{% notice blue "Note" "rocket" %}}
+A web API interacts with, or *is consumed by*, a client application. This process involves transferring data representations and instructions like creating, reading, updating and deleting.
+{{% /notice %}}
 
 ### Responsibilities of a Web API
 
 The chief responsibility of a web API is to exchange representations of data with a corresponding client application. APIs are also gatekeepers, maintaining 
 rules about how end-users may interact with application data.
 
-.. index:: ! server-side rendering, client-side rendering
+<!-- TODO: Link to proper location .. index:: ! server-side rendering, client-side rendering
+-->
 
 #### Data Delivery
 
 Think about how a view works in MVC. 
 
-#. Data is injected into a template file, 
-#. That template is rendered in HTML in the browser when a controller action method is invoked,
-#. The data is sent back to the user
+1. Data is injected into a template file, 
+1. That template is rendered in HTML in the browser when a controller action method is invoked,
+1. The data is sent back to the user
 
-We call this approach **server-side rendering**. A client application and web API work in a similar way. However, instead of injecting the data into a 
-template on the server, data is transferred over the network through AJAX requests made by the client.
+We call this approach **server-side rendering**. A client application and web API work in a similar way. However, instead of injecting the data into a template on the server, data is transferred over the network through AJAX requests made by the client.
 
-When a client application receives data, it injects that data into its HTML using JavaScript. This all occurs from within a browser. This approach is 
-called **client-side rendering** because the web API only sends data, the HTML is assembled on the user's end.
+When a client application receives data, it injects that data into its HTML using JavaScript. This all occurs from within a browser. This approach is called **client-side rendering** because the web API only sends data, the HTML is assembled on the user's end.
 
-.. admonition:: Example
+{{% notice blue "Example" "rocket" %}}
+Consider requesting the ``/events`` path of your MVC project. The response is an HTML presentation of the data. In other words, the 
+data is already included in the presentation.
 
-   Consider requesting the ``/events`` path of your MVC project. The response is an HTML presentation of the data. In other words, the 
-   data is already included in the presentation.
+**MVC**: ``GET /events -> HTML with data``
 
-   **MVC**: ``GET /events -> HTML with data``
+In a web API analog, an ``/events`` path would return just the underlying data. 
 
-   In a web API analog, an ``/events`` path would return just the underlying data. 
+**Web API**: ``GET /events -> just data``
 
-   **Web API**: ``GET /events -> just data``
-
-   It is then the client application's responsibility to integrate the received data into its presentation.
+It is then the client application's responsibility to integrate the received data into its presentation.
+{{% /notice %}}
 
 #### Management of Data
 
-A web API manages data by modeling objects that line up with the underlying business data. This is actually the same process we saw in MVC. Our models 
-are class files that drive the interactions in our codebase. Web APIs often take advantage of ORMs just like MVC applications do. If you have underlying 
-classes that map to a database, you can easily make data available for use within a web API codebase.
+A web API manages data by modeling objects that line up with the underlying business data. This is actually the same process we saw in MVC. Our models are class files that drive the interactions in our codebase. Web APIs often take advantage of ORMs just like MVC applications do. 
+
+If you have underlying classes that map to a database, you can easily make data available for use within a web API codebase.
 
 #### Transference of Data
 
-Beyond managing data, a web API also handles transferring data. A client application will make a request for some data. Our web API must contain controller 
-files that can handle the requests. As a part of handling the request, the controller file must understand the request, access the requested data, package 
-the data in an accepted format, and send the package as a response to the client application.
-
-.. _client-api-transfer:
+Beyond managing data, a web API also handles transferring data. A client application will make a request for some data. Our web API must contain controller files that can handle the requests. As a part of handling the request, the controller file must understand the request, access the requested data, package the data in an accepted format, and send the package as a response to the client application.
 
 Here's an overview of the steps to transfer data between a web API and client application:
 
-#. A request for data comes from a client application to the API.
-#. A controller file in the API catches the request.
-#. The controller determines if the request is valid.
-#. The controller transfers data from the database to an object, via the ORM.
-#. The controller transforms the object into a package the client application can work with.
-#. The controller responds to the client with the packaged data.
+1. A request for data comes from a client application to the API.
+1. A controller file in the API catches the request.
+1. The controller determines if the request is valid.
+1. The controller transfers data from the database to an object, via the ORM.
+1. The controller transforms the object into a package the client application can work with.
+1. The controller responds to the client with the packaged data.
 
-
-.. index:: ! data presentation, ! data representation
+<!-- TODO: Link to correct location once we have it .. index:: ! data presentation, ! data representation
+-->
 
 ### Representation of Data
 
 #### Presentation vs Representation
 
-As mentioned above, the client application presents the data to the end-user. However, the client relies on consuming a representation of data from the 
-web API. **Presentation** is the rendered combination of data and visual styling intended for end-users. The client application needs to know what format the 
-data is in so that it can be transformed into a human readable presentation (HTML/CSS). A web API packages data into a format the client application 
-accepts. This format is called the **representation** of the data. The client application team and the web API team must agree to the underlying data format. 
-A best practice is to use a universal representation widely accepted by client applications.
+As mentioned above, the client application presents the data to the end-user. However, the client relies on consuming a representation of data from the web API. **Presentation** is the rendered combination of data and visual styling intended for end-users. 
+
+The client application needs to know what format the data is in so that it can be transformed into a human readable presentation (HTML/CSS). A web API packages data into a format the client application accepts. 
+
+This format is called the **representation** of the data. The client application team and the web API team must agree to the underlying data format. A best practice is to use a universal representation widely accepted by client applications.
 
 #### Universal Representation
 
-It is necessary to adopt a universal representation because web APIs and client applications may be written in two different programming languages. Your 
-web API may be written in C#/ASP.NET but the client application may be written using JavaScript and React. While there are many languages and frameworks 
-available in web development, they all support the creation and parsing of JSON. JSON is a standard in web development because it is simple to process in 
-any language, compatible with HTTP, and seamlessly represents the structure of data objects.
+It is necessary to adopt a universal representation because web APIs and client applications may be written in two different programming languages. Your web API may be written in C#/ASP.NET but the client application may be written using JavaScript and React. 
+
+While there are many languages and frameworks available in web development, they all support the creation and parsing of JSON. JSON is a standard in web development because it is simple to process in any language, compatible with HTTP, and seamlessly represents the structure of data objects.
 
 ##### JSON
 
 JSON is currently a universal representation of data accepted by client applications. This means our web API packages data 
 requested by a client application as JSON. The web API also transfers this JSON in its communication with a client application.
 
-Let's revisit the last two steps from our web API work flow :ref:`above <client-api-transfer>`:
+<!-- TODO: Link will need to be changed from localhost once we have a permanent endpoint -->
+Let's revisit the last two steps from our [web API work flow](http://localhost:1313/web-api-rest/web-api/#transference-of-data)
 
 5. The controller transforms the object into a JSON representation.
 6. The controller responds to the client with the JSON representation.
 
-.. admonition:: Tip
-
-   `XML <https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction>`_ is another popular data format. It is now used less commonly than 
-   JSON for web API-to-client communications.
+{{% notice green "Tip" "rocket" %}}
+[XML](https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction) is another popular data format. It is now used less commonly than 
+JSON for web API-to-client communications.
+{{% /notice %}}
 
 In the next section, we will discuss exactly how a client application makes a request and how a web API responds.
 
-.. index:: ! state
-
 ### HTTP as The Language of Web APIs
 
-HTTP is the protocol used for communication between a web API and a client application. Web APIs communicate over a network. The most common protocol of 
-the internet is HTTP, so it comes as no surprise that HTTP is the language of web APIs. Similarly, our MVC applications use HTTP as the protocol for an 
-end-user to access the application. HTTP also facilitates the communication between a client application and a web API.
+HTTP is the protocol used for communication between a web API and a client application. Web APIs communicate over a network. The most common protocol of the internet is HTTP, so it comes as no surprise that HTTP is the language of web APIs. Similarly, our MVC applications use HTTP as the protocol for an end-user to access the application. HTTP also facilitates the communication between a client application and a web API.
 
-.. admonition:: Tip
+{{% notice green "Tip" "rocket" %}}
+We will refer to web APIs as APIs going forward, since the web prefix is implied.
+{{% /notice %}}
 
-   We will refer to web APIs as APIs going forward, since the web prefix is implied.
-
-Here's a refresher on `the basics of HTTP <https://education.launchcode.org/intro-to-professional-web-dev/chapters/http/index.html>`__:
+Here's a refresher on [the basics of HTTP](https://education.launchcode.org/intro-to-professional-web-dev/chapters/http/index.html):
 
 - Is a stateless request/response protocol.
 - Requests and responses may include HTTP bodies.
@@ -163,30 +156,27 @@ Here's a refresher on `the basics of HTTP <https://education.launchcode.org/intr
 - Requests and responses always include HTTP headers.
 
 
-We call HTTP a *stateless protocol*. State can be a complex concept that refers to a number of things. We'll explore some aspects of it in more depth on the 
-next page. In the context of HTTP, think of **state** as information about application data that is transferred via HTTP bodies, HTTP status codes, 
-and HTTP headers.
+We call HTTP a *stateless protocol*. State can be a complex concept that refers to a number of things. We'll explore some aspects of it in more depth on the next page. 
+
+In the context of HTTP, think of **state** as information about application data that is transferred via HTTP bodies, HTTP status codes, and HTTP headers.
 
 #### Bodies
 
 An HTTP body can contain a large number of different media types, 
-known as `MIME types <https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types>`_. A MIME type is associated with the 
-HTTP header ``Content-Type``. This header instructs the recipient of the HTTP request/response on what MIME type the HTTP body contains. We've seen a 
-``Content-Type: text/html`` HTTP header before. Here's a simple example of it:
+known as [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types). A MIME type is associated with the HTTP header `Content-Type`. This header instructs the recipient of the HTTP request/response on what MIME type the HTTP body contains. We've seen a `Content-Type:text/html` HTTP header before. Here's a simple example of it:
 
-.. sourcecode:: html
-   :linenos:
-
-   <!DOCTYPE html>
-   <html>
-      <head>
-         <title>My Web Page</title>
-         content
-      </head>
-      <body>
-         content
-      </body>
-   </html>
+```html
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>My Web Page</title>
+      content
+   </head>
+   <body>
+      content
+   </body>
+</html>
+```
 
 This is the header for HTML documents and is used throughout the web. APIs send representations of data in the format of JSON requiring the header 
 ``Content-Type`` to be ``application/json``. This allows us to pass the state of the data as the HTTP body.
