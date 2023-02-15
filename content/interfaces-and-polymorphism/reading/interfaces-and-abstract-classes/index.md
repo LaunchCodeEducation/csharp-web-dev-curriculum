@@ -3,10 +3,10 @@ title: "Interfaces and Abstract Classes"
 date: 2023-02-01T13:10:40-06:00
 draft: false
 weight: 3
-originalAuthor: <no value> # to be set by page creator
-originalAuthorGitHub: <no value> # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
+originalAuthor: Sally Steuterman # to be set by page creator
+originalAuthorGitHub: gildedgardenia # to be set by page creator
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
@@ -32,10 +32,10 @@ The main differences between interfaces and abstract classes are:
 
    {{% notice blue "Example" "rocket" %}}
 
-      Think about our `IFeedable` interface. If we want to 
-      add a `Dog` class to our application, we might implement the `IFeedable` interface for our 
-      `Dog` class. This makes sense as dogs are creatures that we feed. However, as dogs and cats are so 
-      different, it is unlikely that they would share many characteristics through a `Pet` class.
+   Think about our `IFeedable` interface. If we want to 
+   add a `Dog` class to our application, we might implement the `IFeedable` interface for our 
+   `Dog` class. This makes sense as dogs are creatures that we feed. However, as dogs and cats are so 
+   different, it is unlikely that they would share many characteristics through a `Pet` class.
 
    {{% /notice %}}
 

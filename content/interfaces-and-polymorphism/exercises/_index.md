@@ -5,8 +5,8 @@ draft: false
 weight: 2
 originalAuthor: Sally Steuterman # to be set by page creator
 originalAuthorGitHub: gildedgardenia # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
@@ -33,7 +33,7 @@ To help overcome this, let's consider a common occurrence---sorting a
 
 ## Getting Started
 
-Open up your exercises starter code repo in Visual Studio to get started!
+Open up your [exercises starter code repo](https://github.com/LaunchCodeEducation/csharp-web-dev-exercises) in Visual Studio to get started!
 
 You will practice implementing interfaces by playing around with a small ice
 cream store. It consists of a refrigerated display `Case`, which contains
