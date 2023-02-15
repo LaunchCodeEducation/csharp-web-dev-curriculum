@@ -165,7 +165,7 @@ In the context of HTTP, think of **state** as information about application data
 An HTTP body can contain a large number of different media types, 
 known as [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types). A MIME type is associated with the HTTP header `Content-Type`. This header instructs the recipient of the HTTP request/response on what MIME type the HTTP body contains. We've seen a `Content-Type:text/html` HTTP header before. Here's a simple example of it:
 
-```html
+```html {linenos=table}
 <!DOCTYPE html>
 <html>
    <head>
@@ -178,104 +178,89 @@ known as [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_o
 </html>
 ```
 
-This is the header for HTML documents and is used throughout the web. APIs send representations of data in the format of JSON requiring the header 
-``Content-Type`` to be ``application/json``. This allows us to pass the state of the data as the HTTP body.
+This is the header for HTML documents and is used throughout the web. APIs send representations of data in the format of JSON requiring the header `Content-Type` to be `application/json`. This allows us to pass the state of the data as the HTTP body.
 
-.. sourcecode:: json
-   :linenos:
+```json {linenos=table}
+{
+   "title": "An Astronaut's Guide to Life on Earth",
+   "author": "Chris Hadfield",
+   "ISBN": 9780316253017,
+   "year_published": 2013,
+   "subject": ["Hadfield, Chris", "Astronauts", "Biography"],
+   "available": true
+}
+```
 
-   {
-      "title": "An Astronaut's Guide to Life on Earth",
-      "author": "Chris Hadfield",
-      "ISBN": 9780316253017,
-      "year_published": 2013,
-      "subject": ["Hadfield, Chris", "Astronauts", "Biography"],
-      "available": true
-   }
+The HTTP body may include JSON that represents the data being passed between an API and client application. Remember, not all requests/responses include HTTP bodies.
 
-The HTTP body may include JSON that represents the data being passed between an API and client application. Remember, not all requests/responses include 
-HTTP bodies.
+#### Status Codes
 
-Status Codes
-^^^^^^^^^^^^
+The next HTTP component that transfers state is the HTTP status code. The HTTP status code is included as a part of every HTTP response. 
 
-The next HTTP component that transfers state is the HTTP status code. The HTTP status code is included as a part of every HTTP response. The status code 
-is the API's way of telling the client application how their initial request was handled. 
-`HTTP response status codes <https://developer.mozilla.org/en-US/docs/Web/HTTP/Status>`_ are a part of the HTTP spec and their usage goes beyond API 
-design. However, many of their codes have been adopted as a standard within API design.
+The status code is the API's way of telling the client application how their initial request was handled. [HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) are a part of the HTTP spec and their usage goes beyond API design. 
 
-.. list-table:: Common HTTP status codes in API design
-   :widths: 25 20 60
-   :header-rows: 1
+However, many of their codes have been adopted as a standard within API design.
 
-   * - Status Code Group
-     - Commonly Used
-     - Description
-   * - 2XX
-     - 200, 201, 204
-     - request was successful 
-   * - 3XX
-     - 301, 302
-     - request was redirected
-   * - 4XX
-     - 400, 401, 403, 404, 405
-     - client error
-   * - 5XX
-     - 500, 502, 504
-     - server error
+| Status Code Group | Commonly Used | Description |
+|----------|-------|----------|
+| 2XX | 200, 201, 204 | request was successful |
+| 3XX | 301, 302 | request was redirected |
+| 4XX | 400, 401, 403, 404, 405 | client error |
+| 5XX | 500, 502, 504 | server error |
 
 #### Headers
 
-The final HTTP component that transfers state are the HTTP headers. Any `number of headers <https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers>`_ 
-can be included in a request or response. We saw the ``Content-Type`` header above. This is the header that informs the API (request header) or client 
-application (response header) of the format of the data included in the body. 
+The final HTTP component that transfers state are the HTTP headers. Any [number of headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) can be included in a request or response. We saw the `Content-Type` header above. This is the header that informs the API (request header) or client application (response header) of the format of the data included in the body. 
 
-.. admonition:: Tip
-
-   A client can specify which ``Content-Type`` they want to receive in the API response using the ``Accept`` request header.
+{{% notice green "Tip" "rocket" %}}
+A client can specify which ``Content-Type`` they want to receive in the API response using the ``Accept`` request header.
+{{% /notice %}}
 
 ### API Design
 
-The design of an API is a contract that defines how the client and API interact with data. The API is responsible for upholding the data management and 
-transfer behaviors of the contract. The client application is responsible for consuming (via AJAX requests) an API according to the contract.
+The design of an API is a contract that defines how the client and API interact with data. The API is responsible for upholding the data management and transfer behaviors of the contract. The client application is responsible for consuming (via AJAX requests) an API according to the contract.
 
-As long as both sides of the interface (the client and API logic) uphold the contract, then front and back-end teams can operate independently. This 
-provides the following freedoms:
+As long as both sides of the interface (the client and API logic) uphold the contract, then front and back-end teams can operate independently. This provides the following freedoms:
 
 - Front-end developers can choose, or change, the internal styling, libraries, frameworks and design patterns.
 - Back-end developers can choose, or change, the internal server language, libraries, frameworks and design patterns.
 - Both sides can choose, or change, their external hosting infrastructure at any time without affecting the other.
 - Both sides can make and deploy changes to their code bases at any time, without needing to coordinate with, or wait for, the other.
 
-Only when a change must be made to either the client AJAX requests or API behavior do the two teams need to communicate and agree upon a new contract. Up next,
-we discuss how following the REST pattern of API design offers consistency and simplicity in application development.
+Only when a change must be made to either the client AJAX requests or API behavior do the two teams need to communicate and agree upon a new contract. Up next, we discuss how following the REST pattern of API design offers consistency and simplicity in application development.
 
 ### Check Your Understanding
 
-.. admonition:: Question
+{{% notice green "Question" "rocket" %}}
+True or False: Web API programmers must be knowledgeable in HTML/CSS/Javascript to create a client application.
 
-   True or False: Web API programmers must be knowledgeable in HTML/CSS/Javascript to create a client application.
+`a.` True
 
-   a. True
+`b.` False
+{{% /notice %}}
 
-   b. False
+{{% expand "Check your solution" %}}
+2. An API is view-agnostic so its programmers are not responsible for creating a corresponding client application.
+{{% /expand %}}
 
-.. ans: b, An API is view-agnostic so its programmers are not responsible for creating a corresponding client application.
+{{% notice green "Question" "rocket" %}}
+Match the class of HTTP response codes to the approximate definition:
 
-.. admonition:: Question
+``2XX``, ``3XX``, ``4XX``, ``5XX``
 
-   Match the class of HTTP response codes to the approximate definition:
+`a.` Request is valid, but server cannot receive and accept it.
 
-   ``2XX``, ``3XX``, ``4XX``, ``5XX``
+`b.` Request received and accepted.
 
-   a. Request is valid, but server cannot receive and accept it.
+`c.` Due to the request containing an error, it cannot be received.
 
-   b. Request received and accepted.
+`d.` Another action needs to be done to fulfill request.
+{{% /notice %}}
 
-   c. Due to the request containing an error, it cannot be received.
-
-   d. Another action needs to be done to fulfill request.
-
-
-.. ans: 2xx: b. Request received and accepted, 3xx: d. Another action needs to be done to fulfill request., 4xx: c. Due to the request containing an error, it cannot be received., 5xx: a. Request is valid, but server cannot receive and accept it.
+{{% expand "Check your solution" %}}
+1. `2xx: --> b.` Request received and accepted 
+1. `3xx: --> d.` Another action needs to be done to fulfill request.
+1. `4xx: --> c.` Due to the request containing an error, it cannot be received.
+1. `5xx: --> a.` Request is valid, but server cannot receive and accept it.
+{{% /expand %}}
 
