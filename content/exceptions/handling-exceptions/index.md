@@ -17,7 +17,6 @@ When you include exceptions in your C# programs, you must decide what should tak
 Here’s some advice to consider when contemplating when to handle an exception. This comes from Karl Seguin’s [Foundations of Programming](https://www.openmymind.net/FoundationsOfProgramming.pdf).
 
    1. Only handle exceptions that you can actually do something about.
-
    1. You can’t do anything about the vast majority of exceptions.
 
 For example, if your code cannot connect to a database, there is probably nothing your program can do about it. However, as we allude to on the previous page, if you receive invalid input from a user, you can still throw an exception and re-prompt them to refine their input with an error message to help them get it right the next time.
