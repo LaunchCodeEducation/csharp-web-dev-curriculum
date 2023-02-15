@@ -14,7 +14,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Learning Objectives
 
-Upon completing this lesson, you should be able to do the following:
+After completing this chapter, you should be able to do the following:
 
 1. Understand how polymorphism is enabled by interfaces and inheritance.
 1. Understand and use interfaces to create more flexible code. 
