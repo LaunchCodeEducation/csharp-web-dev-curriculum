@@ -24,7 +24,13 @@ Because MVC breaks down all of the programming logic of an application into thre
 
 ## ASP.NET
 
-**ASP.NET Core** is an extension of .NET Core and is used to build web applications. **ASP.NET Core MVC** is the framework that allows us to build web applications in a way that uses the MVC design pattern. Visual Studio has an embedded server so it is easy for us to run our applications and get started. This server picks the port number to run the app. In this book, the port number we use is 5001. If your apps run at a different port number, that is fine. Just take a note of that number so that you may view your running app.
+**ASP.NET Core** is an extension of .NET Core and is used to build web applications. **ASP.NET Core MVC** is the framework that allows us to build web applications in a way that uses the MVC design pattern. Visual Studio has an embedded server so it is easy for us to run our applications and get started. This server picks the port number to run the app. 
+
+{{% notice orange "Warning" "rocket" %}} 
+
+   In this book, the port number we use is 5001. If your port number is different from any of the walkthrough materials, that will not affect the output of your project. Visual Studio uses the first available port on your computer to run your project which is why your port number may vary.  
+
+{{% /notice %}}
 
 {{% notice blue "Note" "rocket" %}} 
 
@@ -38,4 +44,7 @@ The following section is the first of many videos we will be using to demonstrat
 
 ## Intro to ASP.NET - Video
 
-[VIDEO LINK]
+<!-- TODO: update link once video is unlisted. -->
+[VIDEO LINK in case it will not play right now - it is currently unlisted](https://youtu.be/geoobGtBJmQ)
+
+{{< youtube geoobGtBJmQ >}}
