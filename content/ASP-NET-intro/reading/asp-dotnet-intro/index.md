@@ -45,6 +45,5 @@ The following section is the first of many videos we will be using to demonstrat
 ## Intro to ASP.NET - Video
 
 <!-- TODO: update link once video is unlisted. -->
-[VIDEO LINK in case it will not play right now - it is currently unlisted](https://youtu.be/geoobGtBJmQ)
 
 {{< youtube geoobGtBJmQ >}}
