@@ -13,3 +13,16 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Next Steps
+
+Ideas for `HelloASPDotNET`
+- create a form
+- create a new view
+- incorporate previous exercises into `HelloASPDotNET`
+
+[Views in ASP.NET Core MVC](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/overview?view=aspnetcore-6.0)
+
+[Views, Partial Views, and Layouts in ASP.NET Core MVC](https://code-maze.com/views-partial-views-and-layouts-in-asp-net-core-mvc/)
+
+
+
+
