@@ -413,32 +413,32 @@ If you want to learn more, the following links are a good start:
 {{% notice green "Question" "rocket" %}}
 A `POST` request performs which type of action?
 
-`a.` Create
+1. Create
 
-`b.` Read
+1. Read
 
-`c.` Update
+1. Update
 
-`d.` Delete
+1. Delete
 {{% /notice %}}
 
-{{% expand "Check your solution" %}}
+<!-- {{% expand "Check your solution" %}}
 `a:` Create
-{{% /expand %}}
+{{% /expand %}} -->
 
 {{% notice green "Question" "rocket" %}}
 The _________ portion of a RESTful URL identifies the resource.
 
-`a.` path
+1. path
 
-`b.` query
+1. query
 
-`c.` host
+1. host
 
-`d.` user
+1. user
 {{% /notice %}}
-
+<!-- 
 {{% expand "Check your solution" %}}
 `a:` path
-{{% /expand %}}
+{{% /expand %}} -->
 

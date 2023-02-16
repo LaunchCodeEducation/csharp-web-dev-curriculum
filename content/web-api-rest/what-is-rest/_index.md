@@ -152,28 +152,28 @@ defines the shape, or structure, of its resources along with the hierarchal orga
 {{% notice green "Question" "rocket" %}}
 True or False: Using HTTP requests, we can perform all four CRUD operations.
 
-a. True
+1. True
 
-b. False
+1. False
 {{% /notice %}}
 
-{{% expand "Check your solution" %}}
+<!-- {{% expand "Check your solution" %}}
 `a.` True! REST API design relies on HTTP request types to perform CRUD operations on application data
-{{% /expand %}}
+{{% /expand %}} -->
 
 {{% notice green "Question" "rocket" %}}
 Reshaping data from object representation to JSON representation is called:
 
-a. JSON parsing
+1. JSON parsing
 
-b. JSON reshaping 
+1. JSON reshaping 
 
-c. JSON reserialization
+1. JSON reserialization
 
-d. JSON serialization
+1. JSON serialization
 {{% /notice %}}
 
-{{% expand "Check your solution" %}}
+<!-- {{% expand "Check your solution" %}}
 `d.` JSON serialization
-{{% /expand %}}
+{{% /expand %}} -->
 

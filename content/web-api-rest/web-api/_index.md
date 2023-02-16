@@ -232,33 +232,33 @@ Only when a change must be made to either the client AJAX requests or API behavi
 {{% notice green "Question" "rocket" %}}
 True or False: Web API programmers must be knowledgeable in HTML/CSS/Javascript to create a client application.
 
-`a.` True
+1. True
 
-`b.` False
+1. False
 {{% /notice %}}
 
-{{% expand "Check your solution" %}}
+<!-- {{% expand "Check your solution" %}}
 2. An API is view-agnostic so its programmers are not responsible for creating a corresponding client application.
-{{% /expand %}}
+{{% /expand %}} -->
 
 {{% notice green "Question" "rocket" %}}
 Match the class of HTTP response codes to the approximate definition:
 
 ``2XX``, ``3XX``, ``4XX``, ``5XX``
 
-`a.` Request is valid, but server cannot receive and accept it.
+1. Request is valid, but server cannot receive and accept it.
 
-`b.` Request received and accepted.
+1. Request received and accepted.
 
-`c.` Due to the request containing an error, it cannot be received.
+1. Due to the request containing an error, it cannot be received.
 
-`d.` Another action needs to be done to fulfill request.
+1. Another action needs to be done to fulfill request.
 {{% /notice %}}
 
-{{% expand "Check your solution" %}}
-1. `2xx: --> b.` Request received and accepted 
-1. `3xx: --> d.` Another action needs to be done to fulfill request.
-1. `4xx: --> c.` Due to the request containing an error, it cannot be received.
-1. `5xx: --> a.` Request is valid, but server cannot receive and accept it.
-{{% /expand %}}
+<!-- {{% expand "Check your solution" %}}
+1. `2xx: Request received and accepted 
+1. `3xx: Another action needs to be done to fulfill request.
+1. `4xx: Due to the request containing an error, it cannot be received.
+1. `5xx: Request is valid, but server cannot receive and accept it.
+{{% /expand %}} -->
 
