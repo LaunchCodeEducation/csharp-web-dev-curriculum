@@ -354,7 +354,7 @@ Here is a portion of an invalid request to the `PATCH /events/6` endpoint:
 `Foo` does not contain enough characters to be a valid CodingEvent title. The CodingEvents API response to such a request therefore includes a `400` status code. 
 This alerts the client that they must correct their data representation. The response body indicates which aspects of the request are invalid. This is a 400 failed response body:
 
-```bash {linenos=table}
+```bash
 {
     "error": "invalid fields",
     "fields": [
