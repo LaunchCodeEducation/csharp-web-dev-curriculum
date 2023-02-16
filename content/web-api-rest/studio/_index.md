@@ -1,5 +1,5 @@
 ---
-title: "Studio: Consuming the CodingEvents API With Postman"
+title: "Studio: Consuming the Coding Events API With Postman"
 date: 2022-12-15T09:16:07-06:00
 draft: false
 weight: 5
@@ -24,32 +24,33 @@ If you haven't done so already, [install Postman](postman-installation)
 
 With Postman installed, we're ready to fork and clone the [CodingEvents API](https://github.com/LaunchCodeEducation/coding-events-api/tree/1-sqlite). Although it is implemented differently from CodingEvents MVC, you will find that most of the features from the MVC application have been supported through endpoints in the API.
 
-.. admonition:: Note
-
+{{% notice blue "Note" "rocket" %}}
 Our focus in this course is on operations and as such we will not be going into the development of the API. However, feel free to explore the source code if you are curious about the similarities and differences between the .NET MVC and API implementations.
+{{% /notice %}}
 
-Let's begin by forking and cloning the repo onto our machine. In your Powershell or terminal window, move into a directory where you plan to save your localcopy of the API codebase.
+Let's begin by forking and cloning the repo onto our machine. In your Powershell or terminal window, move into a directory where you plan to save your local copy of the API codebase.
 
-.. sourcecode:: bash
-
-> git clone https://github.com/<GitUsername>/coding-events-api
-
-For this studio, we want to have the ``1-sqlite`` branch checked out. This branch has an API with a single (``CodingEvent``) 
+```bash
+git clone https://github.com/<GitUsername>/coding-events-api
+```
+For this studio, we want to have the `1-sqlite` branch checked out. This branch has an API with a single (`CodingEvent`) 
 resource and a built-in SQLite database. 
 
-.. admonition:: Note
-
+{{% notice blue "Note" "rocket" %}}
 Including a SQLite database in this project means you don't need to have your MySQL server running to test the API. We won't get into what this looks like and instead just concentrate on testing the API endpoints.
+{{% /notice %}}
 
 Let's change into the repo and switch to this branch:
 
-.. sourcecode:: bash
-
+```bash
 # cd is an alias (like a nick-name) for the Set-Location cmdlet in PowerShell
-> cd coding-events-api
+cd coding-events-api
+```
 
+```bash
 # check out the 1-sqlite branch
-> git checkout 1-sqlite
+git checkout 1-sqlite
+```
 
 Keep your terminal open! We have some more work to do.
 
@@ -57,15 +58,16 @@ Keep your terminal open! We have some more work to do.
 
 We'll start the API server from the terminal using the `dotnet run` command. Navigate to the `CodingEventsAPI` project folder *within* your `coding-events-api` solution. This is the folder that contains `Controllers/` and so on, and is NOT the main project folder.
 
-.. sourcecode:: bash
+```bash
+# change to the CodingEventsAPI project directory
+cd CodingEventsAPI
+```
 
-#### change to the CodingEventsAPI project directory
+```bash
+# run the project
+dotnet run
+```
 
-> cd CodingEventsAPI
-
-#### run the project
-
-> dotnet run
 ```bash
 info: Microsoft.Hosting.Lifetime[0]
    Now listening on: https://localhost:5001
@@ -83,8 +85,7 @@ If you see something like this output above, then your API is running! You'll no
 
 ### Swagger Documentation
 
-With the application running, go to the first location listed as: "Now listening on:". Enter ``https://localhost:5001`` into your browser. You'll see a pagethat looks nothing like any view we created in our CodingEvents MVC applications. What you see running in the browser is not
-at all a client-side application, but rather, some documentation resources for the API itself. 
+With the application running, go to the first location listed as: **Now listening on: `https://localhost:5001`**. Open `https://localhost:5001` in your browser. You'll see a page that looks nothing like any view we created in our other MVC applications. What you see running in the browser is not at all a client-side application, but rather, some documentation resources for the API itself. 
 
 You'll see a list of those endpoints we asked you to describe for this lesson's exercises:
 
@@ -95,8 +96,8 @@ Two endpoints at the `CodingEvents` entry-point path, `/api/events`, to interact
 
 And two that require a sub-path variable, `/events/{codingEventId}`, to interact with a single entity:
 
-- **delete a CodingEvent**: `DELETE /api/events/{codingEventId} -> 201, CodingEvent`
 - **find single CodingEvent**: `GET /api/events/{codingEventId} -> CodingEvent`
+- **delete a CodingEvent**: `DELETE /api/events/{codingEventId} -> 201, CodingEvent`
 
 And below this list are two *Schemas*, or shapes, of resources the API handles. 
 
@@ -106,37 +107,32 @@ And below this list are two *Schemas*, or shapes, of resources the API handles.
 
 ### List the Coding Events
 
-To create our first request using Postman, select the *New* button in the top left corner of the Postman window:
+To create our first request using Postman, select the *Create New* button located within the "Start with something new" section.
 
-.. figure:: figures/new-button.png
-   :alt: Close up of the Postman New item button
+![Close up of the Postman create new button](pictures/create-new.png?classes=border)
 
-Select the *New* button to create a new request
+Select the *Create New* button to create a new request
 
-.. admonition:: Note
-
-**Mac Users**: The above screenshot and the screenshots on this page are of the Windows version of Postman. The *New* button on your launchpad is also in the top left corner of the window, but is white.
+{{% notice blue "Note" "rocket" %}}
+The above screenshot and the screenshots on this page are of the Linux version of Postman. The *Create New* button on your launchpad should also be located under the "Start with something new" section of the home page.
+{{% /notice %}}
 
 ### Creating a New Request
 
-With the new item dialog open, select the *Create New* tab (on the left) then select *Request*. 
+With the `Create New` view open, select the *HTTP Request* option.
 
-.. figure:: figures/new-item-dialog.png
-   :alt: Close up of the top of the Postman New item dialog
+![Close up of the Postman building blocks](pictures/postman-building-blocks.png?classes=border)
 
-Create a new request item in Postman
+This will open the view to create a *HTTP Request*.
 
-This will open the new request dialog:
+![Close up of the Postman HTTP Request view](pictures/HTTP-request-view.png?classes=border)
 
-.. figure:: figures/new-request-dialog.png
-   :alt: Top of the Postman New Request dialog
+<!-- The new request dialog includes fields for a request name, description, and collection
 
-The new request dialog includes fields for a request name, description, and collection
-
-.. admonition:: Note
-
+{{% notice blue "Note" "rocket" %}}
 Depending on the version of Postman you use, when you select the option to make a new request, you may not encounter this dialog.
 Instead you are taken directly to a new request form and your request is just labeled "Untitled Request". In the top right corner, you will find a *Save* button with an arrow next to it. Clicking on the arrow displays a dropdown menu where you can select *Save As* to change the name and save it to a specific collection.
+{{% /notice %}}
 
 Postman requests require a name and a collection. A collection is just a container to hold related requests. They make it easy to import and export collections of requests for portability across teams. For our first request, enter "list coding events" in the *Request name* form field. At the bottom of the new request dialog, you will see that the collections are empty. Select the *Create Collection* button, then enter the name `coding events API`. The new request dialog button will change to say *Save to coding events API*:
 
@@ -150,7 +146,7 @@ After saving, a new request tab will be created where you can customize its beha
 .. figure:: figures/empty-request-tab.png
    :alt: Postman new request tab view after creation
 
-A new request has been created in Postman 
+A new request has been created in Postman  -->
 
 ### Configuring the Request
 
@@ -166,14 +162,13 @@ In Postman, we can make this request by configuring the following settings:
 - the HTTP method of the endpoint: `GET`
 - the request header: (`Accept: application/json`)
 
-.. admonition:: Note
-
+{{% notice blue "Note" "rocket" %}}
 Though we view the Swagger docs from port 5001, we request the resources on port 5000.
+{{% /notice %}}
 
 To the left of the URL bar is a dropdown selector for HTTP methods. It will default to `GET`. In the following requests, you will need to select the appropriate method from this list. 
 
-.. figure:: figures/http-method-selector.png
-   :alt: Opening the Postman HTTP method dropdown menu
+![Opening the Postman HTTP method dropdown menu](pictures/http-method-selector.png?classes=border)
 
 The dropdown menu contains all of the HTTP request types available to send
 
@@ -181,14 +176,13 @@ Next to the request method type, enter the request URL where the API request sho
 
 Underneath the URL bar are tabs for other aspects of the request. Select the `Headers` tab to configure our header. The `Accept` header lets the API know that we accept responses that are formatted as JSON. 
 
-.. admonition:: Note
-
+{{% notice blue "Note" "rocket" %}}
 In our context, the API only responds with JSON. However, some APIs offer multiple [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) for their responses. It is a best practice to set this header explicitly to the content type the consuming application expects.
+{{% /notice %}}
 
 You can set multiple headers in this section. As you begin to type the name and value of headers, Postman will autocomplete them for you. After configuration, your request should look like this:
 
-.. figure:: figures/list-coding-events-request.png
-   :alt: Postman view of Accept header configured in request
+![Postman view of Accept header configured in request](pictures/list-coding-events-request.png?classes=border)
 
 The request Accept header is given a value of "application/json"
 
