@@ -1,5 +1,5 @@
 ---
-title: "Next Steps"
+title: "Iterating in a Template"
 date: 2023-02-09T12:48:24-06:00
 draft: false
 weight: 4
@@ -11,5 +11,3 @@ lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
-
-## Next Steps

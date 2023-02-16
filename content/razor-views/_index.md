@@ -2,11 +2,11 @@
 title: "Razor Views"
 date: 2023-02-09T12:48:24-06:00
 draft: false
-weight: 100
+weight: 13
 originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
@@ -22,6 +22,15 @@ After completing this chapter you should be able to
 1. How to render a template using ASP.NET controllers
 
 ## Key Terminology
+
+### Creating a Template
+- Razor, `@`, `View()` method
+
+### Using a Template
+- `ViewBag`
+
+### The Shared Directory
+- Partial View
 
 ## Content Links
 
