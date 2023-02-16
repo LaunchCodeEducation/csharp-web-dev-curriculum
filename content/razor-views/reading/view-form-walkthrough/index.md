@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Starting CodingEvents"
+title: "Walkthrough: Begin CodingEvents"
 date: 2023-02-09T12:48:24-06:00
 draft: false
 weight: 11

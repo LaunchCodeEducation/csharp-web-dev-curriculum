@@ -24,13 +24,15 @@ After completing this chapter you should be able to
 ## Key Terminology
 
 ### Creating a Template
-- Razor, `@`, `View()` method
+1. Razor templates
+1. `@`
+1. `View()` method
 
 ### Using a Template
-- `ViewBag`
+1. `ViewBag`
 
 ### The Shared Directory
-- Partial View
+1. Partial View
 
 ## Content Links
 
