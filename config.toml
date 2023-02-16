@@ -11,6 +11,3 @@ canonifyURLs = true
 [params]
   themeVariant = ["lc-light", "lc-dark-blue", "lc-dark-blue-two"]
 
-[markup]
-    [markup.highlight]
-	lineNos = true
