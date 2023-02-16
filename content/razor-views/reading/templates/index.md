@@ -117,5 +117,5 @@ What is the name of the templating syntax we will use in this book?
    1. Razor
    1. Blazor
 
-ans:  Razor
+<!-- ans:  Razor -->
 {{% /notice %}}

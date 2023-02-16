@@ -41,18 +41,16 @@ Out of the box, your MVC project contains several Razor templates within the `Vi
 
 In order to return that template, the action method calls a **View() method**. The `View()` method finds a template that’s associated with the particular controller and action method that it is called from.
 
-{{% notice green "Tip" "rocket" %}} 
+You can override the default behavior of the `View()` method, you can pass in a parameter which is the name of the template you want to render. For example, if we want an action method named `Form()` to return a Razor template named `WelcomeForm.cshtml`, we have `Form()` return `View("WelcomeForm");`.
 
-   To override the default behavior of the `View()` method, you can pass in a parameter which is the name of the template you want to render. For example, if we want an action method named `Form()` to return a Razor template named WelcomeForm.cshtml, we have `Form()` return `View("WelcomeForm");`.
-
-{{% /notice %}}
 
 ### Add a Template
 
-To create a template, we update `HelloController.Index()` to return a Razor template instead of a string of HTML. In `Views`, create a new subdirectory called `Hello`.
+To create a template, we update `HelloController.Index()` to return a Razor template instead of a string of HTML. 
+
+Start by creating a new subdirectory within the `Views` directory called `Hello`.
 
 Within `Hello` create a new file of the _Razor View_ file template.
-
 
 1. Right click on the `Views` directory or any subdirectory and select _Add_ -> _New File_ or _New Item_ depending on your OS.
 1. Look in the _ASP.NET Core_ menu for the _Razor View_ or _Razor View - Empty_ option.
