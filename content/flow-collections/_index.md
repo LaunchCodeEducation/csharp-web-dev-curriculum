@@ -2,11 +2,7 @@
 title: "Control Flow & Collections"
 date: 2023-01-25T13:44:27-06:00
 draft: false
-<<<<<<< HEAD
 weight: 3
-=======
-weight: 1
->>>>>>> main
 originalAuthor: <no value> # to be set by page creator
 originalAuthorGitHub: <no value> # to be set by page creator
 reviewer: # to be set by the page reviewer
