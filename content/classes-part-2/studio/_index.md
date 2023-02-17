@@ -11,7 +11,7 @@ lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
-<!-- TODO: Link to previous chapter -->
+
 We began designing and implementing our `Menu` and `MenuItem` classes in the [last studio]({{< relref "../../../classes/studio/_index.md" >}}). Let’s continue working on these classes by adding some methods.
 
 ## Design
