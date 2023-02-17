@@ -33,7 +33,7 @@ Before we review the syntax for conditionals, let’s go over the comparison and
 ### Logical Operators
 
 | Operator   | Description |
-|:-----------|:------------|
+|-----------|------------|
 | `!`        | Reverses the evaluation of the operand |
 | `\|\|`     | Combines two expressions with OR | 
 | `&&`       | Combines two expressions with AND |
