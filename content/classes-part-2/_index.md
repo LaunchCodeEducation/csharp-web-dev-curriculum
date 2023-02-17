@@ -24,14 +24,23 @@ By the end of this chapter, you should understand:
 
 ## Key Terminology
  
- ### Customizing Fields
- - `readonly` field, `static` field,  `const`
+### Customizing Fields
+1. `readonly` field
+1. `static` field
+1. `const`
 
- ### Customizing Methods
- - `static` method, Class method
+### Customizing Methods
+1. `static` method
+1. Class method
 
- ### Special Methods
- - `override`, `ToString` method, Overriding, Cast, Equality, Identity, `Equals` method
+### Special Methods
+1. `override`
+1. `ToString` method
+1. Overriding
+1. Cast
+1. Equality
+1. Identity
+1. `Equals` method
 
 
 ## Content Links
