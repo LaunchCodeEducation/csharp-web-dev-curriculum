@@ -7,9 +7,9 @@ originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer
 reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
-lastEditor: Courtney Frey # update any time edits are made after review
-lastEditorGitHub: speudusa # update any time edits are made after review
-lastMod: 2023-02-07 # UPDATE ANY TIME CHANGES ARE MADE
+lastEditor: # update any time edits are made after review
+lastEditorGitHub: # update any time edits are made after review
+lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Counting Characters
@@ -18,8 +18,7 @@ In this studio, you will write a program to count the number of times each chara
 
 ### Getting Started
 
-<!-- TODO: Link to chapter 1 -->
-Create your own project from scratch. Review [Creating a C# Project]({{relref ../}}) if you need to.
+Create your own project from scratch. Review [Creating a C# Project]({{< relref "../../../introduction-and-setup/_index.md" >}}) if you need to.
 
 ### Some Items to Ponder Before Coding
 1. There are multiple ways to approach this task, but one way involves the following steps:
@@ -31,8 +30,7 @@ Create your own project from scratch. Review [Creating a C# Project]({{relref ..
 
 1. You’ll need to initialize the counts for the characters in some fashion. It’s probably better to do this as you go through the string instead of doing so before you loop through it. (WHY?)
 
-<!-- TODO: Link to chapter 2 -->
-1. If you need to review how to create a new class, revisit the [Hello Methods](ADD LINK) program.
+1. If you need to review how to create a new class, revisit the [Hello Methods]({{< relref "../../../data-types-and-variables/reading/objects-primer/index.md" >}}) program.
 
 1. Don’t forget to check out the Bonus Missions below.
 

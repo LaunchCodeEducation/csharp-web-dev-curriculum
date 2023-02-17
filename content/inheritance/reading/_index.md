@@ -1,6 +1,6 @@
 ---
-title: "Reading: Classes Part 2"
-date: 2023-01-30T09:32:46-06:00
+title: "Reading"
+date: 2023-02-31T15:39:38-06:00
 draft: false
 weight: 1
 originalAuthor: Courtney Frey # to be set by page creator

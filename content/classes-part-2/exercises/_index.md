@@ -7,9 +7,9 @@ originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer
 reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
-lastEditor: Courtney Frey # update any time edits are made after review
-lastEditorGitHub: speudusa # update any time edits are made after review
-lastMod: 2023-08-02 # UPDATE ANY TIME CHANGES ARE MADE
+lastEditor: # update any time edits are made after review
+lastEditorGitHub: # update any time edits are made after review
+lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 You will find these exercises in `Classes-Part-2` project of the exercises repo. You will update your `Student.cs` file by implementing the `AddGrade` and `GetGradeLevel` methods that were sketched out in the [Instance Methods]({{< relref "../reading/instance-and-static/#instance-methods" >}}) section.
