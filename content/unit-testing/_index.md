@@ -2,7 +2,7 @@
 title: "Unit Testing"
 date: 2023-01-25T13:23:58-06:00
 draft: false
-weight: 100
+weight: 6
 originalAuthor: Sally Steuterman # to be set by page creator
 originalAuthorGitHub: gildedgardenia # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer

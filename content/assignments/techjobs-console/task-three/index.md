@@ -33,9 +33,7 @@ Here are some questions to ask yourself as you get started:
 1. How can you make this comparison in a way that effectively ignores the case of the strings?
 1. How can you do this *without* altering the capitalization of the items in `AllJobs` so that the data gets printed out the same way that it appears in `job_data.csv`?
 
-<!-- TODO: Add reference to string methods section in string chapter -->
-
-You might find it useful to review the String methods listed in the
+You might find it useful to review the [String methods]({{< relref "../../../data-types-and-variables/reading/strings-chars-and-arrays/#string-manipulation" >}}) listed in the
 chapter.
 
 When this task is completed, you're ready to submit your assignment.
