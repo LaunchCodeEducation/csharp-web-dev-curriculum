@@ -9,7 +9,7 @@ reviewer: Kimberly # to be set by the page reviewer
 reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: Courtney # update any time edits are made after review
 lastEditorGitHub: speudusa # update any time edits are made after review
-lastMod: copy edits and links for the debugger added, created separate page for this section
+lastMod: 2023-13-02
 ---
 
 
@@ -29,8 +29,7 @@ Let’s set up the assignment on our computer and learn about its basic structur
    * Windows Users: **View** > **Solution Explorer**
    * Mac Users:  **View** > **Solution** 
 
-      <!-- TODO: Link back to chapter 1 -->
-   Review the Visual Studio walkthroughs from chapter 1 if you need help navigating Visual Studio.
+   Review the Visual Studio walkthroughs from [chapter 1]({{< relref "../../introduction-and-setup/reading/_index.md" >}}) if you need help navigating Visual Studio.
    {{% /notice %}}
 
 1. Inside `HelloWorldAutoGraded`, open up the `SayHelloClass.cs` class. This is where you will write any code for this assignment. Within this class, you will see the following:
