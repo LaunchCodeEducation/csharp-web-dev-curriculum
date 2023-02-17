@@ -312,26 +312,24 @@ Our REST API allows us to interact with the state of its resources. If we make a
 
 Try issuing the request again with a non-existent `codingEventId` of `100`. You should get back the following response:
 
-.. figure:: figures/404-response.png
-   :alt: Postman 404 response for a non-existent resource
+![Postman 404 response for a non-existent resource](pictures/404-response.png?classes=border)
 
 We got a 404 response when requesting a resource that cannot be found on the server
 
 ### Delete a Coding Event
 
-In this final step, we will issue a `DELETE` request. Before we make the request, let's re-issue the request to list the collection of CodingEvents. Now that we have added an entity, we expect the state of the CodingEvents resource collection to have changed. Switch back to the `list coding events` request tab and re-issue the request. You should get a response of the collection's list representation containing the single entity we have created.
+In this final step, we will issue a `DELETE` request. Before we make the request, let's re-issue the request to list the collection of CodingEvents. Now that we have added an entity, we expect the state of the CodingEvents resource collection to have changed. Switch back to the `GET` request tab and re-issue the request for the endpoint `http://localhost:5000/api/events`. You should get a response of the collection's list representation containing the single entity we have created.
 
-.. sourcecode:: bash
-   :linenos:
-
+```bash {linenos=table}
 [
-   {
-      "id": 1,
-      "title": "Halloween Hackathon!",
-      "description": "A gathering of nerdy ghouls to work on GitHub Hacktoberfest contributions",
-      "date": "2020-10-31T00:00:00"
-   }	
+    {
+        "id": 1,
+        "title": "Halloween Hackathon!",
+        "description": "A gathering of nerdy ghouls to work on GitHub Hacktoberfest contributions",
+        "date": "2020-10-31T00:00:00"
+    }
 ]
+```
 
 To delete this entity, and therefore change the state of our resources, we will need to issue the following shorthand request:
 
@@ -339,19 +337,17 @@ To delete this entity, and therefore change the state of our resources, we will 
 
 Once again, go through the methodical process of setting up the request:
 
-1. Create a new request named: `delete a coding event`
-1. Add it to the existing `coding events API` collection
+1. Create a new `HTTP request`
 1. Configure the URL of the endpoint: `http://localhost:5000/api/events/1`
 1. Configure the HTTP method of the endpoint: `DELETE`
 
 Notice that for this request, we do not need to set any request headers. A `DELETE` request should send back an empty (`no-content`) response body with its `204` status code. 
 
-.. figure:: figures/delete-coding-event-response.png
-   :alt: Postman delete a CodingEvent response
+![Postman delete a CodingEvent](pictures/delete-coding-event.png?classes=border)
 
 Deleting a `CodingEvent` returns no body in the response
 
-As a final confirmation, check the state of the CodingEvents collection and notice that it has returned to its initial state. The representation of this state is shown in the empty list `[]` response body.
+As a final confirmation, check the state of the CodingEvents collection by submitting a `GET` request to `http://localhost:5000/api/events` and notice that it has returned to its initial state. The representation of this state is shown in the empty list `[]` response body.
 
 ## Bonus Missions
 
