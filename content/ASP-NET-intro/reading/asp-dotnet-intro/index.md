@@ -46,3 +46,8 @@ The following video is the first in a series designed to help you code your firs
 ## Intro to ASP.NET - Video
 
 {{< youtube geoobGtBJmQ >}}
+
+{{% notice blue "Note" "rocket" %}}
+This video is demonstrating the final output of the `HelloASPDotNET` project.
+Use the instructions on the next page to initialize your own `HelloASPDotNET` MVC project.  As you work through the next few chapters, you will create the routes seen in the video.
+{{% /notice %}}

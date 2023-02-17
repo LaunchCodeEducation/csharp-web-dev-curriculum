@@ -18,6 +18,13 @@ ASP.NET is a framework in the .NET Core family that is used to build web applica
 
 To create a new ASP.NET Core MVC project, start a new project in Visual Studio.
 
+{{% notice blue "Note" "rocket" %}}
+
+You are creating the inital MVC template.  You will not have the routes seen in the video.  
+You will add these to your project in the next chapter.
+
+{{% /notice %}}
+
 
 ### Windows Users
 

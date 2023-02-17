@@ -16,12 +16,8 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 This chapter is only the introduction to MVC design and frameworks like ASP.NET.  The resources below can provide you with more depth on these topics.
 
-[Get started with ASP.NET Core MVC](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?WT.mc_id=dotnet-35129-website&view=aspnetcore-6.0&tabs=visual-studio)
-
-[MVC Framework Introduction](https://www.geeksforgeeks.org/mvc-framework-introduction/)
-
-[Understanding Models, Views, and Controllers (C#)](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/overview/understanding-models-views-and-controllers-cs)
-
-[.NET Core vs .NET Framework](https://www.interviewbit.com/blog/net-core-vs-net-framework/)
-
-[ASP.NET Core Overview](https://www.tutorialsteacher.com/core/aspnet-core-introduction)
+1. [Get started with ASP.NET Core MVC](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?WT.mc_id=dotnet-35129-website&view=aspnetcore-6.0&tabs=visual-studio)
+1. [MVC Framework Introduction](https://www.geeksforgeeks.org/mvc-framework-introduction/)
+1. [Understanding Models, Views, and Controllers (C#)](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/overview/understanding-models-views-and-controllers-cs)
+1. [.NET Core vs .NET Framework](https://www.interviewbit.com/blog/net-core-vs-net-framework/)
+1. [ASP.NET Core Overview](https://www.tutorialsteacher.com/core/aspnet-core-introduction)

@@ -24,7 +24,13 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ### Design Patterns, MVC, and ASP.NET, Oh My!
 
-- Design patterns, Model-View-Controller (MVC), Model, View, Controller, ASP.NET, ASP.NET Core
+1. Design patterns
+1. Model-View-Controller (MVC)
+1. Model
+1. View
+1. Controller
+1. ASP.NET
+1. ASP.NET Core
 
 ## Content Links
 
