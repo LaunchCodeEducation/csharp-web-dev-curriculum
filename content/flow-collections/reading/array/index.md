@@ -7,13 +7,12 @@ originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer
 reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
-lastEditor: Courtney Frey # update any time edits are made after review
-lastEditorGitHub: speudusa # update any time edits are made after review
-lastMod: 2023-02-07 # UPDATE ANY TIME CHANGES ARE MADE
+lastEditor: # update any time edits are made after review
+lastEditorGitHub: # update any time edits are made after review
+lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-<!-- TODO: Add link to chapter 2 -->
-We learned about arrays in C# in a [previous lesson](LINK TO CHAPTER 2), so let’s spend a moment comparing them to `Lists`. 
+We learned about arrays in C# in a [previous lesson]({{< relref "../../../data-types-and-variables/_index.md" >}}), so let’s spend a moment comparing them to `Lists`. 
 `Lists` are generally easier to use than C#’s `Array`. Let’s see why this is.
 
 Why does C# have both `Arrays` and `Lists`? The answer is historical, at least in part. C# is a C-style language, and arrays are the most basic data structure in C. 
