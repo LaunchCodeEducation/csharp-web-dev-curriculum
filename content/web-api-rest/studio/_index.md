@@ -192,36 +192,32 @@ To issue the request, you can select the blue *Send* button on the right of the 
 
 Below the request configuration, you will see the response section has been populated. From here, you see the response body along with the status code (on the right) and a tab for headers:
 
-.. figure:: figures/list-coding-events-response.png
-   :alt: Postman response window displays an empty array returned from requesting all CodingEvents 
+![Postman response window displays an empty array returned from requesting all CodingEvents](pictures/list-coding-events-response.png?classes=border)
 
 The initial CodingEvents collection state is empty
-
 
 Since this is our first time running the application, the database is empty. We expectedly received an empty JSON list `[]` which corresponds to the empty representation of the Coding Events collection.
 
 If you select the *Headers* tab in the response pane, you see the API satisfied our `Accept` request header and provided the response in `application/json` format.
 
-.. figure:: figures/response-headers.png
-   :alt: Postman close up view of response headers tab opened
+![Postman close up view of response headers tab opened](pictures/response-headers.png?classes=border)
 
 The response is returned as `application/json`
 
-.. admonition:: Note
-
+{{% notice blue "Note" "rocket" %}}
 If you get a connection refused error, it means you likely forgot to start the API server or mistyped the URL. Check both of these before attempting the request again.
 
-   .. figure:: figures/connection-refused.png
-      :alt: Error message displayed in Postman from a refused connection 
+![Error message displayed in Postman from a refused connection](pictures/connection-refused.png?classes=border)
 
-   If sending the request results in a connection error, check your setup and request settings
+If sending the request results in a connection error, check your setup and request settings
+{{% /notice %}}
 
 ### Create a `CodingEvent`
 
 For our next request, we will create a `CodingEvent`. Repeat the steps you performed in the previous request:
 
-1. Click on the *New* button in the top left corner of the Postman window to create a new request named: `create coding event`
-1. Add it to the existing `coding events API` collection
+1. Click on the *New* button in the top left corner of the Postman window to create a new request.
+1. Select the *HTTP Request* option.
 
 This request will change the state of the Coding Events collection by adding a new entity to it. Recall that the shorthand for this request is:
 
@@ -234,27 +230,29 @@ We will need to set the following request settings:
 1. The request header: (`Content-Type` `application/json`)
 1. The request body: a JSON `NewCodingEvent` object
 
+Your request should look like the following image:
+
+![Close up view of a post request setup for the coding events api](pictures/post-request-setup.png?classes=border)
+
 As a best practice, we explicitly define the `Content-Type` header. This header indicates that our request contains `application/json` data so that the API knows how to parse the incoming request body. 
 
 ### Configure the Request Body
 
-In addition to the configurations you are now familiar with setting, we will need to define the request body. For this task, select the *Body* tab that is next to *Headers*. 
+In addition to the configurations you are now familiar with setting, we will need to define the request body. For this task, select the *Body* tab that is next to *Headers*.
 
-The body of the request must be in a raw JSON format. In the *Body* tab, open the the dropdown to select your data format. Select *raw* from the menu. Once this format is selected, enter the following JSON body:
+The body of the request must be in a raw JSON format. In the *Body* tab, you will need to select the data format. Select *raw* from the available options. Once this format is selected, enter the following JSON body:
 
-.. sourcecode:: bash
-   :linenos:
-
+```bash {linenos=table}
 {
    "Title": "Halloween Hackathon!",
    "Description": "A gathering of nerdy ghouls to work on GitHub Hacktoberfest contributions",
    "Date": "2020-10-31"
 }
+```
 
 Before sending the request, check that your configuration matches the following image:
 
-.. figure:: figures/create-coding-event-request.png
-   :alt: Postman request display of new CodingEvent item in Body tab 
+![Postman request display of new CodingEvent item in Body tab](pictures/create-coding-event-request.png?classes=border)
 
 You can write JSON directly into the request Body tab 
 
@@ -262,19 +260,21 @@ Hit send and we'll take a look at the result.
 
 ### Analyzing the Response
 
-You can see in the response that the API reflected back the representation of the new `CodingEvent` entity. Notice that a unique `id` has been assigned to it by the API. Looking at the status code (`201`) and headers of the response, we can see the API conformed to the REST convention. Open the *Headers* tab in the response panel. The URL value of the `Location` header is: `http://localhost:5000/api/events/1`. This location can be can now be used to view the individual `CodingEvent` entity that was created by our request.
+![Close up of the post request response body](pictures/post-request-response-body.png?classes=border)
+
+You can see in the response that the API reflected back the representation of the new `CodingEvent` entity. Notice that a unique `id` has been assigned to it by the API. Looking at the status code (`201`) and headers of the response, we can see the API conformed to the REST convention. Open the *Headers* tab in the response panel. The URL value of the `Location` header is: `http://localhost:5000/api/events/1`. (in my case the id was 2) This location can be can now be used to view the individual `CodingEvent` entity that was created by our request.
 
 ### Sending a Bad Request
 
 To test the rejection of bad requests, let's send one that violates the `NewCodingEvent` validation constraints. Send another request with the following JSON body:
 
-.. sourcecode:: bash
-
+```bash {linenos=table}
 {
    "Title": "too short",
    "Description": "A gathering of nerdy ghouls to work on GitHub Hacktoberfest contributions",
    "Date": "2020-10-31"
 }
+```
 
 You can see from the response that the API rejected the request. The response returns a bad request status of `400` which indicates a client-side error. The response body includes information about what needs to be corrected to issue a successful request:
 
@@ -297,15 +297,14 @@ For this step, we will make a request for the state of a single entity. You can 
 
 You should get back the following JSON response body:
 
-.. sourcecode:: bash
-   :linenos:
-
+```bash {linenos=table}
 {
    "id": 1,
    "title": "Halloween Hackathon!",
    "description": "A gathering of nerdy ghouls to work on GitHub Hacktoberfest contributions",
    "date": "2020-10-31T00:00:00"
 }
+```
 
 ### Requesting a Non-Existent Entity
 
