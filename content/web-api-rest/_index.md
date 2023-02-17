@@ -14,6 +14,22 @@ lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Learning Objectives
 
+After completing this chapter, you should be able to do the following:
+
+1. Submit HTTP requests using `Postman` to an API and receive the expected response
+    - `GET`
+    - `POST`
+    - `DELETE`
+1. Submit a bad HTTP request, understand the response and how to fix it
+
+You should also have an understanding of the following:
+
+1. HTTP methods
+1. Endpoints
+1. Status Codes
+1. Headers
+1. API design 
+
 ## Major Concepts & Key Terminology
 
 Throughout this lesson you should make note of the following terms and their definitions as you read the content on the page:
