@@ -2,7 +2,7 @@
 title: "Classes Part 2"
 date: 2023-01-30T09:32:46-06:00
 draft: false
-weight: 100
+weight: 5
 originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer
