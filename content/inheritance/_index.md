@@ -26,27 +26,44 @@ As you read through this chapter, look for the following key words.
 
 ### Inheritance
  
- - Inheritance, Subtyping
+1. Inheritance
+1. Subtyping
 
 ### Inheritance in C#
 
-- Extends, Subclass, Derived class, Child class, Superclass, Base class, Parent class
+1. Extends
+1. Subclass
+1. Derived class
+1. Child class
+1. Superclass
+1. Base class
+1. Parent class
 
 ### A Tale of Two Cats
 
-- `base`, no-argument constructor , no-arg constructor, `override`, method overriding
+1. `base`
+1. no-argument constructor
+1. no-arg constructor
+1. `override`
+1. method overriding
 
 ### Inheriting from Abstraction
 
-- Abstraction, `abstract`, Abstract class, Abstract method
+1. Abstraction
+1. `abstract`
+1. Abstract class
+1. Abstract method
 
 ### Casting
 
-- Runtime exception, Polymorphism
+1. Runtime exception
+1. Polymorphism
 
 ### Class Diagrams
 
-- Class diagrams, One-to-One Relationship, One-to-Many Relationship
+1. Class diagrams
+1. One-to-One Relationship
+1. One-to-Many Relationship
 
 ## Table of Contents
 
