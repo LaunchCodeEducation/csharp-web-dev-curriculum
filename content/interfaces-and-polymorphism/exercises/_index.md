@@ -14,12 +14,10 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 As a new C# coder, it might take you some time to recognize when to use interfaces.
 
-To help overcome this, let's consider a common occurrence---sorting a
+To help overcome this, let's consider a common occurrence --- sorting a
 `List` of objects.
 
-<!-- TODO: Add link to section on list sorting -->
-
-1. If the list contains `string` or numerical entries, then sorting the list
+1. If the list contains `string` or numerical entries, then [sorting the list]({{< relref "../../flow-collections/reading/list/#list-methods-in-c" >}})
    is trivial:
 
    ```csharp
