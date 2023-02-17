@@ -14,11 +14,9 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 To get started, open up Visual Studio and create a new console program.
 
-<!-- TODO: Add link to intro -->
-
 {{% notice green "Tip" "rocket" %}}
 
-   If you do not recall how to create a new console program or need a quick refresher to get started, check out the section on creating a C# project.
+   If you do not recall how to create a new console program or need a quick refresher to get started, check out the section on [creating a C# project]({{< relref "../../introduction-and-setup/reading/creating-a-project" >}}).
 
 {{% /notice %}}
 
