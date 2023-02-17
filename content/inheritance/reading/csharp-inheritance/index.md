@@ -52,8 +52,7 @@ Fields and non-constructor methods are directly available to instances of the su
 
 {{% notice blue "Note" "rocket" %}} 
 
-<!-- TODO: link to Classes part 1 -->
-If anything in the last paragraph was fuzzy, this is a good time to review [access modifiers in C#](LINK).
+If anything in the last paragraph was fuzzy, this is a good time to review [access modifiers in C#]({{< relref "../../../classes/reading/modifiers/index.md" >}}).
 
 {{% /notice %}}
 

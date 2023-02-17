@@ -177,8 +177,7 @@ This calls the overridden method in the base class via `base.Noise()`, carrying 
 
 ## `Object` Class
 
-<!-- TODO: link to chapter 5 -->
-In a previous lesson, we introduced the [special methods](LINK): `Equals` and `ToString`. All classes contain default implementations of these methods that can be overridden.
+In a previous lesson, we introduced the [special methods]({{< relref "../../../classes-part-2/reading/special-methods/index.md" >}}): `Equals` and `ToString`. All classes contain default implementations of these methods that can be overridden.
 
 In fact, these default methods are part of a class called `Object`. All classes we create in C# have access to the methods and members of the `Object` class, because it is the base class in all .NET class hierarchies. In the case of `Cat` and `HouseCat`, `Cat` implicitly extends `Object`. Since `Cat` is a subclass of the `Object` class and `HouseCat` is a subclass of the `Cat` class, `HouseCat` and `Cat` can both access different methods and members of the `Object` class. So the default implementations of `Equals` and `ToString` (along with a few [other methods](https://learn.microsoft.com/en-us/dotnet/api/system.object?view=net-6.0#methods)) are made available to us via inheritance.
 

@@ -14,9 +14,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 Not sure you get the whole inheritance idea? Still not sure which fields and methods get inherited and which are overridden? Looking to test your understanding?
 
-<!-- TODO: add 1st Link => Chapter 6 TOC -->
-
-Knowing what we know now about [Unit Testing](LINK) and Inheritance, we can test that our subclasses extend their base classes.
+Knowing what we know now about [Unit Testing]({{< relref "../../../unit-testing/_index.md" >}}) and [Inheritance]({{< relref "../../../inheritance/_index.md" >}}), we can test that our subclasses extend their base classes.
 
 We can add a `CatTests` project to our `Cats` solution and write some code to ensure that `HouseCat` inherits what we expect it to.
 
