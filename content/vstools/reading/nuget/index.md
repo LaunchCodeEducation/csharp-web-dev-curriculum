@@ -26,9 +26,9 @@ NuGet packages are readily available within the IDE itself. Perhaps you have not
 
 To browse available NuGet packages:
 
-#. Right-click on that directory
-#. Select “Manage NuGet Packages” from the dropdown menu
-#. The resulting window will show you a catalog of software packages you may add to your project
+1. Right-click on that directory
+1. Select “Manage NuGet Packages” from the dropdown menu
+1. The resulting window will show you a catalog of software packages you may add to your project
 
 ### Managing NuGet Packages
 

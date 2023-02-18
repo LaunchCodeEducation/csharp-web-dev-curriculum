@@ -12,39 +12,37 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-Watch this video to learn the basics of the debugging tools available in Visual Studio. If you want 
-to follow along, Chris is debugging the :ref:`hello-methods` program back in the introduction to data types. 
+Some of the features that you will find yourself leaning on the most as you further your career in tech is the Visual Studio debugging tools.
 
-A summary of Chris's debugger tips:
+Open up your [examples repo](https://github.com/LaunchCodeEducation/csharp-web-dev-examples) and find the `HelloMethods` project. Read through each item, make note of how the debugging tools work for each item, and practice using the tool on `HelloMethods`:
 
-- Right click in the text editing window to add a `breakpoint <https://learn.microsoft.com/en-us/visualstudio/debugger/debugger-feature-tour?view=vs-2022#set-a-breakpoint-and-start-the-debugger>`_ to your code.
-- Start debug mode with the run button as you might normally run your program.
-- Debugger Panes:
-   - `Autos <https://learn.microsoft.com/en-us/visualstudio/debugger/autos-and-locals-windows?view=vs-2022>`_ pane shows the values of parameters and variables on the line that the debugger is 
+1. Right-click in the text editing window to add a [breakpoint](https://learn.microsoft.com/en-us/visualstudio/debugger/debugger-feature-tour?view=vs-2022#set-a-breakpoint-and-start-the-debugger) to your code.
+1. Start debug mode with the run button as you might normally run your program.
+1. Make note of the debugger panes and how you might make use of them:
+   1. [Autos](https://learn.microsoft.com/en-us/visualstudio/debugger/autos-and-locals-windows?view=vs-2022) pane shows the values of parameters and variables on the line that the debugger is 
      currently sitting on, as well as the line above.
-   - `Locals <https://learn.microsoft.com/en-us/visualstudio/debugger/autos-and-locals-windows?view=vs-2022>`_ pane shows the value of local variables and parameters within the program being debugged.
-   - Add variables, parameters, and expressions to the `Watch <https://learn.microsoft.com/en-us/visualstudio/debugger/debugger-feature-tour?view=vs-2022#set-a-watch>`_ pane to monitor their values while debugging.
-   - `Call Stack <https://learn.microsoft.com/en-us/visualstudio/debugger/how-to-use-the-call-stack-window?view=vs-2022>`_ pane displays the record of the methods that have been called in the program being debugged.
+   1. [Locals](https://learn.microsoft.com/en-us/visualstudio/debugger/autos-and-locals-windows?view=vs-2022) pane shows the value of local variables and parameters within the program being debugged.
+   1. Add variables, parameters, and expressions to the [Watch](https://learn.microsoft.com/en-us/visualstudio/debugger/debugger-feature-tour?view=vs-2022#set-a-watch) pane to monitor their values while debugging.
+   1. [Call Stack](https://learn.microsoft.com/en-us/visualstudio/debugger/how-to-use-the-call-stack-window?view=vs-2022) pane displays the record of the methods that have been called in the program being debugged.
    - View a list of breakpoints in the *Breakpoints* pane. You may also disable and enable breakpoints from here.
-- Debugger `Code Stepping <https://learn.microsoft.com/en-us/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2022&tabs=csharp#code-stepping>`_ Buttons:
-   - `Step over <https://learn.microsoft.com/en-us/visualstudio/debugger/debugger-feature-tour?view=vs-2022#step-over-code-to-skip-functions>`_ button moves debugger to the next line to be executed within a method.
-   - *Step out* button brings the debugger out of the execution of a method.
-   - *Step into* button makes the debugger enter the method at which it is currently paused. Note that 
-     you can't step into ``System`` defined methods, only those defined by your program.
+1. Debugger [Code Stepping](https://learn.microsoft.com/en-us/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2022&tabs=csharp#code-stepping) Buttons:
+   1. [Step over](https://learn.microsoft.com/en-us/visualstudio/debugger/debugger-feature-tour?view=vs-2022#step-over-code-to-skip-functions) button moves debugger to the next line to be executed within a method.
+   1. *Step out* button brings the debugger out of the execution of a method.
+   1. *Step into* button makes the debugger enter the method at which it is currently paused. Note that 
+     you can't step into `System` defined methods, only those defined by your program.
 
-- Right click on the breakpoint to set conditional logic for when you want the breakpoint to run.
-- Stop debug mode wth the stop button.
+1. Right-click on the breakpoint to set conditional logic for when you want the breakpoint to run.
+1. Stop debug mode wth the stop button.
 
-   **Visual Studio for Mac** extra tips:
+## Visual Studio for Mac Extra Tips
 
-   - Your IDE may not default to *Debug* mode. To select for it, in the top menu, select *View > Debug*.
-   - To view the debugging panes, select *View* in the top menu and scroll down to *Debug Pads*. Select 
-     the items you wish to view, ie. *Breakpoints*, *Watch*, etc.
-   - To add conditions to a breakpoint, right click on the breakpoint and select *Edit Breakpoint*. From 
-     menu that opens, use the *Advanced Conditions* section to set your conditions for when you want the 
-     breakpoint to be executed.
-   - For more information on using the Debugger in Visual Studio for Mac, check out this `guide <https://learn.microsoft.com/en-us/visualstudio/debugger/using-breakpoints?view=vs-2022>`_.
-
+1. Your IDE may not default to *Debug* mode. To select for it, in the top menu, select *Debug > Start Debugging*.
+1. To view the debugging panes, select *Debug* in the top menu and scroll down to *Windows*. Select 
+   the items you wish to view, ie. *Breakpoints*, *Watch*, etc.
+1. To add conditions to a breakpoint, right click on the breakpoint and select *Edit Breakpoint*. From 
+   menu that opens, use the *Advanced Conditions* section to set your conditions for when you want the 
+   breakpoint to be executed.
+1. For more information on using the Debugger in Visual Studio for Mac, check out this [guide](https://learn.microsoft.com/en-us/visualstudio/debugger/using-breakpoints?view=vs-2022).
 
 ## Check Your Understanding
 

@@ -61,11 +61,9 @@ The four elements summarized above provide the details needed to manage larger p
 
 To view a project file, right click on the project’s name in the Visual Studio file menu. From the dropdown menu, select *Edit Project File*.
 
-.. figure:: figures/edit-project-file.png
-   :scale: 50%
-   :alt: User selecting "Edit Project File" from project action dropdown menu
-
-   User selecting "Edit Project File".
+{{< rawhtml >}}
+ <img src="pictures/edit-project-file.png" alt="User selecting "Edit Project File" from project action dropdown menu" width=40% />
+{{< /rawhtml >}}
 
 Most of our project files from this class will look like this:
 
