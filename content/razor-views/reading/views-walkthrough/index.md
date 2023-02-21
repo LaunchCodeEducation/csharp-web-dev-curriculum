@@ -18,16 +18,18 @@ You will find a video walkthrough of the steps covered in the reading.  Time sta
 
 Topics Covered:
 - creating a Razor template (View)
-- Use `Viewbag`
 - Create `Welcome` method
 - Create `Welcome` View
+- Use `Viewbag`
 - Use an conditional to make the view dynamic
 
-## Coming soon: [VIDEO WALKTHROUGH](LINK)!
+## VIDEO WALKTHROUGH
+{{< youtube J7W4DZPI4pA >}}
 
-### Starting [code repo](LINK) - views-starter
+<!-- TODO: Link to chapter 10 video -->
+- This walkthrough starts with the code from the [controllers and routes video].  Starting [code repo](https://github.com/LaunchCodeEducation/HelloASPDotNET/tree/controllers-and-routing) is using the `controllers-and-routing` branch.
 
-### Final [code repo](LINK) - views-dynamic
+- The final [code](https://github.com/LaunchCodeEducation/HelloASPDotNET/tree/views) in the walkthrough can be found on the `views` branch.
 
 {{% notice blue "Note" "rocket" %}}
 
@@ -35,5 +37,5 @@ Topics Covered:
 
 {{% /notice %}}
 
-If you would like to continue this project, checkout out the Next Steps section for some coding challenges.
+If you would like to continue this project, checkout out the [Next Steps section]({{<relref "../../next-steps.md">}}) for some coding challenges.
 

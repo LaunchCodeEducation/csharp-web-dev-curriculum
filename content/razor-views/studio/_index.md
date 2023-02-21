@@ -23,7 +23,7 @@ Our application needs to do the following:
 As always, read through the whole page before starting to code.
 
 ## Setup
-Fork and clone the [starter code](LINK).
+Fork and clone the [starter code](https://github.com/LaunchCodeEducation/SpaDayStudio6).
 
 Once you have the project opened in your IDE, and run it and click the SpaDay link that appears in the upper left of the home page. You should see a small form at the `/Spa` route.
 
@@ -64,8 +64,7 @@ To provide treatment suggestions, `SpaController.Menu()` uses the `CheckSkinType
 
    1. Pass in the `skintype` variable to the `<p>` tag.
    
-      <!-- TODO: Link to loops chapter -->
-   1. Iteratively add the values in `appropriateFacials` to an unordered list. If you need a quick reminder of the syntax, review the [@foreach section](LINK).
+   1. Iteratively add the values in `appropriateFacials` to an unordered list. If you need a quick reminder of the syntax, review the [@foreach section]({{<relref "../reading/iterating-templates/index.md">}}).
 
 ## Mani or Pedi?
 

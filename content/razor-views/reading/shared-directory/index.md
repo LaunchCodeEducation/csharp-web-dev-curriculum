@@ -12,7 +12,6 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-<!-- TODO: link to creating a template in this chapter -->
 [Earlier in the lesson]({{<relref "../creating-templates/index.md">}}), we touched upon the role of `_Layout.cshtml`. When we set Layout to `null`, the header, footer, and Bootstrap disappear from our site and we are left with static HTML. `_Layout` is in the `Shared` directory of the `Views` directory. Files inside this `Shared` directory are used sitewide and can be accessed by the templates we create when we are working with our controllers. These files help us DRY our code.
 
 ## Layout pages
