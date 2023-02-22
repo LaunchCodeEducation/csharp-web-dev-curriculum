@@ -57,8 +57,7 @@ At the end of the studio, when you navigate to `localhost:5001/skills`, you shou
 
 When you navigate to `localhost:5001/skills/form`, you should see a blank form that looks something like: 
 
-.. figure:: figures/blank-studio-form.png
-   :alt: Image showing the blank form.
+![Image showing the blank form](pictures/blank-studio-form.png)
 
    Skill Tracker app blank skill form.
 
