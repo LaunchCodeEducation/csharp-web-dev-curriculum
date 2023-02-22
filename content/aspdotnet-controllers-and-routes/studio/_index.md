@@ -37,11 +37,10 @@ Inside `SkillsController`, you will add several methods to accomplish the follow
 1. At `localhost:5001/skills/form`, add a form that lets the user enter a date and choose their learning progress in each of the programming skills listed at `/skills`.
 
    {{% notice green "Tip" "rocket" %}}
-
-      Use the [date input type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date). Note that the value is 
-      a `string` type. 
-      
-      For each of the skills, use `select` elements for selecting a description of progress. 
+   
+   Use the [date input type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date). Note that the value is a `string` type. 
+   
+   For each of the skills, use `select` elements for selecting a description of progress. 
 
    {{% /notice %}}
 
