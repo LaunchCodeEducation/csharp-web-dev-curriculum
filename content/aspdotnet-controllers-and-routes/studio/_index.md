@@ -63,8 +63,7 @@ When you navigate to `localhost:5001/skills/form`, you should see a blank form t
 
 If you fill out the form, your page may render like so:
 
-.. figure:: figures/completed-studio-form.png
-   :alt: Image showing the web page with information from the completed form.
+![Image showing the web page with information from the completed form](pictures/completed-studio-form.png)
 
    Skill Tracker app result of skill form submission.
 
