@@ -15,7 +15,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 For this studio you will add functionality to allow users to sign up for your `SpaDay` app. 
 
 The starter code has been modified from where you left off last class. Grab the refactored code 
-on the [user-signup-starter branch](https://github.com/LaunchCodeEducation/SpaDay/tree/user-signup-starter). 
+on the [user-signup-starter branch](https://github.com/LaunchCodeEducation/SpaDayStudio6/tree/user-signup-starter). 
 
 You'll notice in this branch that the name has been removed from the service selection form. Once we
 implement user-signup functionality, we can use a given user's name to identify the spa client. We've also 
