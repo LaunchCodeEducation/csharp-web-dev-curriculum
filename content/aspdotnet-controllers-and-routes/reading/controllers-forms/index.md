@@ -5,8 +5,8 @@ draft: false
 weight: 3
 originalAuthor: Sally Steuterman # to be set by page creator
 originalAuthorGitHub: gildedgardenia # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
@@ -40,11 +40,15 @@ By giving the route to the `Welcome()` method in `action`, specifying `POST` as 
 
 With the `Index()` method rewritten and our `Welcome()` method handling form submission, we can run our app and see what happens!
 
-![Webpage with filled out form](pictures/filledoutform.png)
+{{< rawhtml >}}
+   <img src="pictures/filledoutform.png" alt="Webpage with filled out form" width="80%" />
+{{< /rawhtml>}}
 
 Once we hit *Greet Me*, the value of `name`, `"Tillie"`, is submitted to the `Welcome()` method.
 
-![Webpage displaying the form result](pictures/displayformresult.png)
+{{< rawhtml >}}
+   <img src="pictures/displayformresult.png" alt="Webpage displaying the form result" width="80%" />
+{{< /rawhtml >}}
 
 With our form working, we can add some attribute routing to streamline our code and specify routes and request types.
 For the `Index()` method, we want the method to respond to a `GET` request at `localhost:5001/helloworld`.

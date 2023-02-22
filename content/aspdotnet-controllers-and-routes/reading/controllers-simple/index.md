@@ -5,8 +5,8 @@ draft: false
 weight: 1
 originalAuthor: Sally Steuterman # to be set by page creator
 originalAuthorGitHub: gildedgardenia # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
@@ -18,7 +18,9 @@ application's view and update model data accordingly. Conversely, changes to mod
 via controller methods. When the client issues an HTTP request via a URL, we want to make sure that the URL leads to the correct controller so we get an appropriate response.
 A **route** is the mechanism by which a request path gets assigned to a controller within our application.
 
-![MVC Flow Diagram showing controllers in the middle passing data between the view and the model](pictures/mvcOverviewDetail.png)
+{{< rawhtml >}}
+   <img src="pictures/mvcOverviewDetail.png" alt="MVC Flow Diagram showing controllers in the middle passing data between the view and the model" width="90%" />
+{{< /rawhtml >}}
 
 {{% notice blue "Note" "rocket" %}}
 
@@ -166,9 +168,9 @@ Now when we run our application, we can head over to `localhost:5001/helloworld`
 If we head over to the route that was mapped through conventional routing, `localhost:5001/hello`, we will find a broken page.
 The result is a simple web page with one heading that says "Hello World!".
 
-   ![Simple webpage resulting from adding a new method to the controller](pictures/staticresponseresult.png)
-
-   Our end result!
+{{< rawhtml >}}
+   <img src="pictures/staticresponseresult.png" alt="Simple webpage resulting from adding a new method to the controller" width="70%"/ >
+{{< /rawhtml >}}
 
 {{% notice blue "Note" "rocket" %}}
 
