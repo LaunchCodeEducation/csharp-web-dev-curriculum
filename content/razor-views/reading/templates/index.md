@@ -88,7 +88,7 @@ In the last lesson, you built a simple website that displayed a welcome message 
 Templates allow us to decide how to display data in the view, even if we do not know exactly what that data will be. Information pulled from forms, APIs, or user input will be formatted to fit within our design.
 
 {{< rawhtml >}}
-   <img src="../pictures/SampleTemplateDiagram.png" alt="Diagram of a template" />
+   <img src="../../pictures/SampleTemplateDiagram.png" alt="Diagram of a template" />
 {{< /rawhtml >}}
 
 In the figure, the black outlines represent different areas defined by the template—spaces for lists, images, links, etc. As the controller feeds data into the template, the appearance of the page changes.

@@ -25,8 +25,7 @@ Let’s revisit part of the non-efficient HTML from the introduction, where we h
 
 If we want to add, remove, or edit the list items, we need to go in and change the individual tags, which is a poor use of our time. Fortunately, there is a way to streamline the process.
 
-<!-- TODO: Link to Control Flow chapter  -->
-In C#, we use a [foreach Loop](LINK) to iterate through the items in a data collection.
+In C#, we use a [foreach Loop]({{<relref "../../../flow-collections/reading/loops/_index.md">}}) to iterate through the items in a data collection.
 
 ```csharp{linenos=table,hl_lines=[],linenostart=1}
 foreach (type item in items)
@@ -163,8 +162,7 @@ Apart from the nested loops displayed above, here are some other items you may f
 
    In some limited circumstances, we can use the **var** keyword to implicitly type a variable. When this keyword is used, C# still assigns a type to `coffeeShop` through inference. It looks and sees that we are assigning `coffeeShop` to the value at the list index, which is a `CoffeeShop` object. Thus, `coffeeShop` is of type `CoffeeShop`.
 
-   <!-- TODO: Link to chapter 2 -->
-   Alternatively, Razor does also allow us to import a custom class, such as CoffeeShop. If we wanted to do so, we could import the class or its namespace at the top of the template with a [using](LINK) statement.
+   Alternatively, Razor does also allow us to import a custom class, such as CoffeeShop. If we wanted to do so, we could import the class or its namespace at the top of the template with a [using]({{<relref "../../../data-types-and-variables/reading/some-csharp-practice/index.md">}}) statement.
 
 {{% notice orange "Warning" "rocket" %}} 
 

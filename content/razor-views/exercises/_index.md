@@ -17,8 +17,7 @@ In this chapter, we started working on an application for tracking various codin
 ## Getting Started
 Open up your `CodingEvents` project in Visual Studio. Create and checkout a new branch to complete these exercises.
 
-<!-- TODO: Link to branch -->
-The code you start with should roughly resemble [this branch](LINK). If you have been coding along with the video lessons, you’re probably in good shape.
+The code you start with should roughly resemble [this branch](https://github.com/LaunchCodeEducation/CodingEvents/tree/views). If you have been coding along with the video lessons, you’re probably in good shape.
 
 As always, give the branch a useful name, like `view-exercises`.
 
@@ -30,11 +29,17 @@ Now, let’s add descriptions to our events.
 
    {{% notice green "Tip" "rocket" %}}
 
-   If you need to refresh your memory on dictionaries, refer to [this page](Link to Chapter3).
+   If you need to refresh your memory on dictionaries, refer to [this page]({{<relref "../../../flow-collections/reading/dictionary/index.md">}}).
 
    {{% /notice %}}
 
-1. Update the Events/Add.cshtml template with a new field for a user to submit an event description.
+   {{% expand "Check your solution" %}}
+   ```csharp
+    static private Dictionary<string, string> Events = new Dictionary<string, string>();
+   ```
+   {{% /expand %}}
+
+1. Update the `Events/Add.cshtml` template with a new field for a user to submit an event description.
 
    {{% notice green "Tip" "rocket" %}}
 
@@ -111,7 +116,7 @@ Now, let’s add descriptions to our events.
       <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
          <ul class="navbar-nav flex-grow-1">
             <li class="nav-item">
-               <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="Add">Add</a>
+               <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="Add">Add Event</a>
             </li>
          </ul>
       </div>

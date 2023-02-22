@@ -18,11 +18,15 @@ Straight out of the box, Bootstrap helps developers to get their web apps well-s
 
 Image of standard HTML buttons without CSS:
 
-[IMAGE HERE]
+{{< rawhtml >}}
+   <img src="../../pictures/htmlDefaultButtons.png" alt="Diagram of a template"width=40% />
+{{< /rawhtml >}}
 
 Same buttons with Bootstrap:
 
-[IMAGE HERE]
+{{< rawhtml >}}
+   <img src="../../pictures/bootstrapButtonOptions.png" alt="Diagram of a template" width=40% />
+{{< /rawhtml >}}
 
 Bootstrap is already included in the given `_Layout.cshtml`, which means that as long as your view is using that layout, you can access Bootstrap styling.
 

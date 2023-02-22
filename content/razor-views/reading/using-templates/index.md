@@ -52,6 +52,42 @@ Let’s say that `@ViewBag.vegetable` stores the string “Rutabaga”. When the
 
 By using `@ViewBag.vegetable`, we make our webpage dynamically display data within the `p` element. Changing the value of `vegetable` leads to a corresponding change in the text in the view after refreshing.
 
+## Try It Out in `HelloASPDotNET`
+
+We started refactoring the `Welcome` method in the [previous section]({{<relref "../creating-templates/index.md">}}), but we did not update the return statement.  Currently, `Welcome` is still returning `Content`. 
+
+Update the `Welcome` method by doing the following:
+
+1. Change the return statement of `Welcome` to return a `View` instead of `Content`.
+1. Create a `ViewBag` variable to store the `name` value.  
+  {{% expand "Check your code" %}}
+  ```csharp{linenos=table,linenostart=19}
+  public IActionResult Welcome(string name)
+  {
+    ViewBag.person = name;
+    return View();
+  }
+  ```
+  {{% /expand %}}
+
+1. Make sure to add HTML to the `Welcome` View that will greet a user with the name they provided. 
+  {{% expand "Check your code" %}}
+  ```csharp{linenos=table,linenostart=8}
+  <h1>Welcome, @ViewBag.person!</h1>
+  ```  
+  {{% /expand %}}
+
+    Your `Welcome` method will now pass the value of `ViewBag` to the view.
+
+1. Run `HelloASPDotNET` to see your new views.
+
+
+
+
+
+
+
+
 ## Check Your Understanding
 
 {{% notice green  "Question" "rocket" %}} 

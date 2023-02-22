@@ -26,12 +26,23 @@ In this chapter, you will construct some small practice projects to help you lea
 
 ## Hello Views
 
-Before you start coding, we refactored `HelloController`. Now `Index()` is responding to `GET` requests at `localhost:5001/hello` and `Welcome()` is only responding to `POST` requests at `localhost:5001/hello`. Check out the [views-starter](LINK) branch of the `HelloASPDotNETDemo` repo to see how we refactored our code.
+Before you start coding, we need to refactor `HelloController`. Now `Index()` is responding to `GET` requests at `localhost:5001/hello` and `Welcome()` is only responding to `POST` requests at `localhost:5001/hello`. Check out the code block below to refactor your code.
 
-Open up your `HelloASPDotNET` project in Visual Studio and make sure you have committed any recent changes. Make a new branch and code along with the following video.
+Open up your `HelloASPDotNET` project in Visual Studio and make sure you have committed any recent changes. Make a new branch for creating views and code along with the reading.
 
-<!-- Video for setting up a view was here
-TODO: Possible Time Stamp Reference? -->
+```csharp{linenos=table,hl_lines=[2, 7,8,9],linenostart=13}
+
+[HttpGet]
+public IActionResult Index()
+
+//...code continues
+
+[HttpPost]
+[Route("/hello")]
+public IActionResult Welcome(string name)
+
+//...code continues
+```
 
 ### Controllers Return View Templates
 
@@ -56,11 +67,50 @@ Within `Hello` create a new file of the _Razor View_ file template.
 1. Look in the _ASP.NET Core_ menu for the _Razor View_ or _Razor View - Empty_ option.
 1. Once you have your _Razor View_ or _Razor View - Empty_ selected, name it `Index`.  We are going to name the `Views` after their corresponding action methods for the MVC projects in this course.
 
-Add the HTML form from the `Index()` method to your new template. Once you are done with that, update the `Index()` method to return `View()`.
+Add the HTML form from the `Index()` method to your new template. Make sure to remove any residual C# syntax, like `+` or `"` or `;`.  The form should only be in HTML.
+
+```csharp{linenos=table,hl_lines=[],linenostart=6}
+//inside the Views/Hello/Index.cshtml
+
+<form method='post' action='/hello'>
+    <input type='text' name='name' />
+    <input type='submit' value='Greet Me!' />
+</form>
+
+```
+
+Once you are done with that, update the `Index()` method to return `View()`. 
+
+```csharp{linenos=table,hl_lines=[],linenostart=11}
+
+   [HttpGet]
+   public IActionResult Index()
+   {
+      return View();
+   }
+```
+
 
 ### `_Layout.cshtml`
 
 When you re-render the app now, you’ll notice some additional features and different styling. There is a `_Layout.cshtml` file inside of the `Views/Shared` folder that provides some scaffolding for the application views. You can edit this file once and any other template will also render whatever elements you add to it. This can help give your application a polished, unified look and feel. If you do not want to use this file, adding `@{Layout = null;}` at the top of the template will cause this shared layout template to be ignored.
+
+{{% notice blue "Try it!" "rocket" %}}
+
+Try adding the following code to your `Hello/Index` View.  Run your project and see if anything looks different. 
+
+```csharp{linenos=table,hl_lines=[],linenostart=3}
+//inside the Views/Hello/Index.cshtml
+@{
+   Layout = null;
+}
+
+```
+
+You can remove this after you see what it does.  If you leave this, your `Hello/Index` View may be different than the video walkthrough, but only in appearance.
+
+{{% /notice %}}
+
 
 ## Check Your Understanding
 

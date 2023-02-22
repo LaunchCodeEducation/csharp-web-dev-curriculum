@@ -93,6 +93,25 @@ A conditional statement in a Razor template determines if content is added or no
 
 _Hidden_ content still occupies space on a page and requires some amount of memory. When `@if` evaluates to `false`, content remains absent from the page—requiring neither space on the page nor memory. This is an important consideration when including items like images or videos on your website.
 
+## Try It Out in `HelloASPDotNET`
+
+What happens if a user enters an empty string?  What would happen if `name` was `null`?  It's not pretty.
+
+Use conditional logic to prevent empty strings or null values from making it to the view.  Could you provide a generic or default option in the view?
+
+  {{% expand "Check your code" %}}
+  ```csharp{linenos=table,linenostart=8}
+  @if(ViewBag.person == null || ViewBag.person == "")
+  {
+      <h1>Welcome, World!</h1>
+  }
+  else
+  {
+      <h1>Welcome, @ViewBag.person!</h1>
+  }
+  ```
+  {{% /expand %}}
+
 ## Check Your Understanding
 
 Assume you have a list of integers called `numbers`, and you display the values in an unordered list.

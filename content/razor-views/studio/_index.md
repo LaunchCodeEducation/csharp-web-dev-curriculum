@@ -27,6 +27,10 @@ Fork and clone the [starter code](https://github.com/LaunchCodeEducation/SpaDayS
 
 Once you have the project opened in your IDE, and run it and click the SpaDay link that appears in the upper left of the home page. You should see a small form at the `/Spa` route.
 
+{{< rawhtml >}}
+   <img src="../pictures/startingform.png" alt="screenshot of app running with starter code" width=70% />
+{{< /rawhtml >}}
+
 ##  The Customer Profile
 
 In `Controllers`, we have a controller called `SpaController`. Inside `SpaController` are three methods.
@@ -81,6 +85,14 @@ We want to display a description for the nail service the user selects. Inside t
 ## End Result
 
 After you are done with the studio, you should be able to fill out the form, click “Submit”, and see your profile page.
+
+{{< rawhtml >}}
+   <img src="../pictures/completedform.png" alt="screenshot of app running with starter code" width=70% />
+{{< /rawhtml >}}
+
+{{< rawhtml >}}
+   <img src="../pictures/endresultprofilepage.png" alt="screenshot of app running with starter code"/>
+{{< /rawhtml >}}
 
 ## Bonus Mission
 
