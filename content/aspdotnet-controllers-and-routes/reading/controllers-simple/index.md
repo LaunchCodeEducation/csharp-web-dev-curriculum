@@ -166,8 +166,7 @@ Now when we run our application, we can head over to `localhost:5001/helloworld`
 If we head over to the route that was mapped through conventional routing, `localhost:5001/hello`, we will find a broken page.
 The result is a simple web page with one heading that says "Hello World!".
 
-.. figure:: figures/staticresponseresult.png
-   :alt: Simple webpage resulting from adding a new method to the controller
+   ![Simple webpage resulting from adding a new method to the controller](pictures/staticresponseresult.png)
 
    Our end result!
 
