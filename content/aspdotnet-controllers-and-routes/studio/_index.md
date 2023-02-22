@@ -51,8 +51,7 @@ Inside `SkillsController`, you will add several methods to accomplish the follow
 
 At the end of the studio, when you navigate to `localhost:5001/skills`, you should see the following:
 
-.. figure:: figures/studio-home-page.png
-   :alt: Image showing functioning home page.
+![Image showing functioning home page](pictures/studio-home-page.png)
 
    Skill Tracker app home page.
 
