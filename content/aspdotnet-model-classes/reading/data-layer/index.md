@@ -78,6 +78,8 @@ The result in `Models/Event.cs`:
 
 {{% /notice %}}
 
+<!-- TODO: Generate new Equals method, GetHashcode and update view -->
+
 With these additions, every time a new event object is created it is assigned a unique integer to its `id` field.
 
 ## Create a Data Layer

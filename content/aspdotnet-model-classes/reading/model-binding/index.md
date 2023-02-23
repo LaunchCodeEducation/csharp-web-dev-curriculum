@@ -61,7 +61,7 @@ the create form HTML, we update the form fields to match the event fields.
          Description
          <input type="text" name="description" class="form-control">
       </label>
-    </div>  
+   </div>  
 ```
 
 If a form field name does NOT match up with a model field, then binding will fail for that piece of data. 

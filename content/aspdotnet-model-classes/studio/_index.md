@@ -23,7 +23,7 @@ moved data into a `Client` model and out of the `SpaController` class.
 
 In this studio, we'll ask you to write another model, `User`. `User` and `Client` may at first 
 appear redundant, but in the future as you develop your spa application, you may find a scenario where 
-a user is logging in who is not also `Client`.
+a user is logging in and is not also `Client`.
 
 ## Getting Ready
 
