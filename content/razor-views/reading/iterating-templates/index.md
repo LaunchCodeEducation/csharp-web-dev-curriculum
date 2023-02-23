@@ -162,7 +162,7 @@ Apart from the nested loops displayed above, here are some other items you may f
 
    In some limited circumstances, we can use the **var** keyword to implicitly type a variable. When this keyword is used, C# still assigns a type to `coffeeShop` through inference. It looks and sees that we are assigning `coffeeShop` to the value at the list index, which is a `CoffeeShop` object. Thus, `coffeeShop` is of type `CoffeeShop`.
 
-   Alternatively, Razor does also allow us to import a custom class, such as CoffeeShop. If we wanted to do so, we could import the class or its namespace at the top of the template with a [using]({{<relref "../../../data-types-and-variables/reading/some-csharp-practice/index.md">}}) statement.
+   Alternatively, Razor does also allow us to import a custom class, such as CoffeeShop. If we wanted to do so, we could import the class or its namespace at the top of the template with a [using]({{<relref "../../../data-types-and-variables/reading/some-csharp-practice/#using">}}) statement.
 
 {{% notice orange "Warning" "rocket" %}} 
 

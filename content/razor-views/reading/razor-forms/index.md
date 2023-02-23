@@ -29,7 +29,7 @@ Your new project will keep track of some coding events, such as meetups and conf
 1. In the new controller, create an `Index` action method for `GET` requests.
 
 1. Within the action method, create an empty `List` and add a few event names to it.
-   {{% expand "Check your code" %}}
+   {{% notice blue "Example" "rocket" %}} 
    ```csharp{linenos=table,hl_lines=[],linenostart=13}
 
    [HttpGet]
@@ -41,11 +41,11 @@ Your new project will keep track of some coding events, such as meetups and conf
          //...code continues
    }
    ```
-   {{% /expand %}}
+   {{% /notice %}}
 
 
 1. Add the `List` to `ViewBag`. Then return the corresponding view.
-   {{% expand "Check your code" %}}
+   {{% notice blue "Example" "rocket" %}} 
    ```csharp{linenos=table,hl_lines=[],linenostart=13}
 
    [HttpGet]
@@ -57,12 +57,12 @@ Your new project will keep track of some coding events, such as meetups and conf
    }
 
    ```
-   {{% /expand %}}
+  {{% /notice %}}
 
 1. Within the `Views` directory, create a new directory named Events. Within this directory, create a new view named `Index.cshtml`.
 
 1. Within the new template, loop over the `List` and display the name of each event. 
-   {{% expand "Check your code" %}}
+   {{% notice blue "Example" "rocket" %}} 
    ```csharp{linenos=table,hl_lines=[],linenostart=8}
    <ul>
       @foreach (string e in ViewBag.events)
@@ -71,7 +71,7 @@ Your new project will keep track of some coding events, such as meetups and conf
       }
    </ul>
    ```
-   {{% /expand %}}
+   {{% /notice %}}
 
 ## Create and Render a Form
 A Razor form can be made simply with a template that includes a `<form>` element. The method for the form should be of type `post`.
@@ -113,17 +113,17 @@ To *render* the form in the view, add a method to the controller with an `[HttpG
 1. Create a new View for the `EventsController` called `Add`.
 
 1. Inside the `Add` view, create a form that takes one `input` of `type` text, and has a `name` of "name".  Create a second `input` of `type` "submit" and with a `value` "Add Event".
-   {{% expand "Check your code" %}}
+   {{% notice blue "Example" "rocket" %}} 
    ```csharp{linenos=table,hl_lines=[],linenostart=1}}
    <form method="post">
       <input name="name" type="text" />
       <input type="submit" value="Add Event" />
    </form>
    ```
-   {{% /expand %}}
+   {{% /notice %}}
 
 1. In the `EventsController`, create a new action method called `Add`.
-   {{% expand "Check your code" %}}
+   {{% notice blue "Example" "rocket" %}} 
    ```csharp{linenos=table,hl_lines=[],linenostart=1}
    [HttpGet]
    public IActionResult Add()
@@ -131,7 +131,7 @@ To *render* the form in the view, add a method to the controller with an `[HttpG
       return View();
    }
    ```
-   {{% /expand %}}
+   {{% /notice %}}
 
 ## Handling Form Submission
 
@@ -177,7 +177,7 @@ Then when we build our application, the generated HTML of the page will look lik
 ### Try it in `CodingEvents`
  
 1. In your `EventsController` create an action method called `NewEvent` that redirects users to the `"/Events"`.  This method should be a post request, and use the following route: `"/Events/Add"`.
-   {{% expand "Check your code" %}}
+   {{% notice blue "Example" "rocket" %}} 
    ```csharp{linenos=table,hl_lines=[],linenostart=31}
   [HttpPost]
   public IActionResult NewEvent(string name)
@@ -187,11 +187,11 @@ Then when we build our application, the generated HTML of the page will look lik
      return Redirect("/Events");
   }
    ```
-   {{% /expand %}}
+   {{% /notice %}}
 
 
 1. The `NewEvent` needs to add the any provided arguments to the `Events` list.
-   {{% expand "Check your code" %}}
+   {{% notice blue "Example" "rocket" %}} 
    ```csharp{linenos=table,hl_lines=[],linenostart=31}
   [HttpPost]
   public IActionResult NewEvent(string name)
@@ -201,38 +201,38 @@ Then when we build our application, the generated HTML of the page will look lik
      return Redirect("/Events");
   }
    ```
-   {{% /expand %}}
+   {{% /notice %}}
 
 1. You may have an error with the `Events.Add(name);` in the `NewEvent` action method.  It cannot reach the `Events` List contained in the `Index` method.  Remove the list from the `Index` method.  Instead declare the `Events` list above the `Index` method.  Make sure that it has the correct access modifiers that provide access to elements shared within the `EventsController`.  
-   {{% expand "Check your code" %}}
+   {{% notice blue "Example" "rocket" %}} 
    ```csharp{linenos=table,hl_lines=[],linenostart=13}
    static private List<string> Events = new List<string>();
    ```
-   {{% /expand %}}
+   {{% /notice %}}
 
 
 1. How can users add a New Event to the list?  In the `Events/Index` view, add an anchor tag where the `asp-controller` is set to the `Events` controller and the `asp-action` is set to the `Add` action method.  Make sure a user knows this anchor tag's functionality.
-   {{% expand "Check your code" %}}
+   {{% notice blue "Example" "rocket" %}} 
    ```csharp{linenos=table,hl_lines=[],linenostart=4}
    @* Inside Events/Index View *@
    <p>
       <a asp-controller="Events" asp-action="Add">Add Event</a>
    </p>        
    ```
-   {{% /expand %}}
+   {{% /notice %}}
 
 1. If there are no events in our list, how could we encourage users to add one or more?  Add a conditional to the `Index` view that creates a message only if the `Events` list is empty.
-   {{% expand "Check your code" %}}
+   {{% notice blue "Example" "rocket" %}} 
    ```csharp{linenos=table,hl_lines=[],linenostart=13}
    @if(ViewBag.events.Count == 0)
    {
          <p>No events yet!</p>
    }      
    ```
-   {{% /expand %}}
+   {{% /notice %}}
 
 Users can now click on the link on our page at `localhost:5001/Events` and are directed to the form to add an event. Once they hit the button to submit the form, the data is passed to the `NewEvent()` method, the user’s event is added to the `Events` list, and the application redirects back to `localhost:5001/Events` where an updated `Events` list is displayed.
 
 {{% notice blue Note "rocket" %}}
-There is a [walkthrough]({{<relref "../view-form-walkthrough/index.md">}}) of these steps before the exercises.
+You can compare your code to the chapter's [walkthrough]({{<relref "../view-form-walkthrough/index.md">}}).
 {{% /notice %}}

@@ -14,12 +14,13 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 Welcome to the Walkthrough for creating and using templates in your `HelloASPDotNET` project.  
 
+
 You will find a video walkthrough of the steps covered in the reading.  Time stamps have been added to highlight the topics covered so far and their locations in the reading.
 
-Topics Covered:
+The following topics are covered in the walkthrough:
 - creating a Razor template (View)
-- Home Views and HomeController
-- Shared Directory and _Layout.cshtml 
+- Home Views and `HomeController`
+- Shared Directory and `_Layout.cshtml` 
 - Refactor `Index` method to return a View instead of HTML
 - Create `Index` View
 - Refactor `Welcome` method to return a View instead of HTML
@@ -27,7 +28,7 @@ Topics Covered:
 - Use `Viewbag`
 - Use an conditional to make the view dynamic
 
-## VIDEO WALKTHROUGH
+## Video Walkthrough
 {{< youtube ExCSx2x0mAM >}} 
 
 <!-- TODO: Link to chapter 10 video -->
