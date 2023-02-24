@@ -34,9 +34,9 @@ To browse available NuGet packages:
 
 The following documentation can help you become more familiar with downloading and managing NuGet packages.
 
-**Windows Users:** [Follow this guide](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio).
+[**Windows Users: Follow this guide.**](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio).
 
-**Mac Users:** [Use this guide](https://learn.microsoft.com/en-us/visualstudio/mac/nuget-walkthrough?toc=%2Fnuget%2Ftoc.json&view=vsmac-2022).
+[**Mac Users: Follow this guide.**](https://learn.microsoft.com/en-us/visualstudio/mac/nuget-walkthrough?toc=%2Fnuget%2Ftoc.json&view=vsmac-2022).
 
 ## Check Your Understanding
 
