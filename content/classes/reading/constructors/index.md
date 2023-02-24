@@ -143,12 +143,10 @@ A better way to write the above constructors would be this:
 
 {{% /notice %}}
 
-<!-- TODO: Add link to inheritance -->
-
 In the example above on line 17, we use `: this()` to invoke another
 constructor within the same class. In this case, the second constructor calls
 the first with default values for `numberOfCredits` and `gpa`. We haven't seen
-this syntax before but we'll discuss it more in inheritance.
+this syntax before but we'll discuss it more in [inheritance]({{< relref "../../../inheritance" >}}).
 
 This is a good practice not only because it makes your code
 shorter, but also because it allows any initialization behavior that may
