@@ -14,7 +14,19 @@ lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Learning Objectives
 
+After completing this chapter, you should be able to do the following:
+1. Scaffold Identity into an existing project
+1. Authenticate users that visit your application
+1. Attach permissions to users of your application
+
 ## Major Concepts & Key Terminology
+
+1. Authentication
+1. Authorization
+1. Sessions
+1. Cookies
+1. Identity
+1. Hashing
 
 ## Content Links
 
