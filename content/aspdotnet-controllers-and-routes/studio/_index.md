@@ -51,21 +51,21 @@ Inside `SkillsController`, you will add several methods to accomplish the follow
 
 At the end of the studio, when you navigate to `localhost:5001/skills`, you should see the following:
 
-![Image showing functioning home page](pictures/studio-home-page.png)
-
-   Skill Tracker app home page.
+{{< rawhtml >}}
+   <img src="pictures/studio-home-page.png" alt="Skill Tracker app home page" width="80%" />
+{{< /rawhtml>}}
 
 When you navigate to `localhost:5001/skills/form`, you should see a blank form that looks something like: 
 
-![Image showing the blank form](pictures/blank-studio-form.png)
-
-   Skill Tracker app blank skill form.
+{{< rawhtml >}}
+   <img src="pictures/blank-studio-form.png" alt="Skill Tracker app blank skill form" width="80%" />
+{{< /rawhtml>}}
 
 If you fill out the form, your page may render like so:
 
-![Image showing the web page with information from the completed form](pictures/completed-studio-form.png)
-
-   Skill Tracker app result of skill form submission.
+{{< rawhtml >}}
+   <img src="pictures/completed-studio-form.png" alt="Skill Tracker app result of skill form submission" width="80%" />
+{{< /rawhtml>}}
 
 ## Bonus Missions
 
