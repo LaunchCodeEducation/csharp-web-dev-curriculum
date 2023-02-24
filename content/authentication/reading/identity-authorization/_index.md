@@ -12,73 +12,62 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-Identity and Authorization
-==========================
+<!-- TODO: Update below repo links inside of note with correct links once they are available. -->
+{{% notice blue "Note" "rocket" %}}
+Try and code along as you read more about Identity!
 
-.. admonition:: Note
+This page starts off with the code in the [identity-config](https://github.com/LaunchCodeEducation/CodingEventsDemo/tree/identity-config) branch in `CodingEventsDemo`.
 
-   Try and code along as you read more about Identity!
-   This page starts off with the code in the `identity-config <https://github.com/LaunchCodeEducation/CodingEventsDemo/tree/identity-config>`__ branch in ``CodingEventsDemo``.
-   The final code for this page is in the `authorization <https://github.com/LaunchCodeEducation/CodingEventsDemo/tree/authorization>`__ branch in ``CodingEventsDemo``.
+The final code for this page is in the [authorization](https://github.com/LaunchCodeEducation/CodingEventsDemo/tree/authorization) branch in `CodingEventsDemo`.
+{{% /notice %}}
 
-While this chapter is focused on authentication, you may find yourself wanting
-to use Identity to limit pages to logged-in users. Authorization allows us to
-restrict access to pages by allowing only logged in users to see them. While
-this can be a very complex process, ``ASP.NET`` has two simple attributes that
-allow us to restrict access to pages to only logged in users.
+While this chapter is focused on authentication, you may find yourself wanting to use Identity to limit pages to logged-in users Authorization allows us to restrict access to pages by allowing only logged in users to see them. While this can be a very complex process, `ASP.NET` has two simple attributes that allow us to restrict access to pages to only logged in users.
 
-``[Authorize]`` is an attribute that limits access to content to only logged in users.
-``[Authorize]`` can be used for a specific method or a whole controller.
+`[Authorize]` is an attribute that limits access to content to only logged in users.
+`[Authorize]` can be used for a specific method or a whole controller.
 
-``[AllowAnonymous]`` is an attribute that allows *any* viewer to access content.
-This is the default state, so ``[AllowAnonymous]`` is oftentimes used in conjunction with ``[Authorize]``.
+`[AllowAnonymous]` is an attribute that allows *any* viewer to access content.
+This is the default state, so `[AllowAnonymous]` is oftentimes used in conjunction with `[Authorize]`.
 
-In ``CodingEvents``, we may only want to allow logged-in users to add an event.
-We can add ``[Authorize]`` at the controller level to prevent any anonymous
-users from accessing those pages.
+In `CodingEvents`, we may only want to allow logged-in users to add an event. We can add `[Authorize]` at the controller level to prevent any anonymous users from accessing those pages.
 
-.. sourcecode:: csharp
-   :lineno-start: 16
+```csharp {linenos=table}
+[Authorize]
+public class EventsController : Controller
+{
+    // Controller code here!
+}
+```
 
-   [Authorize]
-   public class EventsController : Controller
-   {
-      // Controller code here!
-   }
+Why do this? Because giving all users the ability to add, edit, or delete events can cause trouble.
 
-Why do this? Because giving all users the ability to add, edit, or delete
-events can cause trouble.
+However, we do want to give all users the ability to view the events. That is where `[AllowAnonymous]` comes in. We can update the controller so that the `Index` view is accessible to everyone like so:
 
-However, we do want to give all users the ability to view the events. That is
-where ``[AllowAnonymous]`` comes in. We can update the controller so that the
-``Index`` view is accessible to everyone like so:
+```csharp {linenos=table}
+[Authorize]
+public class EventsController : Controller
+{
 
-.. sourcecode:: csharp
-   :lineno-start: 16
+    private EventDbContext context;
 
-   [Authorize]
-    public class EventsController : Controller
+    public EventsController(EventDbContext dbContext)
     {
-
-        private EventDbContext context;
-
-        public EventsController(EventDbContext dbContext)
-        {
-            context = dbContext;
-        }
-
-        [AllowAnonymous]
-        // GET: /<controller>/
-        public IActionResult Index()
-        {
-            List<Event> events = context.Events
-                .Include(e => e.Category)
-                .ToList();
-
-            return View(events);
-        }
-
-        // Other action methods here!
+        context = dbContext;
     }
+
+    [AllowAnonymous]
+    // GET: /<controller>/
+    public IActionResult Index()
+    {
+        List<Event> events = context.Events
+            .Include(e => e.Category)
+            .ToList();
+
+        return View(events);
+    }
+
+    // Other action methods here!
+}
+```
 
 Now every user can see available events, but only logged-in users can add, edit, or delete events!
