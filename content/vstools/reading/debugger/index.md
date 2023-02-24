@@ -5,14 +5,20 @@ draft: false
 weight: 3
 originalAuthor: Sally Steuterman # to be set by page creator
 originalAuthorGitHub: gildedgardenia # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 Some of the features that you will find yourself leaning on the most as you further your career in tech is the Visual Studio debugging tools.
+
+{{% notice blue "Note" "rocket" %}}
+
+The links for each debugging feature below are for Windows users. Mac users will find that Visual Studio for Mac has the same exact features, but those features may look slighlty different or be in a slightly different location. We have provided some extra tips for Mac users at the end in case you haven't been able to locate these tools in your copy of Visual Studio for Mac.
+
+{{% /notice %}}
 
 Open up your [examples repo](https://github.com/LaunchCodeEducation/csharp-web-dev-examples) and find the `HelloMethods` project. Read through each item, make note of how the debugging tools work for each item, and practice using the tool on `HelloMethods`:
 
@@ -42,7 +48,7 @@ Open up your [examples repo](https://github.com/LaunchCodeEducation/csharp-web-d
 1. To add conditions to a breakpoint, right click on the breakpoint and select *Edit Breakpoint*. From 
    menu that opens, use the *Advanced Conditions* section to set your conditions for when you want the 
    breakpoint to be executed.
-1. For more information on using the Debugger in Visual Studio for Mac, check out this [guide](https://learn.microsoft.com/en-us/visualstudio/debugger/using-breakpoints?view=vs-2022).
+1. For more information on using the Debugger in Visual Studio for Mac, check out this [guide](https://learn.microsoft.com/en-us/visualstudio/mac/debugging?view=vsmac-2022).
 
 ## Check Your Understanding
 
