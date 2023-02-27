@@ -14,7 +14,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 Add functionality to edit event objects in your `CodingEvents` application. 
 These exercises assume that you have added all of the code from this section of the book and your 
-application resembles the [models branch](https://github.com/LaunchCodeEducation/CodingEventsDemo/tree/model-binding).
+application resembles the [models branch](https://github.com/LaunchCodeEducation/CodingEvents/tree/models).
 
 The edit form will resemble the form used to create an event.
 
@@ -53,12 +53,30 @@ The edit form will resemble the form used to create an event.
 
    {{% expand "Check your solution" %}}
 
+   ```csharp {linenos=table}
+   [HttpPost]
+   [Route("Events/Edit")]
+   public IActionResult SubmitEditEventForm(int eventId, string name, string description)
+   {
+      // controller code will go here
+   }
+   ```
+
    {{% /expand %}}
 
 1. You’ll need to configure the route for `Edit()` to include the path variable `eventId`, 
    so that paths like `/Events/Edit/3` will work.
 
    {{% expand "Check your solution" %}}
+
+   ```csharp {linenos=table}
+   [HttpPost]
+   [Route("Events/Edit/{eventId}")]
+   public IActionResult Edit(int eventId)
+   {
+      // controller code will go here
+   }
+   ```
 
    {{% /expand %}}
 
@@ -69,6 +87,22 @@ The edit form will resemble the form used to create an event.
    1. You'll want to update the text of the submit button and the heading to reflect the edit functionality.
 
    {{% expand "Check your solution" %}}
+
+   ```html {linenos = table}
+   <h1>Edit Event</h1>
+
+   <form method="post">
+      <div class="form-group">
+         <label for="name">Name</label>
+         <input name="name" type="text" />
+      </div>
+      <div class="form-group">
+         <label for="description">Description</label>
+         <input name="description" />
+      </div>
+      <input type="submit" value="Edit Event" />
+   </form>
+   ```
 
    {{% /expand %}}
 
@@ -82,6 +116,17 @@ The edit form will resemble the form used to create an event.
 
    {{% expand "Check your solution" %}}
 
+   ```csharp {linenos = table}
+   [HttpGet]
+   [Route("Events/Edit/{eventId}")]
+   public IActionResult Edit(int eventId)
+   {
+      Event editingEvent = EventData.GetById(eventId);
+      ViewBag.eventToEdit = editingEvent;
+      return View();
+   }
+   ```
+
    {{% /expand %}}
 
 1. Within the form fields in `Edit.cshtml`, 
@@ -91,9 +136,26 @@ The edit form will resemble the form used to create an event.
    
    1. Add `action="/events/edit"` to the `form` tag.
 
-      {{% expand "Check your solution" %}}
+   {{% expand "Check your solution" %}}
 
-      {{% /expand %}}
+   ```html {linenos = table}
+   <h1>@ViewBag.title</h1>
+
+   <form method="post" action="/events/edit">
+      <div class="form-group">
+         <label for="name">Name</label>
+         <input name="name" type="text" value="@ViewBag.eventToEdit.Name"/>
+      </div>
+      <div class="form-group">
+         <label for="description">Description</label>
+         <input name="description" type="text" value="@ViewBag.eventToEdit.Description" />
+      </div>
+      <input type="submit" value="Edit Event" />
+
+   </form>
+   ```
+
+   {{% /expand %}}
 
 1. Add another input to hold the id of the event being edited. This
    should be hidden from the user:
@@ -111,6 +173,14 @@ The edit form will resemble the form used to create an event.
 
    {{% expand "Check your solution" %}}
 
+   ```html {linenos = table}
+   <!-- description div code here -->
+      </div>
+      <input type="hidden" value="@ViewBag.eventToEdit.Id" name="eventId">
+      <input type="submit" value="Edit Event" />
+   </form>
+   ```
+
    {{% /expand %}}
 
 1. Back in the `Edit()` action method, add a title to `ViewBag` that reads `“Edit Event
@@ -118,6 +188,18 @@ The edit form will resemble the form used to create an event.
    given event. 
 
    {{% expand "Check your solution" %}}
+
+   ```csharp {linenos = table}
+   [HttpGet]
+   [Route("Events/Edit/{eventId}")]
+   public IActionResult Edit(int eventId)
+   {
+      Event editingEvent = EventData.GetById(eventId);
+      ViewBag.eventToEdit = editingEvent;
+      ViewBag.title = "Edit Event " + editingEvent.Name + "(id = " + editingEvent.Id + ")";
+      return View();
+   }
+   ```
 
    {{% /expand %}}
 
@@ -130,6 +212,18 @@ The edit form will resemble the form used to create an event.
    1. Redirect the user to `/Events` (the event listing page).
 
    {{% expand "Check your solution" %}}
+
+   ```csharp {linenos = table}
+   [HttpPost]
+   [Route("Events/Edit")]
+   public IActionResult SubmitEditEventForm(int eventId, string name, string description)
+   {
+      Event editingEvent = EventData.GetById(eventId);
+      editingEvent.Name = name;
+      editingEvent.Description = description;
+      return Redirect("/Events");
+   }
+   ```
 
    {{% /expand %}}
 
@@ -152,5 +246,18 @@ The edit form will resemble the form used to create an event.
       ```
 
    {{% expand "Check your solution" %}}
+
+   ```html {linenos = table}
+    @foreach (var evt in ViewBag.events)
+      {
+         <tr>
+            <td>@evt.Id</td>
+            <td>@evt.Name</td>
+            <td>@evt.Description</td>
+            <td><a asp-controller="Events" asp-action="Edit" asp-route-id="@evt.Id">Edit Event</a></td>
+         </tr>
+      }
+   </table>
+   ```
 
    {{% /expand %}}
