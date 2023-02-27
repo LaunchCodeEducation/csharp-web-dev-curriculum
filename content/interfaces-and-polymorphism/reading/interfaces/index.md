@@ -49,12 +49,10 @@ interface, `IFeedable`. "I" for interface, of course! More on this name below.
 
 In the code above, notice the following:
 
-<!-- TODO: Add link back to access modifier table -->
-
 1. We need to use the `interface` keyword to define our interface, `IFeedable`.
 1. `Eat` only has a signature. We only provide a body for methods defined 
    in interfaces in special circumstances, defined below under *Default Methods*.
-1. `Eat` also does not have an access modifier. Interface members are `public` by default and it's
+1. `Eat` also does not have an [access modifier]({{< relref "../../../classes/reading/modifiers/index.html#access-modifiers" >}}). Interface members are `public` by default and it's
    best practice to keep them public.
 1. The `IFeedable` interface itself is declared `public`, which means any other class may 
    use it. We may also leave off `public`, making the interface `protected internal`, or 
@@ -125,9 +123,7 @@ Since we’ve declared that `Cat` implements `IFeedable`, we have to
 provide an implementation for the `Eat` method, with the signature as
 specified in the interface definition. 
 
-<!-- TODO: Add link to method overriding in inheritance -->
-
-Note the absence of the `virtual` and `override` keywords we used in inheritance. The class is 
+Note the absence of the `virtual` and `override` keywords we used in [inheritance]({{< relref "../../../inheritance/reading/cats-inheritance/index.html#override" >}}). The class is 
 *implementing* the interface, rather than extending it so different method rules apply. 
 
 {{% notice blue "Note" "rocket" %}}

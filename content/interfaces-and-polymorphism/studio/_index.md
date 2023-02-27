@@ -33,9 +33,7 @@ extending a base class and implementing your interface. Before you do this,
 however, you need to consider what code to place in the interface vs. the
 abstract class vs. each specific class.
 
-<!-- TODO: Add link to classes studio -->
-
-Just like you did with your Restaurant Menu studios, you will begin with pen
+Just like you did with your [Restaurant Menu studios]({{< relref "../../classes/studio" >}}), you will begin with pen
 and paper (or similar tools).
 
 ## Consider Generic Behaviors

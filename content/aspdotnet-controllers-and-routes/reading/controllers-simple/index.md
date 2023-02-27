@@ -55,8 +55,6 @@ provides us with the necessary members and methods to manage traffic between the
 
 ### Controllers Map to Requests
 
-<!-- TODO: Add link back to unit testing -->
-
 Controllers need to handle HTTP requests coming in and routes are a key component of that process.
 ASP.NET MVC has two different ways to map these routes: conventional routing and attribute routing.
 **Conventional routing** establishes the routes as endpoints in one of the application's configuration files.
@@ -121,11 +119,9 @@ But for now, let's run the app and navigate to `localhost:5001/hello` to check o
 
 {{% /notice %}}
 
-<!-- TODO: Add link to unit testing chapter -->
-
 We also want to make use of attribute routing in our new `HelloController`.
 To do so, we can add attributes to our `Index()` method.
-As you may recall from the chapter on unit testing, attributes in C# lie somewhere between code and comments.
+As you may recall from the chapter on [unit testing]({{< relref "../../../unit-testing/reading/mstest/index.html#c-attributes" >}}), attributes in C# lie somewhere between code and comments.
 While an attribute cannot change the code inside the method or class, an attribute in attribute routing does supply critical information about routes and request types.
 Attribute routing is powerful because it does not depend on any endpoint mapping info in `Program.cs`, can defy the pattern established by conventional routing, and specify one request type for a method to respond to.
   
