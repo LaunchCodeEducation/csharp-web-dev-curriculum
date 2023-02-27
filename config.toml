@@ -3,5 +3,7 @@ languageCode = 'en-us'
 title = 'C# Web Development'
 theme = "hugo-theme-relearn"
 
+canonifyURLs = true
+
 [params]
   themeVariant = ["lc-light", "lc-dark-blue", "lc-dark-blue-two"]
