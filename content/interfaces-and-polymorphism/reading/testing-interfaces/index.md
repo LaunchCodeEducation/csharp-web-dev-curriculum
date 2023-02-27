@@ -14,9 +14,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 After all that we have learned about interfaces, perhaps you are wondering, *how do I write my unit tests with interfaces?*
 
-<!-- TODO: Add link back to testing inheritance -->
-
-The best practices to testing interfaces are very similar to those of testing inheritance. You want to focus on testing the contract 
+The best practices to testing interfaces are very similar to those of [testing inheritance]({{< relref "../../../inheritance/reading/testing-inheritance/index.html" >}}). You want to focus on testing the contract 
 that the interface is supposed to be upholding as opposed to the interface itself.
 
 {{% notice blue "Example" "rocket" %}}
