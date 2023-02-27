@@ -56,8 +56,8 @@ To apply the validation rules of the example on the previous page to the fields 
    public string Password { get; set; }
    ```
 {{% /notice %}}
-<!-- TODO: Link to next page -->
-We will see how to ensure these error messages are properly displayed in the next section, Validating Models in a Controller.
+
+We will see how to ensure these error messages are properly displayed in the next section, [Validating Models in a Controller]({{< relref "../controller-validation/" >}}).
 
 ## Applying Validation Attributes
 

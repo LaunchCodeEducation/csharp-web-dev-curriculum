@@ -13,13 +13,11 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 
-<!-- TODO: Link back to the previous studio -->
-We’ll build on the [User Signup](LINK) studio from last class, adding in model validation.
+We’ll build on the [User Signup](https://github.com/LaunchCodeEducation/SpaDayStudio6/tree/user-signup-starter) studio from last class, adding in model validation.
 
 ## Getting Started
 
-<!-- TODO: Link  -->
-Open up your SpaDay application and checkout the [user-signup-pt2 branch](LINK).
+Open up your SpaDay application and checkout the [user-signup-pt2 branch](https://github.com/LaunchCodeEducation/SpaDayStudio6/tree/user-validation).
 
 ## Creating a New ViewModel
 
