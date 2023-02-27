@@ -2,7 +2,7 @@
 title: "Control Flow & Collections"
 date: 2023-01-25T13:44:27-06:00
 draft: false
-weight: 1
+weight: 3
 originalAuthor: <no value> # to be set by page creator
 originalAuthorGitHub: <no value> # to be set by page creator
 reviewer: # to be set by the page reviewer
@@ -29,16 +29,37 @@ After completing this chapter, you should be able to do the following:
 Throughout this lesson, you will see lots of new vocabulary. Here is everything that you should make note of:
 
 ### Conditionals
-- `==`, `!=`, `<`, `>`, `<=`, `>=`, `if` , `else`, `if else`, `else if`, `switch`, `case`, `break`, `default`, fallthrough
+1. `==`
+1. `!=`
+1. `<`
+1. `>`
+1. `<=`
+1. `>=`
+1. `if`
+1. `else`
+1. `if else`
+1. `else if`
+1. `switch`
+1. `case`
+1. `break`
+1. `default`
+1. fallthrough
 
 ### Loops
-- `for` loop, `foreach` loop, `in`, `while` loop, `do-while` loop, `continue`, `StringBuilder`
+1. `for` loop
+1. `foreach` loop
+1. `in`
+1. `while` loop
+1. `do-while` loop
+1. `continue`
+1. `StringBuilder`
 
 ### Collctions
-- data structure, `List`, `Dictionary`, `KeyValuePair`, `Array`
-
-
-
+1. data structure
+1. `List`
+1. `Dictionary`
+1. `KeyValuePair`
+1. `Array`
 
 ## Table of Contents
 

@@ -7,9 +7,9 @@ originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer
 reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
-lastEditor: Courtney Frey # update any time edits are made after review
-lastEditorGitHub: speudusa # update any time edits are made after review
-lastMod: 2023-08-02 # UPDATE ANY TIME CHANGES ARE MADE
+lastEditor: # update any time edits are made after review
+lastEditorGitHub: # update any time edits are made after review
+lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 Every class has a few special methods that belong to it, regardless of whether or not we define them. Exactly how every class obtains these methods will be explored in a future lesson. For now, let’s look at two important examples of these methods.
@@ -55,8 +55,7 @@ Console.WriteLine(person);
 
 ## The `Equals` Method
 
-<!-- TODO: Link to chapter 2 Class Types-->
-Suppose we have two objects of type `Student`, say `student1` and `student2`, and we want to determine if the two are equal. If we try to compare the objects using `==`, we will likely get a result we did not expect. This is because `student1` and `student2` are [reference variables](LINK), which means they hold a reference to, or the *address* of, the actual `Student` objects. `student1` and `student2` evaluate as equal only when they have the same memory address.
+Suppose we have two objects of type `Student`, say `student1` and `student2`, and we want to determine if the two are equal. If we try to compare the objects using `==`, we will likely get a result we did not expect. This is because `student1` and `student2` are [reference variables]({{< relref "../../../data-types-and-variables/reading/data-types/index.md" >}}), which means they hold a reference to, or the *address* of, the actual `Student` objects. `student1` and `student2` evaluate as equal only when they have the same memory address.
 
 To state that again: `student1` and `student2` will be equal (`==`) only when they refer to, or point at, the exact same object. Consider the example below, which creates two `Student` objects:
 

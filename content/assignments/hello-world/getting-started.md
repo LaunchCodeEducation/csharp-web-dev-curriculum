@@ -3,13 +3,13 @@ title: "Task 1: Getting Started"
 date: 2023-01-05T09:57:32-06:00
 draft: false
 weight: 1
-originalAuthor: Courtney Frey  # to be set by page creator
+originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
-reviewer: Kimberly # to be set by the page reviewer
+reviewer: Kimberly Horan # to be set by the page reviewer
 reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
-lastEditor: Courtney # update any time edits are made after review
-lastEditorGitHub: speudusa # update any time edits are made after review
-lastMod: 2023-13-02
+lastEditor: # update any time edits are made after review
+lastEditorGitHub: # update any time edits are made after review
+lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 
