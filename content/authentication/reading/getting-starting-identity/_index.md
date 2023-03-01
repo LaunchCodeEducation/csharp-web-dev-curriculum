@@ -23,8 +23,8 @@ The process of adding Identity to an existing code base is called **scaffolding*
 {{% notice blue "Note" "rocket" %}}
 Try and code along as you read more about Identity!
 <!-- TODO: Need to link proper repos to the below topics -->
-This page starts off with the code in the [Branch](Insert Repo Link here).
-The final code for this page is in the [Branch](Insert Repo Link here).
+This page starts off with the code in the [orm2 branch](https://github.com/LaunchCodeEducation/CodingEvents/tree/orm2) of the [CodingEvents](https://github.com/LaunchCodeEducation/CodingEvents) repository. 
+The final code for this page is in the [authentication branch](https://github.com/gildedgardenia/CodingEvents/) of the [CodingEvents](https://github.com/LaunchCodeEducation/CodingEvents) repository.
 {{% /notice %}}
 
 ## Before You Start
@@ -82,7 +82,7 @@ You can install these packages using the NuGet package manager or the [.NET Core
 Below you will find examples of how to install them using the `.NET Core CLI`
 
 {{% notice blue "Note" "rocket" %}}
-Make sure to execture the following commands within your project directory *inside* of the solution.
+Make sure to execute the following commands within your project directory *inside* of the solution.
 {{% /notice %}}
 
 When installing these packages, make sure that the versions are the same as the .NET Core version your project is using. You can confirm this is the case by reviewing the code in your `csproj` file. The below examples are all using `dotnet 6`
@@ -124,7 +124,7 @@ In both Visual Studio for Mac and Visual Studio for Windows, you have the option
 1. From the menu, select *Identity*.
 
 {{% notice blue "Note" "rocket" %}}
-This approach is the simpler of the two approaches. However, for some Mac users, you may not find Identity as an option when you use this approach. If that is the case, use the terminal method.
+This approach is the simpler of the two approaches. However, for some Mac users, you may not find Identity as an option when you use this approach. If that is the case, use the cli method.
 {{% /notice %}}
 
 ### Adding Identity through the Command Line
@@ -202,8 +202,7 @@ If you tried to run the application right now, you would encounter some build er
 In order to use Identity, we need to change what `EventDbContext` extends. Currently, it extends `DbContext`. Let's change that to `IdentityDbContext` like so:
 
 ```csharp
-public class EventDbContext: IdentityDbContext<IdentityUser, IdentityRole, string>
-
+public class EventDbContext : IdentityDbContext<IdentityUser, IdentityRole, string>
 ```
 
 We also need to add an additional line to ``OnModelCreating()``:
@@ -215,34 +214,46 @@ base.OnModelCreating(modelBuilder);
 With these changes made, `EventDbContext` will look like the following:    
 
 ```csharp {linenos=table}
-public class EventDbContext : IdentityDbContext<IdentityUser>
+using CodingEvents.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
+namespace CodingEvents.Data
 {
-      public DbSet<Event> Events { get; set; }
-      public DbSet<EventCategory> Categories { get; set; }
-      public DbSet<Tag> Tags { get; set; }
-      public DbSet<EventTag> EventTags { get; set; }
+    public class EventDbContext : IdentityDbContext<IdentityUser, IdentityRole, string>
+    {
+        public DbSet<Event> Events { get; set; }
 
-      public EventDbContext(DbContextOptions<EventDbContext> options)
-         : base(options)
-      {
-      }
+        public DbSet<EventCategory> Categories { get; set; }
 
-      protected override void OnModelCreating(ModelBuilder modelBuilder)
-      {
-         //May not need this line depending on the project we use for this chapter
-         // modelBuilder.Entity<EventTag>().HasKey(et => new { et.EventId, et.TagId });
+        public DbSet<Tag> Tags { get; set; }
 
-         base.OnModelCreating(modelBuilder);
-      }
+        public EventDbContext(DbContextOptions<EventDbContext> options) : base(options)
+        {
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Event>()
+                .HasOne(p => p.Category)
+                .WithMany(b => b.events);
+
+            modelBuilder.Entity<Event>()
+                .HasMany(p => p.Tags)
+                .WithMany(p => p.Events)
+                .UsingEntity(j => j.ToTable("EventTags"));
+            base.OnModelCreating(modelBuilder);
+        }
+    }
 }
 ```
 
 You may note that we didn't add any `DbSet` for `IdentityUser` like we did for other models in the application. This is not an oversight! With `EventDbContext` properly set up, we can run a migration and the database will add the appropriate tables for our authentication data.
 
-Add the following lines to your `Program.cs` file:
+Add the following line to your `Program.cs` file:
 
 ```csharp
-builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 ```
 
@@ -263,10 +274,9 @@ builder.Services.AddDefaultIdentity<IdentityUser>
 }).AddEntityFrameworkStores<EventDbContext>();
 ```
 
-You will also need to add a few lines of code below `app.UseAuthorization();`
+You will also need to add a couple lines of code below `app.UseAuthorization();`
 
 ```csharp
-app.UseAuthentication();
 app.MapRazorPages();
 app.MapControllers();
 ```
@@ -274,6 +284,20 @@ app.MapControllers();
 `app.MapRazorPages();` specifies to the app that the Identity pages should follow the routing laid out in `_LoginPartial.cshtml`.
 
 These initial steps were to make sure that the application is still using `EventDbContext` for its connection to the database now that we have added Identity. However, if you take a look inside the `Areas/Identity/Data` directory, you will find a file also called `EventDbContext`. Delete that generated file and continue to use the one we initially created for `CodingEvents`.
+
+You will also need to remove the following line from your `Program.cs` file:
+
+```csharp
+using CodingEvents.Areas.Identity.Data;
+```
+
+The CodingEvents application already has a connection string in addition to using our builder to add database context configured. Since we also configured our own default `identity` user earlier in the walkthrough we can also safely remove that as well. You will need to remove the following lines of code from your `Program.cs` file that were generated when adding our identity scaffolding:
+
+```csharp {linenos=table}
+var connectionString = builder.Configuration.GetConnectionString("EventDbContextConnection");builder.Services.AddDbContext<EventDbContext>(options =>
+    options.UseSqlServer(connectionString));builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<EventDbContext>();
+```
 
 {{% notice blue "Note" "rocket" %}}
 If you do not delete the above file you will most likely receive warnings about having two Database Context classes.
@@ -329,15 +353,29 @@ This partial view can be placed anywhere you need it, but we recommend starting 
 
 Add the above line of code to the following code block:
 
-```html {linenos=table, hl_lines=[2]}
-<div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-   <partial name="_LoginPartial" />
+```html {linenos=table, hl_lines=[22]}
+ <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
    <ul class="navbar-nav flex-grow-1">
       <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Add">Add Job</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="Index">All Events</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="Add">Add Event</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="EventCategory" asp-action="Index">All Event Categories</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="EventCategory" asp-action="Create">Add Category</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Tag" asp-action="Index">All Tags</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Tag" asp-action="Add">Add Tag</a>
       </li>
    </ul>
-</div>
+   <partial name="_LoginPartial" />
 ```
 
 ### Final Steps
