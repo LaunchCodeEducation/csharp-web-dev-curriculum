@@ -5,8 +5,8 @@ draft: false
 weight: 3
 originalAuthor: Sally Steuterman # to be set by page creator
 originalAuthorGitHub: gildedgardenia # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
@@ -78,7 +78,21 @@ The result in `Models/Event.cs`:
 
 {{% /notice %}}
 
-<!-- TODO: Generate new Equals method, GetHashcode and update view -->
+You will also need to override the `Equals()` method and the `GetHashCode()` method to use the `Id` property.
+
+```csharp {linenos = table}
+   public override bool Equals(object? obj)
+   {
+      return obj is Event @event && Id == @event.Id;
+   }
+
+   public override int GetHashCode()
+   {
+      return HashCode.Combine(Id);
+   }
+```
+
+Finally, try to update the `Events/Index.cshtml` view to display the value of `Id` in the table of events.
 
 With these additions, every time a new event object is created it is assigned a unique integer to its `id` field.
 

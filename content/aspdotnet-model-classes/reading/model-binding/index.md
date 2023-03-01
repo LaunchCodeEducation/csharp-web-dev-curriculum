@@ -5,8 +5,8 @@ draft: false
 weight: 4
 originalAuthor: Sally Steuterman # to be set by page creator
 originalAuthorGitHub: gildedgardenia # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
+reviewer: Kimberly Horan # to be set by the page reviewer
+reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
@@ -28,7 +28,17 @@ When submitting new event information, rather than passing in each field used to
 instantiate a model, we can instead pass in `Event newEvent` as a parameter 
 of the controller method. 
 
-Revised `NewEvent` method in `EventsController`:
+First, we need to add a parameterless constructor to `Event`:
+
+```csharp {linenos=table}
+   public Event()
+   {
+      Id = nextId;
+      nextId++;
+   }
+```
+
+Then, we can revise the `NewEvent()` method in `EventsController`:
 
 ```csharp {linenos = table, linenostart = 29}
    [HttpPost]
