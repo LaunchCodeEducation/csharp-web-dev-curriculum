@@ -14,15 +14,6 @@ lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 
 With Identity in place, we can start to configure the settings of the library to meet our authentication requirements. The first place to start with configuring Identity to fit the needs of the project is in `Program.cs`.
 
-<!-- TODO: Add proper github repo links to the below sections -->
-{{% notice blue "Note" "rocket" %}}
-Try and code along as you read more about Identity!
-This page starts off with the code in the [identity-scaffolding](https://github.com/LaunchCodeEducation/CodingEventsDemo/tree/identity-scaffolding) branch in `CodingEventsDemo`.
-The final code for this page is in the [identity-config](https://github.com/LaunchCodeEducation/CodingEventsDemo/tree/identity-config) branch in `CodingEventsDemo`.
-If you are looking for an additional walkthrough, check out this [article](https://learn.microsoft.com/en-us/aspnet/core/security/authentication/customize-identity-model?source=recommendations&view=aspnetcore-6.0) from Microsoft.
-{{% /notice %}}
-
-
 ## `Program.cs`
 
 Now that we are getting to configure our user, let's check out the code in `Program.cs`. Earlier you may have added the following:
@@ -39,14 +30,12 @@ builder.Services.AddDefaultIdentity<IdentityUser>
    options.Password.RequireLowercase = false;
 }).AddEntityFrameworkStores<EventDbContext>();
 ```
+
 This code is dictating the settings for account creation. Right now, for a user to create an account, they have to have the following:
 
 1. They have to click a link to confirm their account.
 1. Their password has to be more than 10 characters long.
 1. Their password has to include an uppercase letter(s).
-<!-- TODO: double check the below is true. When I created authentication it did require a special character and number -->
-The following is not true for a user to create an account.
-
 1. Their password does not have to include a number.
 1. Their password does not have to include a special character such as a question mark.
 1. Their password does not have to include lowercase letters.
