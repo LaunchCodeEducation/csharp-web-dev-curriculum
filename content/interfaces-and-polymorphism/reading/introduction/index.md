@@ -20,9 +20,7 @@ explore is polymorphism.
 **Polymorphism** is an object-oriented mechanism that allows for objects
 of different types to be used in the same way.
 
-<!-- TODO: Add link back to inheritance -->
-
-We’ve already encountered polymorphism made possible by inheritance when talking about 
+We’ve already encountered polymorphism made possible by [inheritance]({{< relref "../../../inheritance/reading/casting/" >}}) when talking about 
 casting with our `Cat` and `HouseCat` classes.
 In that case, we stored an object of type `HouseCat` in its compatible type, `Cat`.
 
