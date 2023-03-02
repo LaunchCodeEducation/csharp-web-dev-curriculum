@@ -1,9 +1,12 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://csharp-web-dev-curriculum.netlify.app'
 languageCode = 'en-us'
 title = 'C# Web Development'
 theme = "hugo-theme-relearn"
 
-canonifyURLs = false
+canonifyURLs = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 [params]
   themeVariant = ["lc-light", "lc-dark-blue", "lc-dark-blue-two"]
