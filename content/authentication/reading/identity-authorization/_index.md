@@ -12,15 +12,6 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-<!-- TODO: Update below repo links inside of note with correct links once they are available. -->
-{{% notice blue "Note" "rocket" %}}
-Try and code along as you read more about Identity!
-
-This page starts off with the code in the [identity-config](https://github.com/LaunchCodeEducation/CodingEventsDemo/tree/identity-config) branch in `CodingEventsDemo`.
-
-The final code for this page is in the [authorization](https://github.com/LaunchCodeEducation/CodingEventsDemo/tree/authorization) branch in `CodingEventsDemo`.
-{{% /notice %}}
-
 While this chapter is focused on authentication, you may find yourself wanting to use Identity to limit pages to logged-in users Authorization allows us to restrict access to pages by allowing only logged in users to see them. While this can be a very complex process, `ASP.NET` has two simple attributes that allow us to restrict access to pages to only logged in users.
 
 `[Authorize]` is an attribute that limits access to content to only logged in users.
