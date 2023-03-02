@@ -56,7 +56,7 @@ gives you a familiar-looking navbar with one menu option, *Add Jobs*. You can ad
 
 - Use the same files as the chapter content and `JobDbContext`.
 
-1. Update `Startup.cs` and `JobDbContext` as necessary.
+1. Update `Program.cs` and `JobDbContext` as necessary.
 1. Add the `LoginPartial` partial view to the navbar.
 1. Run a new migration and test the application.
 
