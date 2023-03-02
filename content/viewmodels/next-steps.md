@@ -29,3 +29,6 @@ Check out these resources if you want a deeper learning journey on these topics.
 1. [How validation works](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/validation?view=aspnetcore-6.0#how-validation-works-1)
 
 
+1. [Strongly Typed Models and the @model Keyword](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-aspnet-mvc3/cs/accessing-your-models-data-from-a-controller) 
+
+1. [Adding Validation Rules to the Movie Model](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/adding-validation#adding-validation-rules-to-the-movie-model)
