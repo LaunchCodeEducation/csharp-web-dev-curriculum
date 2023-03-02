@@ -16,6 +16,8 @@ One application of enum types is to represent categories of objects.
 We will take this approach in our `CodingEvents` application to 
 categorize events based on their type, such as *conference* or *meetup*.
 
+To follow along in `CodingEvents`, make sure that you have forked and cloned our [repo](https://github.com/LaunchCodeEducation/CodingEvents). Your code at the beginning of this chaper should look like the `viewmodels` branch and at the end, your code should look like the `enums` branch.
+
 ## Enum Types in Models
 
 ### Create an Enum Class

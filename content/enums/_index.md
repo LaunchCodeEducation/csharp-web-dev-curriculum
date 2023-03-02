@@ -14,7 +14,13 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Learning Objectives
 
+Once you have completed everything in the chapter, you should be able to do the following:
+
+1. Use enum types to represent categories of related objects
+
 ## Key Terminology
+
+As you read through this chapter, make note of the following key terms and their definitions:
 
 ### Intro
 
