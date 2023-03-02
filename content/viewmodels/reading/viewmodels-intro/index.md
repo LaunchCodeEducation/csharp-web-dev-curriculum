@@ -20,7 +20,7 @@ A `ViewModel` is a model class designed specifically to be used in a view. By ut
 
 To start with understanding why we may want to use a ViewModel, let’s refactor our code to use a model directly in our view. This will require some updates to our controllers and views.
 
-We will need to do the following:
+We need to do the following steps:
 1. Create our new ViewModel
 1. Update our Index Action Method
 1. Update the Index View
@@ -32,77 +32,16 @@ Let's get started!
 
 ## Creating a ViewModel
 
-### Refactoring the Controller
-
-Let's start in `Index` action method in the `EventsController`. We want to convert the collection of Events we have been holding into a list.
-
-   ```csharp{linenos=table,hl_lines=[],linenostart=19}
-   List<Event> events = new List<Event>(EventData.GetAll());
-
-   return View(events);
-   ```
-
-Next let's update our `NewEvent` action method.
-
-1. Rename this method `Add()` and keep the parameters.
-1. Remove the `[Route(...)]` attribute, but make sure to keep the `[HttpPost]` attribute.
-
-   ```csharp{linenos=table,hl_lines=[],linenostart=29}
-   [HttpPost]
-   public IActionResult Add(Event event)
-   ```
-
-You should how have two `Add()` methods. The framework is clever enough to know the difference.  The `[HttpPost]` attribute designates the `Add` method that processes the form while the other `Add()` method retrieves the form.
-
-<!-- TODO: Link to previous chapter -->
-This is similar to how we created the `Delete()` action methods in the [previous chapter](LINK).
-{{% notice blue "Note" "rocket" %}}
-
-This renaming is not critical to your application, but can help you with the design logic of the program as it grows in size. 
-
-{{% /notice %}}
-
-### Refactoring the View
-
-Now that we are storing our items in a `List`, we need to import the model into our `Events/Index.cshtml` view so we can use the new events collection. We can start by adding a `@using` statement to let the view know which model to reference. We can also use the `@model` statement to let the view know which type of object to expect.  In this case, a list of `Event` objects.
-
-```csharp{linenos=table,hl_lines=[],linenostart=1}
-   @using CodingEvents.Models
-
-   @model List<Event>
-```
-
-Wherever we used our `ViewBag` property, we can now use `Model` syntax. 
-
-```csharp{linenos=table,hl_lines=[],linenostart=14}
-@if (Model.Count == 0)
-```
-
-and 
-
-```csharp{linenos=table,hl_lines=[],linenostart=32}
-@foreach (var evt in Model)
-```
-
-Once the view has been updated, run the application!
-
-
-This was merely a refactor so the functionality of the app hasn’t changed, but we have eliminated some of the possibility of bugs in our code being discovered at runtime! Using a model in a view like this makes our view _strongly-typed_. Before if we misspelled a property of `Event` or `ViewBag`, those errors would have been caught at run-time and possibly interfered with users’ experience. With a strongly-typed view, the same errors would be caught at compile-time before users see the application. Strongly-typed views also support intellisense, so as we work with properties of a model, we can make sure we have the correct property name.
-
-## Adding a ViewModel
-
-Now that we have refactored our `Events/Index.cshtml` view and `EventsController` to use a model, let’s investigate how to create a ViewModel. We can do so by following these steps:
-
 1. Add a `ViewModels` directory at the top level of the project.
 
 1. Add a new class to the `ViewModels` directory and name it `AddEventViewModel`.
 
-TODO: INTRODUCE THE NULL-CONDITIONAL OPERATOR
-- need to add it to the Event model, toox
-
 1. Add `Name` and `Description` properties to the new class.  We can remove the constructor. We do not need it at this time. 
 
-   ```csharp{linenos=table,hl_lines=[],linenostart=3}
+1. We will need to declare the `Name` and `Description` as nullable.  You do this by using the nullable value type `T?` after the modifiers.  To see these in action, look at lines 7 and 8 in the code block below.
+
+   {{% notice blue "Check Your Code" "rocket" %}} 
+   ```csharp{linenos=table,hl_lines=[5,6],linenostart=3}
    namespace CodingEvents.ViewModels
    {
       public class AddEventViewModel
@@ -112,15 +51,92 @@ TODO: INTRODUCE THE NULL-CONDITIONAL OPERATOR
       }
    }
    ```
-
-   {{% notice orange "Warning" "rocket" %}}  
-   Do you see the `?` after `string` in lines 8 and 9?  That is the `null-conditional operator`.  
    {{% /notice %}}
+
+   {{% notice blue "Note" "rocket" %}}  
+   
+   **Declaring a Value Nullable**
+
+   Do you see the `?` after `string` in lines 7 and 8 in the code block above? This declares this property to be a nullable value type. 
+
+   When we assign this operator to the properties of the `AddEventViewModel`, the program will automatically perform a null check for the assigned properties. 
+
+   ADD MORE HERE!
+
+   More on [nullable value types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types#code-try-1)
+
+   {{% /notice %}}
+
+### Update the `Index` Action Method in the Controller
+
+In the `EventsController`, find the `Index` action method.  We want to convert our `ViewBag` in to a `List` collection type.  
+
+1. Update the `ViewBag.events` to a `List` of `Event` objects. Let's store this list in a variable called `events`. 
+
+1. Pass the contents of the data layer to the new `List`.
+
+1. Return the new list `events` to the View.
+
+   {{% notice blue "Check Your Code" "rocket" %}} 
+   ```csharp{linenos=table,hl_lines=[],linenostart=19}
+      // GET: /<controller>/
+      public IActionResult Index()
+      {
+         List<Event> events = new List<Event>(EventData.GetAll());
+
+         return View(events);
+      }
+   ```
+   {{% /notice %}}
+
+
+### Update the `Index` View
+
+Now that we are storing our items in a `List`, we need to import the model into our `Events/Index.cshtml` view so we can use the new events collection. We can start by adding a `@using` statement to let the view know which model to reference. We can also use the `@model` statement to let the view know which type of object to expect.  In this case, a list of `Event` objects.
+
+1. Add a `@using` statement that informs the view about which portion of the project to access.
+1. Add a `@model` statement to inform the view about the object type.
+
+   {{% notice blue "Check Your Code" "rocket" %}}
+   ```csharp{linenos=table,hl_lines=[],linenostart=1}
+      @using CodingEvents.Models
+
+      @model List<Event>
+   ```
+   {{% /notice %}}
+
+1. Wherever we used our `ViewBag` property, we can now use `Model` syntax. We want to count the number of `Model` objects, like we did with the `ViewBag`. 
+
+   {{% notice blue "Check Your Code" "rocket" %}}
+   ```csharp{linenos=table,hl_lines=[],linenostart=14}
+   @if (Model.Count == 0)
+   ```
+   {{% /notice %}}
+
+1. We need to update the loop to check the `Model` for events (`evt`).
+
+   {{% notice blue "Check Your Code" "rocket" %}}
+   ```csharp{linenos=table,hl_lines=[],linenostart=32}
+   @foreach (var evt in Model)
+   ```
+   {{% /notice %}}
+
+Once the view has been updated, run the application!
+
+
+### Update the `Add` and `NewEvent` Action Methods in the Controller
 
 1. In the `EventsController`, add a `using` statement for your new ViewModel.
 
+   {{% notice blue "Check Your Code" "rocket" %}}
+   ```csharp{linenos=table,hl_lines=[],linenostart=8}
+   using CodingEvents.ViewModels;
+   ```
+   {{% /notice %}}
+
 1. In the `Add()` action method responsible for retrieving the form to add events, in `EventsController`, create a new instance of `AddEventViewModel` called `addEventViewModel` and pass it to the `View()`.
 
+   {{% notice blue "Check Your Code" "rocket" %}}
    ```csharp{linenos=table,hl_lines=[],linenostart=24}
    [HttpGet]
    public IActionResult Add()
@@ -130,22 +146,111 @@ TODO: INTRODUCE THE NULL-CONDITIONAL OPERATOR
       return View(addEventViewModel);
    }
    ```
+   {{% /notice %}}
 
 
-1. Import the ViewModel to the `Add.cshtml` view with the `@model` syntax.
+Next let's update our `NewEvent` action method.
 
-1. Add `asp-controller = Events` and `asp-action = NewEvent` to the `<form>` tag to designate which method the form data should be sent to.
+1. Rename this method `Add()` and keep the parameters. 
+1. Remove the `[Route()]` attribute, but make sure to keep the `[HttpPost]` attribute.
+1. It should take an instance of `AddEventViewModel` called `addEventViewModel` as a parameter.
+
+   {{% notice blue "Check Your Code" "rocket" %}}
+   ```csharp{linenos=table,hl_lines=[],linenostart=29}
+   [HttpPost]
+   public IActionResult Add(AddEventViewModel addEventViewMode)
+   ```
+   {{% /notice %}}
+
+1. We want to create new events in this action method that we add to our data storage.
+1. We are going to use new constructor syntax to create our `addEventViewModel` objects.
+   1. We will create a new `Event` object called  `newEvent`.  
+   1. We will instantiate all of the properties of Event using the `AddEventViewModel` inside curly braces `{ }`.
+   1. We want to add our newEvent to our `EventData`.
+   1. Finally, we want to return a redirected view back to the `/Events` view to see our newly added event.
+
+   {{% notice blue "Check Your Code" "rocket" %}}
+   ```csharp{linenos=table,hl_lines=[],linenostart=29}
+   [HttpPost]
+   public IActionResult Add(AddEventViewModel addEventViewModel)
+   {
+      Event newEvent = new Event
+      {
+         Name = addEventViewModel.Name,
+         Description = addEventViewModel.Description,
+      };
+
+      EventData.Add(newEvent);
+
+      return Redirect("/Events");
+   }
+   ```
+   {{% /notice %}}
+
+
+You should how have two `Add()` methods. The framework is clever enough to know the difference.  The `[HttpPost]` attribute designates the `Add` method that processes the form while the other `Add()` method retrieves the form.
+
+<!-- TODO: Link to previous chapter -->
+This is similar to how we created the `Delete()` action methods in the [previous chapter](LINK).
+
+{{% notice blue "Note" "rocket" %}}
+
+This renaming is not critical to your application, but can help you with the design logic of the program as it grows in size. 
+
+{{% /notice %}}
+
+### Update the `Add` View
+
+We are now ready to update our `Add` view.
+
+1. Import the ViewModel to the `Add.cshtml` view with the necessary `@using` syntax. Inform the view that we will be using the new ViewModel with the correct `@model` syntax.
+
+   {{% notice blue "Check Your Code" "rocket" %}}
+   ```csharp{linenos=table,hl_lines=[],linenostart=1}
+   @using CodingEvents.ViewModels
+   @model AddEventViewModel
+   ```
+   {{% /notice %}}
+
+   We are going to add [anchor tags helpers](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper?view=aspnetcore-7.0) to the form.  These tag helpers designate which controller and action methods to call. 
+
+1. Add `asp-controller = Events` and `asp-action = Add` to the `<form>` tag to designate which method the form data should be sent to.  
 
 1. Add `asp-for` to `<label>` and `<input>` tags. This allows us to specify which form field corresponds to which property in our ViewModel.
 
-1. Refactor the `NewEvent()` action method to be named `Add()`. Have it also now use the ViewModel as its parameter. Set values of a new `Event` object using the values of the properties stored in the instance of the `AddEventViewModel`.
+   {{% notice blue "Check Your Code" "rocket" %}}
+   ```csharp{linenos=table,hl_lines=[],linenostart=6}
+   <form asp-controller="Events" asp-action="Add" method="post">
+      <div class="form-group">
+         <label asp-for="Name"></label>
+         <input asp-for="Name" />
+      </div>
+      <div class="form-group">
+         <label asp-for="Description"></label>
+         <input asp-for="Description" />
+      </div>
+      <input type="submit" value="Add Event" />
+   </form>
+   ```
+   {{% /notice %}}
 
-1. Add the new `Event` object to `EventData` and make sure that the method still returns a `Redirect` to `/Events`.
+   {{% notice orange "Warning" "rocket" %}}
 
-1. Run your application.
+   In the code block above, notice the lines where we use `asp-for`.  We removed the `name` and `type` requirements from the `<input>` type and added `asp-for` to the `<label>` tag too. `asp-for` reflects the name we provided to the property in the ViewModel.  The reflected name will be used in the view when we run this project.
 
-Following these steps, we effectively refactored our application to use a ViewModel. While the functionality of the application remains the same, we are now in a position to easily add validation to our application.
+   {{% /notice %}}
 
+1. Run your application.  
+   1. Test what happens when you provide input in each box.  
+   1. Test what happens when you leave one empty.  
+   1. Finally, test what happens when you leave all of them blank.  Looks like the app would benefit from some validation.
+
+## Recap for the Refactor
+
+This was merely a refactor so the functionality of the app hasn’t changed, but we have eliminated some of the possibility of bugs in our code being discovered at runtime! Using a model in a view like this makes our view _strongly-typed_. Before if we misspelled a property of `Event` or `ViewBag`, those errors would have been caught at run-time and possibly interfered with users’ experience. With a strongly-typed view, the same errors would be caught at compile-time before users see the application. Strongly-typed views also support intellisense, so as we work with properties of a model, we can make sure we have the correct property name.
+
+
+While the functionality of the application remains the same, we are now in a position to easily add validation to our application.  
 
 ## Check Your Understanding
 {{% notice green  "Question" "rocket" %}} 
