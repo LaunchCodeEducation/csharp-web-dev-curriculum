@@ -47,6 +47,8 @@ The request creates an `Event` object using data from the incoming request. Rega
 
 {{% notice blue "Note" "rocket" %}} 
 
+TODO: replace "War and Peace" reference with number of words on this page: 815
+
 Technically, submitting a request containing “War and Peace” would fail with most applications. This is because web servers typically set a limit on the maximum size of a `POST` request. However, our application code is willing to take requests of any size, at this point. 
 
 {{% /notice %}}

@@ -31,11 +31,11 @@ To apply the validation rules of the example on the previous page to the fields 
    ```csharp{linenos=table,hl_lines=[],linenostart=1}
    [Required]
    [StringLength(12, MinimumLength = 3)]
-   public string Username { get; set; }
+   public string? Username { get; set; }
 
    [Reguired]
    [StringLength(20, MinimumLength=6)]
-   public string Password { get; set; }
+   public string? Password { get; set; }
    ```
 {{% /notice %}}
 
@@ -49,11 +49,11 @@ To apply the validation rules of the example on the previous page to the fields 
    ```csharp{linenos=table,hl_lines=[],linenostart=1}
    [Required(ErrorMessage = "Username is required")]
    [StringLength(12, MinimumLength = 3, ErrorMessage = "Username must be between 3 and 12 characters long")]
-   public string Username { get; set; }
+   public string? Username { get; set; }
 
    [Required(ErrorMessage = "Password is required")]
    [StringLength(20, MinimumLength = 6, ErrorMessage = "Sorry, but the given password is too short. Passwords must be at least 6 characters long.")]
-   public string Password { get; set; }
+   public string? Password { get; set; }
    ```
 {{% /notice %}}
 
@@ -68,11 +68,11 @@ For our `AddEventViewModel` class, we add `[StringLength]` and `[Required]` to t
    ```csharp{linenos=table,hl_lines=[],linenostart=8}
    [Required(ErrorMessage = "Name is required.")]
    [StringLength(50, MinimumLength = 3, ErrorMessage = "Name must be between 3 and 50 characters.")]
-   public string Name { get; set; }
+   public string? Name { get; set; }
 
    [Required(ErrorMessage = "Please enter a description for your event.")]
    [StringLength(500, ErrorMessage = "Description is too long!")]
-   public string Description { get; set; }
+   public string? Description { get; set; }
    ```
 The required `MaximumLength` and optional `MinimumLength` parameters for `[StringLength]` specify the maximum and minimum number of allowed characters, respectively. Omitting the minimum length requirement means that no min or max will be applied for the field. Not adding a `[Required]` attribute onto a property would make the field optional to the form submission.
 
@@ -82,10 +82,10 @@ Next, we add a new property to store a contact email for each event. This is a `
 
    ```csharp{linenos=table,hl_lines=[],linenostart=16}
    [EmailAddress]
-   public string ContactEmail { get; set; }
+   public string? ContactEmail { get; set; }
    ```
 
-Before we can start up our application, we need to add a new input to our form in `Events/Add.cshtml` to take in the contact email for an event organizer. While we don’t demonstrate these items in the video above, we cover them on the next page before tackling validation in the controller.
+Before we can start up our application, we need to add a new input to our form in `Events/Add.cshtml` to take in the contact email for an event organizer. We want to provide the text a user will see for providing us with a contact email. The reflected value would not include the space between "Contact" and "Email".
 
    ```html{linenos=table,hl_lines=[],linenostart=14}
    <div class="form-group">
@@ -93,7 +93,8 @@ Before we can start up our application, we need to add a new input to our form i
       <input asp-for="ContactEmail" />
    </div>
    ```
-We also need to add a new column to the Events/Index.cshtml template to make ContactEmail visible.
+   
+We also need to add a new column to the `Events/Index.cshtml` template to make `ContactEmail` visible.
 
    ```html{linenos=table,hl_lines=[],linenostart=20}
    <table class="table">

@@ -21,16 +21,17 @@ A `ViewModel` is a model class designed specifically to be used in a view. By ut
 To start with understanding why we may want to use a ViewModel, let’s refactor our code to use a model directly in our view. This will require some updates to our controllers and views.
 
 We need to do the following steps:
-1. Create our new ViewModel
-1. Update our Index Action Method
-1. Update the Index View
-1. Update the Add Action Method
-1. Update the NewEvent Action Method
-1. Update the Add View Model
+1. [Create our new ViewModel]({{< relref "#creating-a-viewmodel" >}})
+1. [Update the Model]({{< relref "#update-the-model-with-nullable-values" >}})
+1. [Update our Index Action Method]({{< relref "#update-the-index-action-method-in-the-controller" >}})
+1. [Update the Index View]({{< relref "#update-the-index-view" >}})
+1. [Update the Add Action Method]({{< relref "#update-the-add-and-newevent-action-methods-in-the-controller" >}})
+1. [Update the NewEvent Action Method]({{< relref "#update-the-add-and-newevent-action-methods-in-the-controller" >}})
+1. [Update the Add View Model]({{< relref "#update-the-add-view" >}})
 
 Let's get started!
 
-## Creating a ViewModel
+### Creating a ViewModel
 
 1. Add a `ViewModels` directory at the top level of the project.
 
@@ -65,6 +66,23 @@ Let's get started!
 
    More on [nullable value types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types#code-try-1)
 
+   {{% /notice %}}
+
+### Update the Model with Nullable Values
+
+We need to declare the fields of our `Event` model nullable as well.
+
+   {{% notice blue "Check Your Code" "rocket" %}} 
+   ```csharp{linenos=table,hl_lines=[5,6],linenostart=2}
+   namespace CodingEvents.Models
+   {
+      public class Event
+      {
+		public string? Name { get; set; }
+		public string? Description { get; set; }
+
+      //code continues...
+   ```
    {{% /notice %}}
 
 ### Update the `Index` Action Method in the Controller
@@ -152,7 +170,7 @@ Once the view has been updated, run the application!
 Next let's update our `NewEvent` action method.
 
 1. Rename this method `Add()` and keep the parameters. 
-1. Remove the `[Route()]` attribute, but make sure to keep the `[HttpPost]` attribute.
+1. Remove the `[Route]` attribute, but make sure to keep the `[HttpPost]` attribute.
 1. It should take an instance of `AddEventViewModel` called `addEventViewModel` as a parameter.
 
    {{% notice blue "Check Your Code" "rocket" %}}
@@ -177,7 +195,7 @@ Next let's update our `NewEvent` action method.
       Event newEvent = new Event
       {
          Name = addEventViewModel.Name,
-         Description = addEventViewModel.Description,
+         Description = addEventViewModel.Description
       };
 
       EventData.Add(newEvent);
@@ -212,9 +230,9 @@ We are now ready to update our `Add` view.
    ```
    {{% /notice %}}
 
-   We are going to add [anchor tags helpers](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper?view=aspnetcore-7.0) to the form.  These tag helpers designate which controller and action methods to call. 
+   We are going to add [anchor tags helpers](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper?view=aspnetcore-7.0) to the form. 
 
-1. Add `asp-controller = Events` and `asp-action = Add` to the `<form>` tag to designate which method the form data should be sent to.  
+1. Add `asp-controller = Events` and `asp-action = Add` to the `<form>` tag to designate which method the form data should be sent to.  We want our form to send data to the `Add` method that handles `POST` requests inside the `Events` controller.
 
 1. Add `asp-for` to `<label>` and `<input>` tags. This allows us to specify which form field corresponds to which property in our ViewModel.
 
