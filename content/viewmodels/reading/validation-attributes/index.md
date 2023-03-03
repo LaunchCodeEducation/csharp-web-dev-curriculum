@@ -63,7 +63,19 @@ We will see how to ensure these error messages are properly displayed in the nex
 
 To configure validation on the model-side, we begin by adding validation attributes to each field to which we want to apply constraints.
 
-For our `AddEventViewModel` class, we add `[StringLength]` and `[Required]` to the `Name` and `Description` properties.
+For our `AddEventViewModel` class: 
+
+1. Add `[StringLength]` and `[Required]` to the `Name` property.
+
+- Starting with the `[Required]` attribute, create an error message that informs a user they need to provide the name of an event.
+   
+- For the `[StringLength]` requirement, maybe put a max of 50 characters and minimum of 3.  A message to inform the user of these requirements could be nice.
+
+2.  For the `Description` property, make it `[Required]` and have a longer `[StringLength]` than `Name`.
+
+- Provide an error message for the `[Required]` statement that informs a user it is important to provide some description of the event.
+   
+- `[StringLength]` for `Description` should be longer than for `Name`.  However, you should set a limit on how many words a user can provide.  Make sure that you provide an error message that will inform them if they add too much.
    
    ```csharp{linenos=table,hl_lines=[],linenostart=8}
    [Required(ErrorMessage = "Name is required.")]
@@ -74,7 +86,12 @@ For our `AddEventViewModel` class, we add `[StringLength]` and `[Required]` to t
    [StringLength(500, ErrorMessage = "Description is too long!")]
    public string? Description { get; set; }
    ```
-The required `MaximumLength` and optional `MinimumLength` parameters for `[StringLength]` specify the maximum and minimum number of allowed characters, respectively. Omitting the minimum length requirement means that no min or max will be applied for the field. Not adding a `[Required]` attribute onto a property would make the field optional to the form submission.
+
+Not adding a `[Required]` attribute onto a property would make the field optional to the form submission.
+
+The required `MaximumLength` and optional `MinimumLength` parameters for `[StringLength]` specify the maximum and minimum number of allowed characters, respectively. Omitting the minimum length requirement means that no min or max will be applied for the field. 
+
+
 
 Each of our attributes also receives an `ErrorMessage` parameter. This parameter provides a user-friendly message to display to the user if the particular validation rule fails. We will see how to display these in a view a bit later.
 

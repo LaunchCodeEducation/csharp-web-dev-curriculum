@@ -37,9 +37,13 @@ Let's get started!
 
 1. Add a new class to the `ViewModels` directory and name it `AddEventViewModel`.
 
+{{< rawhtml >}}
+ <img src="pictures/FileTreeforViewModel.png" alt="File tree showing new ViewModels directory" width=40% />
+{{< /rawhtml >}}
+
 1. Add `Name` and `Description` properties to the new class.  We can remove the constructor. We do not need it at this time. 
 
-1. We will need to declare the `Name` and `Description` as nullable.  You do this by using the nullable value type `T?` after the modifiers.  To see these in action, look at lines 7 and 8 in the code block below.
+1. We will need to declare the `Name` and `Description` as nullable.  You do this by using the nullable value type `?` after the modifiers.  To see these in action, look at lines 7 and 8 in the code block below.
 
    {{% notice blue "Check Your Code" "rocket" %}} 
    ```csharp{linenos=table,hl_lines=[5,6],linenostart=3}
@@ -58,14 +62,14 @@ Let's get started!
    
    **Declaring a Value Nullable**
 
-   Do you see the `?` after `string` in lines 7 and 8 in the code block above? This declares this property to be a nullable value type. 
+   Do you see the `?` after `string` in lines 7 and 8 in the code block above? This declares this property to be a nullable value type. This means that the value of `Name` or `Description` is allowed to be null at some point.
 
-   When we assign this operator to the properties of the `AddEventViewModel`, the program will automatically perform a null check for the assigned properties. 
+   A null value for either of these fields is not idea, but we need them to have this flexibility when we begin to add validation attributes later in this chapter. If the validation checks fail, a new event will not be added to the project's data storage.  
 
-   ADD MORE HERE!
+  Check out these resources on [nullable value types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types#code-try-1) and [strategies](https://www.stevenbenitez.com/nullable-reference-type-strategies/) to handle them.
 
-   More on [nullable value types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types#code-try-1)
 
+   We will declare our `Event` fields as nullable types, too.  See the next section below.
    {{% /notice %}}
 
 ### Update the Model with Nullable Values
@@ -97,13 +101,13 @@ In the `EventsController`, find the `Index` action method.  We want to convert o
 
    {{% notice blue "Check Your Code" "rocket" %}} 
    ```csharp{linenos=table,hl_lines=[],linenostart=19}
-      // GET: /<controller>/
-      public IActionResult Index()
-      {
-         List<Event> events = new List<Event>(EventData.GetAll());
+   // GET: /<controller>/
+   public IActionResult Index()
+   {
+      List<Event> events = new List<Event>(EventData.GetAll());
 
-         return View(events);
-      }
+      return View(events);
+   }
    ```
    {{% /notice %}}
 
@@ -117,9 +121,8 @@ Now that we are storing our items in a `List`, we need to import the model into 
 
    {{% notice blue "Check Your Code" "rocket" %}}
    ```csharp{linenos=table,hl_lines=[],linenostart=1}
-      @using CodingEvents.Models
-
-      @model List<Event>
+   @using CodingEvents.Models
+   @model List<Event>
    ```
    {{% /notice %}}
 

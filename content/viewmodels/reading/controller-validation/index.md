@@ -16,7 +16,7 @@ Validation involves both model and controller components of an MVC application. 
 
 ## Validation Flow
 
-Before diving into the details of the code, let’s consider the logical flow of control for validating data in a request. Let’s check out our `POST` action method for processing the Add Event form. Remember that this method uses model binding to create new `Event` objects from form submissions.
+Before diving into the details of the code, let’s consider the logical flow of control for validating data in a request. Let’s check out our `POST` action method for processing the Add Event form. Remember that this method uses model binding to create new `AddEventViewModel` objects from form submissions.
 
 ```csharp{linenos=table,hl_lines=[],linenostart=32}
 [HttpPost]
@@ -39,27 +39,25 @@ The flow of this request can be described as follows:
 
    1. Server receives `POST` request
    1. Server creates `newEvent` object using request parameters
-   1. `Add()` is called with `newEvent`
+   1. `Add()` is called with `addEventViewModel`
    1. `newEvent` is saved
    1. A redirect response is returned, redirecting the user to `/Events`
 
-The request creates an `Event` object using data from the incoming request. Regardless of what the data looks like, the new object is saved to the data layer. The user could submit an empty form, with no name or description filled in, and our code would be happy to create an `Event` and save it. Similarly, a user could submit the full text of the massive novel “War and Peace” as the description. This isn’t great.
+The request creates an `Event` object using data from the incoming request. Regardless of what the data looks like, the new object is saved to the data layer. The user could submit an empty form, with no name or description filled in, and our code would be happy to create an `Event` and save it. Similarly, a user could submit the full text of the any novel as the description. This isn’t great.
 
 {{% notice blue "Note" "rocket" %}} 
 
-TODO: replace "War and Peace" reference with number of words on this page: 815
-
-Technically, submitting a request containing “War and Peace” would fail with most applications. This is because web servers typically set a limit on the maximum size of a `POST` request. However, our application code is willing to take requests of any size, at this point. 
+Technically, submitting a request containing a full length novel would fail with most applications. This is because web servers typically set a limit on the maximum size of a `POST` request. However, our application code is willing to take requests of any size, at this point. 
 
 {{% /notice %}}
 
-Now that we have created `AddEventViewModel` and added validation attributes, we want to refactor our controller to use the ViewModel and handle errors in form submission. Instead of using model binding to create a new `Event` object, we will use model binding to create a new `AddEventViewModel` object called `addEventViewModel`. Our modest validation rules for a new `AddEventViewModel` object are as follows:
+Now that we have added validation attributes to the ViewModel, we want to refactor our controller to and handle errors in form submission. Our modest validation rules for a new `AddEventViewModel` object are as follows:
 
-- The Name property must contain between 3 and 50 characters,
+- The `Name` property must contain between 3 and 50 characters,
 
-- The Description property may contain no more than 500 characters, and
+- The `Description` property may contain no more than 500 characters, and
 
-- The ContactEmail property must satisfy email formatting rules.
+- The `ContactEmail` property must satisfy email formatting rules.
 
 With these rules in place, conceptually, the flow of our controller code should look more like the following:
 
@@ -93,13 +91,17 @@ The model’s responsibility is simply to define validation rules. The controlle
 If these constraints are met, `ModelState.IsValid` equates to true and we want to create and add an Event object to our list of events. 
 If these constraints are not met and the ViewModel object is _not_ valid, we want to redirect the user back to the _Add Event_ form.
 
+{{% notice blue "Note" "rocket" %}}
+One of the constraints that `ModelState.IsValid` checks for is nullability.  If a value is `null`, it will not pass this check.  This is why we declared the members of the `Event` model and `AddEventViewModel` ViewModel as nullable with the `?`.  Without `?` then the controller considers this `false` and will not update the form.  
+{{% /notice %}}
+
 Once we are done refactoring the `Add()` action method to use `ModelState.IsValid`, our action method will look like the code below.
 
-```csharp{linenos=table,hl_lines=[],linenostart=32}
+```csharp{linenos=table,hl_lines=[4],linenostart=32}
 [HttpPost]
 public IActionResult Add(AddEventViewModel addEventViewModel)
 {
-   if (ModelState.IsValid)
+   if(ModelState.IsValid)
    {
       Event newEvent = new Event
       {
