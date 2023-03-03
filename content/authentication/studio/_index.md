@@ -12,11 +12,11 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-For this studio, you'll be tasked with adding simple user authentication to your `TechJobs` application. The steps to do this will match what you have already done in `CodingEvents`. You should refer back to the tutorial starting <!-- TODO: add link to 19.3 Before you Start -->.
+For this studio, you'll be tasked with adding simple user authentication to your `TechJobs` application. The steps to do this will match what you have already done in `CodingEvents`. You should refer back to the tutorial starting [here](https://education.launchcode.org/csharp-web-dev-curriculum/authentication/reading/getting-starting-identity/).
 
-1. [Scaffolding](http://localhost:1313/authentication/studio/#scaffolding)
-1. [Configuration](http://localhost:1313/authentication/studio/#configuration)
-1. [Authorization](http://localhost:1313/authentication/studio/#authorization)
+1. [Scaffolding](https://education.launchcode.org/csharp-web-dev-curriculum//authentication/studio/#scaffolding)
+1. [Configuration](https://education.launchcode.org/csharp-web-dev-curriculum//authentication/studio/#configuration)
+1. [Authorization](https://education.launchcode.org/csharp-web-dev-curriculum//authentication/studio/#authorization)
 
 ## The Starter Code
 
@@ -72,6 +72,10 @@ gives you a familiar-looking navbar with one menu option, *Add Jobs*. You can ad
 ## Authorization
 
 1. Add the necessary attributes so only logged-in users can add jobs, but all visitors to the application can see the listing of jobs.
+
+{{% notice blue "Note" "rocket" %}}
+You will need to implement the `using Microsoft.AspNetCore.Authorization;` inside of your Controller class in order for the [Authorize] and [AllowAnonymous] to work properly.
+{{% /notice %}}
 
 That's it, that's all. You're done. Go forth and test the auth flow by visiting the home page, registering for a new account, and logging into and out of an existing account. Then add this to any other ASP.NET project you're working on!
 
