@@ -11,8 +11,8 @@ lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
-<!-- TODO: LINK back to the final repo for the reading (viewmodels) -->
-Let’s practice adding more properties to our event objects and validating them. Create a new branch from the [display-error-messages branch](LINK).
+
+Let’s practice adding more properties to our event objects and validating them. Create a new branch from the [viewmodels](LINK).
 
 Below, we describe some new properties for you to add to the `Event` class. For each property, consider the following factors:
 
@@ -56,7 +56,7 @@ Event information to add:
 1. Add a property to collect information about the number of attendees for the event. Valid values for this property should be any number between zero and 100,000.
 
 
-1. Add columns for the location and number of attendees to the Events/Index.cshtml view.
+1. Add columns for the location and number of attendees to the `Events/Index.cshtml` view.
 
    {{% expand "Check your solution" %}}
    ```html{linenos=table}
@@ -90,7 +90,7 @@ Add a property to collect information about whether an attendee must register fo
 
 {{% notice green "Tip" "rocket" %}} 
 
-In order to do this, you need to add an additional property called IsTrue to AddEventViewModel with the following code:
+In order to do this, you need to add an additional property called IsTrue to `AddEventViewModel` with the following code:
 
 ```csharp{linenos=table}
 public bool IsTrue { get { return true; } }
