@@ -13,11 +13,11 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 
-We’ll build on the [User Signup](https://github.com/LaunchCodeEducation/SpaDayStudio6/tree/user-signup-starter) studio from last class, adding in model validation.
+We’ll build on the [user-signup-starter](https://github.com/LaunchCodeEducation/SpaDayStudio6/tree/user-signup-starter) studio from last class, adding in model validation.
 
 ## Getting Started
 
-Open up your SpaDay application and checkout the [user-signup-pt2 branch](https://github.com/LaunchCodeEducation/SpaDayStudio6/tree/user-validation).
+Open up your SpaDay application and checkout the [user-validation](https://github.com/LaunchCodeEducation/SpaDayStudio6/tree/user-validation).
 
 ## Creating a New ViewModel
 
@@ -40,7 +40,7 @@ Remember to add error messages to your attributes!
 
 With our new ViewModel set up and ready, we need to refactor our action methods to make use of `AddUserViewModel`. 
 
-Start by passing an instance of `AddUserViewModel` to `User/Add.cshtml` via our `Add()` action method. 
+Start by passing an instance of `AddUserViewModel` to `User/Add.cshtml` via our `Add()` action method. You may want to consider providing a route. This can make finding the new form easier as you work on this application.
 
 Next, to refactor the `SubmitAddUserForm()` action method, we need to do the following:
 
@@ -65,7 +65,7 @@ Last studio, we added some validation checks to make sure the password fields ma
 
 {{% notice green "Tip" "rocket" %}} 
 
-You can, in fact, validate that passwords match using attributes by taking a slightly different approach than we’ve done here. We outline how to do so in the Bonus Mission section.
+You can, in fact, validate that passwords match using attributes by taking a slightly different approach than we’ve done here. We outline how to do so in the [Bonus Mission section]({{< relref "#bonus-mission" >}}).  
 
 {{% /notice %}}
 
@@ -79,13 +79,21 @@ In `User/Index.cshtml`:
 
 1. Replace instances of `ViewBag` with the `@Model` syntax.
 
+   {{% notice green "Tip" "rocket" %}}
+   You may need to add the [null conditional operator](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-) to `@Model` even if you declared the fields in the `User` model as nullable.  
+
+   ```csharp
+   @Model?.ValueName
+   ```
+   {{% /notice %}}
+
 If we do this correctly, when a form with valid data is submitted, we should still see our personalized greeting!
 
 In `User/Add.cshtml`:
 
-1. Make AddUserViewModel accessible to the view.
+1. Make `AddUserViewModel` accessible to the view.
 
-1. Keep the @if statement up at the top so if the two passwords don’t match, we can see the error message.
+1. Keep the `@if` statement up at the top so if the two passwords don’t match, we can see the error message.
 
 1. Replace the inner contents of the form with a properly formatted form field for each property in the ViewModel. Each of your form fields should look something like this:
 
