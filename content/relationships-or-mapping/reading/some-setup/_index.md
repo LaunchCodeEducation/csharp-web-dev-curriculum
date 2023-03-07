@@ -19,18 +19,12 @@ In the next section, we explore how we can work with many-to-many relationships 
 ## The `Tag` Model Class
 
 Between the last section and this one, we have added a new persistent model class to the code, `Tag`. This class represents a tag of the type used for blog or social media posts. For us, a tag will be a topical label that can be applied to any event. Thus, we'll eventually relate `Event` and `Tag` to each other in a many-to-many way.
+<!-- TODO: add correct ref link below -->
+The steps to add this code follow the exact same process that we used to add a [persistent EventCategory class](orm1-exercises), so we won't go through them in detail here. 
 
-The steps to add this code follow the exact same process that we used to add a :ref:`persistent EventCategory class <orm1-exercises>`, so we won't go through them in detail here. 
-
-## The `Detail` View - Video
+## The `Detail` View
 
 Before working with tags, we will add a new view, along with the corresponding controller, ViewModel, and template. The new view will live at the route `/Events/Detail/X`, where `X` is the ID of a specific event. This view will display the details of a specific event on its own page.
-
-{{% notice blue "Note" "rocket" %}}
-The starter code for this video is found at the [Insert Branch Name](https://github.com/LaunchCodeEducation/CodingEventsDemo/tree/migration-testing) of `CodingEvents`. The final code presented in this video is found on the [Insert Branch Name](https://github.com/LaunchCodeEducation/CodingEventsDemo/tree/event-detail-view). As always, code along to the videos on your own `CodingEvents` project.
-{{% /notice %}}
-
-## The `Detail` View - Text
 
 Adding a `Detail` view for events is relatively straightforward, but it also involves a couple of new concepts. We'll start by creating a ViewModel to model the data we want to display in the view.
 

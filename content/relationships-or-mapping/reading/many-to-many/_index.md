@@ -79,10 +79,6 @@ In order to enable many-to-many relationships with EF, we need a class to model 
 
 Let's create a new model class, `EventTag`, to model a join table for `Event` and `Tag` classes. 
 
-{{% notice blue "Note" "rocket" %}}
-The starter code for this portion of the chapter is found at the [Insert Branch Name](https://github.com/LaunchCodeEducation/CodingEvents) of `CodingEvents`. The final code presented in this chapter is found on the [Insert Branch Name](https://github.com/LaunchCodeEducation/CodingEvents). As always, code along to the videos on your own `CodingEvents` project.
-{{% /notice %}}
-
 To model a join table for `Event` and `Tag` classes, we will create a **join class**. Given our discussion of join tables above, we know that it will need `EventId` and `TagId` properties. To more easily work with the corresponding `Event` and `Tag` objects in our controllers, we will also include properties of those specific types.
 
 ```csharp {linenos=table}

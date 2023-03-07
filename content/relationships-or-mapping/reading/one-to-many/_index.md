@@ -17,7 +17,7 @@ The first relationship we implement will be between the `Event` and `EventCatego
 We are now ready to create a relationship between `Event` and `EventCategory`.
 <!-- TODO: Insert Correct Branch names below -->
 {{% notice blue "Note" "rocket" %}}
-The starter code for this chapter is found at the [Insert Branch Name](https://github.com/LaunchCodeEducation/CodingEvents) of `CodingEvents`. The final code presented in this chapter is found on the [Insert Branch Name](https://github.com/LaunchCodeEducation/CodingEvents). As always, code along to the videos on your own `CodingEvents` project.
+The starter code for this chapter is found at the [Insert Branch Name](https://github.com/LaunchCodeEducation/CodingEvents) of `CodingEvents`. The final code presented in this chapter is found on the [Insert Branch Name](https://github.com/LaunchCodeEducation/CodingEvents). As always, code along on your own `CodingEvents` project.
 {{% /notice %}}
 
 ## Setting Up the Relationship
@@ -133,10 +133,6 @@ The new property on `Event` is a single `EventCategory` reference, while the new
 
 ## Refactoring the Controller and View
 
-{{% notice blue "Note" "rocket" %}}
-The starter code for this portion of the chapter is found at the [Insert Branch Name](https://github.com/LaunchCodeEducation/CodingEventsDemo/tree/one-to-many) of `CodingEvents`. The final code presented in this video is found on the [Insert Branch Name](https://github.com/LaunchCodeEducation/CodingEventsDemo/tree/refactoring-controller). As always, code along on your own `CodingEvents` project.
-{{% /notice %}}
-
 Our `EventsController` requires a few updates now that `Event` objects reference `EventCategory` objects.
 
 The `Index` method passes the collection of all `Event` objects into the view for display:
@@ -171,10 +167,6 @@ AddEventViewModel addEventViewModel = new AddEventViewModel(context.Categories.T
 ## Database Migration and Testing
 
 We are done updating our code for now, but before we can test we must update the database. Recall that we changed the structure of the model by relating `Event` and `EventCategory` classes, and by removing `EventType`. Any model change requires a database update.
-
-{{% notice blue "Note" "rocket" %}}
-The starter code for this portion of the chapter is found at the [Insert Branch Name](https://github.com/LaunchCodeEducation/CodingEventsDemo/tree/refactoring-contoller) of `CodingEventsDemo`. The final code presented in this video is found on the [migration-testing branch](https://github.com/LaunchCodeEducation/CodingEventsDemo/tree/migration-testing). As always, code along on your own `CodingEvents` project.
-{{% /notice %}}
 
 Open a terminal and navigate to the `CodingEvents` project directory within the solution. Then run `dotnet ef migrations add RelateEventsAndCategories` to create a new migration.
 
