@@ -14,6 +14,10 @@ lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 
 Before introducing many-to-many relationships in EntityFrameworkCore, we need to add a new model and view to our app.
 
+{{% notice blue "Note" "rocket" %}}
+The following walkthrough is a continuation of the `Creating a One-to-Many Relationship` chapter. If you have not completed the steps in the `Creating a One-to-Many Relationship` walkthrough you will need to revisit them before continuing.
+{{% /notice %}}
+
 In the next section, we explore how we can work with many-to-many relationships in ASP.NET using EntityFrameworkCore. To do so, we need a class that we can relate to `Event` in a many-to-many fashion. This is the `Tag` class.
 
 ## The `Tag` Model Class

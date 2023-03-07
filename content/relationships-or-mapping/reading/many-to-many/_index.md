@@ -13,6 +13,10 @@ lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 Let's set up a many-to-many relationship between `Event` and `Tag`.
 
+{{% notice blue "Note" "rocket" %}}
+The following walkthrough is a continuation of the `Some Setup` chapter. If you have not completed the steps in the `Some Setup` walkthrough you will need to revisit them before continuing.
+{{% /notice %}}
+
 ## Join Tables
 
 To relate data in a many-to-many fashion in a relational database requires a new type of SQL table.
