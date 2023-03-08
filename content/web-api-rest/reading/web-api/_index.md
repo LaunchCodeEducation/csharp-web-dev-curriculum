@@ -128,8 +128,8 @@ requested by a client application as JSON. The web API also transfers this JSON 
 <!-- TODO: Link will need to be changed from localhost once we have a permanent endpoint -->
 Let's revisit the last two steps from our [web API work flow](http://localhost:1313/web-api-rest/web-api/#transference-of-data)
 
-5. The controller transforms the object into a JSON representation.
-6. The controller responds to the client with the JSON representation.
+1. The controller transforms the object into a JSON representation.
+1. The controller responds to the client with the JSON representation.
 
 {{% notice green "Tip" "rocket" %}}
 [XML](https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction) is another popular data format. It is now used less commonly than 
