@@ -135,9 +135,9 @@ Here is a response from a request to the GET `/events` endpoint:
     ...
 ]
 ```
-{{% /notice %}}
 
 The state of the ``CodingEvent`` collection is made up of the collective state of each ``CodingEvent`` entity within it.
+{{% /notice %}}
 
 {{% notice blue "Example" "rocket" %}}
 Here is a response from a request to the GET `/tags` endpoint:
