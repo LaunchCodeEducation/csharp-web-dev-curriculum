@@ -62,11 +62,10 @@ conversion, or serialization, so that our API can output data in a portable form
 
 This branch of the API has four endpoints: 
 
-<!-- TODO: These links will need to be updated -->
-1. [GET Coding Events](http://localhost:1313/web-api-rest/exercises/#get-coding-events)
-1. [GET a Single Coding Event](http://localhost:1313/web-api-rest/exercises/#get-a-single-coding-event)
-1. [Create a Coding Event](http://localhost:1313/web-api-rest/exercises/#create-a-coding-event)
-1. [Delete a Coding Event](http://localhost:1313/web-api-rest/exercises/#delete-a-coding-event)
+1. [GET Coding Events](https://education.launchcode.org/csharp-web-dev-curriculum/web-api-rest/exercises/#get-coding-events)
+1. [GET a Single Coding Event](https://education.launchcode.org/csharp-web-dev-curriculum/web-api-rest/exercises/#get-a-single-coding-event)
+1. [Create a Coding Event](https://education.launchcode.org/csharp-web-dev-curriculum/web-api-rest/exercises/#create-a-coding-event)
+1. [Delete a Coding Event](https://education.launchcode.org/csharp-web-dev-curriculum/web-api-rest/exercises/#delete-a-coding-event)
 
 #### Get Coding Events
 
@@ -100,9 +99,6 @@ Some items to consider:
 1. Is there a request body being sent? What is included in it?
 1. If the request is successful, what information can we expect to be included in the response?
 {{% /notice %}}
-
-<!-- TODO: Need proper link here -->
-<!-- :ref:[Check your solutions](web-api-ex-1) -->
 
 #### GET a Single Coding Event
 
