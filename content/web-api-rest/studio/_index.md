@@ -114,7 +114,7 @@ To create our first request using Postman, select the *Create New* button locate
 Select the *Create New* button to create a new request
 
 {{% notice blue "Note" "rocket" %}}
-The above screenshot and the screenshots on this page are of the Linux version of Postman. The *Create New* button on your launchpad should also be located under the "Start with something new" section of the home page.
+The above screenshot is from the Home page on Postman. If you are on the Workshop page choose the *New* button on the top right of the *My Workspace* pane located on the left side.
 {{% /notice %}}
 
 ### Creating a New Request
