@@ -136,7 +136,7 @@ Let's revisit the last two steps from our [web API work flow](http://localhost:1
 JSON for web API-to-client communications.
 {{% /notice %}}
 
-In the next section, we will discuss exactly how a client application makes a request and how a web API responds.
+Let's look at how exactly a client application makes a request and how a web API responds.
 
 ### HTTP as The Language of Web APIs
 
