@@ -18,7 +18,7 @@ The UI of a browser is designed to make simple `GET` requests for URLs entered i
 
 ### Install Postman
 
-If you haven't done so already, [install Postman](postman-installation)
+If you haven't done so already, [install Postman](https://education.launchcode.org/csharp-web-dev-curriculum/appendices/install-postman/)
 
 ### Fork and Clone the API Source Code
 

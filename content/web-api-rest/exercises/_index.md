@@ -205,7 +205,6 @@ Some items to consider:
 
 ### Install Postman
 
-<!-- TODO: Need proper link to postman install within curriculum -->
 Now that we've explored working with those endpoints, we're almost ready to start running the API and test sending those requests. 
-You'll need to [install Postman](postman-installation) to work with this lesson's studio and practice running these requests.
+You'll need to [install Postman](https://education.launchcode.org/csharp-web-dev-curriculum/appendices/install-postman/) to work with this lesson's studio and practice running these requests.
 
