@@ -41,7 +41,7 @@ public class CodingEvent {
 }
 ```
 
-Notice, the class called ``CodingEvent`` is equivalent to the ``Event`` class in our MVC application.
+Notice, the class called `CodingEvent` is equivalent to the `Event` class in our MVC application.
 
 The output resource shape of a CodingEvent entity:
 
@@ -74,7 +74,7 @@ Here's a CodingEvent JSON Representation:
 We can think of inputs as a *partial state* provided by the client during create and update operations. Only some of the fields 
 are included because the API is responsible for providing the others.
 
-Consider the following example of an input shape used to create an event. Notice that the ``Id`` field is not included:
+Consider the following example of an input shape used to create an event. Notice that the `Id` field is not included:
 
 {{% notice blue "Example" "rocket" %}}
 ```bash {linenos=table}
@@ -88,7 +88,7 @@ CodingEvent {
 
 Some of the common fields the API is responsible for managing:
 
-- the unique identifier (``Id``) 
+- the unique identifier (`Id`) 
 - the "created on" or "last updated" timestamp
 - links for relationships between resources
 
@@ -136,7 +136,7 @@ Here is a response from a request to the GET `/events` endpoint:
 ]
 ```
 
-The state of the ``CodingEvent`` collection is made up of the collective state of each ``CodingEvent`` entity within it.
+The state of the `CodingEvent` collection is made up of the collective state of each `CodingEvent` entity within it.
 {{% /notice %}}
 
 {{% notice blue "Example" "rocket" %}}
@@ -199,8 +199,8 @@ The use case of an API dictates the design of its contract. This includes which 
 other words, not every action must be exposed for each resource the API manages.
 
 {{% notice blue "Note" "rocket" %}}
-If a client tries to take an action on a resource that is not supported by the API, they will receive a ``405`` status code or 
-``Method not allowed`` error response.
+If a client tries to take an action on a resource that is not supported by the API, they will receive a `405` status code or 
+`Method not allowed` error response.
 {{% /notice %}}
 
 ### Endpoint Behavior
@@ -224,10 +224,10 @@ Let's consider a request for creating a resource entity. Recall that this operat
 adding a new entity to it.
 
 {{% notice blue "Example" "rocket" %}}
-As we saw earlier, the input shape for creating an event only includes the fields the consumer is responsible for. The ``Id`` 
+As we saw earlier, the input shape for creating an event only includes the fields the consumer is responsible for. The `Id` 
 field is then managed internally by the API.
 
-We refer to this shape as a ``NewCodingEvent`` to distinguish it from the ``CodingEvent`` resource shape:
+We refer to this shape as a `NewCodingEvent` to distinguish it from the `CodingEvent` resource shape:
 
 ```bash {linenos=table}
 NewCodingEvent {
@@ -265,7 +265,7 @@ After sending this request, the response includes:
 | `PUT/PATCH` | update the entity state | 
 | `DELETE` | remove the entity from the collection |
 
-When removing a resource, the client is requesting a transition to an empty state. This means that both the request body and response body that are transferred (the representations of state) are empty. We can see this behavior in action with a request to the ``DELETE`` endpoint for a single resource entity in our example API:
+When removing a resource, the client is requesting a transition to an empty state. This means that both the request body and response body that are transferred (the representations of state) are empty. We can see this behavior in action with a request to the `DELETE` endpoint for a single resource entity in our example API:
 
 {{% notice blue "Example" "rocket" %}}
 Let's once again assume a `CodingEvent` resource exists with an `Id` of `12`. If we want to remove this entity, we need to issue a request to its uniquely identified `DELETE` endpoint:

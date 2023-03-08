@@ -54,7 +54,7 @@ represented in a way that is portable and compatible with both the client and AP
 JSON is a data format that provides structure, portability and compatibility. For these reasons, JSON is the standard representation used when transferring state between a client application and an API. 
 
 {{% notice blue "Example" "rocket" %}}
-The state of a *single* ``CodingEvent`` entity is represented as a single JSON object:
+The state of a *single* `CodingEvent` entity is represented as a single JSON object:
 
 ```json {linenos=table}
 {
@@ -79,7 +79,7 @@ Whereas the state of a collection of `CodingEvents` is represented by a JSON arr
 ]
 ```
 
-Notice that the state here is represented as the collective state of all of the ``CodingEvents`` in the collection.
+Notice that the state here is represented as the collective state of all of the `CodingEvents` in the collection.
 {{% /notice %}}
 
 <!-- TODO: add correct link here when available .. index:: ! JSON serialization, ! JSON deserialization
@@ -130,7 +130,7 @@ client applications to interact with. Resources are categorized as an individual
 We refer to the state of a resource in terms of a single entity or the shared state of a collection.
 
 {{% notice blue "Note" "rocket" %}}
-Initially, a collection's state is just empty. If you were to read the collection's state, it would be represented as an empty JSON array, ``[]``.
+Initially, a collection's state is just empty. If you were to read the collection's state, it would be represented as an empty JSON array, `[]`.
 {{% /notice %}}
    
 In RESTful design, an individual entity only exists as a part of a collection. A change to the state of an entity inherently changes the state of the collection it is a part of.

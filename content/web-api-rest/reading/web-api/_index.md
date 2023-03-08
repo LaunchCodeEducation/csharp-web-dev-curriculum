@@ -70,14 +70,14 @@ We call this approach **server-side rendering**. A client application and web AP
 When a client application receives data, it injects that data into its HTML using JavaScript. This all occurs from within a browser. This approach is called **client-side rendering** because the web API only sends data, the HTML is assembled on the user's end.
 
 {{% notice blue "Example" "rocket" %}}
-Consider requesting the ``/events`` path of your MVC project. The response is an HTML presentation of the data. In other words, the 
+Consider requesting the `/events` path of your MVC project. The response is an HTML presentation of the data. In other words, the 
 data is already included in the presentation.
 
-**MVC**: ``GET /events -> HTML with data``
+**MVC**: `GET /events -> HTML with data`
 
-In a web API analog, an ``/events`` path would return just the underlying data. 
+In a web API analog, an `/events` path would return just the underlying data. 
 
-**Web API**: ``GET /events -> just data``
+**Web API**: `GET /events -> just data`
 
 It is then the client application's responsibility to integrate the received data into its presentation.
 {{% /notice %}}
@@ -213,7 +213,7 @@ However, many of their codes have been adopted as a standard within API design.
 The final HTTP component that transfers state are the HTTP headers. Any [number of headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) can be included in a request or response. We saw the `Content-Type` header above. This is the header that informs the API (request header) or client application (response header) of the format of the data included in the body. 
 
 {{% notice green "Tip" "rocket" %}}
-A client can specify which ``Content-Type`` they want to receive in the API response using the ``Accept`` request header.
+A client can specify which `Content-Type` they want to receive in the API response using the `Accept` request header.
 {{% /notice %}}
 
 ### API Design
@@ -246,7 +246,7 @@ True or False: Web API programmers must be knowledgeable in HTML/CSS/Javascript 
 {{% notice green "Question" "rocket" %}}
 Match the class of HTTP response codes to the approximate definition:
 
-``2XX``, ``3XX``, ``4XX``, ``5XX``
+`2XX`, `3XX`, `4XX`, `5XX`
 
 1. Request is valid, but server cannot receive and accept it.
 

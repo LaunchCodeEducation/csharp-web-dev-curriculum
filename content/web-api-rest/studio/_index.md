@@ -30,9 +30,6 @@ Our focus in this course is on operations and as such we will not be going into 
 
 Let's begin by forking and cloning the repo onto our machine. In your Powershell or terminal window, move into a directory where you plan to save your local copy of the API codebase.
 
-```bash
-git clone https://github.com/<GitUsername>/coding-events-api
-```
 For this studio, we want to have the `1-sqlite` branch checked out. This branch has an API with a single (`CodingEvent`) 
 resource and a built-in SQLite database. 
 
