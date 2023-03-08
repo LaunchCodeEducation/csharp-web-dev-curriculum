@@ -148,9 +148,9 @@ Here is a response from a request to the GET `/tags` endpoint:
     ...
 ]
 ```
-{{% /notice %}}
 
 A request to the endpoint of the `Tag` collection would include its respective `Tag` entity representations (JSON objects).
+{{% /notice %}}
 
 Suppose we wanted to interact with an individual resource entity. We would need to identify it within its collection. 
 
