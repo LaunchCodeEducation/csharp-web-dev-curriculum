@@ -177,7 +177,7 @@ If the request fails because of a client error, then it will respond with a `400
 - `Title`: 10-100 characters
 - `Description`: less than 1000 characters
  
-{{% notice blue "Question" "rocket" %}}
+{{% notice green "Question" "rocket" %}}
 Using our endpoint shorthand, how would we describe this action?
 
 Some items to consider:
