@@ -161,8 +161,9 @@ In the context of HTTP, think of **state** as information about application data
 #### Bodies
 
 An HTTP body can contain a large number of different media types, 
-known as [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types). A MIME type is associated with the HTTP header `Content-Type`. This header instructs the recipient of the HTTP request/response on what MIME type the HTTP body contains. We've seen a `Content-Type:text/html` HTTP header before. Here's a simple example of it:
+known as [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types). A MIME type is associated with the HTTP header `Content-Type`. This header instructs the recipient of the HTTP request/response on what MIME type the HTTP body contains. We've seen a `Content-Type:text/html` HTTP header before. 
 
+{{% notice blue "Example" "rocket" %}}
 ```html {linenos=table}
 <!DOCTYPE html>
 <html>
