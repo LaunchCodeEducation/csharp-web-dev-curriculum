@@ -22,16 +22,13 @@ If you haven't done so already, [install Postman](postman-installation)
 
 ### Fork and Clone the API Source Code
 
-With Postman installed, we're ready to fork and clone the [CodingEvents API](https://github.com/LaunchCodeEducation/coding-events-api/tree/1-sqlite). Although it is implemented differently from CodingEvents MVC, you will find that most of the features from the MVC application have been supported through endpoints in the API.
+With Postman installed, we're ready to fork and clone the [CodingEvents API](https://github.com/LaunchCodeEducation/coding-events-api/). Although it is implemented differently from CodingEvents MVC, you will find that most of the features from the MVC application have been supported through endpoints in the API.
 
 {{% notice blue "Note" "rocket" %}}
 Our focus in this course is on operations and as such we will not be going into the development of the API. However, feel free to explore the source code if you are curious about the similarities and differences between the .NET MVC and API implementations.
 {{% /notice %}}
 
 Let's begin by forking and cloning the repo onto our machine. In your Powershell or terminal window, move into a directory where you plan to save your local copy of the API codebase.
-
-For this studio, we want to have the `1-sqlite` branch checked out. This branch has an API with a single (`CodingEvent`) 
-resource and a built-in SQLite database. 
 
 {{% notice blue "Note" "rocket" %}}
 Including a SQLite database in this project means you don't need to have your MySQL server running to test the API. We won't get into what this looks like and instead just concentrate on testing the API endpoints.
@@ -42,11 +39,6 @@ Let's change into the repo and switch to this branch:
 ```bash
 # cd is an alias (like a nick-name) for the Set-Location cmdlet in PowerShell
 cd coding-events-api
-```
-
-```bash
-# check out the 1-sqlite branch
-git checkout 1-sqlite
 ```
 
 Keep your terminal open! We have some more work to do.
@@ -123,27 +115,6 @@ With the `Create New` view open, select the *HTTP Request* option.
 This will open the view to create a *HTTP Request*.
 
 ![Close up of the Postman HTTP Request view](pictures/HTTP-request-view.png?classes=border)
-
-<!-- The new request dialog includes fields for a request name, description, and collection
-
-{{% notice blue "Note" "rocket" %}}
-Depending on the version of Postman you use, when you select the option to make a new request, you may not encounter this dialog.
-Instead you are taken directly to a new request form and your request is just labeled "Untitled Request". In the top right corner, you will find a *Save* button with an arrow next to it. Clicking on the arrow displays a dropdown menu where you can select *Save As* to change the name and save it to a specific collection.
-{{% /notice %}}
-
-Postman requests require a name and a collection. A collection is just a container to hold related requests. They make it easy to import and export collections of requests for portability across teams. For our first request, enter "list coding events" in the *Request name* form field. At the bottom of the new request dialog, you will see that the collections are empty. Select the *Create Collection* button, then enter the name `coding events API`. The new request dialog button will change to say *Save to coding events API*:
-
-.. figure:: figures/new-request-dialog-complete.png
-   :alt: Full view of the Postman New Request dialog
-
-Once the collection is selected, save the new request
-
-After saving, a new request tab will be created where you can customize its behavior:
-
-.. figure:: figures/empty-request-tab.png
-   :alt: Postman new request tab view after creation
-
-A new request has been created in Postman  -->
 
 ### Configuring the Request
 
