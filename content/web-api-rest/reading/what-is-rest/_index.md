@@ -80,6 +80,7 @@ Whereas the state of a collection of `CodingEvents` is represented by a JSON arr
 ```
 
 Notice that the state here is represented as the collective state of all of the ``CodingEvents`` in the collection.
+{{% /notice %}}
 
 <!-- TODO: add correct link here when available .. index:: ! JSON serialization, ! JSON deserialization
 -->
