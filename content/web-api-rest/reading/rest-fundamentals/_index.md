@@ -53,6 +53,7 @@ CodingEvent {
     Date: string (ISO 8601 date format)
 }
 ```
+{{% /notice %}}
 
 The JSON representation of the resource that the API sends out is then based on the shape. This is like how an object is based on 
 the blueprint of its class.
