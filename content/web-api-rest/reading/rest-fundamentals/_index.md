@@ -40,7 +40,6 @@ public class CodingEvent {
     public DateTime Date { get; set; }
 }
 ```
-{{% /notice %}}
 
 Notice, the class called ``CodingEvent`` is equivalent to the ``Event`` class in our MVC application.
 
