@@ -12,11 +12,11 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-We've created a CodingEvents API application [here](https://github.com/LaunchCodeEducation/coding-events-api/tree/1-sqlite). Before we ask you to fork and clone this, let's first think conceptually about the kinds of requests a client application could make to this API.
+We've created a CodingEvents API application [here](https://github.com/LaunchCodeEducation/coding-events-api/). Before we ask you to fork and clone this, let's first think conceptually about the kinds of requests a client application could make to this API.
 
 ## The API
 
-This branch of `coding-events-api` starts by only exposing a single resource, `CodingEvent`, and four endpoints for interacting with it.
+The `coding-events-api` starts by only exposing a single resource, `CodingEvent`, and four endpoints for interacting with it.
 The `CodingEvent` resource is analogous to the `Event` model class we created in our CodingEvents MVC application.
 
 ### The Resource
