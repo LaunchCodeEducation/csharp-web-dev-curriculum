@@ -55,7 +55,6 @@ JSON is a data format that provides structure, portability and compatibility. Fo
 
 {{% notice blue "Example" "rocket" %}}
 The state of a *single* ``CodingEvent`` entity is represented as a single JSON object:
-{{% /notice %}}
 
 ```json {linenos=table}
 {
