@@ -15,9 +15,9 @@ lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 The first relationship we implement will be between the `Event` and `EventCategory` classes. We will allow multiple events to be in the same category, but each event will only have one category. Thus, this will be a one-to-many relationship. In this case, we will set up both sides of the relationship, so a many-to-one relationship will result as well.
 
 We are now ready to create a relationship between `Event` and `EventCategory`.
-<!-- TODO: Insert Correct Branch names below -->
+
 {{% notice blue "Note" "rocket" %}}
-The starter code for this chapter is found at the [Insert Branch Name](https://github.com/LaunchCodeEducation/CodingEvents) of `CodingEvents`. The final code presented in this chapter is found on the [Insert Branch Name](https://github.com/LaunchCodeEducation/CodingEvents). As always, code along on your own `CodingEvents` project.
+The starter code for the following walkthroughs is found at the [orm-1 branch](https://github.com/LaunchCodeEducation/CodingEvents/tree/orm-1) of `CodingEvents`. The final code presented in the following walkthroughs will be found on the [orm2 branch](https://github.com/LaunchCodeEducation/CodingEvents/tree/orm2). As always, code along on your own `CodingEvents` project.
 {{% /notice %}}
 
 ## Setting Up the Relationship
@@ -105,13 +105,13 @@ When this method runs, `addEventViewModel` contains form data. The data that spe
 The code above can be refactored as follows:
 
 ```csharp {linenos=table}
-EventCategory category = context.Categories.Find(addEventViewModel.CategoryId);
+EventCategory theCategory = context.Categories.Find(addEventViewModel.CategoryId);
 Event newEvent = new Event
 {
    Name = addEventViewModel.Name,
    Description = addEventViewModel.Description,
    ContactEmail = addEventViewModel.ContactEmail,
-   Category = category
+   Category = theCategory
 };
 ```
 
@@ -138,7 +138,11 @@ Our `EventsController` requires a few updates now that `Event` objects reference
 The `Index` method passes the collection of all `Event` objects into the view for display:
 
 ```csharp {linenos=table}
-List<Event> events = context.Events.ToList();
+public IActionResult Index()
+   {
+      List<Event> events = context.Events.ToList();
+      return View(events);
+   }
 ```
 
 When we reference `context.Events`, all `Event` objects will be queried from the database. By default, EF uses **lazy loading** to retrieve objects. Lazy loading results in *only* the data in the `Event` table being returned in the result set. Any data stored in other tables, such as data belonging to a referenced object, will NOT be loaded. In our case, this means that `Event` objects in `context.Events` will NOT have their `Category` properties set by EF. As-is, our code would display an empty category column in the main view.
@@ -152,7 +156,12 @@ If all we need is a list of users, loading all of the additional data in `UserPr
 The solution is to use **eager loading**. Eager loading is a technique that allows us to specify that data from other tables/objects be loaded when the querying a specific table/object. In our case, we want our `Event` objects to be returned with their corresponding `EventCategory` objects. We can tell EF to load the categories eagerly with the following code:
 
 ```csharp {linenos=table}
-List<Event> events = context.Events.Include(e => e.Category).ToList();
+public IActionResult Index()
+   {
+      List<Event> events = context.Events.Include(e => e.Category).ToList();
+
+      return View(events);
+   }
 ```
 
 The `Include` method takes a lambda expression which specifies the property of each `Event` object that should be included in the query results. The effect of this additional method is that a `JOIN` query is performed between the `Event` and `EventCategory` tables, with `Event.CategoryId` being joined on `EventCategory.Id`.
@@ -183,7 +192,7 @@ You are working on an ASP.NET application tracking elected officials. Your model
 
 1. In `Senator`, a `State` property and a `StateId` property
 1. In `Senator`, only a `State` property
-1. In `State``, a `Senator` property and a `SenatorId` property
+1. In `State`, a `Senator` property and a `SenatorId` property
 1. In `State`, only a `Senator` property
 {{% /notice %}}
 
