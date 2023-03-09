@@ -15,10 +15,11 @@ lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 Before introducing many-to-many relationships in EntityFrameworkCore, we need to add a new model and view to our app.
 
 {{% notice blue "Note" "rocket" %}}
-The following walkthrough is a continuation of the `Creating a One-to-Many Relationship` chapter. If you have not completed the steps in the `Creating a One-to-Many Relationship` walkthrough you will need to revisit them before continuing.
+The starter code for this chapter is located within the [orm-one-to-many branch](https://github.com/LaunchCodeEducation/CodingEvents/tree/orm-one-to-many).
+<!-- The following walkthrough is a continuation of the [Creating a One-to-Many Relationship](https://education.launchcode.org/csharp-web-dev-curriculum/relationships-or-mapping/reading/one-to-many/) chapter. In addition to the steps in the previous chapter we also added a new persistent model class `Tag`. This will allow us to set up a `many-to-many` relationship between the `Event` and `Tag` class. If you have not completed the steps in the **Creating a One-to-Many Relationship** walkthrough you can either revisit and complete the steps or start this walkthrough using the following branch of code: [orm-one-to-many](https://github.com/LaunchCodeEducation/CodingEvents/tree/orm-one-to-many). -->
 {{% /notice %}}
 
-In the next section, we explore how we can work with many-to-many relationships in ASP.NET using EntityFrameworkCore. To do so, we need a class that we can relate to `Event` in a many-to-many fashion. This is the `Tag` class.
+In this section, we explore how we can work with many-to-many relationships in ASP.NET using EntityFrameworkCore. To do so, we need a class that we can relate to `Event` in a many-to-many fashion. This is the `Tag` class.
 
 ## The `Tag` Model Class
 
@@ -76,7 +77,15 @@ public IActionResult Detail(int id)
 There are two new concepts to introduce here. First, our method takes a parameter named `id`. You have worked with such parameters in the past, as query parameters mapped to method parameters. For example, we could reach this handler with the request path `/Events/Detail?id=X`. What's new now is that we will use the same parameter mapping, but with a **path parameter**. A path parameter is a parameter that is part of the request path. In this case, we will be able to make requests to a path like `Events/Detail/X`.
 
 {{% notice blue "Note" "rocket" %}}
-This parameter mapping works seamlessly because the of default path template specified in the `Configure` method of `Startup.cs`. This template is `"{controller=Home}/{action=Index}/{id?}"`. The last portion, `{id?}`, means that any path parameter following the action method will map to a method parameter named `id`. 
+This parameter mapping works seamlessly because the of default path template specified in the `Program.cs` file. 
+
+```csharp {linenos=table}
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+```
+
+This template is `"{controller=Home}/{action=Index}/{id?}"`. The last portion, `{id?}`, means that any path parameter following the action method will map to a method parameter named `id`. 
 
 If we wanted to use a different URL structure, or a different method parameter name, we would need to include additional configuration. See [the documentation on routing](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/routing?view=aspnetcore-6.0) for more details.
 {{% /notice %}}
@@ -95,4 +104,27 @@ This method takes a boolean lambda expression and filters the `Context.Events` c
 We use `Single` instead of `Find` here because we also need to call `Include` to eagerly fetch the `Category` property. `Include` can not be chained with `Find`.
 {{% /notice %}}
 
-The only remaining task is to create the view. It should consist of a table displaying the properties of the `Event`. This is straightforward, so we'll skip over the details here. 
+The only remaining task is to create the view for the new event details. It should consist of a table displaying the properties of the `Event`. Create a new file within the `/Views/Events` folder named `Detail.cshtml` and add the following code:
+
+```html {linenos=table}
+@model CodingEvents.ViewModels.EventDetailViewModel
+
+<h1>@Model.Name</h1>
+
+<table class="table">
+    <tr>
+        <th>Description</th>
+        <td>@Model.Description</td>
+    </tr>
+    <tr>
+        <th>Contact Email</th>
+        <td>@Model.ContactEmail</td>
+    </tr>
+    <tr>
+        <th>Category</th>
+        <td>@Model.CategoryName</td>
+    </tr>
+</table>
+```
+
+That wraps up this section. In the next chapter we will create the `many-to-many` relationship between the `Event` and `Tag` class.
