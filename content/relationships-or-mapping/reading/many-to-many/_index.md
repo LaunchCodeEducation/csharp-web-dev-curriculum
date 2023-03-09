@@ -52,7 +52,7 @@ Consider some example data in our `Events` and `Tags` tables.
 | 5 | spring |
 | 6 | java |
 
-A join table for these two tables would be called `EventTags`, and would have two columns, `EventId` and `TagId`. Each of these columns are foreign key columns into their respective tables. 
+A join table for these two tables would be called `EventTags`, and would have two columns, `EventsId` and `TagsId`. Each of these columns are foreign key columns into their respective tables. 
 
 If we want to relate the `ios` tag to the `WWDC` event, we create a new row in `EventTags`:
 
@@ -68,62 +68,54 @@ We can do this again and again to generate more relationships. Let's revisit the
 
 The join table representing these relationships looks like this:
 
-| EventId | TagId |
+| EventsId | TagsId |
 |-----|-----|
 | 13 | 4 |
 | 15 | 5 |
 | 15 | 6 |
 | 17 | 7 |
 
-Notice that join table doesn't have an explicit primary key column. Values in both `EventId` and `TagId` may be duplicated in each column. Indeed, this is the exact property of a join table that allows many-to-many relationships. A join table makes use of a new type of primary key, called a **composite primary key**. A composite primary key is a combination of columns that is unique and functions as a primary key. So, for example, the primary key of the first row of the example just above is the pair (13, 4). This combination is unique, because the objects with the two IDs can be related to each other in only one way. 
+Notice that join table doesn't have an explicit primary key column. Values in both `EventsId` and `TagsId` may be duplicated in each column. Indeed, this is the exact property of a join table that allows many-to-many relationships. A join table makes use of a new type of primary key, called a **composite primary key**. A composite primary key is a combination of columns that is unique and functions as a primary key. So, for example, the primary key of the first row of the example just above is the pair (13, 4). This combination is unique, because the objects with the two IDs can be related to each other in only one way. 
 
 In order to enable many-to-many relationships with EF, we need a class to model a join table.
 
-## The `EventTag` Model
+## Many to Many Relationship
 
-Let's create a new model class, `EventTag`, to model a join table for `Event` and `Tag` classes. 
+To model a join table for `Event` and `Tag` classes, we will provide a collection navigation property on both sides of the relationship. 
 
-To model a join table for `Event` and `Tag` classes, we will create a **join class**. Given our discussion of join tables above, we know that it will need `EventId` and `TagId` properties. To more easily work with the corresponding `Event` and `Tag` objects in our controllers, we will also include properties of those specific types.
-
-```csharp {linenos=table}
-using System;
-namespace CodingEventsDemo.Models
-{
-   public class EventTag
-   {
-
-      public int EventId { get; set; }
-      public Event Event { get; set; }
-
-      public int TagId { get; set; }
-      public Tag Tag { get; set; }
-
-      public EventTag()
-      {
-      }
-   }
-}
-```
-
-To make this class persistent, and a new `DbSet` entry to `EventDbContext`:
+Within the `Event.cs` class we add the following collection property of type `Tags`:
 
 ```csharp {linenos=table}
-public DbSet<EventTag> EventTags { get; set; }
+public ICollection<Tag>? Tags { get; set; }
 ```
+
+Within the `Tag.cs` class we add a collection property of type `Events` to the other side of the relationship:
+
+```csharp {linenos=table}
+public ICollection<Event>? Events { get; set; }
+```
+
+## Join Entity Type Configuration
 
 Since our join table will make use of a composite primary key, we need to add some additional configuration to `EventDbContext`.
 
 ```csharp {linenos=table}
 protected override void OnModelCreating(ModelBuilder modelBuilder)
 {
-   modelBuilder.Entity<EventTag>()
-         .HasKey(et => new { et.EventId, et.TagId });
+   modelBuilder.Entity<Event>()
+         .HasOne(p => p.Category)
+         .WithMany(b => b.events);
+
+   modelBuilder.Entity<Event>()
+         .HasMany(p => p.Tags)
+         .WithMany(p => p.Events)
+         .UsingEntity(j => j.ToTable("EventTags"));
 }
 ```
 
-The method `OnModelCreating` can be overridden from the base class, `DbContext`, in order to provide additional configuration for the data store. In this case, we add code that configures `EntityTag` to have a composite primary key consisting of the properties/columns `EventId` and `TagId`.
+The method `OnModelCreating` can be overridden from the base class, `DbContext`, in order to provide additional configuration for the data store. In this case, we add code that configures `EventTag` to have a composite primary key consisting of the properties/columns `EventId` and `TagId`.
 
-This completes configuration of our join class. Before proceeding, create and apply a database migration. Refer to the :ref:`previous section <create-migration>` for details if needed, being sure to use a unique, descriptive migration name. After running the migration, verify that there is a new join table, ``EventTag``.
+Before proceeding, create and apply a database migration. Be sure to use a unique and descriptive migration name. After running the migration, verify that there is a new join table, `EventTags`.
 
 ## Adding a `Tag` to an `Event`
 
