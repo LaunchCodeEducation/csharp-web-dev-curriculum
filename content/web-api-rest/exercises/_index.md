@@ -62,10 +62,10 @@ conversion, or serialization, so that our API can output data in a portable form
 
 This branch of the API has four endpoints: 
 
-1. [GET Coding Events](https://education.launchcode.org/csharp-web-dev-curriculum/web-api-rest/exercises/#get-coding-events)
-1. [GET a Single Coding Event](https://education.launchcode.org/csharp-web-dev-curriculum/web-api-rest/exercises/#get-a-single-coding-event)
-1. [Create a Coding Event](https://education.launchcode.org/csharp-web-dev-curriculum/web-api-rest/exercises/#create-a-coding-event)
-1. [Delete a Coding Event](https://education.launchcode.org/csharp-web-dev-curriculum/web-api-rest/exercises/#delete-a-coding-event)
+1. [GET Coding Events](#get-coding-events)
+1. [GET a Single Coding Event](#get-a-single-coding-event)
+1. [Create a Coding Event](#create-a-coding-event)
+1. [Delete a Coding Event](#delete-a-coding-event)
 
 #### Get Coding Events
 
