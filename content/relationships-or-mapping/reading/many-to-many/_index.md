@@ -129,49 +129,46 @@ This new view will contain a form with a dropdown that will allow the user to se
 
 ```csharp {linenos=table}
 using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using CodingEventsDemo.Models;
+using CodingEvents.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace CodingEventsDemo.ViewModels
+namespace CodingEvents.ViewModels
 {
-   public class AddEventTagViewModel
-   {
-      [Required(ErrorMessage = "Event is required")]
-      public int EventId { get; set; }
+    public class AddEventTagViewModel
+    {
 
-      [Required(ErrorMessage = "Tag is required")]
-      public int TagId { get; set; }
+        public int EventId { get; set; }
+        public Event? Event { get; set; }
 
-      public Event Event { get; set; }
+        public List<SelectListItem>? Tags { get; set; }
 
-      public List<SelectListItem> Tags { get; set; }
+        public int TagId { get; set; }
 
-      public AddEventTagViewModel(Event theEvent, List<Tag> possibleTags)
-      {
+        public AddEventTagViewModel(Event theEvent, List<Tag> possibleTags)
+        {
             Tags = new List<SelectListItem>();
 
             foreach (var tag in possibleTags)
             {
-               Tags.Add(new SelectListItem
-               {
-                  Value = tag.Id.ToString(),
-                  Text = tag.Name
-               });
+                Tags.Add(new SelectListItem
+                {
+                    Value = tag.Id.ToString(),
+                    Text = tag.Name
+                });
             }
 
             Event = theEvent;
-      }
+        }
 
-      public AddEventTagViewModel()
-      {            
-      }
-   }
+        public AddEventTagViewModel()
+        {
+        }
+    }
+
 }
 ```
 
-This class models the data that is need to render and process our form. In order to add a tag to an event, our `POST` handler will need to know the IDs of the two objects in question. Therefore, our ViewModel has required `EventId` and `TagId` properties. It also contains an `Event` property, which we will use to display details (such as the event name) in the view.
+This class models the data that is needed to render and process our form. In order to add a tag to an event, our `POST` handler will need to know the IDs of the two objects in question. Therefore, our ViewModel has required `EventId` and `TagId` properties. It also contains an `Event` property, which we will use to display details (such as the event name) in the view.
 
 Finally, the ViewModel has a property `List<SelectListItem> Tags`. As with previous forms containing a dropdown, this property will be used to populate the `select` element containing the all of the tag options. 
 
@@ -184,7 +181,7 @@ Now, let's create the view template.
 Our template needs a form with two inputs. The more obvious input will be the `select` element containing tag options. Since we also need to submit the event ID in our request, we'll add a hidden input that holds the value of `EventId` from our ViewModel.
 
 ```html {linenos=table}
-@model CodingEventsDemo.ViewModels.AddEventTagViewModel
+@model CodingEvents.ViewModels.AddEventTagViewModel
 
 <h1>Add Tag to Event: @Model.Event.Name</h1>
 
@@ -208,12 +205,14 @@ The `GET` method is simple since it just displays the form.
 ```csharp {linenos=table}
 // responds to URLs like /Tag/AddEvent/5 (where 5 is an event ID)
 public IActionResult AddEvent(int id)
-{
-   Event theEvent = context.Events.Find(id);
-   List<Tag> possibleTags = context.Tags.ToList();
-   AddEventTagViewModel viewModel = new AddEventTagViewModel(theEvent, possibleTags);
-   return View(viewModel);
-}
+   {
+      Event theEvent = context.Events.Find(id);
+      List<Tag> possibleTags = context.Tags.ToList();
+
+      AddEventTagViewModel viewModel = new AddEventTagViewModel(theEvent, possibleTags);
+      
+      return View(viewModel);
+   }
 ```
 
 This method creates an `AddEventTagViewModel` using the event specified by the `id` parameter and the list of all tags from the database. Then it renders the view.
@@ -222,26 +221,25 @@ The `POST` method is more complicated.
 
 ```csharp {linenos=table}
 [HttpPost]
-public IActionResult AddEvent(AddEventTagViewModel viewModel)
-{
-   if (ModelState.IsValid)
+   public IActionResult AddEvent(AddEventTagViewModel viewModel)
    {
+      if (ModelState.IsValid)
+      {
+            int eventId = viewModel.EventId;
+            int tagId = viewModel.TagId;
 
-      int eventId = viewModel.EventId;
-      int tagId = viewModel.TagId;
+            Event theEvent = context.Events.Include(p => p.Tags).Where(e => e.Id == eventId).First();
+            Tag theTag = context.Tags.Where(t => t.Id == tagId).First();
 
-      EventTag eventTag = new EventTag {
-         EventId = eventId,
-         TagId = tagId
-      };
-      context.EventTags.Add(eventTag);
-      context.SaveChanges();
+            theEvent.Tags.Add(theTag);
 
-      return Redirect("/Events/Detail/" + eventId);
+            context.SaveChanges();
+
+            return Redirect("/Events/Detail/" + eventId);
+      }
+
+      return View(viewModel);
    }
-
-   return View(viewModel);
-}
 ```
 
 This action method takes in a `AddEventTagViewModel` object which will be created via model binding. Assuming validation passes (that is, both `EventId` and `TagId` are not `null`) we create a new `EventTag` object and save it to the database. Then we redirect to the detail view for the given event.
@@ -252,28 +250,22 @@ In the next section, we'll work to display tags in the view.
 
 ## Displaying Tags in the Detail View
 
-Now that we have `EventTag` data in the database, let's display the tags for a given event in the view.
+Now that we have `EventTags` data in the database, let's display the tags for a given event in the view.
 
-We want an event's tags to be displayed on its detail view, so let's start in `EventsController`. The `Detail` method needs to pass in tag data for the given event. To do this, we must query `context.EventTags` and pass the resulting list of `EventTag` objects into the ViewModel's constructor.
+We want an event's tags to be displayed on its detail view, so let's start in `EventsController`. The `Detail` method needs to pass in tag data for the given event. To do this, we must use another `.Include()` statement with a lambda expression for `Tags`.
 
 ```csharp {linenos=table}
-List<EventTag> eventTags = context.EventTags
-      .Where(et => et.EventId == id)
-      .Include(et => et.Tag)
-      .ToList();
+public IActionResult Detail(int id)
+   {
+   Event theEvent = context.Events
+      .Include(e => e.Category)
+      .Include(e => e.Tags)
+      .Single(e => e.Id == id);
 
-EventDetailViewModel viewModel = new EventDetailViewModel(theEvent, eventTags);
+   EventDetailViewModel viewModel = new EventDetailViewModel(theEvent);
+   return View(viewModel);
+   }
 ```
-
-Our query of `context.EventTags` has a few pieces:
-<!-- TODO: Double check that the below lines are correct -->
-1. **Line 93** - Filters the `EventTags` set to include only objects related to the given `Event`.
-1. **Line 94** - Forces eager loading of the `Tag` property of those `EventTag` objects.
-1. **Line 95** - Converts the `DbSet` to a list.
-
-{{% notice blue "Note" "rocket" %}}
-You might be wondering why we have to query `context.EventTags`. Indeed, it would be convenient of we could just reference a `Tags` property from the `Event` class. But notice that there *is no such property* in `Event`. The many-to-many relationship is defined by the data in `EventTag`, so we must use this class in order to access related objects.
-{{% /notice %}}
 
 Now let's move into `EventDetailsViewModel`. Here, we add data related to an event's tags to pass into the view.
 
@@ -282,7 +274,6 @@ First, add a new string property named `TagText`.
 ```csharp {linenos=table}
 public string TagText { get; set; }
 ```
-.. sourcecode:: csharp
 
 Then in the constructor, add a parameter to represent the list of all of `EventTag` objects associated with a given `Event`. Use this parameter to set the value of `TagText`.
 
