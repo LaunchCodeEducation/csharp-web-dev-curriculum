@@ -39,9 +39,10 @@ Including a SQLite database in this project means you don't need to have your My
 We'll start the API server from the terminal using the `dotnet run` command. Navigate to the `CodingEventsAPI` project folder *within* your `coding-events-api` solution. This is the folder that contains `Controllers/` and so on, and is NOT the main project folder.
 
 ```bash
+# navigate and change into the coding-events-api solution 
+cd coding-events-api
 # change to the CodingEventsAPI project directory
 cd CodingEventsAPI
-```
 
 ```bash
 # run the project
