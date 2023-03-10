@@ -267,15 +267,13 @@ public IActionResult Detail(int id)
    }
 ```
 
-Now let's move into `EventDetailsViewModel`. Here, we add data related to an event's tags to pass into the view.
+Now let's move into `EventDetailViewModel`. Here, we add data related to an event's tags to pass into the view.
 
-First, add a new string property named `TagText`.
+First, add a new string property named `TagText`. We will also create a List of `Tags` called `evtTags`.
 
 ```csharp {linenos=table}
 public string TagText { get; set; }
 ```
-
-Then in the constructor, add a parameter to represent the list of all of `EventTag` objects associated with a given `Event`. Use this parameter to set the value of `TagText`.
 
 ```csharp {linenos=table}
 public EventDetailViewModel(Event theEvent, List<EventTag> eventTags)
@@ -287,13 +285,14 @@ public EventDetailViewModel(Event theEvent, List<EventTag> eventTags)
    CategoryName = theEvent.Category.Name;
 
    TagText = "";
+   List<Tag> evtTags = theEvent.Tags.ToList();
    for (var i = 0; i < eventTags.Count; i++)
    {
-         TagText += ("#" + eventTags[i].Tag.Name);
-         if (i < eventTags.Count - 1)
-         {
-            TagText += ", ";
-         }
+      TagText += ("#" + eventTags[i].Name);
+      if (i < eventTags.Count - 1)
+      {
+         TagText += ", ";
+      }
    }
 }
 ```
@@ -336,78 +335,65 @@ public IActionResult AddEvent(AddEventTagViewModel viewModel)
    if (ModelState.IsValid)
    {
 
-         int eventId = viewModel.EventId;
-         int tagId = viewModel.TagId;
+      int eventId = viewModel.EventId;
+      int tagId = viewModel.TagId;
 
-         List<EventTag> existingItems = context.EventTags
-            .Where(et => et.EventId == eventId)
-            .Where(et => et.TagId == tagId)
-            .ToList();
+      Event theEvent = context.Events.Include(e => e.Tags).Where(e => e.Id == eventId).First();
+      Tag theTag = context.Tags.Where(t => t.Id == tagId).First();
 
-         if (existingItems.Count == 0)
-         {
-            EventTag eventTag = new EventTag {
-               EventId = eventId,
-               TagId = tagId
-            };
-            context.EventTags.Add(eventTag);
-            context.SaveChanges();
-         }
+      theEvent.Tags.Add(theTag);
 
-         return Redirect("/Events/Detail/" + eventId);
-   }
+      context.SaveChanges();
+
+      return Redirect("/Events/Detail/" + eventId);
+
+   } 
 
    return View(viewModel);
+
 }
 ```
-<!-- TODO: double check that the below lines of code are correctly numbered -->
-Lines 68-71 query for existing `EventTag` objects that have the some `EventId`/`TagId` pair. In other words, `existingItems` will be empty unless that given event already has the given tag. Before creating and saving a new `EventTag` object, we check the size of `existingItems`, skipping this step if the event already has the tag.
+
+The `.First();` method will return the first element of our lambda expression condition for the target collection. If the collection is empty or does not include the element from our condition we will receive an `InvalidOperation` exception. 
 
 ## Display Items With a Given Tag
 
 In addition to seeing which tags are on an event, we would also like to see all events with a specific tag.
 
-We start by creating a `Detail` action in `Controllers/TagController.cs`. This action method should retrieve all `EventTag` objects with a given `TagId`.
+We start by creating a `Detail` action in `Controllers/TagController.cs`. This action method should retrieve all `Tags` objects with a given `TagId`.
 
 ```csharp {linenos=table}
-public IActionResult Detail(int id)
+public IActionResult Detail(int id) 
 {
-   List<EventTag> eventTags = context.EventTags
-         .Where(et => et.TagId == id)
-         .Include(et => et.Event)
-         .Include(et => et.Tag)
-         .ToList();
+   Tag theTag = context.Tags.Include(e => e.Events).Where(t => t.Id == id).First();
 
-   return View(eventTags);
+   return View(theTag);
 }
 ```
-
-Here's a breakdown of this query:
-<!-- TODO: double check the below lines are correctly numbered -->
-1. **Line 92** - Filters the collection of all `EventTag` objects down to just those with the given `TagId`.
-1. **Line 93** - Eager loads the `Event` child object.
-1. **Line 94** - Eager loads the `Tag` child object.
-1. **Line 95** - Converts the `DbSet` to a list.
 
 This controller is accessible at the route `/Tag/Detail/X` where `X` is the ID of a specific tag.
 
 The view is similar to other listings that we have created.
 
-```html {linenos=table}
-@model List<CodingEventsDemo.Models.EventTag>
+## `Views/Tag/Detail.cshtml`
 
-@if (Model.Count == 0)
+Create the `Detail.cshtml` file and add the below code:
+
+```html {linenos=table}
+@model CodingEvents.Models.Tag
+
+@if (Model.Events.ToList().Count == 0)
 {
    <h1>No elements with the given tag</h1>
 }
 else
 {
-   <h1>Events Tagged: @Model[0].Tag.Name</h1>
+   <h1>Events Tagged: @Model.Name</h1>
 
    <ul>
-      @foreach (var evtTag in Model)
+      @foreach (var evtTag in Model.Events)
       {
-         <li>@evtTag.Event.Name</li>
+         <li>@evtTag.Name</li>
       }
    </ul>
 
@@ -449,4 +435,3 @@ Which ``EventDbContext`` property allows you to access `Tag` objects that are re
 1. `DbSet<Tag> Tags`
 1. `DbSet<EventTag> EventTags`
 1. All of the above
-{{% /notice %}}
