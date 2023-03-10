@@ -12,7 +12,7 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-Let’s practice adding more properties to our event objects and validating them. Create a new branch from the [viewmodels](LINK).
+Let’s practice adding more properties to our event objects and validating them. Create a new branch from the [viewmodels](https://github.com/LaunchCodeEducation/CodingEvents/tree/viewmodels).
 
 Below, we describe some new properties for you to add to the `Event` class. For each property, consider the following factors:
 
