@@ -13,3 +13,5 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Next Steps
+
+- [What is a Relational Database (RDBMS)?](https://www.oracle.com/database/what-is-a-relational-database/)
