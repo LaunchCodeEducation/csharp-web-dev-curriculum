@@ -34,15 +34,6 @@ Let's begin by forking and cloning the repo onto our machine. In your Powershell
 Including a SQLite database in this project means you don't need to have your MySQL server running to test the API. We won't get into what this looks like and instead just concentrate on testing the API endpoints.
 {{% /notice %}}
 
-Let's change into the repo and switch to this branch:
-
-```bash
-# cd is an alias (like a nick-name) for the Set-Location cmdlet in PowerShell
-cd coding-events-api
-```
-
-Keep your terminal open! We have some more work to do.
-
 ### Start the API Server
 
 We'll start the API server from the terminal using the `dotnet run` command. Navigate to the `CodingEventsAPI` project folder *within* your `coding-events-api` solution. This is the folder that contains `Controllers/` and so on, and is NOT the main project folder.
