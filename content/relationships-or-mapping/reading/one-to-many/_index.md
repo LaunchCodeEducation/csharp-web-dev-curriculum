@@ -51,7 +51,7 @@ Open `AddEventViewModel`, which is in the `ViewModels` directory. Recall that th
 [Required(ErrorMessage = "Category is required")]
 public int CategoryId { get; set; }
 
-public List<SelectListItem> Categories { get; set; }
+public List<SelectListItem>? Categories { get; set; }
 ```
 
 The constructor for this class populates the `EventTypes` collection, which we have just removed. This collection stored a collection of `SelectListItem` objects, one for each possible value of `Type`. The corresponding code to work with categories should populate `Categories` with each possible value of `Category`. In other words, `Categories` should have one `SelectListItem` for each item in the `EventCategory` table. 
@@ -222,10 +222,10 @@ Our next update is more straightforward. Recall that we modified the main contro
 ### `Controllers/EventsController.cs`
 
 ```csharp
-[HttpGet]
 public IActionResult Add()
 {
-   AddEventViewModel addEventViewModel = new AddEventViewModel(context.Categories.ToList());
+   List<EventCategory> categories = context.Categories.ToList();
+   AddEventViewModel addEventViewModel = new AddEventViewModel(categories);
 
    return View(addEventViewModel);
 }
