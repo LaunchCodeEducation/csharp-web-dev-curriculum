@@ -12,11 +12,21 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-## Major Concepts & Key Terminology
+## Major Concepts
 
 The learning objectives for this chapter are:
 
 This chapter introduces the tools needed to create meaningful relationships using ORM. Let’s consider the different types of relationships at a conceptual level. In later sections, we will learn how to implement these relationships using EntityFrameworkCore.
+
+## Key Terminology
+1. One-to-Many
+1. Many-to-Many
+1. Lambda Expressions
+1. Join Tables
+1. Composite Primary Key
+1. Join Class
+1. Lazy Loading
+1. Eager Loading
 
 ## Content Links
 
