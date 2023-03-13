@@ -34,7 +34,7 @@ public EventCategory Category { get; set; }
 public int CategoryId { get; set; }
 ```
 <!-- TODO: Insert Correct link below -->
-The `CategoryId` property functions as a [foreign key](https://education.launchcode.org/csharp-web-dev-curriculum/). EF will create a `CategoryId` column in the `Event` table. The value of this column for a given row will determine which row in the `Category` table is related to the given event. Our code is now set up so that each `Event` will knows about its `EventCategory` object, and that relationship persists.
+The `CategoryId` property functions as a [foreign key](https://education.launchcode.org/csharp-web-dev-curriculum/). EF will create a `CategoryId` column in the `Event` table. The value of this column for a given row will determine which row in the `Category` table is related to the given event. Our code is now set up so that each `Event` will know about its `EventCategory` object, and that relationship persists.
 
 {{% notice blue "Note" "rocket" %}}
 It is *very* important that the ID field corresponding to the `Category` property is named `CategoryId`. This naming convention lets EF know that it should set `Category` to be the object with the `Id` value the same as `CategoryId`. 
@@ -46,7 +46,7 @@ Open `AddEventViewModel`, which is in the `ViewModels` directory. Recall that th
 
 ```csharp {linenos=table}
 [Required(ErrorMessage = "Category is required")]
-public int CategoryID { get; set; }
+public int CategoryId { get; set; }
 
 public List<SelectListItem> Categories { get; set; }
 ```
