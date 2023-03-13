@@ -1,8 +1,8 @@
 ---
 title: "Accessing Data"
-date: 2023-01-30T09:32:46-06:00
+date: 2023-03-10T09:32:46-06:00
 draft: false
-weight: 2
+weight: 3
 originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer

@@ -1,6 +1,6 @@
 ---
 title: "Exercises: OMG the ORM!"
-date: 2023-03-10T09:01:27-06:00
+date: 2023-03-10T09:32:46-06:00
 draft: false
 weight: 2
 originalAuthor: <no value> # to be set by page creator
