@@ -28,12 +28,13 @@ We want to relate `Event` objects to `EventCategory` objects, and vice versa. Cu
 
 In the `Event` class, replace the `Type` property with a new property of type `EventCategory`. In order for EntityFrameworkCore to be able to persist relationships between `Event` objects and `EventCategory` objects, we must also have a property that stores the `Id` of the given `EventCategory`.
 
-```csharp {linenos=table}
+### `Models/Event.cs`
+
+```csharp
 public EventCategory Category { get; set; }
 
 public int CategoryId { get; set; }
 ```
-<!-- TODO: Insert Correct link below -->
 The `CategoryId` property functions as a [foreign key](https://education.launchcode.org/csharp-web-dev-curriculum/). EF will create a `CategoryId` column in the `Event` table. The value of this column for a given row will determine which row in the `Category` table is related to the given event. Our code is now set up so that each `Event` will know about its `EventCategory` object, and that relationship persists.
 
 {{% notice blue "Note" "rocket" %}}
@@ -44,7 +45,9 @@ Now, let's remove all references to `EventType` in the project.
 
 Open `AddEventViewModel`, which is in the `ViewModels` directory. Recall that this ViewModel represents the data that is needed to display and process the form used to create new `Event` instances. Replace its `Type` and `EventType` properties with similar properties that use `EventCategory`.
 
-```csharp {linenos=table}
+### `ViewModels/AddEventViewModel.cs`
+
+```csharp
 [Required(ErrorMessage = "Category is required")]
 public int CategoryId { get; set; }
 
@@ -75,44 +78,88 @@ The `Value` of each `SelectListItem` will be the `Id` of the given category. The
 
 Since we no longer have a no-arg constructor, we must add one to allow model binding.
 
-```csharp {linenos=table}
+```csharp
 public AddEventViewModel()
 {
 }
 ```
 
-There is another reference to `EventType`, and it is in `Views/Events/Add.cshtml`. Within that file, update the `select` input and its label to reference our new `Category` and `Categories` properties.
+There are a couple references to `Type` and `EventType`, residing within our `Views/` directory. 
 
-```html {linenos=table}
+Within the `Views/Events/Add.cshtml` file, update the `select` input and its label to reference our new `Category` and `Categories` properties.
+
+```html
 <label asp-for="CategoryId">Category</label>
 <select asp-for="CategoryId" asp-items="Model.Categories"></select>
 ```
 
-Finally, we have a reference to `EventType` in the `EventsController.Add` method that handles POST requests. This method creates a new `Event` object using data from the `AddEventViewModel` parameter.
+Additionally, within the `Views/Events/Index.cshtml` file, update the `Event Type` to `Category` and the `Evt.Type` to `Evt.Category.Name`:
 
-```csharp {linenos=table}
-Event newEvent = new Event
-{
-   Name = addEventViewModel.Name,
-   Description = addEventViewModel.Description,
-   ContactEmail = addEventViewModel.ContactEmail,
-   Type = addEventViewModel.Type
-};
+```html
+<th>
+   Category
+</th>
 ```
 
-When this method runs, `addEventViewModel` contains form data. The data that specifies which `EventCategory` and `Event` should be assigned to is `CatgoryId` and NOT and actually `EventCategory` object. Therefore, we must first retrieve the category object, and then pass it into the `Event` constructor.
+```html
+<td>@evt.Category.Name</td>
+```
+
+Finally, we have a reference to `EventType` in the `EventsController.Add` method that handles POST requests. This method creates a new `Event` object using data from the `AddEventViewModel` parameter.
+
+### `Controllers/EventController.cs`
+
+```csharp {linenos=table}
+[HttpPost]
+public IActionResult Add(AddEventViewModel addEventViewModel)
+{
+   if (ModelState.IsValid)
+   {
+         Event newEvent = new Event
+         {
+         Name = addEventViewModel.Name,
+         Description = addEventViewModel.Description,
+         ContactEmail = addEventViewModel.ContactEmail,
+         Type = addEventViewModel.Type
+         };
+
+         context.Events.Add(newEvent);
+         context.SaveChanges();
+
+         return Redirect("/Events");
+   }
+
+   return View(addEventViewModel);
+}
+```
+
+When this method runs, `addEventViewModel` contains form data. The data that specifies which `EventCategory` and `Event` should be assigned to is `CatgoryId` and NOT the `EventCategory` object. Therefore, we must first retrieve the category object, and then pass it into the `Event` constructor.
 
 The code above can be refactored as follows:
 
 ```csharp {linenos=table}
-EventCategory theCategory = context.Categories.Find(addEventViewModel.CategoryId);
-Event newEvent = new Event
+[HttpPost]
+public IActionResult Add(AddEventViewModel addEventViewModel)
 {
-   Name = addEventViewModel.Name,
-   Description = addEventViewModel.Description,
-   ContactEmail = addEventViewModel.ContactEmail,
-   Category = theCategory
-};
+   if (ModelState.IsValid)
+   {
+         EventCategory theCategory = context.Categories.Find(addEventViewModel.CategoryId);
+         Event newEvent = new Event
+         {
+         Name = addEventViewModel.Name,
+         Description = addEventViewModel.Description,
+         ContactEmail = addEventViewModel.ContactEmail,
+         Category = theCategory
+         };
+
+         context.Events.Add(newEvent);
+         context.SaveChanges();
+
+         return Redirect("/Events");
+   }
+
+   return View(addEventViewModel);
+}
 ```
 
 Our app is now free of all references to `EventType`, so we may delete this unused class. 
@@ -121,9 +168,9 @@ Our app is now free of all references to `EventType`, so we may delete this unus
 
 For categories to be aware of the events that they relate to, we must add an `Event` collection property to `EventCategory`.
 
-In `EventCategory`:
+### `Models/EventCategory.cs`
 
-```csharp {linenos=table}
+```csharp
 public List<Event> Events { get; set; }
 ```
 
@@ -137,7 +184,9 @@ Our `EventsController` requires a few updates now that `Event` objects reference
 
 The `Index` method passes the collection of all `Event` objects into the view for display:
 
-```csharp {linenos=table}
+### `Controllers/EventsController.cs`
+
+```csharp
 public IActionResult Index()
    {
       List<Event> events = context.Events.ToList();
@@ -155,7 +204,9 @@ If all we need is a list of users, loading all of the additional data in `UserPr
 
 The solution is to use **eager loading**. Eager loading is a technique that allows us to specify that data from other tables/objects be loaded when the querying a specific table/object. In our case, we want our `Event` objects to be returned with their corresponding `EventCategory` objects. We can tell EF to load the categories eagerly with the following code:
 
-```csharp {linenos=table}
+### `Controllers/EventsController.cs`
+
+```csharp
 public IActionResult Index()
    {
       List<Event> events = context.Events.Include(e => e.Category).ToList();
@@ -168,9 +219,16 @@ The `Include` method takes a lambda expression which specifies the property of e
 
 Our next update is more straightforward. Recall that we modified the main controller in `AddEventViewModel` to take a list of all `EventCategory` objects. This constructor is called in the `Add` method of our controller. Let's update it to pass in a list of all `EventCategory` objects, as queried from the database.
 
-```csharp {linenos=table}
-AddEventViewModel addEventViewModel = new AddEventViewModel(context.Categories.ToList());
+### `Controllers/EventsController.cs`
 
+```csharp
+[HttpGet]
+public IActionResult Add()
+{
+   AddEventViewModel addEventViewModel = new AddEventViewModel(context.Categories.ToList());
+
+   return View(addEventViewModel);
+}
 ```
 
 ## Database Migration and Testing
