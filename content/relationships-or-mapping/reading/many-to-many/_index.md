@@ -322,44 +322,6 @@ To make it easy for users to add a tag to an event, add the following link below
 
 This creates a URL of the form `/Tag/AddEvent/X`, where `X` is the ID of the given event.
 
-## Preventing Errors When Adding a Tag
-
-With the current state of our code, attempting to add a tag to an event that already has that tag results in an error. This is because the `EventId`/`TagId` combination is the primary key for our join table, and primary keys must be unique. 
-
-Let's address this scenario.
-
-There are multiple ways to address this issue. The approach we take is to allow the user to submit a form with a potentially duplicate `EventId`/`TagId` combination and add a check in the `POST` handler.
-
-Within `Controller/TagController.cs` update the `AddEvent` (`POST` handler) code to look like this:
-
-```csharp {linenos=table}
-[HttpPost]
-public IActionResult AddEvent(AddEventTagViewModel viewModel)
-{
-   if (ModelState.IsValid)
-   {
-
-      int eventId = viewModel.EventId;
-      int tagId = viewModel.TagId;
-
-      Event theEvent = context.Events.Include(e => e.Tags).Where(e => e.Id == eventId).First();
-      Tag theTag = context.Tags.Where(t => t.Id == tagId).First();
-
-      theEvent.Tags.Add(theTag);
-
-      context.SaveChanges();
-
-      return Redirect("/Events/Detail/" + eventId);
-
-   } 
-
-   return View(viewModel);
-
-}
-```
-
-The `.First();` method will return the first element of our lambda expression condition for the target collection. If the collection is empty or does not include the element from our condition we will receive an `InvalidOperation` exception. 
-
 ## Display Items With a Given Tag
 
 In addition to seeing which tags are on an event, we would also like to see all events with a specific tag.
