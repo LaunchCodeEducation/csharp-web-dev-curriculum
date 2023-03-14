@@ -85,14 +85,22 @@ To model a join table for `Event` and `Tag` classes, we will provide a collectio
 
 Within the `Event.cs` class we add the following collection property of type `Tags`:
 
-```csharp {linenos=table}
+```csharp
 public ICollection<Tag>? Tags { get; set; }
+```
+
+```csharp {linenos=table}
+Tags = new List<Tag>();
 ```
 
 Within the `Tag.cs` class we add a collection property of type `Events` to the other side of the relationship:
 
-```csharp {linenos=table}
+```csharp
 public ICollection<Event>? Events { get; set; }
+```
+
+```csharp
+Events = new List<Event>();
 ```
 
 ## Join Entity Type Configuration
