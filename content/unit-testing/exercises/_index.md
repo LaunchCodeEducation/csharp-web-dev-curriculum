@@ -12,9 +12,8 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-Work on these exercises in your local copy of the [csharp-web-dev-unittesting](https://github.com/LaunchCodeEducation/csharp-web-dev-unittesting) repo.
-You were directed to fork and clone this repo earlier in the chapter. If you have not done so, do so now.
-Before starting work on the exercises, check out the `exercises-start` branch.
+Work on these exercises in your local copy of the [csharp-web-dev-exercises](https://github.com/LaunchCodeEducation/csharp-web-dev-exercises) repo.
+You were directed to fork and clone this repo earlier in the book. If you have not done so, do so now.
 
 {{% notice green "Tip" "rocket" %}}
 
@@ -68,7 +67,7 @@ Add a test for the fourth TODO, "GasTankLevel is accurate after attempting to dr
         public void TestGasTankAfterExceedingTankRange()
         {
             test_car.Drive(501);
-            Assert.AreEqual(test_car.GasTankLevel, 0, .001);
+            Assert.AreEqual(0, test_car.GasTankLevel, 0.001);
         }
    ```
 
