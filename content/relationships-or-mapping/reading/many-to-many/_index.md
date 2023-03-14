@@ -14,7 +14,7 @@ lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 Let's set up a many-to-many relationship between `Event` and `Tag`.
 
 {{% notice blue "Note" "rocket" %}}
-The following walkthrough is a continuation of the `Some Setup` chapter. If you have not completed the steps in the `Some Setup` walkthrough you will need to revisit them before continuing.
+The following walkthrough is a continuation of the `Some Setup` chapter. If you have not completed the steps in the `Some Setup` walkthrough you can either revisit them or start with the following branch: [Coding Events some-setup branch](https://github.com/LaunchCodeEducation/CodingEvents/tree/some-setup)
 {{% /notice %}}
 
 ## Join Tables
