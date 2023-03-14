@@ -228,7 +228,7 @@ The `POST` method is more complicated.
             int eventId = viewModel.EventId;
             int tagId = viewModel.TagId;
 
-            Event theEvent = context.Events.Include(p => p.Tags).Where(e => e.Id == eventId).First();
+            Event theEvent = context.Events.Include(e => e.Tags).Where(e => e.Id == eventId).First();
             Tag theTag = context.Tags.Where(t => t.Id == tagId).First();
 
             theEvent.Tags.Add(theTag);
@@ -286,10 +286,10 @@ public EventDetailViewModel(Event theEvent, List<EventTag> eventTags)
 
    TagText = "";
    List<Tag> evtTags = theEvent.Tags.ToList();
-   for (var i = 0; i < eventTags.Count; i++)
+   for (var i = 0; i < evtTags.Count; i++)
    {
-      TagText += ("#" + eventTags[i].Name);
-      if (i < eventTags.Count - 1)
+      TagText += ("#" + evtTags[i].Name);
+      if (i < evtTags.Count - 1)
       {
          TagText += ", ";
       }
