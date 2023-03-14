@@ -12,7 +12,27 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
+With our data store and persistent class configured, we are ready to realize the full power of ORM.
 
+## Data Stores in the Controller
+
+
+Since our data store, `EventDbContext`, extends `DbContext`, we have access to all of the methods defined by `DbContext`. There are quite a few such methods (see the [documentatio](https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext?view=efcore-6.0#methods) for details), but we will only use `SaveChanges`.
+
+We will make more extensive use of the `Events` property of `EventDbContext`, which is of type `DbSet`. As mentioned in the previous section, this property allows us to query for objects directly from the database. It too has [quite a few methods](https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbset-1?view=efcore-6.0#methods), and we will demonstrate usage of `Add`, `Remove`, `ToList`, and `Find`.
+
+### Adding the Data Store
+
+To access data from the database in a controller, we’ll need an instance of EventDbContext. Adding the following code to the top of `EventsController` will make one available as an instance variable of the controller.
+
+```csharp{linenos=table,hl_lines=[],linenostart=17}
+  private EventDbContext context;
+
+  public EventsController(EventDbContext dbContext)
+  {
+    context = dbContext;
+  }
+```
 
 ## Check Your Understanding
 

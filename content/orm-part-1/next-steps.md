@@ -15,3 +15,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ## Next Steps
 
 - [What is a Relational Database (RDBMS)?](https://www.oracle.com/database/what-is-a-relational-database/)
+
+[Pomelo.EntityFrameworkCore.MySql](https://github.com/PomeloFoundation/Pomelo.EntityFrameworkCore.MySql/blob/master/README.md)
+
+[Troubleshoot and debug ASP.NET Core projects](https://learn.microsoft.com/en-us/aspnet/core/test/troubleshoot?view=aspnetcore-6.0)

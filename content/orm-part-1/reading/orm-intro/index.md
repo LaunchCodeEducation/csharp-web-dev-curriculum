@@ -30,7 +30,13 @@ In CodingEvents, we have the `Events` class that contains the following properit
 - `Description`
 - `ContactEmail`
 
-Now we want to store this information in a MySQL database. We can use ORM so that the database of our application has a table to contain all objects instantiated from the `Events` class. The table called `Events` has four columns: interger `Id`, varchar `Name`, a varchar `Description`, and a varchar `ContactEmail`.  
+Now we want to store this information in a MySQL database. We can use ORM so that the database of our application has a table to contain all objects instantiated from the `Events` class. 
+
+The table called `Events` has four columns: 
+- interger `Id`
+- varchar `Name`
+- varchar `Description`
+- varchar `ContactEmail`.  
 
 Now, let's instantiate a C# `Events` object:
 
@@ -58,7 +64,7 @@ Now Code with Pride and all the information we provided is stored in our MySQL d
 
 One of the most widely used object-relational mappers available for C# and ASP.NET Core is **Entity Framework Core**. This framework makes use of **data layers**. When we learned about models, we learned that [data layers](LINK) add abstraction between models and the data we want to store. With Entity FrameworkCore, data layers take the form of classes that extend `DbContext`. Models are NOT persistent data stores and relational databases do NOT shape the C# objects we will be using. We want to make sure that the two remain separate.
 
-{{% notice blue "Note" "Rocket" %}}
+{{% notice blue "Note" "rocket" %}}
 
 We’ll often shorten Entity Framework Core to EF. The “Core” in the name indicates that we’re talking about the version of EF that is compatible with ASP.NET Core.
 
@@ -75,8 +81,8 @@ You can test that it has been installed by running the following in your termina
 1. `cd` your way down into the project folders. Verify your location by running the `ls` command. You should see all the folders within your project.
 
    ```bash
-   student-computer:CodingEventsDemo student$ ls
-   CodingEventsDemo.csproj           ViewModels
+   student-computer:CodingEvents student$ ls
+   CodingEvents.csproj               ViewModels
    Controllers                       Views
    Data                              appsettings.Development.json
    Models                            appsettings.json
@@ -104,11 +110,13 @@ You can test that it has been installed by running the following in your termina
       |___||_|       /   \\\/\\
 
       Entity Framework Core .NET Command-line Tools 6.0.X
+
+      //code continues ...
       ```
 
 {{% notice blue "Note" "rocket" %}}
 
-   We recommend using or installing EF Core version 6.0.11 or higher
+   We recommend using or installing EF Core version 6.0.11 or higher.
 
 {{% /notice %}}   
 
@@ -154,16 +162,7 @@ If you are not able to see the Entity Framework Core logo, then try the followin
 
 Once you have taken these steps, you are ready to set up the appropriate models and controllers for the application. We’ll do that in the next section.
 
-
-
 ## Check Your Understanding
-
-{{% notice green "Question" "rocket" %}}
-   **True/False:** Writing usernames and passwords in plain text in a file is a GREAT idea!
-
-   <!-- ans: False -->
-{{% /notice %}}
-
 
 {{% notice green "Question" "rocket" %}}
    **True/False:** An ORM converts data between C# objects and relational databases.
