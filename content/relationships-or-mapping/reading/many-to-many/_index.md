@@ -297,7 +297,7 @@ public EventDetailViewModel(Event theEvent, List<EventTag> eventTags)
 }
 ```
 
-We build up the contents of `TagText` by looping over `eventTags` and appending tag names, separated by commas. For example, if an event has tags with names `"java"`, `"csharp"`, and `"object-oriented"`, then the `TagList` will be `"#java, #csharp, #object-oriented"`. 
+We build up the contents of `TagText` by looping over `evtTags` and appending tag names, separated by commas. For example, if an event has tags with names `"java"`, `"csharp"`, and `"object-oriented"`, then the `TagList` will be `"#java, #csharp, #object-oriented"`. 
 
 Displaying this data in the view is straightforward. In `Views/Events/Detail.cshtml`, add an additional row to the table.
 
