@@ -103,10 +103,6 @@ Since our join table will make use of a composite primary key, we need to add so
 protected override void OnModelCreating(ModelBuilder modelBuilder)
 {
    modelBuilder.Entity<Event>()
-         .HasOne(c => c.Category)
-         .WithMany(e => e.events);
-
-   modelBuilder.Entity<Event>()
          .HasMany(e => e.Tags)
          .WithMany(e => e.Events)
          .UsingEntity(j => j.ToTable("EventTags"));
