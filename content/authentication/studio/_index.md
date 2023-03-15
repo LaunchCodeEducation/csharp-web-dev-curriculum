@@ -50,7 +50,7 @@ gives you a familiar-looking navbar with one menu option, *Add Jobs*. You can ad
 
 1. In the project you have cloned, scaffold Identity onto the codebase.
 
-- Use the same files as the chapter content and `JobDbContext`.
+   - Use the same files as the chapter content and `JobDbContext`.
 
 1. Update `Program.cs` and `JobDbContext` as necessary.
 1. Add the `LoginPartial` partial view to the navbar.
