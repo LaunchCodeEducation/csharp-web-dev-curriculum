@@ -26,24 +26,15 @@ For this studio, you'll be tasked with adding simple user authentication to your
 1. You will need to do some work to ensure that the schema, user, and database password 
 match your own local MySQL setup.
 
-1. Open `appsettings.json` and find the following statement:
+1. Open `Program.cs` and find the following code:
 
-```json
-"ConnectionStrings": {
-   "DefaultConnection": "server=localhost;userid=techjobs_auth;password=ILoveTechJobs;database=techjobs_auth;"
-}
-```
+   ```csharp
+   var connectionString = "server=localhost;user=techjobs_auth;password=ILoveTechJobs;database=techjobs_auth";
+   ```
 
-- You likely do not already have a schema named `techjobs_auth` or this combination of username and password so you must create them.
+- You likely do not already have a database named `techjobs_auth` or this combination of username and password so you will need to update them so that you can connect to your MySQL workbench.
 
-{{% notice green "Tip" "rocket" %}}
-<!-- TODO: Add link to 1.4 exercises SQL, Part 1 to below link -->
-To create a new schema in your current connection, refer back to the instructions in the [SQL Part 1 Exercises](https://education.launchcode.org/SQL/chapters/mysql-part-1/exercises.html).
-<!-- TODO: Add link to 17.1 Setting up a persistent database video -->
-To create a new user with permissions, refresh your memory in [Setting up a Persistent Database]().
-{{% /notice %}}
-
-1. Before getting started with setting up Identity, run a new migration to make sure that all of the database info is correct.
+4. Before getting started with setting up Identity, run a new migration to make sure that all of the database info is correct.
 
 {{% notice blue "Note" "rocket" %}}
 We've greatly reduced the functionality of the app so you can focus on the work to set up authentication. Running the application now 
