@@ -12,22 +12,36 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 <!-- TODO: Link back to MySQL book for refresher -->
-To get started with using a relational database with our MVC applications, we need to first [set up a new database](https://education.launchcode.org/SQL/chapters/mysql-part-1/exercises.html) in MySQL Workbench.
+We have decided to use [MySQL](LINK) for our relational database for `CodingEvents` MVC project.  
+
+First we need to [set up a new database](https://education.launchcode.org/SQL/chapters/mysql-part-1/exercises.html) in MySQL Workbench and then we can connect it to `CodingEvents`
+
+## Create the Database
+
 
 In MySQL Workbench, do the following:
 
-1. Create a new schema, `coding_events`.
+1. Create a new schema, `coding-events`.
 
-1. Add a new user, `coding_events`, with a new password. Give the user all privileges to modify your new schema.
+1. Add a new user, `codingevents`, with a new password. Give the user "all" privileges to modify your new schema.
 
+## Begin Connecting `CodingEvents` to the Database
 
-**UPDATE PROGRAM.CS**
+Now, attach MySQL to your project in `Program.cs` by adding the following property:
 
-```csharp{linenos=table,hl_lines=[],linenostart=1}
-
-//CODE HERE FOR CONNECTING TO DATABASE
+```csharp{linenos=table,hl_lines=[],linenostart=6}
+   var connectionString = "server=localhost;user=username;password=password;database=database";
+   var serverVersion = new MySqlServerVersion(new Version(#, #, #));
 
 ```
+
+{{% notice orange "Warning" "rocket" %}}
+Update the `connectionString` with your username, password, and database name.
+
+Update `serverVersion` with the actual version of your MySql Workbench.
+
+Visual Studio will automatically add the correct `using` statement which will shift the lines once you provide correct version numbers the `serverVersion`.  This will move `connectionString` and `serverVersion` to lines 8 and 9. 
+{{% /notice %}}
 
 We now need to add a couple of NuGet packages to support our database connection. This process differs slightly for Windows and MacOS users.
 
@@ -67,10 +81,27 @@ If we do not do these steps, then our application will not be able to use a pers
 Setting the value of the `connectionString` property using the values of the username and password is NOT a best practice. We regularly commit our code to Github, meaning anyone who reads the code in our repository can see the username and password. While you can do it for the applications in this class, you do not want to do it in the future.
 
 {{% notice blue "Note"  "rocket"%}}
-   To avoid this in the future, you can configure your `connectionString` string to reference environment variables. You then hide the appropriate info by setting the environment variable’s value equal to the password, for example.
+   To avoid this in the future, you can configure your `connectionString` string to reference **environment variables**. You then hide the appropriate info by setting the environment variable’s value equal to the password, for example.
+
+   We used the [documentation provided by Pomelo](https://github.com/PomeloFoundation/Pomelo.EntityFrameworkCore.MySql#1-project-configuration) to code the current `connectionString`. 
+
+   If you are interested in more secure methods of connection, see Microsoft's [documentation on Configuration](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-6.0#environment-variables) to learn how to keep the username and password to your database safe and secure.
+
 {{% /notice %}}
 
-See Microsoft [documentation](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-6.0#environment-variables) to learn how to keep the username and password to your database safe and secure.
+## Troubleshooting Your Connections
+
+If you are not able to connect your MVC project to your MySQL database, try the following:
+
+- Double check the username, password, and database name.
+
+- Check the versions of all the dependencies you added to your project.  They should all be the same _major_ version.  
+   
+   - For example if you use Pomelo 6.0.2 with both Microsoft.EntityFrameworkCore.Relational and Microsoft.EntityFrameworkCore.Design 6.0.10. These are all contained within version 6 and should work.
+   - If one of them was version 7.0.3, this discrepancy _may_ be cause errors.
+
+   Use the [NuGet manager](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio) to verify and set versions.  You can install higher versions or lower versions as needed. 
+   
 
 ## Check Your Understanding
 
@@ -78,4 +109,10 @@ See Microsoft [documentation](https://learn.microsoft.com/en-us/aspnet/core/fund
    **True/False:** Writing usernames and passwords in plain text in a file is a GREAT idea!
 
    <!-- ans: False -->
+{{% /notice %}}
+
+{{% notice green "Question" "rocket" %}}
+   **True/False:** We need Entity Framework Core AND a MySQL provider to successfully use ORM in this project.
+
+   <!-- ans: True -->
 {{% /notice %}}

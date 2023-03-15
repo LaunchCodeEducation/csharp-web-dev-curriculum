@@ -19,3 +19,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 [Pomelo.EntityFrameworkCore.MySql](https://github.com/PomeloFoundation/Pomelo.EntityFrameworkCore.MySql/blob/master/README.md)
 
 [Troubleshoot and debug ASP.NET Core projects](https://learn.microsoft.com/en-us/aspnet/core/test/troubleshoot?view=aspnetcore-6.0)
+
+[Websites using ASP.NET Core in the United States](https://trends.builtwith.com/websitelist/ASP.NET-Core/United-States)
+
+[Code First to a New Database](https://learn.microsoft.com/en-us/ef/ef6/modeling/code-first/workflows/new-database)

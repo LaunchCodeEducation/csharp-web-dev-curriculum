@@ -20,9 +20,45 @@ In our work so far, we have been using an in-application data store. This is the
 
 ## Creating a `DbContext`
 
-To create a persistent data store for our `Event` class, we can extend the class `DbContext`, which is provided by EF. Here’s what that looks like.
+We are going to use the `DbContext` class.  [This class](https://learn.microsoft.com/en-us/dotnet/api/system.data.entity.dbcontext?view=entity-framework-6.2.0) works with databases to track and manage changes in our stored data.  
 
-   ```csharp{linenos=table,hl_lines=[],linenostart=1}
+### Create `EventDbContext` Class
+1. In the `Data` directory, create a new class called `EventDbContext`. 
+
+   By convention, we name it `EventDbContext` since it is going to be used to work with Event objects and data.
+
+1. To create a persistent data store for our `Event` class, we can extend the class `DbContext`, which is provided by EF. This will provide the base functionality we need.
+
+   {{% notice blue "Check Your Code" "rocket" %}}
+   ```csharp
+   public class EventDbContext : DbContext
+   ```
+   {{% /notice %}}
+
+   This class needs a `using Microsoft.EntityFrameworkCore;` statement.  Visual Studio's Intellisense should automatically add it for you.
+
+
+1. `DbContext` is often paired with `DbSet<Entity>` which represents the collection of all entities of a given type that cna be queried from the database.
+
+   We are going to create a `DbSet<Entity>` of `Event` types and name it `Events`. This will allow us to query `Event` objects once our database is created.
+
+   `DbSet<Events>` will need access to the `Event` Model class.  Make sure you provide the appropriate using statement.
+   
+
+   {{% notice blue "Check Your Code" "rocket" %}}
+   ```csharp{linenos=table,hl_lines=[1],linenostart=9}
+   public DbSet<Event> Events { get; set; }
+
+   public EventDbContext()  
+   {
+   }
+   ```
+   {{% /notice %}}   
+
+1. We want to the `EventDbContext` constructor to extend `DbContextOptions`.  This will configure the data store.  
+
+   {{% notice blue "Check Your Code" "rocket" %}}
+   ```csharp{linenos=table,hl_lines=[10,11],linenostart=1}
    using CodingEvents.Models;
    using Microsoft.EntityFrameworkCore;
 
@@ -40,50 +76,26 @@ To create a persistent data store for our `Event` class, we can extend the class
    }
 
    ```
+   {{% /notice %}} 
 
-This new class is placed in the `Data` directory and namespace. By convention, we name it `EventDbContext` since it is going to be used to work with `Event` objects and data. We extend `DbContext`, which will provide most of the base functionality that we need. More on this in the next section.
+This basic data store template can be used for _any_ class that you want to persist in a database. Each such class will need its own data store.
 
-**DID WE COVER THIS?**
-
-This extension must provide a property of type `DbSet<Event>`. The `DbSet` class provides methods for querying sets of objects of the given type (in this case, `Event`). In the next section, we will explore how to use these methods.
-
-The only additional code that we need to add is a constructor that calls the constructor from the base class.
-
-This basic data store template can be used for any class that you want to persist in a database. Each such class will need its own data store.
 
 ## Registering a Data Store
 
 To make ASP.NET aware of this data store, we need to register `EventDbContext` in the `Program class`. `Program` is automatically executed every time our app starts up, and is a place where application configuration can be customized.
 
-We will be using the `WebApplication` class to customize our configurations.
+A persistent data store is considered a service in ASP.NET. We need register this service by applying the following code to `Program.cs`:
 
-```csharp{linenos=table,hl_lines=[],linenostart=5}
-   var builder = WebApplication.CreateBuilder(args);
-```
-
-A persistent data store is considered a service in ASP.NET, and we can register this service by applying the following code to `builder`:
-
-
-```csharp{linenos=table,hl_lines=[],linenostart=10}
-   var connectionString = "server=localhost;user=username;password=password;database=database";
-   var serverVersion = new MySqlServerVersion(new Version(#, #, #));
-
-   builder.Services.AddDbContext<EventDbContext>(dbContextOptions => dbContextOptions.UseMySql(connectionString, serverVersion));
-```
-
-{{% notice orange "Warning" "rocket" %}}
-Update the `connectionString` with your username, password, and database name.
-
-Update `serverVersion` with the actual version of your MySql Workbench.
-{{% /notice %}}
-
-**Should this go here?  Or should I move it?**
+   ```csharp{linenos=table,hl_lines=[],linenostart=12}
+      builder.Services.AddDbContext<EventDbContext>(dbContextOptions => dbContextOptions.UseMySql(connectionString, serverVersion));
+   ```
 
 This code adds EF Core as a service to our `CodingEvents` application.   Using the `AddDbContext<EventDbContext>(...)` to configure the `CodingEvents` database context options.
 
 The `MySql()` method is passed the `connectionString` and `serverVersion` variables which provide us access to the correct database.  A single application may have multiple database connections. 
 
-When `WebApplication.CreateBuilder(args);` runs in line 5, the connection to the database begins. 
+When `WebApplication.CreateBuilder(args);` runs in line 5 of `Program.cs`, the connection to the database begins. 
 
 ## Configuring a Primary Key
 <!-- TODO: Update SQL link -->

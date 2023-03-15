@@ -18,13 +18,14 @@ Let's connect our MVC application to a [relational database](https://education.l
 
 **Object-Relational Mapping** or **ORM** is a technique for converting data between C# objects and relational databases. ORM converts data between two incompatible type systems (C# and MySQL), such that each model class becomes a _table_ in our database and each instance a _row_ of the table.
 
-To make ORM work in our C# applications, we need an **object-relational mapper** to convert between C# and MySQL. When we create a new model class and configure it to be stored in a database, a mapper creates a MySQL query to make the corresponding table. 
+To make ORM work in our C# applications, we need an **object-relational mapper** to convert between C# and MySQL. When we create and configure a new model class to be stored in a database, a mapper creates a MySQL query to make the corresponding table.
+ 
 
 {{% notice blue "Example" "rocket" %}}
 
 Let's think about this in `CodingEvents`.
 
-In CodingEvents, we have the `Events` class that contains the following properities:
+In CodingEvents, we have the `Events` class that contains the following properties:
 - `Id`
 - `Name`
 - `Description`
@@ -33,7 +34,7 @@ In CodingEvents, we have the `Events` class that contains the following properit
 Now we want to store this information in a MySQL database. We can use ORM so that the database of our application has a table to contain all objects instantiated from the `Events` class. 
 
 The table called `Events` has four columns: 
-- interger `Id`
+- integer `Id`
 - varchar `Name`
 - varchar `Description`
 - varchar `ContactEmail`.  
@@ -60,9 +61,12 @@ Now Code with Pride and all the information we provided is stored in our MySQL d
 
 
 ## ORM in ASP.NET
-<!-- TODO: Link to chapter 14: data layers -->
+<!-- TODO: Link to chapter 14: models TOC and data layers page -->
 
-One of the most widely used object-relational mappers available for C# and ASP.NET Core is **Entity Framework Core**. This framework makes use of **data layers**. When we learned about models, we learned that [data layers](LINK) add abstraction between models and the data we want to store. With Entity FrameworkCore, data layers take the form of classes that extend `DbContext`. Models are NOT persistent data stores and relational databases do NOT shape the C# objects we will be using. We want to make sure that the two remain separate.
+One of the most widely used object-relational mappers available for C# and ASP.NET Core is **Entity Framework Core**. This framework makes use of **data layers**. When we learned about [models](LINK), we learned that [data layers](LINK) add abstraction between models and the data we want to store. With Entity FrameworkCore, data layers take the form of classes that _extend_ `DbContext`. 
+
+
+Before we add persistence to our data, it's important to remember that: _Models are NOT persistent data stores, and relational databases do NOT shape the C# objects we will be using._ We want to make sure that the two remain separate.
 
 {{% notice blue "Note" "rocket" %}}
 
@@ -72,11 +76,15 @@ We’ll often shorten Entity Framework Core to EF. The “Core” in the name in
 
 ## Adding ORM to `CodingEvents`
 
+To work with EF Core, we need to add it to the project. 
+
+Currently, Visual Studio 2022 (Windows and Mac) is typically installed with EF 6.0.X.
+
 ### Verify EF Core Tools are Present
 
-EF 6.0.X is typically installed with Visual Studio 2022.
+If you downloaded Visual Studio 2022 or later, let's verify EF Core's presence and version.
 
-You can test that it has been installed by running the following in your terminal.
+You can test that it has been installed in Visual Studio by running the following in your terminal.
 
 1. `cd` your way down into the project folders. Verify your location by running the `ls` command. You should see all the folders within your project.
 
@@ -162,17 +170,11 @@ If you are not able to see the Entity Framework Core logo, then try the followin
 
 Once you have taken these steps, you are ready to set up the appropriate models and controllers for the application. We’ll do that in the next section.
 
+
 ## Check Your Understanding
 
 {{% notice green "Question" "rocket" %}}
    **True/False:** An ORM converts data between C# objects and relational databases.
-
-   <!-- ans: True -->
-{{% /notice %}}
-
-
-{{% notice green "Question" "rocket" %}}
-   **True/False:** We need Entity Framework Core AND a MySQL provider to successfully use ORM in this project.
 
    <!-- ans: True -->
 {{% /notice %}}
