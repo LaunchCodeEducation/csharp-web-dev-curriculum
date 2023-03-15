@@ -23,16 +23,13 @@ For this studio, you'll be tasked with adding simple user authentication to your
 1. Fork and clone the starter code for 
 [TechJobsAuthentication](https://github.com/LaunchCodeEducation/TechJobsAuthentication).
 
-1. You will need to do some work to ensure that the schema, user, and database password 
-match your own local MySQL setup.
+1. You will need to do some work to ensure that the user, and database password match your own local MySQL setup.
 
-1. Open `Program.cs` and find the following code:
+1. Open `Program.cs` and update the following code:
 
    ```csharp
-   var connectionString = "server=localhost;user=techjobs_auth;password=ILoveTechJobs;database=techjobs_auth";
+   var connectionString = "server=localhost;user=your_username;password=your_password;database=techjobs_auth";
    ```
-
-- You likely do not already have a database named `techjobs_auth` or this combination of username and password so you will need to update them so that you can connect to your MySQL workbench.
 
 4. Before getting started with setting up Identity, run a new migration to make sure that all of the database info is correct.
 
