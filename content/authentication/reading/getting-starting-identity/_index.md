@@ -24,7 +24,7 @@ The process of adding Identity to an existing code base is called **scaffolding*
 Try and code along as you read more about Identity!
 <!-- TODO: Need to link proper repos to the below topics -->
 This page starts off with the code in the [orm2 branch](https://github.com/LaunchCodeEducation/CodingEvents/tree/orm2) of the [CodingEvents](https://github.com/LaunchCodeEducation/CodingEvents) repository. 
-The final code for this page is in the [authentication branch](https://github.com/gildedgardenia/CodingEvents/) of the [CodingEvents](https://github.com/LaunchCodeEducation/CodingEvents) repository.
+The final code for this page is in the [authentication branch](https://github.com/LaunchCodeEducation/CodingEvents/tree/authentication) of the [CodingEvents](https://github.com/LaunchCodeEducation/CodingEvents) repository.
 {{% /notice %}}
 
 ## Before You Start
