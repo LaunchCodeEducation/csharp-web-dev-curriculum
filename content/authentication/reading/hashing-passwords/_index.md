@@ -35,7 +35,7 @@ For a specific message, the output of a hash function is a **hash**.
 The hashing process is essentially just the top half of the diagram above. While it might not be clear yet, hashing allows us to securely store passwords and still be able to validate a user's submitted password. Precisely *how* this is done will be explored in a moment.
 The diagram below shows the general flow of how hashing works to secure the site.
 
-![Diagram showing how encoded passwords are compared to a submitted password to authenticate a user.](pictures/hashingdiagram.png?classes=border)
+![Encoded passwords are compared to a submitted password to authenticate a user.](pictures/hashingdiagram.png?classes=border)
 
 It can be difficult to write a good hash function, so thankfully you will never have to. Over the years, some very smart people have created some very good hash functions. However, it is important to understand how the properties of a hash function allow for secure password storage. For our purposes, it is only important that we consider a hash function to have these properties:
 
