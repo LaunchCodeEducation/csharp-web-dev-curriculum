@@ -293,10 +293,9 @@ using CodingEvents.Areas.Identity.Data;
 
 The CodingEvents application already has a connection string in addition to using our builder to add database context configured. Since we also configured our own default `identity` user earlier in the walkthrough we can also safely remove that as well. You will need to remove the following lines of code from your `Program.cs` file that were generated when adding our identity scaffolding:
 
-```csharp {linenos=table}
-var connectionString = builder.Configuration.GetConnectionString("EventDbContextConnection");builder.Services.AddDbContext<EventDbContext>(options =>
-    options.UseSqlServer(connectionString));builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<EventDbContext>();
+```csharp
+var connectionString = builder.Configuration.GetConnectionString("EventDbContextConnection");builder.Services.AddDbContext<EventDbContext>(options => options.UseSqlServer(connectionString));builder.Services.AddDefaultIdentity<IdentityUser>
+(options => optionsSignInRequireConfirmedAccount = true).AddEntityFrameworkStores<EventDbContext>();
 ```
 
 {{% notice blue "Note" "rocket" %}}
