@@ -14,9 +14,9 @@ lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
 
 For this studio, you'll be tasked with adding simple user authentication to your `TechJobs` application. The steps to do this will match what you have already done in `CodingEvents`. You should refer back to the tutorial starting [here](https://education.launchcode.org/csharp-web-dev-curriculum/authentication/reading/getting-starting-identity/).
 
-1. [Scaffolding](https://education.launchcode.org/csharp-web-dev-curriculum//authentication/studio/#scaffolding)
-1. [Configuration](https://education.launchcode.org/csharp-web-dev-curriculum//authentication/studio/#configuration)
-1. [Authorization](https://education.launchcode.org/csharp-web-dev-curriculum//authentication/studio/#authorization)
+1. [Scaffolding](#scaffolding)
+1. [Configuration](#configuration)
+1. [Authorization](#authorization)
 
 ## The Starter Code
 
