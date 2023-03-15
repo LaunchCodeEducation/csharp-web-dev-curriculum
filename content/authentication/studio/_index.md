@@ -33,6 +33,14 @@ For this studio, you'll be tasked with adding simple user authentication to your
 
 4. Before getting started with setting up Identity, run a new migration to make sure that all of the database info is correct.
 
+```bash
+dotnet ef migrations add new-migration
+```
+
+```bash
+dotnet ef database update
+```
+
 {{% notice blue "Note" "rocket" %}}
 We've greatly reduced the functionality of the app so you can focus on the work to set up authentication. Running the application now 
 gives you a familiar-looking navbar with one menu option, *Add Jobs*. You can add jobs right away and an astute observer of the starter code and schema tables will notice that the fields on `Job` are only strings, not complex objects.
@@ -52,8 +60,8 @@ gives you a familiar-looking navbar with one menu option, *Add Jobs*. You can ad
 
 1. Use the appropriate methods to set the following validation conditions on the password:
 
-- The password must be at a minimum of 8 characters.
-- The password does NOT need to contain an uppercase letter.
+   - The password must be at a minimum of 8 characters.
+   - The password does NOT need to contain an uppercase letter.
 
 1. Complete any additional necessary configuration steps in `Program.cs`.
 
