@@ -92,7 +92,7 @@ else
 ```
 
 <!-- TODO: Links will need to be changed for the below hash properties -->
-The conditional compares the values of the hash stored in the database with the hash generated from the *submitted* password. By [hash property 1](http://localhost:1313/authentication/reading/hashing-passwords/#hash-properties), we know that if the hash values are different, then there is no way the passwords are the same. By [hash property 3](http://localhost:1313/authentication/reading/hashing-passwords/#hash-properties), we can safely assume that the passwords are the same. 
+The conditional compares the values of the hash stored in the database with the hash generated from the *submitted* password. By [hash property 1](#hash-properties), we know that if the hash values are different, then there is no way the passwords are the same. By [hash property 3](#hash-properties), we can safely assume that the passwords are the same. 
 
 {{% notice blue "Note" "rocket" %}}
 When using Identity, the library handles hashing passwords for newly registered users and comparing hashes when logging in a user. The example above is just an example and meant to illustrate what is going on under the hood of Identity.
