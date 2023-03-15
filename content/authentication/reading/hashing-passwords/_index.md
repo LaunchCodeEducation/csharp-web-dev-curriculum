@@ -22,9 +22,9 @@ Fortunately, it is possible for us to implement simple authentication *without* 
 
 When you think of encryption, you might think of WWII or the Cold War, when the militaries of various countries exchanged secret messages that were unreadable by their enemies. This type of encryption is **two-way encryption**. A message is *encoded* with a key before being sent, and when it is received, it is *decoded* by another key. 
 
-![A two-way encryption flow. A key is used to encrypt sensitive data. After being transmitted, another key decrypts it.](pictures/two-way-encryption.png?classes=border)
+The diagram below depicting the flow of two-way encryption was created by Munkhzaya Ganbold, and is licensed via [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en).
 
-Two-way encryption (Created by Munkhzaya Ganbold, licensed via [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
+![A key is used to encrypt sensitive data. After being transmitted, another key decrypts it.](pictures/two-way-encryption.png?classes=border)
 
 ### One-Way Encryption
 
