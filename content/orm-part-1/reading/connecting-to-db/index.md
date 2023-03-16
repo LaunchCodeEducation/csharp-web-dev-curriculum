@@ -12,7 +12,7 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 <!-- TODO: Link back to MySQL book for refresher -->
-We have decided to use [MySQL](LINK) for our relational database for `CodingEvents` MVC project.  
+We have decided to use [MySQL](https://education.launchcode.org/SQL/) for our relational database for `CodingEvents` MVC project.  
 
 First we need to [set up a new database](https://education.launchcode.org/SQL/chapters/mysql-part-1/exercises.html) in MySQL Workbench and then we can connect it to `CodingEvents`
 

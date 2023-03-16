@@ -17,7 +17,7 @@ With our data store and persistent class configured, we are ready to realize the
 ## Data Stores in the Controller
 
 
-Since our data store, `EventDbContext`, extends `DbContext`, we have access to all of the methods defined by `DbContext`. There are quite a few such methods (see the [documentatio](https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext?view=efcore-6.0#methods) for details), but we will only use `SaveChanges`.
+Since our data store, `EventDbContext`, extends `DbContext`, we have access to all of the methods defined by `DbContext`. There are quite a few such methods (see the [documentation](https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext?view=efcore-6.0#methods) for details), but we will only use `SaveChanges`.
 
 We will make more extensive use of the `Events` property of `EventDbContext`, which is of type `DbSet`. As mentioned in the previous section, this property allows us to query for objects directly from the database. It too has [quite a few methods](https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbset-1?view=efcore-6.0#methods), and we will demonstrate usage of `Add`, `Remove`, `ToList`, and `Find`.
 
@@ -140,6 +140,8 @@ public IActionResult Delete(int[] eventIds)
     Event? theEvent = context.Events.Find(eventId);
     context.Events.Remove(theEvent);
   }
+
+  context.SaveChanges();
 
   return Redirect("/Events");
 }

@@ -14,12 +14,16 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Next Steps
 
+This lesson covered the basics of Object-Relational Mapping, connecting `CodingEvents` to a database, and persistent data.
+
+Check out these resources if you want a deeper learning journey on these topics.
+
 - [What is a Relational Database (RDBMS)?](https://www.oracle.com/database/what-is-a-relational-database/)
 
-[Pomelo.EntityFrameworkCore.MySql](https://github.com/PomeloFoundation/Pomelo.EntityFrameworkCore.MySql/blob/master/README.md)
+- [Pomelo.EntityFrameworkCore.MySql](https://github.com/PomeloFoundation/Pomelo.EntityFrameworkCore.MySql/blob/master/README.md)
 
-[Troubleshoot and debug ASP.NET Core projects](https://learn.microsoft.com/en-us/aspnet/core/test/troubleshoot?view=aspnetcore-6.0)
+- [Troubleshoot and debug ASP.NET Core projects](https://learn.microsoft.com/en-us/aspnet/core/test/troubleshoot?view=aspnetcore-6.0)
 
-[Websites using ASP.NET Core in the United States](https://trends.builtwith.com/websitelist/ASP.NET-Core/United-States)
+- [Websites using ASP.NET Core in the United States](https://trends.builtwith.com/websitelist/ASP.NET-Core/United-States)
 
-[Code First to a New Database](https://learn.microsoft.com/en-us/ef/ef6/modeling/code-first/workflows/new-database)
+- [Code First to a New Database](https://learn.microsoft.com/en-us/ef/ef6/modeling/code-first/workflows/new-database)

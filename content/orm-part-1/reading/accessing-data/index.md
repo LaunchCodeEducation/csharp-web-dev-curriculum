@@ -38,7 +38,7 @@ We are going to use the `DbContext` class.  [This class](https://learn.microsoft
    This class needs a `using Microsoft.EntityFrameworkCore;` statement.  Visual Studio's Intellisense should automatically add it for you.
 
 
-1. `DbContext` is often paired with `DbSet<Entity>` which represents the collection of all entities of a given type that cna be queried from the database.
+1. `DbContext` is often paired with `DbSet<Entity>` which represents the collection of all entities of a given type that can be queried from the database.
 
    We are going to create a `DbSet<Entity>` of `Event` types and name it `Events`. This will allow us to query `Event` objects once our database is created.
 
