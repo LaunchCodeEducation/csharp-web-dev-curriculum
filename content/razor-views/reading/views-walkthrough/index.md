@@ -17,7 +17,6 @@ Welcome to the Walkthrough for creating and using templates in your `HelloASPDot
 ## Video Walkthrough
 {{< youtube 3FSAi6C4Pdw  >}} 
 
-<!-- TODO: Link to chapter 10 video -->
 - This walkthrough starts with the code from the [controllers and routes video]({{<relref "../../../../aspdotnet-controllers-and-routes/reading/video-walkthrough/">}}).  Starting [code repo](https://github.com/LaunchCodeEducation/HelloASPDotNET/tree/controllers-and-routing) is using the `controllers-and-routing` branch.
 
 - The final [code](https://github.com/LaunchCodeEducation/HelloASPDotNET/tree/views) in the walkthrough can be found on the `views` branch.
