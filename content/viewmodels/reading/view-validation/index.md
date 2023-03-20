@@ -37,7 +37,7 @@ The [jQuery Unobtrusive Validation](https://github.com/aspnet/jquery-validation-
 ### `_Layout.cshtml` Updates
 
 To utilize the library, we need to add the following references to it within the `<main>` area.
-
+{{% notice blue "Add This Code" "rocket" %}}
 ```html{linenos=table}
 <main>
    @RenderBody()
@@ -46,8 +46,11 @@ To utilize the library, we need to add the following references to it within the
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.js"></script>
 </main>
 ```
+{{% /notice %}}
+
 In the `Add` View, you will need to create more class attributes for the library to target.
 
+{{% notice blue "Check Your Code" "rocket" %}}
 ```html{linenos=table,hl_lines=[3,4],linenostart=8}
  <div asp-controller="Events" asp-action="Add" class="form-group">
      <label asp-for="Name"></label>
@@ -55,6 +58,7 @@ In the `Add` View, you will need to create more class attributes for the library
      <span asp-validation-for="Name" class="text-danger"></span>
  </div>
 ```
+{{% /notice %}}
 
 Note in line 10 the addition of `class="form-control"` and in line 11 `class="text-danger"`. These attributes will be noted by the jQuery Unobtrusive Validation library and print our red if the client does not meet the requirements.
 

@@ -14,24 +14,6 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 Welcome to the walkthrough for creating and using templates in your `CodingEvents` project.
 
-You will find a video walkthrough of the steps covered in the reading. Time stamps have been added to highlight the topics covered so far and their locations in the reading.
-
-<!-- TODO: maybe keep these??  Maybe add them in the video summary on youtube? -->
-The following topics are covered in the walkthrough:
-
-- Why add ViewModels
-- Creating the `AddEventViewModel`
-- Updating the `Event` Model
-- Updating the `Index` action method
-- Updating the `Index` View
-- Updating the `Add` and `NewEvent` action methods
-- Updating the `Add` View
-- Why Validation
-- Updating the ViewModel
-- Updating the Add View
-- Updating the Controller
-- Updating the `_Layout.cshtml` 
-
 ## Video Walkthrough
 
 {{<youtube UW7nPRBNeRY>}}

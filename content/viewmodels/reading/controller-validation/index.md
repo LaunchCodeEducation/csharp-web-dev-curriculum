@@ -18,6 +18,7 @@ Validation involves both model and controller components of an MVC application. 
 
 Before diving into the details of the code, let’s consider the logical flow of control for validating data in a request. Let’s check out our `POST` action method for processing the Add Event form. Remember that this method uses model binding to create new `AddEventViewModel` objects from form submissions.
 
+{{% notice blue "Check Your Code" "rocket"%}}
 ```csharp{linenos=table,hl_lines=[],linenostart=32}
 [HttpPost]
 public IActionResult Add(AddEventViewModel addEventViewModel)
@@ -34,6 +35,7 @@ public IActionResult Add(AddEventViewModel addEventViewModel)
    return Redirect("/Events");
 }
 ```
+{{% /notice %}}
 
 The flow of this request can be described as follows:
 
@@ -97,6 +99,7 @@ One of the constraints that `ModelState.IsValid` checks for is nullability.  If 
 
 Once we are done refactoring the `Add()` action method to use `ModelState.IsValid`, our action method will look like the code below.
 
+{{% notice blue "Check Your Code" "rocket"%}}
 ```csharp{linenos=table,hl_lines=[4],linenostart=32}
 [HttpPost]
 public IActionResult Add(AddEventViewModel addEventViewModel)
@@ -118,6 +121,7 @@ public IActionResult Add(AddEventViewModel addEventViewModel)
    return View(addEventViewModel);
 }
 ```
+{{% /notice %}}
 
 Now we have refactored our action method to handle any errors in form submission. 
 However, if you submit a value that doesn’t meet our conditions, you won’t see any error messages indicating what was wrong with your submission. 

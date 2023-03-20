@@ -28,6 +28,7 @@ We’ll use only a few of these attributes, but you can find a full list in the 
 {{% notice blue "Example" "rocket" %}}
 To apply the validation rules of the example on the previous page to the fields of an `AddUserViewModel` class, we can use `[StringLength]` and `[Required]`.
 
+
    ```csharp{linenos=table,hl_lines=[],linenostart=1}
    [Required]
    [StringLength(12, MinimumLength = 3)]
@@ -76,7 +77,7 @@ For our `AddEventViewModel` class:
 - Provide an error message for the `[Required]` statement that informs a user it is important to provide some description of the event.
    
 - `[StringLength]` for `Description` should be longer than for `Name`.  However, you should set a limit on how many words a user can provide.  Make sure that you provide an error message that will inform them if they add too much.
-   
+   {{% notice blue "Check Your Code" "rocket" %}}
    ```csharp{linenos=table,hl_lines=[],linenostart=8}
    [Required(ErrorMessage = "Name is required.")]
    [StringLength(50, MinimumLength = 3, ErrorMessage = "Name must be between 3 and 50 characters.")]
@@ -86,6 +87,7 @@ For our `AddEventViewModel` class:
    [StringLength(500, ErrorMessage = "Description is too long!")]
    public string? Description { get; set; }
    ```
+   {{% /notice %}}
 
 Not adding a `[Required]` attribute onto a property would make the field optional to the form submission.
 
@@ -97,23 +99,27 @@ Each of our attributes also receives an `ErrorMessage` parameter. This parameter
 
 Next, we add a new property to store a contact email for each event. This is a `string` named `ContactEmail`. Validating email addresses by directly applying each of the rules that an email must satisfy is _extremely_ difficult. Thankfully, there is an `[EmailAddress]` validation attribute that we can apply to our new field.
 
+   {{% notice blue "Check Your Code" %}}
    ```csharp{linenos=table,hl_lines=[],linenostart=16}
    [EmailAddress]
    public string? ContactEmail { get; set; }
    ```
+   {{% /notice %}}
 
 Before we can start up our application, we need to add a new input to our form in `Events/Add.cshtml` to take in the contact email for an event organizer. We want to provide the text a user will see for providing us with a contact email. The reflected value would not include the space between "Contact" and "Email".
 
+   {{% notice blue "Check Your Code" %}}
    ```html{linenos=table,hl_lines=[],linenostart=14}
    <div class="form-group">
       <label asp-for="ContactEmail">Contact Email</label>
       <input asp-for="ContactEmail" />
    </div>
    ```
-   
+   {{% /notice %}}
 We also need to add a new column to the `Events/Index.cshtml` template to make `ContactEmail` visible.
 
-   ```html{linenos=table,hl_lines=[],linenostart=20}
+{{% notice blue "Check Your Code" %}}
+   ```html{linenos=table,hl_lines=[13,23],linenostart=20}
    <table class="table">
       <tr>
          <th>
@@ -141,6 +147,7 @@ We also need to add a new column to the `Events/Index.cshtml` template to make `
       }
    </table>
    ```
+{{% /notice %}}
 
 Now we can start up our application and test. Submitting an empty form at `/Events/Add` still results in an event being created, which may not be what you were expecting.
 
