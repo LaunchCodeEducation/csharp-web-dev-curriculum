@@ -14,7 +14,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Learning Objectives 
 
-After completing this chapter you should be able to 
+By the end of this chapter, you should understand:
 1. Understand the benefits of using templates
 1. Create a template using a Razor View in an MVC application
 1. How to add iteration, conditionals, and forms to a template
