@@ -15,8 +15,8 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ## Learning Objectives 
 
 By the end of this chapter, you should understand:
-1. Understand the benefits of using templates
-1. Create a template using a Razor View in an MVC application
+1. The benefits of using templates
+1. How to create a template using a Razor View in an MVC application
 1. How to add iteration, conditionals, and forms to a template
 1. How to link a template to static resources like CSS stylesheets, scripts, images, etc.
 1. How to render a template using ASP.NET controllers
