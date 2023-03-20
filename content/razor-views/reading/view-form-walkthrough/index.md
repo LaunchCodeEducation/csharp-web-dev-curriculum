@@ -25,7 +25,7 @@ The following topics are covered in the walkthrough:
 - Using [anchor tags](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper?view=aspnetcore-6.0)
 
 ## Video Walkthrough
-{{< youtube B_Uw_BpATjk >}}
+{{< youtube 3FSAi6C4Pdw >}}
 
 - Starting [code repo](https://github.com/LaunchCodeEducation/CodingEvents/tree/main) can be found on the `main` branch.
 

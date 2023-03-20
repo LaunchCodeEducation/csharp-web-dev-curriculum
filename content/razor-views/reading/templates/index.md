@@ -30,6 +30,7 @@ Let’s see how using a template makes our lives easier.
 
 The code below displays a simple list. It defines the location for the heading and each `<li>` element, in addition to a couple of fun links. The CSS file (not shown) specifies the font, text size, colors, etc.
 
+{{% notice blue "Example" "rocket" %}}
 ```csharp{linenos=table,hl_lines=[],linenostart=1}
   <body>
      <h1>Java Types</h1>
@@ -49,6 +50,7 @@ The code below displays a simple list. It defines the location for the heading a
      </div>
   </body>
 ```
+{{% /notice %}}
 
 We could drastically improve the appearance and content of the page by playing around with the tags, classes, styles and text. However, any change we want to make needs to be coded directly into the HTML and CSS files, and this quickly becomes inefficient.
 
@@ -56,6 +58,7 @@ We could drastically improve the appearance and content of the page by playing a
 
 Recall that a template represents a view in the MVC world. It sets up a structure to display the data delivered by the controller, and the template guides where that information goes. This provides much more flexibility than hard-coding, since data can change based on a user’s actions.
 
+{{% notice blue "Example" "rocket" %}}
 ```csharp{linenos=table,hl_lines=[],linenostart=1}
   <body>
      <h1>{templateInstructions}</h1>
@@ -71,6 +74,7 @@ Recall that a template represents a view in the MVC world. It sets up a structur
      </div>
   </body>
   ```
+{{% /notice %}}
 
 This HTML looks similar to the previous example, but it replaces some of the code with _instructions_.
 

@@ -26,9 +26,17 @@ In this chapter, you will construct some small practice projects to help you lea
 
 ## Hello Views
 
-Before you start coding, we need to refactor `HelloController`. Now `Index()` is responding to `GET` requests at `localhost:5001/hello` and `Welcome()` is only responding to `POST` requests at `localhost:5001/hello`. Check out the code block below to refactor your code.
-
 Open up your `HelloASPDotNET` project in Visual Studio and make sure you have committed any recent changes. Make a new branch for creating views and code along with the reading.
+
+Before you start coding, we need to refactor `HelloController`: 
+   1. `Index()` should respond to `GET` requests at `localhost:5001/hello`
+   1.  `Welcome()` should only responding to `POST` requests at `localhost:5001/hello`. 
+   
+Check out the code block below to refactor your code.
+
+
+
+{{% notice blue "Check Your Code" "rocket" %}}
 
 ```csharp{linenos=table,hl_lines=[2, 7,8,9],linenostart=13}
 
@@ -43,8 +51,9 @@ public IActionResult Welcome(string name)
 
 //...code continues
 ```
+{{% /notice %}}
 
-### Controllers Return View Templates
+## Controllers Return View Templates
 
 So far, you’ve seen action methods in controller classes return `Content` objects to render some view. Now, we pivot to another option. We mention in the introduction to controller classes that action methods can return HTML templates. Indeed, the `HomeController` contains a few methods that do just that.
 
@@ -69,6 +78,7 @@ Within `Hello` create a new file of the _Razor View_ file template.
 
 Add the HTML form from the `Index()` method to your new template. Make sure to remove any residual C# syntax, like `+` or `"` or `;`.  The form should only be in HTML.
 
+{{% notice blue "Check Your Code" "rocket" %}}
 ```csharp{linenos=table,hl_lines=[],linenostart=6}
 //inside the Views/Hello/Index.cshtml
 
@@ -78,9 +88,11 @@ Add the HTML form from the `Index()` method to your new template. Make sure to r
 </form>
 
 ```
+{{% /notice %}}
 
 Once you are done with that, update the `Index()` method to return `View()`. 
 
+{{% notice blue "Check Your Code" "rocket" %}}
 ```csharp{linenos=table,hl_lines=[],linenostart=11}
 
    [HttpGet]
@@ -89,6 +101,7 @@ Once you are done with that, update the `Index()` method to return `View()`.
       return View();
    }
 ```
+{{% /notice %}}
 
 
 ### `_Layout.cshtml`
@@ -97,7 +110,7 @@ When you re-render the app now, you’ll notice some additional features and dif
 
 {{% notice blue "Try it!" "rocket" %}}
 
-Try adding the following code to your `Hello/Index` View.  Run your project and see if anything looks different. 
+Try adding the following code to your `Hello/Index` View.  Run your project and see if anything looks different.  
 
 ```csharp{linenos=table,hl_lines=[],linenostart=3}
 //inside the Views/Hello/Index.cshtml

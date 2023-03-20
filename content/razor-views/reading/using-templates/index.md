@@ -17,6 +17,7 @@ Now that we know a little bit about views, we can start talking about how to pas
 ## Passing Data to a Template
 The controller class contains methods that send data to different templates. These methods have a structure similar to:
 
+{{% notice blue "Example" "rocket" %}}
 ```csharp{linenos=table,hl_lines=[5],linenostart=1}
   public IActionResult ActionMethod()
   {
@@ -26,31 +27,41 @@ The controller class contains methods that send data to different templates. The
      return View();
   }
 ```
+{{% /notice %}}
 
 **ViewBag** is an object that passes data into a template. `Data` can be a variable of any type, a number, a collection of some sort, or an object. A `ViewBag` property is created and given a value as simply as is done on line 5 above. In fact, we can just as easily create a second property on `ViewBag` as follows:
 
+{{% notice blue "Example" "rocket" %}}
 ```csharp
 ViewBag.anotherNewProperty = someOtherData;
 ```
+{{% /notice %}}
 
 You can think of `ViewBag` as like an empty container object who exists for the purpose of carrying variables from the controller into the view.
 
 ### Accessing Data in a Template
 The data assigned to properties on `ViewBag` is available inside of Razor templates. It can be accessed with the syntax `@ViewBag.propertyName`.
 
+{{% notice blue "Example" "rocket" %}}
+
 For example, if the controller stores a vegetable name as string in `ViewBag.vegetable`, then the template can display that value like so:
+
 
 ```csharp
 <p>@ViewBag.vegetable</p>
 ```
 
+
 Let’s say that `@ViewBag.vegetable` stores the string “Rutabaga”. When the program runs, the application interprets `<p>@ViewBag.vegetable</p>` as:
+
 
 ```csharp
 <p>Rutabaga</p>
 ```
 
+
 By using `@ViewBag.vegetable`, we make our webpage dynamically display data within the `p` element. Changing the value of `vegetable` leads to a corresponding change in the text in the view after refreshing.
+{{% /notice %}}
 
 ## Try It Out in `HelloASPDotNET`
 
@@ -60,7 +71,7 @@ Update the `Welcome` method by doing the following:
 
 1. Change the return statement of `Welcome` to return a `View` instead of `Content`.
 1. Create a `ViewBag` variable to store the `name` value.  
-  {{% expand "Check your code" %}}
+  {{% notice blue "Check your code" "rocket" %}}
   ```csharp{linenos=table,linenostart=19}
   public IActionResult Welcome(string name)
   {
@@ -68,14 +79,14 @@ Update the `Welcome` method by doing the following:
     return View();
   }
   ```
-  {{% /expand %}}
+  {{% /notice %}}
 
 1. Make sure to add HTML to the `Welcome` View that will greet a user with the name they provided. 
-  {{% expand "Check your code" %}}
+  {{% notice blue "Check your code" "rocket" %}}
   ```csharp{linenos=table,linenostart=8}
   <h1>Welcome, @ViewBag.person!</h1>
   ```  
-  {{% /expand %}}
+  {{% /notice %}}
 
     Your `Welcome` method will now pass the value of `ViewBag` to the view.
 
