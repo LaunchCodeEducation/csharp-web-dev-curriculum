@@ -210,8 +210,7 @@ Next let's update our `NewEvent` action method.
 
 You should how have two `Add()` methods. The framework is clever enough to know the difference.  The `[HttpPost]` attribute designates the `Add` method that processes the form while the other `Add()` method retrieves the form.
 
-<!-- TODO: Link to previous chapter -->
-This is similar to how we created the `Delete()` action methods in the [previous chapter](LINK).
+This is similar to how we created the `Delete()` action methods in the [previous chapter]({{< relref "../../../aspdotnet-model-classes/reading/data-layer/#delete-an-event" >}}).
 
 {{% notice blue "Note" "rocket" %}}
 

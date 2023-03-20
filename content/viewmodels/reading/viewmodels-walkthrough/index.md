@@ -18,7 +18,6 @@ Welcome to the walkthrough for creating and using templates in your `CodingEvent
 
 {{<youtube UW7nPRBNeRY>}}
 
-<!-- TODO: Link to models video walkthrough -->
 - This walkthrough starts with the code from the [models](https://github.com/LaunchCodeEducation/CodingEvents/tree/models) branch.
 
 - The final code in the walkthrough can be found on the [viewmodels](https://github.com/LaunchCodeEducation/CodingEvents/tree/viewmodels) branch.
