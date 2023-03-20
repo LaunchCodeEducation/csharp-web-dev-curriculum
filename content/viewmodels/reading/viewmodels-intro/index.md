@@ -25,8 +25,7 @@ We need to do the following steps:
 1. [Update the Model]({{< relref "#update-the-model-with-nullable-values" >}})
 1. [Update our Index Action Method]({{< relref "#update-the-index-action-method-in-the-controller" >}})
 1. [Update the Index View]({{< relref "#update-the-index-view" >}})
-1. [Update the Add Action Method]({{< relref "#update-the-add-and-newevent-action-methods-in-the-controller" >}})
-1. [Update the NewEvent Action Method]({{< relref "#update-the-add-and-newevent-action-methods-in-the-controller" >}})
+1. [Update the Add an New Event Action Methods]({{< relref "#update-the-add-and-newevent-action-methods-in-the-controller" >}})
 1. [Update the Add View Model]({{< relref "#update-the-add-view" >}})
 
 Let's get started!
