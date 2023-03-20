@@ -18,14 +18,16 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 1. [Views, Partial Views, and Layouts in ASP.NET Core MVC](https://code-maze.com/views-partial-views-and-layouts-in-asp-net-core-mvc/)
 
-1. Ideas for `HelloASPDotNET`
+1. Ideas for expanding `HelloASPDotNET`
    - create a new form
    - create a new view
    - incorporate previous exercises into `HelloASPDotNET`
 
 
-
-
-
+1. Git Resources
+   1. [Fork[ a  repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+   1. [Git Checkout Remote Branch tutorial](https://www.freecodecamp.org/news/git-checkout-remote-branch-tutorial/)
+   1. [git branch](https://www.atlassian.com/git/tutorials/using-branches)
+   1. [Git Branches: List, Create, Switch to, Merge, Push, & Delete](https://www.nobledesktop.com/learn/git/git-branches)
 
 

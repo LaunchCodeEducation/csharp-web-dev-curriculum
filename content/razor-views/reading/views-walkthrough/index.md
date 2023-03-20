@@ -14,25 +14,11 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 Welcome to the Walkthrough for creating and using templates in your `HelloASPDotNET` project.  
 
-
-You will find a video walkthrough of the steps covered in the reading.  Time stamps have been added to highlight the topics covered so far and their locations in the reading.
-
-The following topics are covered in the walkthrough:
-- creating a Razor template (View)
-- Home Views and `HomeController`
-- Shared Directory and `_Layout.cshtml` 
-- Refactor `Index` method to return a View instead of HTML
-- Create `Index` View
-- Refactor `Welcome` method to return a View instead of HTML
-- Create `Welcome` View
-- Use `Viewbag`
-- Use an conditional to make the view dynamic
-
 ## Video Walkthrough
-{{< youtube ExCSx2x0mAM >}} 
+{{< youtube 3FSAi6C4Pdw  >}} 
 
 <!-- TODO: Link to chapter 10 video -->
-- This walkthrough starts with the code from the [controllers and routes video].  Starting [code repo](https://github.com/LaunchCodeEducation/HelloASPDotNET/tree/controllers-and-routing) is using the `controllers-and-routing` branch.
+- This walkthrough starts with the code from the [controllers and routes video]({{<relref "../../../../aspdotnet-controllers-and-routes/reading/video-walkthrough/">}}).  Starting [code repo](https://github.com/LaunchCodeEducation/HelloASPDotNET/tree/controllers-and-routing) is using the `controllers-and-routing` branch.
 
 - The final [code](https://github.com/LaunchCodeEducation/HelloASPDotNET/tree/views) in the walkthrough can be found on the `views` branch.
 
