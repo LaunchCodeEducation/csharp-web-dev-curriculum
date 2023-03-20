@@ -19,6 +19,8 @@ Open up your `CodingEvents` project in Visual Studio. Create and checkout a new 
 
 The code you start with should roughly resemble [this branch](https://github.com/LaunchCodeEducation/CodingEvents/tree/views). If you have been coding along with the video lessons, you’re probably in good shape.
 
+If you need a git refresher check out the resources in this chapter's [Next Steps]({{< relref "../next-steps.md" >}})
+
 As always, give the branch a useful name, like `view-exercises`.
 
 Now, let’s add descriptions to our events.

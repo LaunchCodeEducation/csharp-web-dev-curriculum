@@ -25,9 +25,9 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 
 1. Git Resources
-   1. [Fork[ a  repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+   1. [Fork a  repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
    1. [Git Checkout Remote Branch tutorial](https://www.freecodecamp.org/news/git-checkout-remote-branch-tutorial/)
    1. [git branch](https://www.atlassian.com/git/tutorials/using-branches)
-   1. [Git Branches: List, Create, Switch to, Merge, Push, & Delete](https://www.nobledesktop.com/learn/git/git-branches)
+   1. [Git Branches: List, Create, Switch to, Merge, Push, and Delete](https://www.nobledesktop.com/learn/git/git-branches)
 
 
