@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Object-Relational Mapping"
+title: "Chapter 17: Introduction to Object-Relational Mapping"
 date: 2023-03-10T09:01:27-06:00
 draft: false
 weight: 17
