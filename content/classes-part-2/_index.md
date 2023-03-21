@@ -1,5 +1,5 @@
 ---
-title: "Classes Part 2"
+title: "Chapter 5: Classes Part 2"
 date: 2023-01-30T09:32:46-06:00
 draft: false
 weight: 5

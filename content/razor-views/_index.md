@@ -1,5 +1,5 @@
 ---
-title: "Razor Views"
+title: "Chapter 13: Razor Views"
 date: 2023-02-09T12:48:24-06:00
 draft: false
 weight: 13

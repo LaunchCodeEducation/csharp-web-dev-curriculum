@@ -1,5 +1,5 @@
 ---
-title: "Viewmodels and Model Validation"
+title: "Chapter 15: Viewmodels and Model Validation"
 date: 2023-02-24T08:57:18-06:00
 draft: false
 weight: 15
