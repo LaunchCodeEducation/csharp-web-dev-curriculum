@@ -1,5 +1,5 @@
 ---
-title: "Controllers and Routing"
+title: "Chapter 10: Controllers and Routing"
 date: 2023-02-06T14:09:15-06:00
 draft: false
 weight: 10

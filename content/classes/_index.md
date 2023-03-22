@@ -1,5 +1,5 @@
 ---
-title: "Classes"
+title: "Chapter 4: Classes"
 date: 2023-01-23T13:36:52-06:00
 draft: false
 weight: 4
