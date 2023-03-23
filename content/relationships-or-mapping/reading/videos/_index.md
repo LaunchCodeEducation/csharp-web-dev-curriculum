@@ -9,7 +9,7 @@ reviewer: Kimberly Horan # to be set by the page reviewer
 reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
-lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
+lastMod:  # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 The following video walkthroughs are all of the steps included in the one-to-many and many-to-many relationship sections.
