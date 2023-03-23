@@ -1,5 +1,5 @@
 ---
-title: "Data Types"
+title: "Chapter 2: Data Types"
 date: 2023-01-17T16:28:22-06:00
 draft: false
 weight: 2

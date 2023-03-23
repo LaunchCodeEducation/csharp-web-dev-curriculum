@@ -1,5 +1,5 @@
 ---
-title: "Inheritance"
+title: "Chapter 7: Inheritance"
 date: 2023-01-31T15:39:38-06:00
 draft: false
 weight: 7

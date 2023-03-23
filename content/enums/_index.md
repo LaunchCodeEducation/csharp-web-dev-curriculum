@@ -1,5 +1,5 @@
 ---
-title: "Enums"
+title: "Chapter 16: Enums"
 date: 2023-02-27T14:58:53-06:00
 draft: false
 weight: 16
