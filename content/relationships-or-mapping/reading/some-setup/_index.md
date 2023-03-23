@@ -9,7 +9,7 @@ reviewer: Kimberly Horan # to be set by the page reviewer
 reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
-lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
+lastMod:  # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 Before introducing many-to-many relationships in EntityFrameworkCore, we need to add a new model and view to our app.
