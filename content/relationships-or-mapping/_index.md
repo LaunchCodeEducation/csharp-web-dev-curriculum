@@ -1,5 +1,5 @@
 ---
-title: "Relationships in Object-Relational Mapping"
+title: "Chapter 18: Relationships in Object-Relational Mapping"
 date: 2022-12-15T09:16:07-06:00
 draft: false
 weight: 18
