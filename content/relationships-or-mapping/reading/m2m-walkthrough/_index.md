@@ -1,8 +1,8 @@
 ---
-title: "Videos"
+title: "Walkthrough: Many-to-Many"
 date: 2023-03-16T09:16:07-06:00
 draft: false
-weight: 6
+weight: 7
 originalAuthor: John Woolbright # to be set by page creator
 originalAuthorGitHub: jwoolbright23 # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer
@@ -12,10 +12,7 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod:  # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-The following video walkthroughs are all of the steps included in the one-to-many and many-to-many relationship sections.
-
-The one-to-many video uses the following github repository [orm-1 branch](https://github.com/LaunchCodeEducation/CodingEvents/tree/orm-1)
-{{< youtube 9mBJLk5eNnA >}}
+The following video walkthrough is all of the steps included in the many-to-many relationship section.
 
 The many-to-many video uses the following github repository [some-setup branch](https://github.com/LaunchCodeEducation/CodingEvents/tree/some-setup)
 {{< youtube W5cs3MWi7Ss >}}

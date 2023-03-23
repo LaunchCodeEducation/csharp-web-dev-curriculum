@@ -2,7 +2,7 @@
 title: "Creating a Many-to-Many Relationship"
 date: 2023-03-16T09:16:07-06:00
 draft: false
-weight: 5
+weight: 6
 originalAuthor: John Woolbright # to be set by page creator
 originalAuthorGitHub: jwoolbright23 # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer

@@ -2,7 +2,7 @@
 title: "Some Setup"
 date: 2023-03-16T09:16:07-06:00
 draft: false
-weight: 4
+weight: 5
 originalAuthor: John Woolbright # to be set by page creator
 originalAuthorGitHub: jwoolbright23 # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer
@@ -24,8 +24,8 @@ In this section, we explore how we can work with many-to-many relationships in A
 ## The `Tag` Model Class
 
 Between the last section and this one, we have added a new persistent model class to the code, `Tag`. This class represents a tag of the type used for blog or social media posts. For us, a tag will be a topical label that can be applied to any event. Thus, we'll eventually relate `Event` and `Tag` to each other in a many-to-many way.
-<!-- TODO: add correct ref link below -->
-The steps to add this code follow the exact same process that we used to add a [persistent EventCategory class](orm1-exercises), so we won't go through them in detail here. 
+
+The steps to add this code follow the exact same process that we used to add a [persistent EventCategory class]({{< relref "../../../orm-part-1/exercises/" >}}), so we won't go through them in detail here. 
 
 ## The `Detail` View
 
