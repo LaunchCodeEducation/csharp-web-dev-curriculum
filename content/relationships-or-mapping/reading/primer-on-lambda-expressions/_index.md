@@ -1,6 +1,6 @@
 ---
 title: "A Primer on Lambda Expressions"
-date: 2022-12-15T09:16:07-06:00
+date: 2023-03-16T09:16:07-06:00
 draft: false
 weight: 2
 originalAuthor: John Woolbright # to be set by page creator
