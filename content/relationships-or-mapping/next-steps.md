@@ -16,6 +16,6 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 As you continue to learn about Entity Framework and types of relationships visit the following articles for further review and understanding.
 
-1. [Microsoft Docs](https://learn.microsoft.com/en-us/ef/core/modeling/relationships?tabs=fluent-api%2Cfluent-api-simple-key%2Csimple-key)
-1. [Learn Entity Framework](https://learn.microsoft.com/en-us/ef/core/modeling/relationships?tabs=fluent-api%2Cfluent-api-simple-key%2Csimple-key)
+1. [Microsoft Docs on Relationships](https://learn.microsoft.com/en-us/ef/core/modeling/relationships?tabs=fluent-api%2Cfluent-api-simple-key%2Csimple-key)
+1. [Learn Entity Framework](https://learn.microsoft.com/en-us/ef/core/get-started/overview/first-app?tabs=netcore-cli)
 1. [Entity Framework Tutorial](https://www.entityframeworktutorial.net/entity-relationships.aspx)
