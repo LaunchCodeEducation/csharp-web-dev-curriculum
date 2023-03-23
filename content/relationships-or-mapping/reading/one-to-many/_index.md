@@ -9,7 +9,7 @@ reviewer: Kimberly Horan # to be set by the page reviewer
 reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
-lastMod: 12/15/22 # UPDATE ANY TIME CHANGES ARE MADE
+lastMod:  # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 The first relationship we implement will be between the `Event` and `EventCategory` classes. We will allow multiple events to be in the same category, but each event will only have one category. Thus, this will be a one-to-many relationship. In this case, we will set up both sides of the relationship, so a many-to-one relationship will result as well.
