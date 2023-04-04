@@ -25,7 +25,7 @@ The List and Search functions in the demo app are not part of this current Assig
 ## Getting Started
 Set up a local copy of the project:
 <!-- TODO: Link to github classroom -->
-1. In Canvas, Graded Assignment #4: TechJobs (Persistent Edition) contains a GitHub Classroom assignment invitation link, and then set up the project in Visual Studio. Refer back to the GitHub Classroom instructions from [Assignment #0: Hello, World!](../hell0-world/) for details.
+1. In Canvas, Graded Assignment #4: TechJobs (Persistent Edition) contains a GitHub Classroom assignment invitation link, and then set up the project in Visual Studio. Refer back to the GitHub Classroom instructions from [Assignment #0: Hello, World!](../hello-world/) for details.
 1. You will need to complete Task 1 before you see a working MVC application.
 
 ## Checkout and Review the Starter Code
