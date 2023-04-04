@@ -35,9 +35,10 @@ If you correctly connect to your database, you should have tables for `Jobs`, `E
    1. Do you see tables?
    1. Do your tables have columns?
 
-**SQL TASK**: In `queries.sql` under “Task 1”, list the columns and their data types in the `Jobs` table.  Write this answer as a comment. 
+### SQL TASK: 
+In `queries.sql` under “Task 1”, list the columns and their data types in the `Jobs` table.  Write this answer as a comment. 
 
-{{% notice blue Progress Check "Rocket" %}}
+{{% notice blue "Progress Check" "rocket" %}}
 
 **Project Check:** You should be able to connect to your MySQL database and perform an initial migration. Your project should open a localhost browser window with a header that reads: “Tech Jobs & Persistent Data” with a message below that there are no jobs yet.
 
@@ -47,4 +48,4 @@ If you click through the application, you will see that not every page is functi
 
 {{% /notice %}}
 
-You are ready for Task 2
+You are ready for [Task 2]({{< relref "../task-2/" >}}).

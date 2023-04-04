@@ -41,4 +41,4 @@ The `Job` class will also look different from how you have last seen it. In Task
 
 Since you are entering your own data, the queries we ask you to write will return unique result sets. For example, if you haven’t entered any data yet, there may be an empty result set. However, as the architect of the database, you have the knowledge to write the appropriate queries nonetheless.
 
-Move on to Task 1 
+Move on to [Task 1]({{< relref "../techjobs-persist/task-1/" >}}).
