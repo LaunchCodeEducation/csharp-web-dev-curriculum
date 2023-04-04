@@ -33,6 +33,8 @@ In `queries.sql` under “Task 3”, write a query to return a list of the names
 {{% notice blue "Progress Check" "rocket" %}}
 **Testing:** Run the tests found in `Task.Tests`.  These should all pass unless your database connections have been set incorrectly.
 
+You will need to uncomment the code for the unit tests.  Look for `TODO` statements in lines 1 and 304 in the `DatabaseTesting.cs` in `Task.Tests`.
+
 **Build:** You should have a working website that allows you to make a job, employer, and skill and connect them.  You should be able to see the connections in an the `Job/Detail` view.
 
 **Database:** and see data in MySQL database.  You should see data in your `JobSkills` table.  It should be a pairing of Job and Skill Ids.
