@@ -22,8 +22,8 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 `EmployerController` contains four relatively empty action methods. Take the following steps to handle traffic between the views and the model:
    1. Set up a private `JobDbContext` variable so you can perform CRUD operations on the database. Pass it into a `EmployerController` constructor.
-   1. Complete Index() so that it passes all of the `Employer` objects in the database to the view. 
-   1. Create an instance of `AddEmployerViewModel` inside of the Add() method and pass the instance into the `View()` return method.
+   1. Complete `Index()` so that it passes all of the `Employer` objects in the database to the view. 
+   1. Create an instance of `AddEmployerViewModel` inside of the `Add()` method and pass the instance into the `View()` return method.
    1. Add the appropriate code to `ProcessAddEmployerForm()` so that it will process form submissions and make sure that only valid `Employer` objects are being saved to the database.
       1. You want to add a new employer if the model is valid.  
       1. Else redirect users back to the form
