@@ -7,9 +7,9 @@ originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer
 reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
-lastEditor: # update any time edits are made after review
-lastEditorGitHub: # update any time edits are made after review
-lastMod: # UPDATE ANY TIME CHANGES ARE MADE
+lastEditor: Kimberly Horan # update any time edits are made after review
+lastEditorGitHub: codinglikeagirl42 # update any time edits are made after review
+lastMod: 2023-04-06 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 Today’s studio depends on completion of the [exercises]({{< relref "../exercises/_index.md" >}}). If you have not completed the exercises, go back and complete them before continuing with the studio. If you want to check out one possible solution to the exercises before you get started, look at the [orm1-studio](https://github.com/LaunchCodeEducation/CodingEvents/tree/orm1-studio) branch in `CodingEvents`.
@@ -39,8 +39,7 @@ We will be creating 2 new action methods in our controller:
 
 1. Responds to POST requests at the route of your choosing.
 
-<!-- TODO: Link to ViewModel/Validation Chapter -->
-1. Use error validation and `ModelState.IsValid` appropriately. If you want to review how to use `ModelState.IsValid`, check out the section on [error validation](LINK).
+1. Use error validation and `ModelState.IsValid` appropriately. If you want to review how to use `ModelState.IsValid`, check out the section on [error validation]({{< relref "../../../content/viewmodels/reading/controller-validation/index.md" >}}).
 
 1. Create a new instance of `EventCategory` and add it to the database if the form input meets the validation conditions.
 
