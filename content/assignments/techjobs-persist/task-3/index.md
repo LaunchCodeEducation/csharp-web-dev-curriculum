@@ -23,7 +23,7 @@ Using a many-to-many relationship, we can apply jobs to multiple skills, and a s
 Run your application and make sure you can create a new job with an employer and several skills. You should now also have restored full list and search capabilities.
 
 ### SQL Task: 
-In `queries.sql` under “Task 3”, write a query to return a list of the names and descriptions of all skills that are attached to jobs in alphabetical order. If a skill does not have a job listed, it should not be included in the results of this query.
+In `queries.sql` under “Task 3”, write a query to return a list of the skills that are attached to jobs in alphabetical order. If a skill does not have a job listed, it should not be included in the results of this query.
 
 {{% notice green Tip "rocket" %}}
  You will need to make use of “is not null”.
