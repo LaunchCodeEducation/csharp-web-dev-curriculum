@@ -280,7 +280,7 @@ public string TagText { get; set; }
 ```
 
 ```csharp {linenos=table}
-public EventDetailViewModel(Event theEvent, List<EventTag> eventTags)
+public EventDetailViewModel(Event theEvent)
 {
    EventId = theEvent.Id;
    Name = theEvent.Name;
