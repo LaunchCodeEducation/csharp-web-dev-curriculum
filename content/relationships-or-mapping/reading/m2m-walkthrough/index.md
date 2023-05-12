@@ -15,4 +15,4 @@ lastMod:  # UPDATE ANY TIME CHANGES ARE MADE
 The following video walkthrough is all of the steps included in the many-to-many relationship section.
 
 The many-to-many video uses the following github repository [some-setup branch](https://github.com/LaunchCodeEducation/CodingEvents/tree/some-setup)
-{{< youtube W5cs3MWi7Ss >}}
+{{< youtube kIkAGrK5tZk >}}
