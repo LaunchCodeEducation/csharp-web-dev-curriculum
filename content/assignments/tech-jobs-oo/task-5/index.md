@@ -7,9 +7,9 @@ originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer
 reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
-lastEditor: # update any time edits are made after review
-lastEditorGitHub: # update any time edits are made after review
-lastMod: # UPDATE ANY TIME CHANGES ARE MADE
+lastEditor: Terri Penn # update any time edits are made after review
+lastEditorGitHub: tpenn # update any time edits are made after review
+lastMod: 2023-09-03T08:39:11 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 {{% notice orange "Warning" "rocket" %}}
@@ -52,7 +52,7 @@ In `JobTests`, add a new test called `TestToStringStartsAndEndsWithNewLine` to c
 Only run the unit tests in the `JobTests` class as you work through this Task.
 
 
-If you were to run the auto-graded tests right now, you will not pass them even if you pass own unit tests pass.  Once you have all 3 unit tests completed, we will ask you to run the auto-graded tests.  Please make sure you are running the correct tests.
+If you were to run the auto-graded tests right now, you will not pass them even if your own unit tests pass.  Once you have all 3 unit tests completed, we will ask you to run the auto-graded tests.  Please make sure you are running the correct tests.
 {{% /notice %}}
 
 ### Code `ToString()` to Pass Test 1
@@ -86,6 +86,12 @@ Uncomment the tests inside the `TestTask5`class.  Look for the `TODO`s to help y
 Run your `TestTask5` unit tests. 
 
 Refactor your code as needed. 
+
+If the tests are failing, make sure you have uncommented the `TODO` in RunTechJobs.cs.  If you are getting a FileNotFound exception on the EmptyFieldTest.txt and StartsAndEndsWithNewLine.txt files, right-click on those, choose Quick Properties and then `Copy to Output Directory`.
+
+{{< rawhtml >}}
+<img src="pictures/copy-to-output-directory.png" alt="Copy to Output Directory" />
+{{< /rawhtml >}}
 
 Do not start Task 6 until you have passed all of Task 5’s auto-grading unit tests.
 
