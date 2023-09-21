@@ -9,7 +9,7 @@ reviewer: Kimberly Horan # to be set by the page reviewer
 reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
 lastEditor: Terri Penn # update any time edits are made after review
 lastEditorGitHub: tpenn # update any time edits are made after review
-lastMod: 2023-09-03T08:39:11 # UPDATE ANY TIME CHANGES ARE MADE
+lastMod: 2023-09-21T12:02:05-5:00 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 {{% notice orange "Warning" "rocket" %}}
@@ -87,11 +87,21 @@ Run your `TestTask5` unit tests.
 
 Refactor your code as needed. 
 
-If the tests are failing, make sure you have uncommented the `TODO` in RunTechJobs.cs.  If you are getting a FileNotFound exception on the EmptyFieldTest.txt and StartsAndEndsWithNewLine.txt files, right-click on those, choose Quick Properties and then `Copy to Output Directory`.
+If the tests are failing, make sure you have uncommented the `TODO` in RunTechJobs.cs.
 
-{{< rawhtml >}}
-<img src="pictures/copy-to-output-directory.png" alt="Copy to Output Directory" />
-{{< /rawhtml >}}
+If you are getting a FileNotFound exception on the EmptyFieldTest.txt and StartsAndEndsWithNewLine.txt files:
+
+>On Windows, right-click on the _EmptyFieldTest.txt_ file and choose _Properties_ from the context menu.  Under _Advanced_->_Copy to Output Directory_, change the setting to `Copy if newer`.  Repeat these steps for the _StartsAndEndsWithNewLine.txt_ file.
+>
+>{{< rawhtml >}}
+><img src="pictures/copy-to-output-directory-win.png" alt="Copy to Output Directory" />
+>{{< /rawhtml >}}
+> 
+>On Mac, you may select both of these files, right-click, choose _Quick Properties_, and then `Copy to Output Directory`.
+>
+>{{< rawhtml >}}
+><img src="pictures/copy-to-output-directory-mac.png" alt="Copy to Output Directory" />
+>{{< /rawhtml >}}
 
 Do not start Task 6 until you have passed all of Task 5’s auto-grading unit tests.
 
