@@ -55,7 +55,7 @@ Repeat the process above for the `Location`, `CoreCompetency`, and `PositionType
 
 Rerun your unit tests to verify that your classes and methods still work.
 
-### Run TestTas6 tests
+### Run TestTask6 tests
 
 Uncomment the tests inside the `TestTask6`class.  Look for the `TODO`s to help you find the multi-line comments marks.
 
