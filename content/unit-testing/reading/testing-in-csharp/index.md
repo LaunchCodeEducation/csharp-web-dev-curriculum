@@ -28,7 +28,7 @@ those building blocks.
 
    If you would like to review the benefits of automated testing, take a peek
    at
-   [this section](https://education.launchcode.org/intro-to-professional-web-dev/chapters/unit-testing/why-test.html)
+   [this section](https://education.launchcode.org/intro-to-web-dev-curriculum/unit-testing/reading/why-test/index.html)
    in another LaunchCode text.
 
 {{% /notice %}}
