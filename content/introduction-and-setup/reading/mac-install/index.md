@@ -1,5 +1,5 @@
 ---
-title: "Mac Users: Visual Studio for Mac"
+title: "Mac Users: C# Dev Kit for Visual Studio Code"
 date: 2022-12-15T09:16:07-06:00
 draft: false
 weight: 3
@@ -7,15 +7,15 @@ originalAuthor: Sally Steuterman # to be set by page creator
 originalAuthorGitHub: gildedgardenia # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer
 reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
-lastEditor: # update any time edits are made after review
-lastEditorGitHub: # update any time edits are made after review
-lastMod: # UPDATE ANY TIME CHANGES ARE MADE
+lastEditor: Sally Steuterman # update any time edits are made after review
+lastEditorGitHub: gildedgardenia # update any time edits are made after review
+lastMod: 2024-04-25 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 Before you start the installation guide, read through each step below. You will find the recommended features and functionality to install listed in each step.
 
 {{% notice orange "Warning" "rocket" %}}
-Allow at least **an hour** for the installation process.
+Allow ample time for the installation process.
 {{% /notice %}}
 
 ## Installation Steps
@@ -24,25 +24,16 @@ Allow at least **an hour** for the installation process.
 
 Before you start installing anything, you should first make sure that you can install this on your computer.
 
-### Install Visual Studio
+### Install C# Dev Kit
 
-Walk through the installation process by following Microsoft’s [Install Visual Studio for Mac](https://learn.microsoft.com/en-us/visualstudio/mac/installation?view=vsmac-2022) guide.
+You will need to install Microsoft's C# Dev Kit for Visual Studio Code. You can do so by going to the left sidebar on Visual Studio Code and selecting *Extensions* (the icon appears to be a stack of boxes with one being added to the group). Search for "C# Dev Kit" and click the *Install* button. Alternatively, you can check out the Marketplace Extension website to install [C# Dev Kit Extension for VSC](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
 
-As you install Visual Studio, keep these things in mind:
+You may be required to sign in with a Microsoft account. Creating a Microsoft account is free and it can be used for other Microsoft products. 
 
-1. You will have to assist the installer as needed. This may take a while, but stick around. You may be asked to enter your password a few times.
-1. How to personalize your install is up to you. Visual Studio may require the following personalizations.
+## A Tour of Your New Extension
 
-   1. Microsoft Account: You may be required to sign in with a Microsoft account. Creating a Microsoft account is free and it can be used for other Microsoft products. For more information on how to connect your Microsoft account to Visual Studio, check out the [documentation](https://learn.microsoft.com/en-us/visualstudio/mac/signing-in?view=vsmac-2022).
-   1. Keyboard Shortcuts: The default is Visual Studio for Mac and that is a good starting option. You can change this later.
-
-## A Tour of Your New IDE
-
-Microsoft has created a [walkthrough](https://learn.microsoft.com/en-us/visualstudio/mac/ide-tour?view=vsmac-2022) of the Visual Studio 2022 for Mac. We recommend you read through this to learn the location of key components within your new IDE.
+Microsoft has created a [walkthrough](https://code.visualstudio.com/docs/csharp/get-started) of this Visual Studio Code. We recommend you read through this to learn the location of key components of this extension.
 
 ## Troubleshooting
 
-### Already have Visual Studio on Your Computer?
-If you don’t have this most recent version of Visual Studio installed, you will need to updated it. The [Update Visual Studio for Mac Guide](https://learn.microsoft.com/en-us/visualstudio/mac/update?view=vsmac-2022) can help you update your old version of VS to the latest. At the time of this writing, the current version for the course is 2022.
-
-Updating can also help you keep any of your workloads, extensions, or other installed packages up to date.
+If you encounter any issues with this extension, check out the [FAQs](https://code.visualstudio.com/docs/csharp/cs-dev-kit-faq) to get started troubleshooting. 

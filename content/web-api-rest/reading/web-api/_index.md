@@ -191,7 +191,7 @@ This is the header for HTML documents and is used throughout the web. APIs send 
 ```
 
 The HTTP body may include JSON that represents the data being passed between an API and client application. Remember, not all requests/responses include HTTP bodies.
-{{% notice %}}
+{{% /notice %}}
 
 #### Status Codes
 

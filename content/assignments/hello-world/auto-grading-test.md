@@ -7,9 +7,9 @@ originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer
 reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
-lastEditor: # update any time edits are made after review
-lastEditorGitHub: # update any time edits are made after review
-lastMod: # UPDATE ANY TIME CHANGES ARE MADE
+lastEditor: Sally Steuterman # update any time edits are made after review
+lastEditorGitHub: gildedgardenia # update any time edits are made after review
+lastMod: 2024-04-25 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 We use unit tests in your graded-assignments to provide feedback on your progress. We will refer to them as auto-graded or auto-grading tests in these projects. 
@@ -59,10 +59,10 @@ Let’s learn how to run the tests in Visual Studio.
    ```
 1. Run all of your tests using the Test Explorer window.
    1. Mac Users: 
-      1. **View** > **Tests**  
-      1. Select the green triangle on the left of the Test Explorer Window. 
+      1. **View** > **Testing**  
+      1. Select the stacked triangles on the right of the Test Explorer Window. 
       1. In the Test Explorer, step through the file tree until you find the failed test. 
-      1. If you need more help running the tests, checkout this [guide](https://learn.microsoft.com/en-us/visualstudio/mac/testing?view=vsmac-2022#running-tests) for running tests in Visual Studio for Mac.
+      1. If you need more help running the tests, checkout this [guide](https://code.visualstudio.com/docs/csharp/testing) for running tests with C# Dev Kit.
    1. Windows Users 
       1. **Test** > **Windows** > **Test Explorer**
       1. Select the `Run All` icon to run all of your tests. 

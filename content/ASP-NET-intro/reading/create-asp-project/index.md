@@ -7,9 +7,9 @@ originalAuthor: Courtney Frey # to be set by page creator
 originalAuthorGitHub: speudusa # to be set by page creator
 reviewer: Kimberly Horan # to be set by the page reviewer
 reviewerGitHub: codinglikeagirl42 # to be set by the page reviewer
-lastEditor: # update any time edits are made after review
-lastEditorGitHub: # update any time edits are made after review
-lastMod: # UPDATE ANY TIME CHANGES ARE MADE
+lastEditor: Sally Steuterman # update any time edits are made after review
+lastEditorGitHub: gildedgardenia # update any time edits are made after review
+lastMod: 2024-04-25 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ASP.NET is a framework in the .NET Core family that is used to build web applications. While [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-6.0) can be used to build a wide variety of web applications, we will be focusing on using it to build MVC web applications.
@@ -53,24 +53,18 @@ This [tutorial for Windows](https://learn.microsoft.com/en-us/aspnet/core/tutori
 {{% /notice %}}
 
 ### Mac Users
-1. Open Visual Studio for Mac and select  *New*
 
-1. The type of project is a **Web Application (Model-View-Controller)**. In the left-side menu, select *App* from under the *Web and Console* list. Continue on to the next screen.
+<!-- TODO: FIX THIS -->
 
-1. Target Framework will be `.NET 6.0`. You don’t need to adjust any other settings at this time.
+1. Open VSC and select *.NET: New Project* in the Command Palette.
 
-1. Name your project `HelloASPDotNET` and put it in the appropriate directory for all of your classwork. Hit *Next*.
+1. The type of project is a **ASP Dot Net Core Web Application (Model-View-Controller)**.
 
-1. Visual Studio creates a fully-functional web application for you.
+1. Name your project `HelloASPDotNET` and put it in the appropriate directory for all of your classwork. Hit *Enter*.
 
-{{% notice green "Tip" "rocket" %}} 
+1. Visual Studio Code creates a fully-functional web application for you.
 
-**Troubleshooting:**
-Microsoft created a tutorial for creating an MVC in Visual Studio, but for the Mac version they recommend the following [guide](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-7.0&tabs=visual-studio-mac).
-
-Mac users, the guide is working with `.NET 7.0`. Make you that you are using `.NET 6.0` as the process is identical.
-
-{{% /notice %}}
+1. Go to the `.csproj` file and change the Target Framework to `.net6.0`.
 
 ### All Users
 

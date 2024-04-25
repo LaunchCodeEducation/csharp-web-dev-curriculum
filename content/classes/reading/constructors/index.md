@@ -199,4 +199,5 @@ When defining constructors, think about:
    1. `Dog myDog = new Dog("Bernie", "beagle");`
    1. `Dog Bernie = new Dog("Bernie", "beagle");`
 
+{{% /notice %}}
 <!-- B, Dog myDog = new Dog("Bernie", "beagle"); -->

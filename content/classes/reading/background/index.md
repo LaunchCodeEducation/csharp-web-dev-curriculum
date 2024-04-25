@@ -168,4 +168,5 @@ this case, in order to refer to the field, we *must* use `this`.
    1. line 8
    1. line 1
 
+{{% /notice %}}
 <!-- lines 4, 8 and 9 all have bugs. -->
