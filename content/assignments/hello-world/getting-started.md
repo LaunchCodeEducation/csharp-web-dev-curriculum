@@ -22,7 +22,7 @@ Let’s set up the assignment on our computer and learn about its basic structur
 1. When the solution opens, check out the contents of the Solution Explorer. You will find two **projects** within the solution:
  
    * The `HelloWorldAutoGraded` contains the code that you will work with for this assignment. 
-   * The `HelloWorldTests` project contains auto-grading tests. You do not need to change any of the code in the testing project.
+   * The `Hello.Tests` project contains auto-grading tests. You do not need to change any of the code in the testing project.
 
    {{% notice blue "Note" "rocket" %}}
    If you do not see the Solution Explorer, you can open it by selecting the following:
