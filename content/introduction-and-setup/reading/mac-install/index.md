@@ -26,7 +26,7 @@ Before you start installing anything, you should first make sure that you can in
 
 ### Install C# Dev Kit
 
-You will need to install Microsoft's C# Dev Kit for Visual Studio Code. You can do so by going to the left sidebar on Visual Studio Code and selecting *Extensions* (the icon appears to be a stack of boxes with one being added to the group). Search for "C# Dev Kit" and click the *Install* button. Alternatively, you can check out the Marketplace Extension website to install [C# Dev Kit Extension for VSC](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
+You will need to install Microsoft's C# Dev Kit for Visual Studio Code. You can do so by going to the left sidebar in Visual Studio Code and selecting *Extensions* (the icon appears to be a stack of boxes with one being added to the group). Search for "C# Dev Kit" and click the *Install* button. Alternatively, you can check out the Marketplace Extension website to install [C# Dev Kit Extension for VSC](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
 
 You may be required to sign in with a Microsoft account. Creating a Microsoft account is free and it can be used for other Microsoft products. 
 
