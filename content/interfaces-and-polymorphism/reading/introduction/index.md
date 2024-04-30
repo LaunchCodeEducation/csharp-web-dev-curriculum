@@ -65,4 +65,5 @@ Let's take a closer look at how polymorphism might work in our cat-centric appli
    parameter has the methods defined within `Cat`. Via inheritance,
    both `HouseCat` and `Cat` satisfy this requirement.
 
+{{% /notice %}}
 In addition to using classes to code in a polymorphic way, we can use *interfaces*.

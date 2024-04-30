@@ -401,3 +401,4 @@ Which ``EventDbContext`` property allows you to access `Tag` objects that are re
 1. `DbSet<Tag> Tags`
 1. `DbSet<EventTag> EventTags`
 1. All of the above
+{{% /notice %}}

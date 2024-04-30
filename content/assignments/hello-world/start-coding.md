@@ -18,13 +18,13 @@ According to the tests we just ran, we expected the string `Hello, World!` to be
    The auto-grading tests are VERY exacting. A difference of a single character will result in a failed test. The tests are also case-sensitive. You’ll need to pay attention to detail to correctly complete your assignments.
   {{% /notice %}}
 
-### Recommended Resources for Debugging Code in Visual Studio
+### Recommended Resources for Debugging Code
 
-Visual Studio has a built-in Debugger feature to help you troubleshoot your code.  We will explore it more in later chapters.  However, if you want to read through the guides and try things out early, you may find that this is a wonderful tool and skill-set to develop.
+Microsoft tools oftentimes have a built-in Debugger feature to help you troubleshoot your code.  We will explore it more in later chapters.  However, if you want to read through the guides and try things out early, you may find that this is a wonderful tool and skill-set to develop.
 
 - [How to debug for absolute beginners](https://learn.microsoft.com/en-us/visualstudio/debugger/debugging-absolute-beginners?view=vs-2022&tabs=csharp)
 - **Windows Users:** [Tutorial: Learn to debug C# code using Visual Studio](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-debugger?toc=%2Fvisualstudio%2Fdebugger%2Ftoc.json&view=vs-2022#start-the-debugger)
-- **Mac Uses:** [Debugging with Visual Studio for Mac](https://learn.microsoft.com/en-us/visualstudio/mac/debugging?view=vsmac-2022)
+- **Mac Uses:** [Debugging with C# Dev Kit](https://code.visualstudio.com/docs/csharp/debugging)
 
 
 

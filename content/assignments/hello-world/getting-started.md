@@ -19,17 +19,17 @@ Let’s set up the assignment on our computer and learn about its basic structur
 
 1. Follow the instructions to clone your repository and open it in Visual Studio.
 
-1. When the solution opens, check out the contents of the Solution (Mac) or Solution Explorer (Windows). You will find two **projects** within the solution:
+1. When the solution opens, check out the contents of the Solution Explorer. You will find two **projects** within the solution:
  
    * The `HelloWorldAutoGraded` contains the code that you will work with for this assignment. 
    * The `Hello.Tests` project contains auto-grading tests. You do not need to change any of the code in the testing project.
 
    {{% notice blue "Note" "rocket" %}}
-   If you do not see the **Solution Explorer**, you can open it by selecting the **View** option in the toolbar.
-   * Windows Users: **View** > **Solution Explorer**
-   * Mac Users:  **View** > **Solution** 
+   If you do not see the Solution Explorer, you can open it by selecting the following:
+   * Windows Users: *View* > *Solution Explorer*
+   * Mac Users:  Select *.NET: Open Solution* in the command palette. 
 
-   Review the Visual Studio walkthroughs from [chapter 1]({{< relref "../../introduction-and-setup/reading/_index.md" >}}) if you need help navigating Visual Studio.
+   Review the walkthroughs from [Chapter 1]({{< relref "../../introduction-and-setup/reading/_index.md" >}}) if you need help navigating the interface.
    {{% /notice %}}
 
 1. Inside `HelloWorldAutoGraded`, open up the `SayHelloClass.cs` class. This is where you will write any code for this assignment. Within this class, you will see the following:
@@ -43,7 +43,7 @@ Let’s set up the assignment on our computer and learn about its basic structur
 
 
 1. You are now ready to run the program. Do the following:
-   * **Mac Users:** Hit the Run button at the top left-hand corner of the window. Right-clicking on the `HelloWorldAutograded` project and selecting Run Project will also work.
+   * **Mac Users:** Hit the Run button at the top right-hand corner of the window. Alternatively, select *Run* > *Start Debugging* from the upper bar.
    * **Windows Users:** Click on the solid green triangle next to the name of the `HelloWorldAutograded` project. You can also press F5 to run the project.
 
 

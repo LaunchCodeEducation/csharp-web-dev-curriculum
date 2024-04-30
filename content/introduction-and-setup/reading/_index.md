@@ -57,9 +57,9 @@ Fortunately for us, .NET can be installed along with Visual Studio IDE.
 
 ## Windows Users vs. Mac Users
 
-Windows users will setup their C# development environment with a community version of Visual Studio. Mac users need to download and install a different version of Visual Studio called Visual Studio for Mac. While the names of these two programs are very similar, the user-experiences are quite different.
+Windows users will setup their C# development environment with a community version of Visual Studio. Mac users need to download and install an extension for Visual Studio Code called C# Dev Kit. The user-experiences for these two tools are quite different.
 
-An important note for this class: The content of this book is designed to inform both Windows and Mac users on the basics of web programming in C#. There are sometimes significant, and other times more minor, discrepancies between how to use the IDE tools provided in Visual Studio on Windows machines and Visual Studio for Mac. We will do our best to provide either instructions that are application neutral, or instructions that are tailored to the development experiences on both operating systems. There may be times when your C# project view will not look exactly like that in the book because you are on a different operating system and are therefore using a different Visual Studio application. The actions you take or buttons to click may be slightly different from what you see in the book.
+An important note for this class: The content of this book is designed to inform both Windows and Mac users on the basics of web programming in C#. There are sometimes significant, and other times more minor, discrepancies between how to use the IDE tools provided in Visual Studio on Windows machines and the C# Dev Kit. We will do our best to provide either instructions that are application neutral, or instructions that are tailored to the development experiences on both operating systems. There may be times when your C# project view will not look exactly like that in the book because you are on a different operating system and are therefore using a different application. The actions you take or buttons to click may be slightly different from what you see in the book.
 
 ## C# Naming Conventions
 
