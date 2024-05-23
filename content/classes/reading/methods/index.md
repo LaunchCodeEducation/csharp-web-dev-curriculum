@@ -119,7 +119,7 @@ how to add additional behaviors to our classes.
 
 {{% notice blue "Note" "rocket" %}}
 
-   Above, we've added some functionality to increment the ``studtentId`` property, too.
+   Above, we've added some functionality to increment the `studentId` property, too.
 
 {{% /notice %}}
 

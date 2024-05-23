@@ -22,7 +22,7 @@ The process of adding Identity to an existing code base is called **scaffolding*
 
 {{% notice blue "Note" "rocket" %}}
 Try and code along as you read more about Identity!
-<!-- TODO: Need to link proper repos to the below topics -->
+
 This page starts off with the code in the [orm2 branch](https://github.com/LaunchCodeEducation/CodingEvents/tree/orm2) of the [CodingEvents](https://github.com/LaunchCodeEducation/CodingEvents) repository. 
 The final code for this page is in the [authentication branch](https://github.com/LaunchCodeEducation/CodingEvents/tree/authentication) of the [CodingEvents](https://github.com/LaunchCodeEducation/CodingEvents) repository.
 {{% /notice %}}
@@ -379,7 +379,6 @@ Add the above line of code to the following code block:
 
 ### Final Steps
 
-<!-- TODO: Determine if the below is still accurate -->
 No matter which approach you took for the initial steps in scaffolding, you need to run a new migration and update your database.
 Once you update the database, your database will contain a number of tables related to Identity such as `AspNetUsers` and `AspNetRoles`.
 

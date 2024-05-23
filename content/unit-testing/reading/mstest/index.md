@@ -194,8 +194,6 @@ testing the `Car` class. One responsibility of the `Car` class constructor is to
 This class-specific behavior is a good item to test. Under your second TODO, write a test to verify that the 
 constructor sets the `gasTankLevel` field.
 
-<!-- TODO: Add link to using statements from earlier chapter -->
-
 {{% notice blue "Note" "rocket" %}}
 
    To test the `Car` class, we must make it available to us by adding `using Car;` to the top of your 

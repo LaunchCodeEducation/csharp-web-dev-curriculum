@@ -39,9 +39,8 @@ Because MVC breaks down all of the programming logic of an application into thre
 {{% /notice %}}
 
 ## How We Teach ASP.NET
-<!-- TODO -- link to views chapter (13) -->
 
-The following video is the first in a series designed to help you code your first ASP.NET application. We will be building this app over the next several chapters, finishing in [Views chapter](LINK). The video below provides an overview of simple application routing via the use of controllers along with a walkthrough of what the finished app will look like. In subsequent videos in this series, we ask you to code along for maximum absorption of the topics introduced. A summary of the content introduced will follow each of these videos.
+The following video is the first in a series designed to help you code your first ASP.NET application. We will be building this app over the next several chapters, finishing in [Views chapter]({{% relref "../../../razor-views" %}}). The video below provides an overview of simple application routing via the use of controllers along with a walkthrough of what the finished app will look like. In subsequent videos in this series, we ask you to code along for maximum absorption of the topics introduced. A summary of the content introduced will follow each of these videos.
 
 ## Intro to ASP.NET - Video
 

@@ -119,8 +119,7 @@ Which of the following are true:
 1. A cookie is stored in the browser.
 {{% /notice %}}
 
-<!-- TODO: Add dropdown for answer? .. ans: a and d,  A session is stored on the server. and A cookie is stored in the browser.
--->
+<!-- .. ans: a and d,  A session is stored on the server. and A cookie is stored in the browser. -->
 
 {{% notice green "Question" "rocket" %}}
 What is the difference between authentication and authorization?
@@ -131,6 +130,5 @@ What is the difference between authentication and authorization?
 1. User authorization can be changed in a request, authentication cannot.
 {{% /notice %}}
 
-<!-- TODO: Add dropdown for answer? .. ans: b, Authentication handles user identity, authorization handles user permissions.
--->
+<!-- .. ans: b, Authentication handles user identity, authorization handles user permissions. -->
 

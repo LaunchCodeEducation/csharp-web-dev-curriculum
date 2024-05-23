@@ -63,7 +63,7 @@ Now Code with Pride and all the information we provided is stored in our MySQL d
 ## ORM in ASP.NET
 <!-- TODO: Link to chapter 14: models TOC and data layers page -->
 
-One of the most widely used object-relational mappers available for C# and ASP.NET Core is **Entity Framework Core**. This framework makes use of **data layers**. When we learned about [models](LINK), we learned that [data layers](LINK) add abstraction between models and the data we want to store. With Entity FrameworkCore, data layers take the form of classes that _extend_ `DbContext`. 
+One of the most widely used object-relational mappers available for C# and ASP.NET Core is **Entity Framework Core**. This framework makes use of **data layers**. When we learned about [models]({{% relref "../../../aspdotnet-model-classes/reading/model-intro" %}}), we learned that [data layers]({{% relref "../../../aspdotnet-model-classes/reading/data-layer" %}}) add abstraction between models and the data we want to store. With Entity FrameworkCore, data layers take the form of classes that _extend_ `DbContext`. 
 
 
 Before we add persistence to our data, it's important to remember that: _Models are NOT persistent data stores, and relational databases do NOT shape the C# objects we will be using._ We want to make sure that the two remain separate.

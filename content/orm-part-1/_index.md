@@ -28,7 +28,6 @@ By the end of this chapter, you should understand:
 1. object-relational mapper
 1. Entity Framework Core
 1. Data Layers
-<!-- TODO: Is this still needed for with the updated connectionString??? -->
 1. Environment Variables 
 
 ### Accessing Data

@@ -31,8 +31,7 @@ You may have seen exceptions in C# or another programming language already, perh
 This last scenario is a **null pointer**. This is an object reference that doesn’t actually contain an object. 
 {{% /notice %}}
 
-<!-- TODO: Link back to Classes part 1 for LINK-1 and Classes part 2 to Link-2 -->
-Indeed, we have even used exceptions in this book already. Recall [this temperature example](LINK-1) where we throw a built-in exception when a provided argument falls outside of an acceptable range. Later, we refine our [temperature app](LINK-2) and throw the more targeted `ArgumentOutOfRangeException`.
+Indeed, we have even used exceptions in this book already. Recall the temperature example where we throw a built-in exception when a provided argument falls outside of an acceptable range. Later, we refine our [temperature app]({{% relref "../../../classes-part-2/reading/custom-fields/#a-temperature-example" %}}) and throw the more targeted `ArgumentOutOfRangeException`.
 
 The example below is found in the `TemperatureExceptions` project in the [example code repo](https://github.com/LaunchCodeEducation/csharp-web-dev-exceptions).
 

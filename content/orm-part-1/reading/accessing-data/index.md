@@ -98,7 +98,7 @@ The `MySql()` method is passed the `connectionString` and `serverVersion` variab
 When `WebApplication.CreateBuilder(args);` runs in line 5 of `Program.cs`, the connection to the database begins. 
 
 ## Configuring a Primary Key
-<!-- TODO: Update SQL link -->
+
 As you [learned previously](https://education.launchcode.org/SQL/chapters/mysql-part-2/relationships.html#table-keys), every relational table should have a primary key. When working with ORM, this means that every **persistent class** needs a primary key property. A persistent class is a class that we want to store (or persist) in a database.
 
 Our `Event` class currently has an ID field.
