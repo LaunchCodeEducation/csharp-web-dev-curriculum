@@ -65,7 +65,7 @@ Then we store Jamie's username along with her hashed password in our `user` tabl
 |-----|-----|
 | tswizzle_fan | bd62d7e13ef465fa705f30de198ba0cb |
 
-This is very secure. Even if somebody breaks into the database and finds Jamie's info, they will not be able to log in. Since we used a hash function, the hacker will have a very hard time turning the hash into a password:[see property 2](http://localhost:1313/authentication/reading/hashing-passwords/#hash-properties)
+This is very secure. Even if somebody breaks into the database and finds Jamie's info, they will not be able to log in. Since we used a hash function, the hacker will have a very hard time turning the hash into a password, see Hash Property 2.
 
 We can still authenticate Jamie, however. When they come to our site to log in, they will submit a username and password. Let's call the password value `submittedPassword`. Some basic logic will allow us to determine, with an *extremely* high rate of probability, whether or not the pair is valid.
 
@@ -91,8 +91,7 @@ else
 }
 ```
 
-<!-- TODO: Links will need to be changed for the below hash properties -->
-The conditional compares the values of the hash stored in the database with the hash generated from the *submitted* password. By [hash property 1](#hash-properties), we know that if the hash values are different, then there is no way the passwords are the same. By [hash property 3](#hash-properties), we can safely assume that the passwords are the same. 
+The conditional compares the values of the hash stored in the database with the hash generated from the *submitted* password. By Hash Property 1 listed above, we know that if the hash values are different, then there is no way the passwords are the same. By Hash Property 3, we can safely assume that the passwords are the same. 
 
 {{% notice blue "Note" "rocket" %}}
 When using Identity, the library handles hashing passwords for newly registered users and comparing hashes when logging in a user. The example above is just an example and meant to illustrate what is going on under the hood of Identity.
@@ -100,7 +99,7 @@ When using Identity, the library handles hashing passwords for newly registered 
 
 ### Hashing Isn't Perfect
 
-Using hash functions to process passwords is not a cure-all. One vulnerability is the possibility for **collisions**. A collision occurs when two different messages have the same hash value. By [hash property 3](#hash-properties), this is supposed to be rare. However, if a collision is found for a given hash function, then it may be possible to create an algorithm to *generate* collisions. In other words, given a specific hash value, the algorithm could generate a string with the *same* hash value.
+Using hash functions to process passwords is not a cure-all. One vulnerability is the possibility for **collisions**. A collision occurs when two different messages have the same hash value. By Hash Property 3, this is supposed to be rare. However, if a collision is found for a given hash function, then it may be possible to create an algorithm to *generate* collisions. In other words, given a specific hash value, the algorithm could generate a string with the *same* hash value.
 
 The once-popular MD5 and SHA1 hash algorithms [quickly become obsolete](https://arstechnica.com/information-technology/2017/02/at-deaths-door-for-years-widely-used-sha1-function-is-now-dead/) (for cryptographic purposes, at least) once collisions were found. 
 
@@ -131,8 +130,7 @@ True/False: One-way encryption does not involve decryption.
 1. False
 {{% /notice %}}
 
-<!-- TODO: Add answer for above question? .. ans: a, one-way encryption is only responsible for encrypting a message, not deciphering it
--->
+<!-- .. ans: a, one-way encryption is only responsible for encrypting a message, not deciphering it -->
 
 {{% notice green "Question" "rocket" %}}
 Which of the following best describes hashing?
@@ -143,6 +141,5 @@ Which of the following best describes hashing?
 1. Hashing smashing.
 {{% /notice %}}
 
-<!-- TODO: add answer for above question? .. ans: a, Hashing is the process of encrypting plaintext so that it is very difficult to obtain the original message.
- -->
+<!-- .. ans: a, Hashing is the process of encrypting plaintext so that it is very difficult to obtain the original message. -->
 

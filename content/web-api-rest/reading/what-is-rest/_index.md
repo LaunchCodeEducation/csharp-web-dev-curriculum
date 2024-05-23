@@ -82,9 +82,6 @@ Whereas the state of a collection of `CodingEvents` is represented by a JSON arr
 Notice that the state here is represented as the collective state of all of the `CodingEvents` in the collection.
 {{% /notice %}}
 
-<!-- TODO: add correct link here when available .. index:: ! JSON serialization, ! JSON deserialization
--->
-
 {{% notice green "Tip" "rocket" %}}
 The process of converting an object representation to a JSON representation is called **JSON serialization**.
 
@@ -114,9 +111,6 @@ However, it is up to the API to define the contract, or expose:
 - which (CRUD) interactions are supported for each resource 
 
 These decisions are what drive the design of the contract. 
-
-<!-- TODO: add correct link here when available: .. index:: ! resource, ! resource entity, ! resource collection
-  -->
    
 ### Resources
 

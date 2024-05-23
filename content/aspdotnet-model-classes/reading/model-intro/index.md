@@ -12,10 +12,8 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-<!-- TODO: Add link to controllers -->
-
 In the previous chapter, you learned about Razor, which displays data and an
-interface for a user. Before that, you learned about controllers. Remember that controllers
+interface for a user. Before that, you learned about [controllers]({{% relref "../../../aspdotnet-controllers-and-routes" %}}). Remember that controllers
 determine what data to send to the the views. This data needs to come from some source 
 and take some shape. Cue the models.
 

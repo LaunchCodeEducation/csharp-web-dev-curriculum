@@ -54,23 +54,27 @@ This [tutorial for Windows](https://learn.microsoft.com/en-us/aspnet/core/tutori
 
 ### Mac Users
 
-<!-- TODO: FIX THIS -->
+1. Open VSC and navigate to the folder you would like to make your new app in the integrated terminal.
 
-1. Open VSC and select *.NET: New Project* in the Command Palette.
+1. Run this command in your terminal: `dotnet new mvc -o HelloASPDotNET`.
 
-1. The type of project is a **ASP Dot Net Core Web Application (Model-View-Controller)**.
+1. Once the terminal is ready, run `code -r HelloASPDotNET`.
 
-1. Name your project `HelloASPDotNET` and put it in the appropriate directory for all of your classwork. Hit *Enter*.
+1. Visual Studio Code opens a fully-functional web application for you!
 
-1. Visual Studio Code creates a fully-functional web application for you.
+{{% notice green "Tip" "rocket" %}}
 
-1. Go to the `.csproj` file and change the Target Framework to `.net6.0`.
+**Troubleshooting:**
+
+This [tutorial](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio-code) can help you if you are stuck using the C# Dev Kit to work with ASP.NET Core MVC projects.
+
+{{% /notice %}}
 
 ### All Users
 
 1. Now launch the application!
 
-   1. **Mac Users:** Click *Run*.   
+   1. **Mac Users:** Click *Run project* in the upper right-hand corner.   
 
    1. **Windows Users:** Select `HelloAspDotNet` (or whatever you named your project) and try launching the application if it doesn't work initially.
 

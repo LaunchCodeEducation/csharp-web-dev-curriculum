@@ -54,9 +54,6 @@ A web API interacts with, or *is consumed by*, a client application. This proces
 The chief responsibility of a web API is to exchange representations of data with a corresponding client application. APIs are also gatekeepers, maintaining 
 rules about how end-users may interact with application data.
 
-<!-- TODO: Link to proper location .. index:: ! server-side rendering, client-side rendering
--->
-
 #### Data Delivery
 
 Think about how a view works in MVC. 
@@ -101,9 +98,6 @@ Here's an overview of the steps to transfer data between a web API and client ap
 1. The controller transforms the object into a package the client application can work with.
 1. The controller responds to the client with the packaged data.
 
-<!-- TODO: Link to correct location once we have it .. index:: ! data presentation, ! data representation
--->
-
 ### Representation of Data
 
 #### Presentation vs Representation
@@ -125,8 +119,7 @@ While there are many languages and frameworks available in web development, they
 JSON is currently a universal representation of data accepted by client applications. This means our web API packages data 
 requested by a client application as JSON. The web API also transfers this JSON in its communication with a client application.
 
-<!-- TODO: Link will need to be changed from localhost once we have a permanent endpoint -->
-Let's revisit the last two steps from our [web API work flow](http://localhost:1313/web-api-rest/web-api/#transference-of-data)
+Let's revisit the last two steps from our web API work flow.
 
 1. The controller transforms the object into a JSON representation.
 1. The controller responds to the client with the JSON representation.

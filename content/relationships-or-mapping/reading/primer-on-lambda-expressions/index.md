@@ -118,7 +118,7 @@ c. x => x + lastName
 d. x => x == "Smith"
 ```
 {{% /notice %}}
-<!-- TODO: Add answer?: b. x => x + " Smith" -->
+<!-- b. x => x + " Smith" -->
 
 {{% notice green "Question" %}}
 Given an array of numbers, ``nums``, what lambda expression would you pass to ``Where`` in the following code so that the resulting array consists of only the numbers greater than 42?
@@ -133,4 +133,4 @@ d. x => x < 42
 ```
 {{% /notice %}}
 
-<!-- TODO: Add answer?: x => x > 4 -->
+<!-- x => x > 4 -->
