@@ -72,8 +72,8 @@ If you look at the corresponding page at `/list`, you’ll see an "All" column
 in the table. However, this option doesn’t work yet, and you will fully
 implement the constructor as you work on this project.
 
-At the top of `ListController` is a constructor that populates
-`ColumnChoices` and `TableChoices` with values. These Dictionaries play the
+At the top of `ListController` are static Dictionaries that populate
+`ColumnChoices` and `TableChoices` with values respectively. These Dictionaries play the
 same role as in the console app, which is to provide a centralized collection
 of the different *List* and *Search* options presented throughout the user
 interface.
