@@ -153,7 +153,7 @@ user clicks on these links, they will be routed to the
 `Jobs()` action method in `ListController`, which looks for
 these parameters.
 
-By the end of your work on this project, clicking on one of the links display a list of jobs that relate to the
+By the end of your work on this project, clicking on one of the links should display a list of jobs that relate to the
 choice, via the `Jobs()` action method.
 
 For now, click one of the *Location* links. This sends a request as we
