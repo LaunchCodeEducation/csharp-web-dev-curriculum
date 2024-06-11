@@ -13,7 +13,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 {{% notice blue "Note" "rocket" %}}
-   Before starting this task, un-comment out the tests in `TestTaskFour`. You can do so by removing the `/*` on line 18 and the `*/` on line 44.
+   Before starting this task, un-comment out the tests in `TestTaskFour`.
 {{% /notice %}}
 
 Once you have your `Results()` action method passing information to the
