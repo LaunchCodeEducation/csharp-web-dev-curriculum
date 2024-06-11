@@ -52,7 +52,7 @@ In `JobTests`, add a new test called `TestToStringStartsAndEndsWithNewLine` to c
 Only run the unit tests in the `JobTests` class as you work through this Task.
 
 
-If you were to run the auto-graded tests right now, you will not pass them even if you pass own unit tests pass.  Once you have all 3 unit tests completed, we will ask you to run the auto-graded tests.  Please make sure you are running the correct tests.
+If you were to run the auto-graded tests right now, you will not pass them even if your own unit tests pass.  Once you have all 3 unit tests completed, we will ask you to run the auto-graded tests.  Please make sure you are running the correct tests.
 {{% /notice %}}
 
 ### Code `ToString()` to Pass Test 1
