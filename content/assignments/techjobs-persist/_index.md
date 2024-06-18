@@ -16,7 +16,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 You will once again work with the TechJobs application. This time around you’ll add ORM functionality by using Entity Framework. You will be responsible for completing the code to allow users to create new job data.
 Your final application will have the same list and search capabilities as your [Tech Jobs (MVC Edition)](../techjobs-mvc/) but you’ll need to do the work to connect the project to a database for storing user-submitted job data.
 Each of the three sections of this assignment will also ask you to demonstrate your SQL skills under an item labeled **SQL TASK**.
-As you work through each part, refer to our [demo app](https://techjobs-persistent.launchcodetechnicaltraining.org/) to clarify questions about intended application behavior.
+As you work through each part, refer to our [demo app](https://techjobs-persistent.launchcodelearning.org/) to clarify questions about intended application behavior.
 
 {{% notice blue Note "rocket" %}}
 The List and Search functions in the demo app are not part of this current Assignment's codebase at this time.
