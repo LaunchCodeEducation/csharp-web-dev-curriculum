@@ -196,7 +196,7 @@ Thus, the first item in this table:
 {{% /expand %}}
 
 {{% expand `Sort()` %}}
-   Rearranges the elements of an `List` into ascending order.
+   Rearranges the elements of a `List` into ascending order.
 
    ```csharp
    planets.Sort(); 
