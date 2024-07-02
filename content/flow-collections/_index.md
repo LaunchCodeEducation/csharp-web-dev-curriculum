@@ -54,7 +54,7 @@ Throughout this lesson, you will see lots of new vocabulary. Here is everything 
 1. `continue`
 1. `StringBuilder`
 
-### Collctions
+### Collections
 1. data structure
 1. `List`
 1. `Dictionary`
