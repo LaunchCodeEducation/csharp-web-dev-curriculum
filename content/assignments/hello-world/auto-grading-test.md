@@ -17,7 +17,7 @@ Use the tests to check your work as you complete the assignment. The goal is to 
 
 Let’s learn how to run the tests in Visual Studio.
 
-1. Each assignment will contain a test **project**. This project contains all of the auto-grading tests and may have more than one test class. In the Solution/Solution Explorer, navigate to `HelloTests.cs` inside the `Hello.Tests` project. 
+1. Each assignment will contain a test **project**. This project contains all of the auto-grading tests and may have more than one test class. In the Solution/Solution Explorer, navigate to `HelloTest.cs` inside the `Hello.Tests` project. 
 
    {{% notice blue "Note" "rocket" %}}
    You will not need to open the `Using.cs` file.  This file connects the testing project to the testing library.  This is not a test class.

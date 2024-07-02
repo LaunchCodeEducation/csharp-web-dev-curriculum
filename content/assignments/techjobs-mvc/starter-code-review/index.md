@@ -72,8 +72,8 @@ If you look at the corresponding page at `/list`, you’ll see an "All" column
 in the table. However, this option doesn’t work yet, and you will fully
 implement the constructor as you work on this project.
 
-At the top of `ListController` is a constructor that populates
-`ColumnChoices` and `TableChoices` with values. These Dictionaries play the
+At the top of `ListController` are static Dictionaries that populate
+`ColumnChoices` and `TableChoices` with values respectively. These Dictionaries play the
 same role as in the console app, which is to provide a centralized collection
 of the different *List* and *Search* options presented throughout the user
 interface.
@@ -153,7 +153,7 @@ user clicks on these links, they will be routed to the
 `Jobs()` action method in `ListController`, which looks for
 these parameters.
 
-By the end of your work on this project, clicking on one of the links display a list of jobs that relate to the
+By the end of your work on this project, clicking on one of the links should display a list of jobs that relate to the
 choice, via the `Jobs()` action method.
 
 For now, click one of the *Location* links. This sends a request as we

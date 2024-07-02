@@ -229,7 +229,7 @@ Now that we know how to write an `Equals()` method, let’s look at some charact
 
 If you think back to what your math classes had to say about equality, then these concepts will feel familiar.
 
-Using the general approach outlined above to implement `Equals()` will make it easier to meet these characteristics. However, always check your method! Missing one or more characteristic can be disastrous for your C# applications.
+Using the general approach outlined above to implement `Equals()` will make it easier to meet these characteristics. However, always check your method! Missing one or more characteristics can be disastrous for your C# applications.
 
 {{% notice green "Tip" "rocket" %}} 
 Seasoned C# developers, will tell you that every time you implement your own version of `Equals()` you should also implement your own version of `GetHashCode()`. `GetHashCode()` is another special method that every class has. Understanding `GetHashCode()` would take us a bit far afield at this point, but we would be remiss to not mention it. If you want to read more, check out the [documentation](https://learn.microsoft.com/en-us/dotnet/api/system.object.gethashcode?view=net-6.0) on the `GetHashCode()` method and [this Stack Overflow discussion](https://stackoverflow.com/questions/371328/why-is-it-important-to-override-gethashcode-when-equals-method-is-overridden). We will cover how to override `Equals()` and `GetHashCode()` in the next section using some fun shortcuts in Visual Studio.

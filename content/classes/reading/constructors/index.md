@@ -193,7 +193,7 @@ When defining constructors, think about:
    ```
 
    What line of code would be appropriate for us to declare an instance of the `Dog` 
-   class called `myDog` and give it the name, "Bernie", and the breed, "Beagle"?
+   class called `myDog` and give it the name, "Bernie", and the breed, "beagle"?
 
    1. `Dog myDog = new Dog(Bernie, beagle);`
    1. `Dog myDog = new Dog("Bernie", "beagle");`
