@@ -17,5 +17,5 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 Here’s a definition: inheritance is a mechanism within object-oriented programming that allows one class to be based on another class, thus receiving its properties and behaviors.
 
 {{% notice blue "Note" "rocket" %}} 
-Inheritance is also sometimes referred to as **subtyping**. 
+Inheritance is also sometimes referred to as **subclassing**. 
 {{% /notice %}}
