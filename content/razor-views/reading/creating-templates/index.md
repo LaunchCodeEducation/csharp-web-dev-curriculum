@@ -30,7 +30,7 @@ Open up your `HelloASPDotNET` project in Visual Studio and make sure you have co
 
 Before you start coding, we need to refactor `HelloController`: 
    1. `Index()` should respond to `GET` requests at `localhost:5001/hello`
-   1.  `Welcome()` should only responding to `POST` requests at `localhost:5001/hello`. 
+   1.  `Welcome()` should only respond to `POST` requests at `localhost:5001/hello`. 
    
 Check out the code block below to refactor your code.
 
@@ -61,7 +61,7 @@ Out of the box, your MVC project contains several Razor templates within the `Vi
 
 In order to return that template, the action method calls a **View() method**. The `View()` method finds a template that’s associated with the particular controller and action method that it is called from.
 
-You can override the default behavior of the `View()` method, you can pass in a parameter which is the name of the template you want to render. For example, if we want an action method named `Form()` to return a Razor template named `WelcomeForm.cshtml`, we have `Form()` return `View("WelcomeForm");`.
+You can override the default behavior of the `View()` method by passing in a parameter which is the name of the template you want to render. For example, if we want an action method named `Form()` to return a Razor template named `WelcomeForm.cshtml`, we have `Form()` return `View("WelcomeForm");`.
 
 
 ### Add a Template
