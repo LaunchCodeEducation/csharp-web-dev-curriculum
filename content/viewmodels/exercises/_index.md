@@ -29,7 +29,7 @@ Event information to add:
 
    {{% expand "Check your solution" %}}
    ```csharp{linenos=table}
-   // In the Events class
+   // In the Event class
 
    public string Location { get; set; }
 

@@ -83,7 +83,7 @@ When using model binding, we can use tools to validate new model objects before 
 
 ### Using `ModelState.IsValid`
 
-Within `EventController`, the `Add()` action method uses model binding to receive an `AddEventViewModel` object when the form is posted. 
+Within `EventsController`, the `Add()` action method uses model binding to receive an `AddEventViewModel` object when the form is posted. 
 That ViewModel instance is created using form data. This object is NOT validated automatically, even if validation attributes are present on its fields.
 
 Recall that _both_ the model and controller play a role in validation. 
