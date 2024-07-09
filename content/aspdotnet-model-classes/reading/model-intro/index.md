@@ -23,7 +23,7 @@ A **model** represents the logic for accessing and storing the data used in an a
 Properly constructed, models do not depend on any controllers or views. Models should be classes that 
 are easy to reuse without modification.
 
-Models are not the data itself, but rather the logic that moulds the data for a particular
+Models are not the data itself, but rather the logic that molds the data for a particular
 purpose. They dictate how we want to handle the data in an application-specific way. The data used in 
 an application is often sourced from a database or an external data service. Data is typically 
 application-agnostic. It is the work of the models we write to shape raw data into useful 

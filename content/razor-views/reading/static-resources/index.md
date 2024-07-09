@@ -24,14 +24,14 @@ Two things to keep in mind before we start adding our own CSS:
 
 1. We need to organize and store our CSS files in the appropriate location, just as we need to do with other files in ASP.NET Core MVC. In our application, we have a `wwwroot` directory. Inside that directory, we can add CSS files to the `css` subdirectory. The `wwwroot` directory is the default location for static files so when the application is served, ASP.NET Core MVC can easily locate these files.
 
-{{% notice blue note %}}
+{{% notice blue Note %}}
 Let’s say we add a custom CSS file to our application called `custom.css` and store this file in the `css` subdirectory in `wwwroot`. If we want to link to this file to use it for a view, we would use the following line of HTML.
 
 ```csharp
 <link rel="stylesheet" type="text/css" href="~/css/custom.css">
 ```
 
-Because we added our file to the `css` subdirectory inside the `wwwwroot` directory, our link is simply `"~/css/custom.css"`.
+Because we added our file to the `css` subdirectory inside the `wwwroot` directory, our link is simply `"~/css/custom.css"`.
 {{% /notice %}}
 
 ## Add Custom Scripts

@@ -60,7 +60,7 @@ In the `Add` View, you will need to create more class attributes for the library
 ```
 {{% /notice %}}
 
-Note in line 10 the addition of `class="form-control"` and in line 11 `class="text-danger"`. These attributes will be noted by the jQuery Unobtrusive Validation library and print our red if the client does not meet the requirements.
+Note in line 10 the addition of `class="form-control"` and in line 11 `class="text-danger"`. These attributes will be noted by the jQuery Unobtrusive Validation library and print out red if the client does not meet the requirements.
 
 You can read more about client-side validation and the jQuery Unobtrusive Validation library check out the [documentation](https://learn.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-6.0#client-side-validation). 
 

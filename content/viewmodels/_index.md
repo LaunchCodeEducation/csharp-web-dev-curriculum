@@ -24,7 +24,7 @@ By the end of this chapter, you should understand:
 ### ViewModels and Passing Data Between Views
 1. ViewModel
 
-### Side-Server Validation
+### Server-Side Validation
 1. Validation
 1. Client-Side Validation
 1. Server-Side Validation

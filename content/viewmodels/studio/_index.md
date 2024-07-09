@@ -17,7 +17,7 @@ We’ll build on the [user-signup-starter](https://github.com/LaunchCodeEducatio
 
 ## Getting Started
 
-Open up your SpaDay application and checkout the [user-validation](https://github.com/LaunchCodeEducation/SpaDayStudio6/tree/user-validation).
+Open up your SpaDay application and checkout the [user-validation](https://github.com/LaunchCodeEducation/SpaDayStudio6/tree/user-validation) branch.
 
 ## Creating a New ViewModel
 

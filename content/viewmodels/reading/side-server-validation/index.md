@@ -1,5 +1,5 @@
 ---
-title: "Side-Server Validation"
+title: "Server-Side Validation"
 date: 2023-02-24T08:57:18-06:00
 draft: false
 weight: 2

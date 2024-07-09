@@ -25,7 +25,7 @@ We need to do the following steps:
 1. [Update the Model]({{< relref "#update-the-model-with-nullable-values" >}})
 1. [Update our Index Action Method]({{< relref "#update-the-index-action-method-in-the-controller" >}})
 1. [Update the Index View]({{< relref "#update-the-index-view" >}})
-1. [Update the Add an New Event Action Methods]({{< relref "#update-the-add-and-newevent-action-methods-in-the-controller" >}})
+1. [Update the Add and New Event Action Methods]({{< relref "#update-the-add-and-newevent-action-methods-in-the-controller" >}})
 1. [Update the Add View Model]({{< relref "#update-the-add-view" >}})
 
 Let's get started!
@@ -63,7 +63,7 @@ Let's get started!
 
    Do you see the `?` after `string` in lines 7 and 8 in the code block above? This declares this property to be a nullable value type. This means that the value of `Name` or `Description` is allowed to be null at some point.
 
-   A null value for either of these fields is not idea, but we need them to have this flexibility when we begin to add validation attributes later in this chapter. If the validation checks fail, a new event will not be added to the project's data storage.  
+   A null value for either of these fields is not ideal, but we need them to have this flexibility when we begin to add validation attributes later in this chapter. If the validation checks fail, a new event will not be added to the project's data storage.  
 
   Check out these resources on [nullable value types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types#code-try-1) and [strategies](https://www.stevenbenitez.com/nullable-reference-type-strategies/) to handle them.
 
@@ -90,7 +90,7 @@ We need to declare the fields of our `Event` model nullable as well.
 
 ### Update the `Index` Action Method in the Controller
 
-In the `EventsController`, find the `Index` action method.  We want to convert our `ViewBag` in to a `List` collection type.  
+In the `EventsController`, find the `Index` action method.  We want to convert our `ViewBag` to a `List` collection type.  
 
 1. Update the `ViewBag.events` to a `List` of `Event` objects. Let's store this list in a variable called `events`. 
 
@@ -113,7 +113,7 @@ In the `EventsController`, find the `Index` action method.  We want to convert o
 
 ### Update the `Index` View
 
-Now that we are storing our items in a `List`, we need to import the model into our `Events/Index.cshtml` view so we can use the new events collection. We can start by adding a `@using` statement to let the view know which model to reference. We can also use the `@model` statement to let the view know which type of object to expect.  In this case, a list of `Event` objects.
+Now that we are storing our items in a `List`, we need to import the model into our `Events/Index.cshtml` view so we can use the new events collection. We can start by adding a `@using` statement to let the view know which model to reference. We can also use the `@model` statement to let the view know which type of object to expect.  In this case we can expect a list of `Event` objects.
 
 1. Add a `@using` statement that informs the view about which portion of the project to access.
 1. Add a `@model` statement to inform the view about the object type.
@@ -178,7 +178,7 @@ Next let's update our `NewEvent` action method.
    {{% notice blue "Check Your Code" "rocket" %}}
    ```csharp{linenos=table,hl_lines=[],linenostart=29}
    [HttpPost]
-   public IActionResult Add(AddEventViewModel addEventViewMode)
+   public IActionResult Add(AddEventViewModel addEventViewModel)
    ```
    {{% /notice %}}
 
@@ -208,7 +208,7 @@ Next let's update our `NewEvent` action method.
    {{% /notice %}}
 
 
-You should how have two `Add()` methods. The framework is clever enough to know the difference.  The `[HttpPost]` attribute designates the `Add` method that processes the form while the other `Add()` method retrieves the form.
+You should now have two `Add()` methods. The framework is clever enough to know the difference.  The `[HttpPost]` attribute designates the `Add` method that processes the form while the other `Add()` method retrieves the form.
 
 This is similar to how we created the `Delete()` action methods in the [previous chapter]({{< relref "../../../aspdotnet-model-classes/reading/data-layer/#delete-an-event" >}}).
 
@@ -255,7 +255,7 @@ We are now ready to update our `Add` view.
 
    {{% notice orange "Warning" "rocket" %}}
 
-   In the code block above, notice the lines where we use `asp-for`.  We removed the `name` and `type` requirements from the `<input>` type and added `asp-for` to the `<label>` tag too. `asp-for` reflects the name we provided to the property in the ViewModel.  The reflected name will be used in the view when we run this project.
+   In the code block above, notice the lines where we use `asp-for`.  We removed the `name` and `type` requirements from the `<input>` tag and added `asp-for` to the `<label>` tag too. `asp-for` reflects the name we provided to the property in the ViewModel.  The reflected name will be used in the view when we run this project.
 
    {{% /notice %}}
 
