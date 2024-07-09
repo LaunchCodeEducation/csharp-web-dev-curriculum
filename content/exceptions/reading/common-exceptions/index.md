@@ -87,7 +87,7 @@ As with catching, be specific with which types of exceptions you throw. Never th
 
 When should you write your own exception class?
 
-   1. The error the your code encounters is very specific and targeted.
+   1. The error your code encounters is very specific and targeted.
    1. You know your code will produce an error, but you’re not sure which exception is the best fit.
    1. Writing custom exception classes is done by .NET developers only.
    1. Never, don’t do it. 
