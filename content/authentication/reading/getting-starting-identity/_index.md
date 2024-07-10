@@ -113,7 +113,7 @@ dotnet add package Microsoft.EntityFrameworkCore.Tools --version 6.0
 
 With these packages installed, you are ready to go!
 
-## Scaffolding Identity in an Exisiting Project
+## Scaffolding Identity in an Existing Project
 
 In both Visual Studio for Mac and Visual Studio for Windows, you have the option to add new scaffolded items through the UI and through the terminal.
 
@@ -129,7 +129,7 @@ This approach is the simpler of the two approaches. However, for some Mac users,
 
 ### Adding Identity through the Command Line
 
-All of these commmands should be run in the project directory *inside* of the solution.
+All of these commands should be run in the project directory *inside* of the solution.
 
 1. Use the following command to make sure you have the necessary code generator tools installed.
 
