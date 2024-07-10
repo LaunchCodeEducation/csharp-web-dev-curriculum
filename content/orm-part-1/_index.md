@@ -19,7 +19,7 @@ By the end of this chapter, you should understand:
 - What object-relational mapping is and why developers use it.
 - How to connect an ASP.NET Core MVC application to a MySQL database.
 - How to create a new migration and update the database.
-- How to create a `DbContext` and why developer use it.
+- How to create a `DbContext` and why developers use it.
 
 ## Key Terminology
 
