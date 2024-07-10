@@ -84,7 +84,7 @@ When might a programmer want to make a class abstract?
 
    1. When a class has no real data or behavior
    1. When expressionism just won’t cut it
-   1. When that class needs to be instantiated i   n more than one package
+   1. When that class needs to be instantiated in more than one package
    1. When shared behavior is desired among a group of non-abstract classes
 
 <!-- ans: When shared behavior is desired among a group of non-abstract classes  -->

@@ -15,7 +15,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 For this studio, you will be writing unit tests to help you find 
 errors in the `BalancedBrackets.cs` file in the starter code.
 
-Discuss with your fellow students and TA how the given class should behave.
+Discuss with your fellow students and IA how the given class should behave.
 What are some examples of input? What would the desired output be for each input?
 
 ## Getting Started
@@ -35,7 +35,8 @@ What are some examples of input? What would the desired output be for each input
 
    ```csharp
       [TestMethod]
-      public void OnlyBracketsReturnsTrue() {
+      public void OnlyBracketsReturnsTrue() 
+      {
          Assert.IsTrue(BalancedBrackets.HasBalancedBrackets("[]"));
       }
    ```

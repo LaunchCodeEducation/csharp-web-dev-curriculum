@@ -42,7 +42,7 @@ You can learn more about .NET [here](https://dotnet.microsoft.com/en-us/learn/do
 
 As we progress through this portion of the course, we will start creating web projects. .NET will compile C#, but does not contain any libraries for web development. ASP.NET Core is an open source collection of libraries specifically for web development and creating dynamic web applications.
 
-We will use ASP.NET Core midway through this course; however, you can to learn more about this framework at [this site](https://dotnet.microsoft.com/en-us/learn/aspnet/what-is-aspnet-core).
+We will use ASP.NET Core midway through this course; however, you can learn more about this framework at [this site](https://dotnet.microsoft.com/en-us/learn/aspnet/what-is-aspnet-core).
 
 ## C# and the Frameworks
 

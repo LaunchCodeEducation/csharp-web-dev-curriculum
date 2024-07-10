@@ -82,7 +82,7 @@ guess, `[TestMethod]` annotates a method to signal it as a test case. Both of th
 via the Visual Studio test runner.
 
 In `CarTests`, on top of `public class CarTests`, add `[TestClass]`. Then, create the following empty 
-test underneath the first TODO. As usual, be sure write this code rather than copy/paste it:
+test underneath the first TODO. As usual, be sure to write this code rather than copy/paste it:
 
 ```csharp {linenos=table}
    namespace CarTests

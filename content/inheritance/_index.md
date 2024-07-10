@@ -27,7 +27,7 @@ As you read through this chapter, look for the following key words.
 ### Inheritance
  
 1. Inheritance
-1. Subtyping
+1. Subclassing
 
 ### Inheritance in C#
 

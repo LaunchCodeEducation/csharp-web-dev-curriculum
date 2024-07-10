@@ -93,7 +93,7 @@ This `finally` statement is a tad redundant, since presumably a user will know t
 
 ### What to Catch
 
-When working with a `try/catch` statement, in statically-type languages like C#, you can declare the type of exception you wish to catch. Given inheritance and polymorphism, catching the base `System.Exception` type will result in all exceptions being caught. This is not advised. Be specific about the types of exceptions you want to catch, as we have in the example above.
+When working with a `try/catch` statement, in statically-typed languages like C#, you can declare the type of exception you wish to catch. Given inheritance and polymorphism, catching the base `System.Exception` type will result in all exceptions being caught. This is not advised. Be specific about the types of exceptions you want to catch, as we have in the example above.
 
 If you have reason to believe that a given method may return an exception but you are unsure which type exactly, `try/catch` can — and should — include more than one `catch` block. Rather than catching one abstract exception type, you want to attempt to catch the exception with specificity so that the resulting decisions are meaningful. It is also important to note that order matters when it comes to catching. If the thrown exception matches the first `catch` block, then that block executes and any remaining `catch` blocks are ignored. If that exception thrown doesn’t match the first `catch` argument, then it goes on to the next statement to check for a type match.
 

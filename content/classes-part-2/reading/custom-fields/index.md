@@ -115,7 +115,7 @@ public class Temperature
 }
 ```
 
-Static fields cannot be referenced by class instances, but a static field can by referenced by the *type*.  We can see this in the following example.
+Static fields cannot be referenced by class instances, but a static field can be referenced by the *type*.  We can see this in the following example.
 
 {{% notice blue "Example" "rocket" %}} 
 
@@ -178,7 +178,7 @@ public class Student {
 {{% /notice %}}
 
 
-In line 6, we add a static integer field that will keep track of the next student ID to be assigned to a student. Then, our new constructor (line 30) takes only a name as a parameter and assigns the student the next available ID. This works because static fields are shared across all objects created from the `Student` class, so it functions as a counter of sorts for the number of `Student` objects created.
+In line 8, we add a static integer field that will keep track of the next student ID to be assigned to a student. Then, our new constructor (line 30) takes only a name as a parameter and assigns the student the next available ID. This works because static fields are shared across all objects created from the `Student` class, so it functions as a counter of sorts for the number of `Student` objects created.
 
 ## Constants
 
