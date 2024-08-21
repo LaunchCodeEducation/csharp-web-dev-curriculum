@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chapter 20: Introduction to Web APIs &amp; REST :: C# Web Development</title>
+    <link>http://localhost:1313/web-api-rest/index.html</link>
+    <description>Learning Objectives After completing this chapter, you should be able to do the following:&#xA;Submit HTTP requests using Postman to an API and receive the expected response GET POST DELETE Submit a bad HTTP request, understand the response and how to fix it You should also have an understanding of the following:&#xA;HTTP methods Endpoints Status Codes Headers API design Major Concepts &amp; Key Terminology Throughout this lesson you should make note of the following terms and their definitions as you read the content on the page:</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Dec 2022 09:16:07 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/web-api-rest/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reading</title>
+      <link>http://localhost:1313/web-api-rest/reading/index.html</link>
+      <pubDate>Thu, 15 Dec 2022 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/web-api-rest/reading/index.html</guid>
+      <description>Content Links Web APIs What is REST REST: Practical Fundamentals </description>
+    </item>
+    <item>
+      <title>Exercises: Web APIs and REST</title>
+      <link>http://localhost:1313/web-api-rest/exercises/index.html</link>
+      <pubDate>Thu, 15 Dec 2022 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/web-api-rest/exercises/index.html</guid>
+      <description>We’ve created a CodingEvents API application here . Before we ask you to fork and clone this, let’s first think conceptually about the kinds of requests a client application could make to this API.&#xA;The API The coding-events-api starts by only exposing a single resource, CodingEvent, and four endpoints for interacting with it. The CodingEvent resource is analogous to the Event model class we created in our CodingEvents MVC application.</description>
+    </item>
+    <item>
+      <title>Studio: Consuming the Coding Events API With Postman</title>
+      <link>http://localhost:1313/web-api-rest/studio/index.html</link>
+      <pubDate>Thu, 15 Dec 2022 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/web-api-rest/studio/index.html</guid>
+      <description>The UI of a browser is designed to make simple GET requests for URLs entered into its address bar. This design works great for browsing sites, but falls short when working with APIs. Anything beyond a GET request is difficult to send via a browser address bar alone. Think about what is needed to create a new CodingEvent. This type of request contains a body. Our MVC application included a view to allow us to test inputs.</description>
+    </item>
+    <item>
+      <title>Next Steps</title>
+      <link>http://localhost:1313/web-api-rest/next-steps/index.html</link>
+      <pubDate>Thu, 15 Dec 2022 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/web-api-rest/next-steps/index.html</guid>
+      <description>We have covered the fundamental aspects of the RESTful mental model and practical usage. However, RESTful design is a deep topic that even extends beyond the web and use of HTTP!&#xA;If you want to learn more, the following links are a good start:&#xA;Practical Understanding Craig Dennis: APIs for beginners (YouTube) REST sub-collections, relationships and links OpenAPI specification &amp; Swagger REST tools The GitHub API and Stripe (payment processing) API are excellent examples of RESTful design (and fantastic documentation) Deep Understanding the REST constraints The Richardson REST maturity model the original REST doctoral thesis by Roy Fielding </description>
+    </item>
+  </channel>
+</rss>

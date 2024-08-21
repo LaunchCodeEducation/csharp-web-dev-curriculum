@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Registrations and Logins :: C# Web Development</title>
+    <link>http://localhost:1313/authentication/reading/registrations-and-logins/index.html</link>
+    <description>In order for users to successfully navigate through the application, Identity will handle a number of functions related to both authentication and authorization. For the purposes of this book, we will focus on just two: registering for a new account and logging in.&#xA;Note Razor Class Libraries do not have separate controllers like in the traditional MVC design pattern. The logic that we might be inclined to put in a controller for each of the actions that we look at is actually contained within a Razor page.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/authentication/reading/registrations-and-logins/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

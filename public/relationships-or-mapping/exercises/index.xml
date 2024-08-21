@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercises :: C# Web Development</title>
+    <link>http://localhost:1313/relationships-or-mapping/exercises/index.html</link>
+    <description>Exercises: The Early Bird Gets the ORM. Now that we have gotten very familiar with our CodingEvents application, let’s design some additional features. As you work on your CodingEvents application, you may have been inspired by Meetup . One of the cool features that Meetup has is that people can sign up for accounts. They can use their Meetup accounts to follow the events they are most interested in and keep track of their calendar of events.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/relationships-or-mapping/exercises/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

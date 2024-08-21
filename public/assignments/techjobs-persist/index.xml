@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assignment 4: Tech Jobs Persistent :: C# Web Development</title>
+    <link>http://localhost:1313/assignments/techjobs-persist/index.html</link>
+    <description>Your Task You will once again work with the TechJobs application. This time around you’ll add ORM functionality by using Entity Framework. You will be responsible for completing the code to allow users to create new job data. Your final application will have the same list and search capabilities as your Tech Jobs (MVC Edition) but you’ll need to do the work to connect the project to a database for storing user-submitted job data.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Jan 2023 13:58:39 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/assignments/techjobs-persist/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Task 1: Connect a Database to an ASP.NET App</title>
+      <link>http://localhost:1313/assignments/techjobs-persist/task-1/index.html</link>
+      <pubDate>Thu, 05 Jan 2023 13:58:39 -0600</pubDate>
+      <guid>http://localhost:1313/assignments/techjobs-persist/task-1/index.html</guid>
+      <description>In the Program.cs file&#xA;Start MySQL Workbench and create a new schema named TechJobs. In the administration tab, create a new user, TechJobs with the same settings described in the CodingEvents tutorial and set the password to TechJobs. Make sure that the TechJobs6Persistent project has all of its necessary dependencies. Pomelo.EntityFrameworkCore.MySql Microsoft.EntityFrameworkCore.Design Microsoft.EntityFrameworkCore.Relational Read through the code that is currently in JobDbContext to get an idea of what the database will look like in terms of tables.</description>
+    </item>
+    <item>
+      <title>Task 2: Adding Employers</title>
+      <link>http://localhost:1313/assignments/techjobs-persist/task-2/index.html</link>
+      <pubDate>Thu, 05 Jan 2023 13:58:39 -0600</pubDate>
+      <guid>http://localhost:1313/assignments/techjobs-persist/task-2/index.html</guid>
+      <description>ViewModels Create a new ViewModel called AddEmployerViewModel that has 2 properties: Name and Location. For this application, an employer can only have one location. Add validation to both properties in the ViewModel so that both properties are required. The depth of your validation is up to you. This class does not need a constructor. Controllers EmployerController contains four relatively empty action methods. Take the following steps to handle traffic between the views and the model:</description>
+    </item>
+    <item>
+      <title>Task 3: Creating a Many-To-Many Relationship</title>
+      <link>http://localhost:1313/assignments/techjobs-persist/task-3/index.html</link>
+      <pubDate>Thu, 05 Jan 2023 13:58:39 -0600</pubDate>
+      <guid>http://localhost:1313/assignments/techjobs-persist/task-3/index.html</guid>
+      <description>Using a many-to-many relationship, we can apply jobs to multiple skills, and a skill to multiple jobs. We want to create a table that will track the relationships between both Jobs and Skills. To do this, we need to tell the Modelbuilder which properties to use.&#xA;Update the JobDbContext In the OnModelCreating method, we want to create a table called “JobSkills”. This table will use an Entity of type Job. It has many Skills with many Jobs.</description>
+    </item>
+  </channel>
+</rss>

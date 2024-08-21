@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading :: C# Web Development</title>
+    <link>http://localhost:1313/authentication/reading/index.html</link>
+    <description>Content Links Introduction to Authentication Hashing Passwords Getting Started with Identity Registrations and Logins Configuring Identity Identity and Authorization </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Dec 2022 09:16:07 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/authentication/reading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Authentication</title>
+      <link>http://localhost:1313/authentication/reading/intro-to-authentication/index.html</link>
+      <pubDate>Thu, 15 Dec 2022 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/authentication/reading/intro-to-authentication/index.html</guid>
+      <description>We log into many, many websites every day. The process has become so routine that we expect it to work flawlessly every time. How surprised would you be if you logged into a website and saw a different user’s account info? What if you entered the wrong password and were still let in? What we have come to expect as routine is anything but when we consider the code needed to make it happen.</description>
+    </item>
+    <item>
+      <title>Hashing Passwords</title>
+      <link>http://localhost:1313/authentication/reading/hashing-passwords/index.html</link>
+      <pubDate>Thu, 15 Dec 2022 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/authentication/reading/hashing-passwords/index.html</guid>
+      <description>Simple authentication allows users to log in to a site with a username and password. To implement authentication, we need to be able to verify that a user’s password is correct. However, you should NEVER store passwords in a database. Seriously. Don’t do it. Ever.&#xA;Storing passwords in a database is incredibly insecure. A hacker may break into the database, gaining access to every user account. Or a deviant employee with access to the database may do the same.</description>
+    </item>
+    <item>
+      <title>Getting Started with Identity</title>
+      <link>http://localhost:1313/authentication/reading/getting-starting-identity/index.html</link>
+      <pubDate>Thu, 15 Dec 2022 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/authentication/reading/getting-starting-identity/index.html</guid>
+      <description>As a developer, you may find yourself wanting to add Identity in one of the two following situations:&#xA;You are creating a new project and you know that you need Identity in the project. You are working with an existing project and need to add Identity to continue your work. For this chapter, we are going to focus on the second situation and how we might add Identity to CodingEvents. The process of adding Identity to an existing code base is called scaffolding.</description>
+    </item>
+    <item>
+      <title>Registrations and Logins</title>
+      <link>http://localhost:1313/authentication/reading/registrations-and-logins/index.html</link>
+      <pubDate>Thu, 15 Dec 2022 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/authentication/reading/registrations-and-logins/index.html</guid>
+      <description>In order for users to successfully navigate through the application, Identity will handle a number of functions related to both authentication and authorization. For the purposes of this book, we will focus on just two: registering for a new account and logging in.&#xA;Note Razor Class Libraries do not have separate controllers like in the traditional MVC design pattern. The logic that we might be inclined to put in a controller for each of the actions that we look at is actually contained within a Razor page.</description>
+    </item>
+    <item>
+      <title>Configuring Identity</title>
+      <link>http://localhost:1313/authentication/reading/configuring-identity/index.html</link>
+      <pubDate>Thu, 15 Dec 2022 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/authentication/reading/configuring-identity/index.html</guid>
+      <description>With Identity in place, we can start to configure the settings of the library to meet our authentication requirements. The first place to start with configuring Identity to fit the needs of the project is in Program.cs.&#xA;Program.cs Now that we are getting to configure our user, let’s check out the code in Program.cs. Earlier you may have added the following:&#xA;1 2 3 4 5 6 7 8 9 10 builder.</description>
+    </item>
+    <item>
+      <title>Identity and Authorization</title>
+      <link>http://localhost:1313/authentication/reading/identity-authorization/index.html</link>
+      <pubDate>Thu, 15 Dec 2022 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/authentication/reading/identity-authorization/index.html</guid>
+      <description>While this chapter is focused on authentication, you may find yourself wanting to use Identity to limit pages to logged-in users Authorization allows us to restrict access to pages by allowing only logged in users to see them. While this can be a very complex process, ASP.NET has two simple attributes that allow us to restrict access to pages to only logged in users.&#xA;[Authorize] is an attribute that limits access to content to only logged in users.</description>
+    </item>
+  </channel>
+</rss>

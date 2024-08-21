@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chapter 12: Tools in Visual Studio :: C# Web Development</title>
+    <link>http://localhost:1313/vstools/index.html</link>
+    <description>Learning Objectives Understand the role of Visual Studio build tools in C#/.NET projects&#xA;Key Terminology MSBuild MSBuild Automated build tool XML Extensible Markup Language MSBuild tasks MSBuild targets MSBuild properties MSBuild items NuGet NuGet Content Links Reading Studio: If It Ain&#39;t Broke, Add a Breakpoint! Next Steps </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Feb 2023 19:56:25 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/vstools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reading</title>
+      <link>http://localhost:1313/vstools/reading/index.html</link>
+      <pubDate>Tue, 14 Feb 2023 19:56:25 -0600</pubDate>
+      <guid>http://localhost:1313/vstools/reading/index.html</guid>
+      <description> MSBuild NuGet Debugger </description>
+    </item>
+    <item>
+      <title>Studio: If It Ain&#39;t Broke, Add a Breakpoint!</title>
+      <link>http://localhost:1313/vstools/studio/index.html</link>
+      <pubDate>Tue, 14 Feb 2023 19:56:25 -0600</pubDate>
+      <guid>http://localhost:1313/vstools/studio/index.html</guid>
+      <description>On your machine, open up your copy of SpinningDiscs in Visual Studio. The purpose of this studio is to talk about your current debugging strategies and how to make the most of the debugger tools discussed in this chapter.&#xA;Before we start practicing with debugging tools, go over with the group one error you encountered when working on your own version of last lesson’s studio. This could be the result of a typo or a logical error.</description>
+    </item>
+    <item>
+      <title>Next Steps</title>
+      <link>http://localhost:1313/vstools/next-steps/index.html</link>
+      <pubDate>Tue, 14 Feb 2023 19:56:25 -0600</pubDate>
+      <guid>http://localhost:1313/vstools/next-steps/index.html</guid>
+      <description>Before you move on to reading about views, play around with using the various debugging tools on HelloASPDotNET. The more you use these tools and try and incorporate them into your coding routine, the better you will get at understanding them.</description>
+    </item>
+  </channel>
+</rss>

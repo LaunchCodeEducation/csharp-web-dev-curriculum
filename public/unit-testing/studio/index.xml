@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Studio :: C# Web Development</title>
+    <link>http://localhost:1313/unit-testing/studio/index.html</link>
+    <description>For this studio, you will be writing unit tests to help you find errors in the BalancedBrackets.cs file in the starter code.&#xA;Discuss with your fellow students and IA how the given class should behave. What are some examples of input? What would the desired output be for each input?&#xA;Getting Started Fork and clone the studio repository .&#xA;In Visual Studio, check out your repository.&#xA;Write unit tests to find the errors in BalancedBrackets.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/unit-testing/studio/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

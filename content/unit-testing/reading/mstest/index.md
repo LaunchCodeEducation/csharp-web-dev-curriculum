@@ -103,7 +103,7 @@ test underneath the first TODO. As usual, be sure to write this code rather than
 Our empty test is aptly named `EmptyTest()` as a description of its role. This test does 
 not follow the AAA rule from our testing best practices, as it jumps straight to 
 asserting. Nor is it relevant, for that matter. The goal of this empty unit test is not to 
-demonstrate all of our [best practices]({{< relref "../testing-in-csharp/#testing-best-practices" >}}), but rather, to verify that our testing setup is in place.
+demonstrate all of our [best practices]({{% relref "../testing-in-csharp/index.md#testing-best-practices" %}}), but rather, to verify that our testing setup is in place.
 
 The three arguments in our test care defined as "expected", "actual", and "delta". This empty test 
 asserts an expected value of `10` to equal an actual value of `10`, 
@@ -215,7 +215,7 @@ constructor sets the `gasTankLevel` field.
 Here, we give the test a descriptive name, `TestInitialGasTank()`, initialize a new 
 `Car` object, and test that the constructor correctly sets the `gasTankLevel` field.
 
-We've done our best to address [testing best practices]({{< relref "../testing-in-csharp/#testing-best-practices" >}}):
+We've done our best to address [testing best practices]({{% relref "../testing-in-csharp/index.md#testing-best-practices" %}}):
 
 1. The AAAs
    

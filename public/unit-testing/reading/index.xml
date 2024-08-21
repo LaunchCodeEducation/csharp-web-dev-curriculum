@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading :: C# Web Development</title>
+    <link>http://localhost:1313/unit-testing/reading/index.html</link>
+    <description>Content Links Testing in C# MSTest </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Jan 2023 13:23:58 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/unit-testing/reading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing in C#</title>
+      <link>http://localhost:1313/unit-testing/reading/testing-in-csharp/index.html</link>
+      <pubDate>Wed, 25 Jan 2023 13:23:58 -0600</pubDate>
+      <guid>http://localhost:1313/unit-testing/reading/testing-in-csharp/index.html</guid>
+      <description>Testing your code is a crucial practice for every developer. Automated testing ensures that your code works as expected every time it runs. Tests also function as internal documentation, giving a fellow programmer instructions on how to properly execute your classes and methods. While these purposes are the same for C# as any other language, the implementation of tests will look a bit different.&#xA;This course covers unit testing in C# with a test framework called MSTest.</description>
+    </item>
+    <item>
+      <title>MSTest</title>
+      <link>http://localhost:1313/unit-testing/reading/mstest/index.html</link>
+      <pubDate>Wed, 25 Jan 2023 13:23:58 -0600</pubDate>
+      <guid>http://localhost:1313/unit-testing/reading/mstest/index.html</guid>
+      <description>MSTest is a framework that provides the methods and assertions for writing and executing unit tests in C#.&#xA;C# Attributes In C#, attributes are formalized bits of information about a program. They operate somewhere between actual code syntax and a comment on the code. Attributes do not directly affect the code they annotate, but they do supply information to the compiler. An attribute is enclosed in square brackets, [], and placed above the item it decorates.</description>
+    </item>
+  </channel>
+</rss>

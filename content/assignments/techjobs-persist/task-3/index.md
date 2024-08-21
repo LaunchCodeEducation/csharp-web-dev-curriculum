@@ -43,7 +43,7 @@ You will need to uncomment the code for the unit tests.  Look for `TODO` stateme
 
 ## How to Submit
 
-To turn in your assignment and get credit, follow the [submission instructions]({{< relref "../../hello-world/submit-your-code/" >}}).
+To turn in your assignment and get credit, follow the [submission instructions]({{% relref "../../hello-world/submit-your-code.md" %}}).
 
 ## Congrats!
 You have successfully completed Graded Assignment 4 in C#! 

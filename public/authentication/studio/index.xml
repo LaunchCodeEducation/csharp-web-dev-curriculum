@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Studio: TechJobs Authentication :: C# Web Development</title>
+    <link>http://localhost:1313/authentication/studio/index.html</link>
+    <description>For this studio, you’ll be tasked with adding simple user authentication to your TechJobs application. The steps to do this will match what you have already done in CodingEvents. You should refer back to the tutorial starting here .&#xA;Scaffolding Configuration Authorization The Starter Code Fork and clone the starter code for TechJobsAuthentication .&#xA;You will need to do some work to ensure that the user, and database password match your own local MySQL setup.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/authentication/studio/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

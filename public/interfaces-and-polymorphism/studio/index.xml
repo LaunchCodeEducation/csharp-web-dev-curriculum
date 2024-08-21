@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Studio: Spinning Discs :: C# Web Development</title>
+    <link>http://localhost:1313/interfaces-and-polymorphism/studio/index.html</link>
+    <description>Although they look the same, the old optical discs—CDs and DVDs—are quite different from each other. Let’s use them as the focus for creating a new interface.&#xA;Getting Ready Set up a local copy of the project:&#xA;Visit the repository page for this project and fork it to create a copy under your own GitHub account. Open up the solution in Visual Studio to get started. Disc Project Overview In this activity, you will pair up to design a new custom interface and an abstract class.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/interfaces-and-polymorphism/studio/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

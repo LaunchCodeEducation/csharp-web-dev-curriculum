@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercises :: C# Web Development</title>
+    <link>http://localhost:1313/unit-testing/exercises/index.html</link>
+    <description>Work on these exercises in your local copy of the csharp-web-dev-exercises repo. You were directed to fork and clone this repo earlier in the book. If you have not done so, do so now.&#xA;Tip Earlier in the chapter, we instantiated an object of the Car class called test_car. Be sure to take note of the values of the make, model, gasTankSize, and milesPerGallon fields! Having a note you can quickly reference of how big the gas tank is will help you decide on values to use in your tests!</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/unit-testing/exercises/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

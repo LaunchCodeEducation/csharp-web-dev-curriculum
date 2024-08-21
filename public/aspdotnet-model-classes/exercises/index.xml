@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercises: Edit Model Classes :: C# Web Development</title>
+    <link>http://localhost:1313/aspdotnet-model-classes/exercises/index.html</link>
+    <description>Add functionality to edit event objects in your CodingEvents application. These exercises assume that you have added all of the code from this section of the book and your application resembles the models branch .&#xA;The edit form will resemble the form used to create an event.&#xA;Tip As you work through these steps, test your code along the way! With each change you apply to your code, ask yourself what you expect to see when the application is run.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/aspdotnet-model-classes/exercises/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

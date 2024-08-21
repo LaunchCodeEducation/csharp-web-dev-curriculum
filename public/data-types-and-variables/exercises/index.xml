@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercises :: C# Web Development</title>
+    <link>http://localhost:1313/data-types-and-variables/exercises/index.html</link>
+    <description>To get started, open up Visual Studio and create a new console program.&#xA;Tip If you do not recall how to create a new console program or need a quick refresher to get started, check out the section on creating a C# project .&#xA;For each part of the exercises, create a new project in your solution. When you are done, push your solution up to a repository on your Github account!</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/data-types-and-variables/exercises/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

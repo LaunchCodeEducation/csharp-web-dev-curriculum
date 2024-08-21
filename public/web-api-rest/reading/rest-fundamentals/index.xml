@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>REST: Practical Fundamentals :: C# Web Development</title>
+    <link>http://localhost:1313/web-api-rest/reading/rest-fundamentals/index.html</link>
+    <description>Here’s a takeaway of the abstract ideas we covered on the last page:&#xA;State: data that can change (transition) through interactions between an API and its client&#xA;Representation: the convertible format that enables state to be transferred and used by the client and API&#xA;Resource: the representation of a type of state (as an entity or collection) that the API exposes to its client for interaction&#xA;Now that you have an understanding of these concepts, let’s turn our attention to the practical details of working with REST APIs.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/web-api-rest/reading/rest-fundamentals/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

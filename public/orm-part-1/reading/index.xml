@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading :: C# Web Development</title>
+    <link>http://localhost:1313/orm-part-1/reading/index.html</link>
+    <description>Content Links Introduction to Object-Relational Mapping Setting Up a Persistent Database Accessing Data Working with Data Stores Walkthrough: Connecting to the Database </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Mar 2023 09:32:46 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/orm-part-1/reading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Object-Relational Mapping</title>
+      <link>http://localhost:1313/orm-part-1/reading/orm-intro/index.html</link>
+      <pubDate>Fri, 10 Mar 2023 09:32:46 -0600</pubDate>
+      <guid>http://localhost:1313/orm-part-1/reading/orm-intro/index.html</guid>
+      <description>Currently our app only saves data while it is running. Once you end the session and close the program, all of the data you provided disappears. We can make that data persistent by connecting your application to a database. This will retain the data even if the application is not running, and allow you to access it when you open a new session.&#xA;Let’s connect our MVC application to a relational database and add persistent data storage to our apps.</description>
+    </item>
+    <item>
+      <title>Setting Up a Persistent Database</title>
+      <link>http://localhost:1313/orm-part-1/reading/connecting-to-db/index.html</link>
+      <pubDate>Fri, 10 Mar 2023 09:32:46 -0600</pubDate>
+      <guid>http://localhost:1313/orm-part-1/reading/connecting-to-db/index.html</guid>
+      <description>We have decided to use MySQL for our relational database for CodingEvents MVC project.&#xA;First we need to set up a new database in MySQL Workbench and then we can connect it to CodingEvents&#xA;Create the Database In MySQL Workbench, do the following:&#xA;Create a new schema, coding-events.&#xA;Add a new user, codingevents, with a new password. Give the user “all” privileges to modify your new schema.&#xA;Begin Connecting CodingEvents to the Database Now, attach MySQL to your project in Program.</description>
+    </item>
+    <item>
+      <title>Accessing Data</title>
+      <link>http://localhost:1313/orm-part-1/reading/accessing-data/index.html</link>
+      <pubDate>Fri, 10 Mar 2023 09:32:46 -0600</pubDate>
+      <guid>http://localhost:1313/orm-part-1/reading/accessing-data/index.html</guid>
+      <description>Now that we have connected our C# application to a MySQL database, we need to set up our C# code to interact with the new schema. In the previous chapters, we learned about performing basic operations on a database and its tables, such as creating, reading, updating, and deleting rows. One of the reasons we use ORM is so that now we can write C# code in our application to manage our relational database.</description>
+    </item>
+    <item>
+      <title>Working with Data Stores</title>
+      <link>http://localhost:1313/orm-part-1/reading/data-stores/index.html</link>
+      <pubDate>Fri, 10 Mar 2023 09:32:46 -0600</pubDate>
+      <guid>http://localhost:1313/orm-part-1/reading/data-stores/index.html</guid>
+      <description>With our data store and persistent class configured, we are ready to realize the full power of ORM.&#xA;Data Stores in the Controller Since our data store, EventDbContext, extends DbContext, we have access to all of the methods defined by DbContext. There are quite a few such methods (see the documentation for details), but we will only use SaveChanges.&#xA;We will make more extensive use of the Events property of EventDbContext, which is of type DbSet.</description>
+    </item>
+    <item>
+      <title>Walkthrough: Connecting to the Database</title>
+      <link>http://localhost:1313/orm-part-1/reading/walkthrough/index.html</link>
+      <pubDate>Mon, 13 Mar 2023 09:32:46 -0600</pubDate>
+      <guid>http://localhost:1313/orm-part-1/reading/walkthrough/index.html</guid>
+      <description>Welcome to the walkthrough for creating and using templates in your CodingEvents project.&#xA;You will find a video walkthrough of the steps covered in the reading. Time stamps have been added to highlight the topics covered so far and their locations in the reading.&#xA;Video Walkthrough </description>
+    </item>
+  </channel>
+</rss>

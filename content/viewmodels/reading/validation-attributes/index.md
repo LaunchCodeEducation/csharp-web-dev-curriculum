@@ -58,7 +58,7 @@ To apply the validation rules of the example on the previous page to the fields 
    ```
 {{% /notice %}}
 
-We will see how to ensure these error messages are properly displayed in the next section, [Validating Models in a Controller]({{< relref "../controller-validation/" >}}).
+We will see how to ensure these error messages are properly displayed in the next section, [Validating Models in a Controller]({% relref "../controller-validation/index.md" %}).
 
 ## Applying Validation Attributes
 

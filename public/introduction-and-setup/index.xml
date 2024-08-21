@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chapter 1: Introduction and Setup :: C# Web Development</title>
+    <link>http://localhost:1313/introduction-and-setup/index.html</link>
+    <description>Major Concepts &amp; Key Terminology The learning objectives for this chapter are:&#xA;Install and configure Visual Studio and the .NET SDK Create and run a “Hello World!” console app within Visual Studio Import a C# project from GitHub into Visual Studio Content Links Setup for C# Next Steps </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Dec 2022 09:16:07 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/introduction-and-setup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup for C#</title>
+      <link>http://localhost:1313/introduction-and-setup/reading/index.html</link>
+      <pubDate>Thu, 15 Dec 2022 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/introduction-and-setup/reading/index.html</guid>
+      <description>For the entirety of this course, we will be coding in C# with the help of Visual Studio and .NET.&#xA;The Integrated Development Environment Visual Studio (VS) is an integrated development environment (IDE). An IDE is like a text editor on steroids. We can write and edit code and make use of additional features that enhance our coding experience. VS offers code completion hints, debugging, and even it’s own compiler.</description>
+    </item>
+    <item>
+      <title>Next Steps</title>
+      <link>http://localhost:1313/introduction-and-setup/next-steps/index.html</link>
+      <pubDate>Thu, 15 Dec 2022 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/introduction-and-setup/next-steps/index.html</guid>
+      <description>Next Steps Now that you have Visual Studio set up, you are ready to start programming in C#. Before you dive in, make sure to bookmark Microsoft’s documentation for C#. Microsoft regularly updates the documentation to address common errors or to make sure you, as a developer, get the latest info after a new release. The next chapter is on how data types and variables work in C#. Before you start reading up on the next topic, here are a couple extensions you might enjoy experimenting with in Visual Studio:</description>
+    </item>
+  </channel>
+</rss>

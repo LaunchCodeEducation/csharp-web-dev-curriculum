@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading :: C# Web Development</title>
+    <link>http://localhost:1313/inheritance/reading/index.html</link>
+    <description>Content Links Inheritance Inheritance in C# A Tale of Two Cats Inheriting from Abstraction Casting Testing Inheritance Class Diagrams </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Jan 2023 15:39:38 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/inheritance/reading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inheritance</title>
+      <link>http://localhost:1313/inheritance/reading/inheritance-oop/index.html</link>
+      <pubDate>Tue, 31 Jan 2023 15:39:38 -0600</pubDate>
+      <guid>http://localhost:1313/inheritance/reading/inheritance-oop/index.html</guid>
+      <description>Inheritance is the second of the four pillars of object-oriented programming that we encounter.&#xA;Here’s a definition: inheritance is a mechanism within object-oriented programming that allows one class to be based on another class, thus receiving its properties and behaviors.&#xA;Note Inheritance is also sometimes referred to as subclassing.</description>
+    </item>
+    <item>
+      <title>Inheritance in C#</title>
+      <link>http://localhost:1313/inheritance/reading/csharp-inheritance/index.html</link>
+      <pubDate>Tue, 31 Jan 2023 15:39:38 -0600</pubDate>
+      <guid>http://localhost:1313/inheritance/reading/csharp-inheritance/index.html</guid>
+      <description>Let’s examine an inheritance relationship between two classes: Cat and HouseCat. HouseCat is a class that inherits from Cat, so HouseCat receives the data and behaviors of Cat. These inherited traits are things like fields, properties, and methods. Any fields and non-constructor methods in Cat are available to each instance of HouseCat.&#xA;When we speak about an inheritance relationship, we say that a HouseCat is a Cat, or extends Cat. In order to define a class that inherits from another, we use the : syntax.</description>
+    </item>
+    <item>
+      <title>A Tale of Two Cats</title>
+      <link>http://localhost:1313/inheritance/reading/cats-inheritance/index.html</link>
+      <pubDate>Tue, 31 Jan 2023 15:39:38 -0600</pubDate>
+      <guid>http://localhost:1313/inheritance/reading/cats-inheritance/index.html</guid>
+      <description>Let’s revisit our Cat and HouseCat friends. In Visual Studio, open the csharp-web-dev-example solution and examine the two classes inside the Cats project.&#xA;Inheriting Fields and Properties Notice that Cat has a property called Family, representing the biological family of all cats.&#xA;9 public string Family { get; } = &#34;Felidae&#34;; The family field is not directly accessible by HouseCat and can only be accessed by the get accessor of the Family property.</description>
+    </item>
+    <item>
+      <title>Inheriting from Abstraction</title>
+      <link>http://localhost:1313/inheritance/reading/abstract-inheritance/index.html</link>
+      <pubDate>Tue, 31 Jan 2023 15:39:38 -0600</pubDate>
+      <guid>http://localhost:1313/inheritance/reading/abstract-inheritance/index.html</guid>
+      <description>abstract Classes We noted in the introduction to this section that inheritance is a way to share behaviors among classes. You’ll sometimes find yourself creating a base class as a way to share behaviors among related classes. However, in such situations it is not always desirable for instances of the base class to be created.&#xA;For example, suppose we began coding two classes, HouseCat and Tiger. Upon writing the code, we realized that there was some common data and behaviors.</description>
+    </item>
+    <item>
+      <title>Casting</title>
+      <link>http://localhost:1313/inheritance/reading/casting/index.html</link>
+      <pubDate>Tue, 31 Jan 2023 15:39:38 -0600</pubDate>
+      <guid>http://localhost:1313/inheritance/reading/casting/index.html</guid>
+      <description>When one class extends another, as HouseCat extends Cat, a field or local variable of the type of the base class may hold an object that is of the type of the child class.&#xA;In other words, this is allowed:&#xA;Cat suki = new HouseCat(&#34;Suki&#34;, 8);This is acceptable because a HouseCat is a Cat. Furthermore, when we call methods on such an object, the compiler is smart enough to determine which method it should call.</description>
+    </item>
+    <item>
+      <title>Testing Inheritance</title>
+      <link>http://localhost:1313/inheritance/reading/testing-inheritance/index.html</link>
+      <pubDate>Tue, 31 Jan 2023 15:39:38 -0600</pubDate>
+      <guid>http://localhost:1313/inheritance/reading/testing-inheritance/index.html</guid>
+      <description>Not sure you get the whole inheritance idea? Still not sure which fields and methods get inherited and which are overridden? Looking to test your understanding?&#xA;Knowing what we know now about Unit Testing and Inheritance , we can test that our subclasses extend their base classes.&#xA;We can add a CatTests project to our Cats solution and write some code to ensure that HouseCat inherits what we expect it to.</description>
+    </item>
+    <item>
+      <title>Class Diagrams</title>
+      <link>http://localhost:1313/inheritance/reading/class-diagrams/index.html</link>
+      <pubDate>Tue, 31 Jan 2023 15:39:38 -0600</pubDate>
+      <guid>http://localhost:1313/inheritance/reading/class-diagrams/index.html</guid>
+      <description>We have mentioned a few times the importance of designing your classes before starting to write code. It’s important to think about the fields, properties, and methods of your classes, as well as the relationship of your various classes to each other. Doing so will not only result in better code, but will also mean that you’re less likely to have to rewrite your code due to lack of foresight.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chapter 5: Classes Part 2 :: C# Web Development</title>
+    <link>http://localhost:1313/classes-part-2/index.html</link>
+    <description>Learning Objectives By the end of this chapter, you should understand:&#xA;How to customize fields with the keywords readonly and static. How to add methods to a class and call those methods. The difference between instance methods and static methods. How to override the default ToString and Equals methods for a class. How to auto-generate an Equals method in Visual Studio. Key Terminology Customizing Fields readonly field static field const Customizing Methods static method Class method Special Methods override ToString method Overriding Cast Equality Identity Equals method Content Links Reading: Classes Part 2 Exercises: Objects and Classes, Part 2 Studio: Restaurant Menu Continued Next Steps </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Jan 2023 09:32:46 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/classes-part-2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reading: Classes Part 2</title>
+      <link>http://localhost:1313/classes-part-2/reading/index.html</link>
+      <pubDate>Mon, 30 Jan 2023 09:32:46 -0600</pubDate>
+      <guid>http://localhost:1313/classes-part-2/reading/index.html</guid>
+      <description>Content Links Customizing Fields Instance and Static Methods Special Methods Visual Studio Generation Shortcut </description>
+    </item>
+    <item>
+      <title>Exercises: Objects and Classes, Part 2</title>
+      <link>http://localhost:1313/classes-part-2/exercises/index.html</link>
+      <pubDate>Mon, 30 Jan 2023 09:32:46 -0600</pubDate>
+      <guid>http://localhost:1313/classes-part-2/exercises/index.html</guid>
+      <description>You will find these exercises in Classes-Part-2 project of the exercises repo. You will update your Student.cs file by implementing the AddGrade and GetGradeLevel methods that were sketched out in the Instance Methods section.&#xA;The GetGradeLevel Method This method returns the student’s level based on the number of credits they have earned: Freshman (0-29 credits), Sophomore (30-59 credits), Junior (60-89 credits), or Senior (90+ credits).&#xA;Check your solution public string GetGradeLevel(int credits) { if (credits &lt;= 29) { return &#34;Freshman&#34;; } else if (credits &lt;= 59) { return &#34;Sophomore&#34;; } else if (credits &lt;= 89) { return &#34;Junior&#34;; } else { return &#34;Senior&#34;; } } The AddGrade Method This method accepts two parameters—a number of course credits and a numerical grade (0.</description>
+    </item>
+    <item>
+      <title>Studio: Restaurant Menu Continued </title>
+      <link>http://localhost:1313/classes-part-2/studio/index.html</link>
+      <pubDate>Mon, 30 Jan 2023 09:32:46 -0600</pubDate>
+      <guid>http://localhost:1313/classes-part-2/studio/index.html</guid>
+      <description>We began designing and implementing our Menu and MenuItem classes in the last studio . Let’s continue working on these classes by adding some methods.&#xA;Design To review, here are the details you have from the restaurant owner:&#xA;The menu consists of several menu items. Each menu item has a price, description, and category (appetizer, main course, or dessert). It should be possible to display whether or not a menu item is new.</description>
+    </item>
+    <item>
+      <title>Next Steps</title>
+      <link>http://localhost:1313/classes-part-2/next-steps/index.html</link>
+      <pubDate>Mon, 30 Jan 2023 09:32:46 -0600</pubDate>
+      <guid>http://localhost:1313/classes-part-2/next-steps/index.html</guid>
+      <description>Next Steps This lesson covered the basics of static fields, static methods, the ToSting method, and the Equals method. Check out these resources if you want a deeper learning journey on these topics.&#xA;Working with Static Classes and Static Methods in C# Object.ToString Method Object.Equals Method Casting and type conversions (C# Programming Guide) </description>
+    </item>
+  </channel>
+</rss>

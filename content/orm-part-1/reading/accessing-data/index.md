@@ -149,7 +149,7 @@ Be sure to update your `Event` class to match the simplified codeblock above bef
 
 Our application is now completely configured to store `Event` objects in our MySQL database. However, if you look at the `coding-events` database, you’ll notice that it has no table in which to store such data. To create such a table, we need to create and run a **database migration**. A database migration (or migration, for short) is an update to a database made in order to reflect changes in an application’s model. Every time we change our application’s model by adding or removing a new persistent class, or by modifying a persistent class, we will need to create and run a migration.
 
-The EntityFrameworkCore Tools package we installed in the last section provides tools for working with migrations. To get started, open a terminal (the Terminal app on MacOS or Powershell on Windows). Navigate to the `CodingEvents` [project folder]({{< relref "../orm-intro/#verify-ef-core-tools-are-present" >}}) _within_ your `CodingEvents` solution. 
+The EntityFrameworkCore Tools package we installed in the last section provides tools for working with migrations. To get started, open a terminal (the Terminal app on MacOS or Powershell on Windows). Navigate to the `CodingEvents` [project folder]({{% relref "../orm-intro/index.md#verify-ef-core-tools-are-present" %}}) _within_ your `CodingEvents` solution. 
 
 Then run the following command to create a migration:
 

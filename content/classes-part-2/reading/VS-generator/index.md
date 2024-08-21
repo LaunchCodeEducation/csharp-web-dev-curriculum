@@ -67,7 +67,7 @@ public class Course
       }
    }
    ```
-In order to gain an understanding at what Visual Studio just did for us, review the section on the `Equals()` method and take note of the following lines of code in the code block above. While the behavior of the code is the same as the various implementations of the `Equals()` methods on the [previous page]({{< relref "../special-methods#Equals" >}}), Visual Studio’s method does not necessarily look similar to the ones we wrote before.
+In order to gain an understanding at what Visual Studio just did for us, review the section on the `Equals()` method and take note of the following lines of code in the code block above. While the behavior of the code is the same as the various implementations of the `Equals()` methods on the [previous page]({{% relref "../special-methods/index.md#Equals" %}}), Visual Studio’s method does not necessarily look similar to the ones we wrote before.
 
    1. On line 9, we see some new syntax. With `is`, the compiler confirms that it is possible to cast `obj` to a variable `course` of type `Course`. If it is, the value of `course` is set to `obj`. All in one line!
    1. On line 10, the value of `course.Topic` and `Topic` is compared for equality.

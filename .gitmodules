@@ -4,9 +4,9 @@
 [submodule "layouts"]
 	path = layouts
 	url = https://github.com/LaunchCode-Hugo-Submodules/layouts
-[submodule "static"]
-	path = static
-	url = https://github.com/LaunchCode-Hugo-Submodules/static
 [submodule "archetypes"]
 	path = archetypes
 	url = https://github.com/LaunchCode-Hugo-Submodules/archetypes
+[submodule "assets"]
+	path = assets
+	url = https://github.com/LaunchCode-Hugo-Submodules/assets

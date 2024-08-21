@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Studio: Fun With Quizzes :: C# Web Development</title>
+    <link>http://localhost:1313/inheritance/studio/index.html</link>
+    <description>For this studio, you will design and build a console program that allows the user to take a quiz. This means you will have to create some questions and get some input from the user.&#xA;First, the questions. We want to be able to handle multiple types of questions:&#xA;Multiple choice: A question with a fixed set of possible answers. A user can only select one answer and only one answer is correct.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/inheritance/studio/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
