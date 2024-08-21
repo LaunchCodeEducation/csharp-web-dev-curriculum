@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chapter 19: Authentication :: C# Web Development</title>
+    <link>http://localhost:1313/authentication/index.html</link>
+    <description>Learning Objectives After completing this chapter, you should be able to do the following:&#xA;Scaffold Identity into an existing project Authenticate users that visit your application Attach permissions to users of your application Major Concepts &amp; Key Terminology Authentication Authorization Sessions Cookies Identity Hashing Content Links Reading Studio: TechJobs Authentication Next Steps </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Dec 2022 09:16:07 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/authentication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reading</title>
+      <link>http://localhost:1313/authentication/reading/index.html</link>
+      <pubDate>Thu, 15 Dec 2022 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/authentication/reading/index.html</guid>
+      <description>Content Links Introduction to Authentication Hashing Passwords Getting Started with Identity Registrations and Logins Configuring Identity Identity and Authorization </description>
+    </item>
+    <item>
+      <title>Studio: TechJobs Authentication</title>
+      <link>http://localhost:1313/authentication/studio/index.html</link>
+      <pubDate>Thu, 15 Dec 2022 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/authentication/studio/index.html</guid>
+      <description>For this studio, you’ll be tasked with adding simple user authentication to your TechJobs application. The steps to do this will match what you have already done in CodingEvents. You should refer back to the tutorial starting here .&#xA;Scaffolding Configuration Authorization The Starter Code Fork and clone the starter code for TechJobsAuthentication .&#xA;You will need to do some work to ensure that the user, and database password match your own local MySQL setup.</description>
+    </item>
+    <item>
+      <title>Next Steps</title>
+      <link>http://localhost:1313/authentication/next-steps/index.html</link>
+      <pubDate>Thu, 15 Dec 2022 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/authentication/next-steps/index.html</guid>
+      <description>Next Steps Now that you have successfuly scaffolding Identity into an existing project and impleneted authentication you can further explore the topics below:&#xA;For further review you can visit Introduction to Identity Visit the following documentation for information on Identity model customization in ASP.NET Core Microsoft Identity Platform . Microsoft Identity Platform allows users of your application to sign in using their Microsoft Identities or social accounts. Several components that allow this to work are OAuth 2.</description>
+    </item>
+  </channel>
+</rss>

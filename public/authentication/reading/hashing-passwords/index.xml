@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hashing Passwords :: C# Web Development</title>
+    <link>http://localhost:1313/authentication/reading/hashing-passwords/index.html</link>
+    <description>Simple authentication allows users to log in to a site with a username and password. To implement authentication, we need to be able to verify that a user’s password is correct. However, you should NEVER store passwords in a database. Seriously. Don’t do it. Ever.&#xA;Storing passwords in a database is incredibly insecure. A hacker may break into the database, gaining access to every user account. Or a deviant employee with access to the database may do the same.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/authentication/reading/hashing-passwords/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

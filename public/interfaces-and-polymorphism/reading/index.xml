@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading :: C# Web Development</title>
+    <link>http://localhost:1313/interfaces-and-polymorphism/reading/index.html</link>
+    <description> Introduction Interfaces Interfaces and Abstract Classes Interfaces in the Wild Unit Testing and Interfaces </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Feb 2023 13:10:40 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/interfaces-and-polymorphism/reading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/interfaces-and-polymorphism/reading/introduction/index.html</link>
+      <pubDate>Wed, 01 Feb 2023 13:10:40 -0600</pubDate>
+      <guid>http://localhost:1313/interfaces-and-polymorphism/reading/introduction/index.html</guid>
+      <description>The final pillar of object-oriented programming that we’ll explore is polymorphism.&#xA;Polymorphism Polymorphism is an object-oriented mechanism that allows for objects of different types to be used in the same way.&#xA;We’ve already encountered polymorphism made possible by inheritance when talking about casting with our Cat and HouseCat classes. In that case, we stored an object of type HouseCat in its compatible type, Cat.&#xA;Let’s take a closer look at how polymorphism might work in our cat-centric application.</description>
+    </item>
+    <item>
+      <title>Interfaces</title>
+      <link>http://localhost:1313/interfaces-and-polymorphism/reading/interfaces/index.html</link>
+      <pubDate>Wed, 01 Feb 2023 13:10:40 -0600</pubDate>
+      <guid>http://localhost:1313/interfaces-and-polymorphism/reading/interfaces/index.html</guid>
+      <description>An interface is similar to an abstract class, with some important differences. Interfaces allow us to create code organized by behavior, rather than static data. While some object-oriented languages encourage creating classes that behave like interfaces to improve software design, C# is a language that includes interfaces as a formal construction. Like abstract classes, interfaces cannot be instantiated and they have limitations on what kind of behavioral information they may contain.</description>
+    </item>
+    <item>
+      <title>Interfaces and Abstract Classes</title>
+      <link>http://localhost:1313/interfaces-and-polymorphism/reading/interfaces-and-abstract-classes/index.html</link>
+      <pubDate>Wed, 01 Feb 2023 13:10:40 -0600</pubDate>
+      <guid>http://localhost:1313/interfaces-and-polymorphism/reading/interfaces-and-abstract-classes/index.html</guid>
+      <description>We mentioned previously that interfaces share some characteristics with abstract classes. Recall that an abstract class is one declared with the abstract keyword. You may not create an object from an abstract class and, like an interface, an abstract class is allowed to contain methods that only have signatures (that is, methods that don’t have implementation code).&#xA;The main differences between interfaces and abstract classes are:&#xA;You implement an interface, while you extend an abstract class.</description>
+    </item>
+    <item>
+      <title>Interfaces in the Wild</title>
+      <link>http://localhost:1313/interfaces-and-polymorphism/reading/given-interfaces/index.html</link>
+      <pubDate>Wed, 01 Feb 2023 13:10:40 -0600</pubDate>
+      <guid>http://localhost:1313/interfaces-and-polymorphism/reading/given-interfaces/index.html</guid>
+      <description>The first situations where you’ll want to use interfaces involve applying pre-defined interfaces and classes that are part of C#. In fact, you have already encountered implementations of several these System provided interfaces.&#xA;IComparer&lt;T&gt; Purpose: A class implements this interface to compare two objects of a given class. This is a parameterized interface, which means that when using it, you need to specify the class that it will be comparing. For example, IComparer&lt;Job&gt; would compare Job objects.</description>
+    </item>
+    <item>
+      <title>Unit Testing and Interfaces</title>
+      <link>http://localhost:1313/interfaces-and-polymorphism/reading/testing-interfaces/index.html</link>
+      <pubDate>Wed, 01 Feb 2023 13:10:40 -0600</pubDate>
+      <guid>http://localhost:1313/interfaces-and-polymorphism/reading/testing-interfaces/index.html</guid>
+      <description>After all that we have learned about interfaces, perhaps you are wondering, how do I write my unit tests with interfaces?&#xA;The best practices to testing interfaces are very similar to those of testing inheritance . You want to focus on testing the contract that the interface is supposed to be upholding as opposed to the interface itself.&#xA;Example We have an IFeedable interface and a HouseCat class.&#xA;1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 public interface IFeedable { string Eat() { return &#34;the feedable is eating&#34;; } } public class HouseCat : IFeedable { public string Name { get; set; } public HouseCat(string name) { Name = name; } } Based on the class above and the interface it implements, we should expect that a call to .</description>
+    </item>
+  </channel>
+</rss>

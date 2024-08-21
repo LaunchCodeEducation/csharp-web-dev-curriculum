@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>What is REST :: C# Web Development</title>
+    <link>http://localhost:1313/web-api-rest/reading/what-is-rest/index.html</link>
+    <description>REST is an acronym that stands for REpresentational State Transfer. RESTful web services refer to web technologies that use this design pattern. REST, as we’ve mentioned, is an architectural pattern that provides uniformity and predictability to any API that adheres to it.&#xA;The same benefits are experienced by the API consumer. REST is a set of guiding principles for supporting the organization of an API’s core responsibilities – managing and transferring data.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/web-api-rest/reading/what-is-rest/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

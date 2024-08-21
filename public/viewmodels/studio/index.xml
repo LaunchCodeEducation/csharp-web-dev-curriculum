@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Studio: Spa User Validation :: C# Web Development</title>
+    <link>http://localhost:1313/viewmodels/studio/index.html</link>
+    <description>We’ll build on the user-signup-starter studio from last class, adding in model validation.&#xA;Getting Started Open up your SpaDay application and checkout the user-validation branch.&#xA;Creating a New ViewModel To get started with adding validation to our application, we need to first make a ViewModel. After adding a folder for storing our ViewModels, create a new ViewModel for working with form submission called AddUserViewModel. Add properties for the user’s username, password, and email.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/viewmodels/studio/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

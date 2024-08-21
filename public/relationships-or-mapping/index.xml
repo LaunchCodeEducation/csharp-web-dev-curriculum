@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chapter 18: Relationships in Object-Relational Mapping :: C# Web Development</title>
+    <link>http://localhost:1313/relationships-or-mapping/index.html</link>
+    <description>Major Concepts The learning objectives for this chapter are:&#xA;This chapter introduces the tools needed to create meaningful relationships using ORM. Let’s consider the different types of relationships at a conceptual level. In later sections, we will learn how to implement these relationships using EntityFrameworkCore.&#xA;Key Terminology One-to-Many Many-to-Many Lambda Expressions Join Tables Composite Primary Key Join Class Lazy Loading Eager Loading Content Links Reading Exercises Next Steps </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Mar 2023 09:16:07 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/relationships-or-mapping/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reading</title>
+      <link>http://localhost:1313/relationships-or-mapping/reading/index.html</link>
+      <pubDate>Thu, 16 Mar 2023 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/relationships-or-mapping/reading/index.html</guid>
+      <description>Content Links Types of Relationships A Primer on Lambda Expressions Creating a One-to-Many Relationship Walkthrough: One-to-Many Some Setup Creating a Many-to-Many Relationship Walkthrough: Many-to-Many </description>
+    </item>
+    <item>
+      <title>Exercises</title>
+      <link>http://localhost:1313/relationships-or-mapping/exercises/index.html</link>
+      <pubDate>Thu, 16 Mar 2023 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/relationships-or-mapping/exercises/index.html</guid>
+      <description>Exercises: The Early Bird Gets the ORM. Now that we have gotten very familiar with our CodingEvents application, let’s design some additional features. As you work on your CodingEvents application, you may have been inspired by Meetup . One of the cool features that Meetup has is that people can sign up for accounts. They can use their Meetup accounts to follow the events they are most interested in and keep track of their calendar of events.</description>
+    </item>
+    <item>
+      <title>Next Steps</title>
+      <link>http://localhost:1313/relationships-or-mapping/next-steps/index.html</link>
+      <pubDate>Thu, 16 Mar 2023 09:16:07 -0600</pubDate>
+      <guid>http://localhost:1313/relationships-or-mapping/next-steps/index.html</guid>
+      <description>Next Steps As you continue to learn about Entity Framework and types of relationships visit the following articles for further review and understanding.&#xA;Microsoft Docs on Relationships Learn Entity Framework Entity Framework Tutorial </description>
+    </item>
+  </channel>
+</rss>

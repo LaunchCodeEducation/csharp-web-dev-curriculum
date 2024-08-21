@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading :: C# Web Development</title>
+    <link>http://localhost:1313/viewmodels/reading/index.html</link>
+    <description>Content Links ViewModels and Passing Data Between Views Server-Side Validation Validation Attributes Validating Models in a Controller Validation and Views Walkthrough: Adding ViewModels and Validation to CodingEvents </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 Mar 2023 13:23:58 -0601</lastBuildDate>
+    <atom:link href="http://localhost:1313/viewmodels/reading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ViewModels and Passing Data Between Views</title>
+      <link>http://localhost:1313/viewmodels/reading/viewmodels-intro/index.html</link>
+      <pubDate>Fri, 24 Feb 2023 08:57:18 -0600</pubDate>
+      <guid>http://localhost:1313/viewmodels/reading/viewmodels-intro/index.html</guid>
+      <description>Now that we have an understanding for what a model is, we can focus on how to effectively pass information between the three elements of MVC applications. With our current MVC application, we can add new events and remove events. However, our application is also susceptible to run-time errors. Our view can accept any type of input and if we mistype something in our view, we can run into issues later down the line.</description>
+    </item>
+    <item>
+      <title>Server-Side Validation</title>
+      <link>http://localhost:1313/viewmodels/reading/side-server-validation/index.html</link>
+      <pubDate>Fri, 24 Feb 2023 08:57:18 -0600</pubDate>
+      <guid>http://localhost:1313/viewmodels/reading/side-server-validation/index.html</guid>
+      <description>Web applications work under the client-server model. We have been focusing on the server portion, using ASP.NET Core MVC and C# to create server-side application code. A critical component of any well-made web application is validation, which is the process of checking that data conforms to certain criteria. Validation ensures that the application only stores meaningful data.&#xA;Example Consider a user registration form on a web site. Effective validation rules might require that:</description>
+    </item>
+    <item>
+      <title>Validation Attributes</title>
+      <link>http://localhost:1313/viewmodels/reading/validation-attributes/index.html</link>
+      <pubDate>Fri, 24 Feb 2023 08:57:18 -0600</pubDate>
+      <guid>http://localhost:1313/viewmodels/reading/validation-attributes/index.html</guid>
+      <description>Within the ViewModel or model of a C# web application, we can define validation rules using attributes. Validation attributes can be applied to model fields.&#xA;Common Attributes We’ll use only a few of these attributes, but you can find a full list in the documentation .&#xA;Annotation Description Syntax [Required] Specifies that a field cannot be null [Required] [Range] Specifies the range of potential values of a numeric field. [Range(0,100)] [StringLength] Specifies the maximum length of a string field.</description>
+    </item>
+    <item>
+      <title>Validating Models in a Controller</title>
+      <link>http://localhost:1313/viewmodels/reading/controller-validation/index.html</link>
+      <pubDate>Fri, 24 Feb 2023 08:57:18 -0600</pubDate>
+      <guid>http://localhost:1313/viewmodels/reading/controller-validation/index.html</guid>
+      <description>Validation involves both model and controller components of an MVC application. After we have defined validation rules using attributes on the model, we must also update the controller to ensure that the rules are checked and appropriate action is taken when validation fails.&#xA;Validation Flow Before diving into the details of the code, let’s consider the logical flow of control for validating data in a request. Let’s check out our POST action method for processing the Add Event form.</description>
+    </item>
+    <item>
+      <title>Validation and Views</title>
+      <link>http://localhost:1313/viewmodels/reading/view-validation/index.html</link>
+      <pubDate>Fri, 24 Feb 2023 08:57:18 -0600</pubDate>
+      <guid>http://localhost:1313/viewmodels/reading/view-validation/index.html</guid>
+      <description>While our application is properly handing errors, we need to display the error messages so that the users know what information they should be adding. Client-side validation like this can prevent faulty data submissions.&#xA;Displaying Error Messages in our View Create a separate span element in the form. In the &lt;span&gt; tag, we can add asp-validation-for to specify which property’s validation error messages should be displayed if the conditions are not met.</description>
+    </item>
+    <item>
+      <title>Walkthrough: Adding ViewModels and Validation to CodingEvents</title>
+      <link>http://localhost:1313/viewmodels/reading/viewmodels-walkthrough/index.html</link>
+      <pubDate>Thu, 09 Mar 2023 13:23:58 -0601</pubDate>
+      <guid>http://localhost:1313/viewmodels/reading/viewmodels-walkthrough/index.html</guid>
+      <description>Welcome to the walkthrough for creating and using templates in your CodingEvents project.&#xA;Video Walkthrough This walkthrough starts with the code from the models branch.&#xA;The final code in the walkthrough can be found on the viewmodels branch.</description>
+    </item>
+  </channel>
+</rss>

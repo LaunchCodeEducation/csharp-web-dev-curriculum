@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading: Classes Part 2 :: C# Web Development</title>
+    <link>http://localhost:1313/classes-part-2/reading/index.html</link>
+    <description>Content Links Customizing Fields Instance and Static Methods Special Methods Visual Studio Generation Shortcut </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Jan 2023 09:32:46 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/classes-part-2/reading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Customizing Fields</title>
+      <link>http://localhost:1313/classes-part-2/reading/custom-fields/index.html</link>
+      <pubDate>Mon, 30 Jan 2023 09:32:46 -0600</pubDate>
+      <guid>http://localhost:1313/classes-part-2/reading/custom-fields/index.html</guid>
+      <description>In the previous chapter, we used fields to store data within a class, and we explored how to access and modify the values of those fields.&#xA;Now, we will explore several ways to configure fields based on their intended use.&#xA;You will find the example code in the csharp-web-dev-examples repo . Be sure to try what you learn before moving on the the next section.&#xA;Readonly Fields A readonly field is one that cannot be changed once it is initialized.</description>
+    </item>
+    <item>
+      <title>Instance and Static Methods</title>
+      <link>http://localhost:1313/classes-part-2/reading/instance-and-static/index.html</link>
+      <pubDate>Mon, 30 Jan 2023 09:32:46 -0600</pubDate>
+      <guid>http://localhost:1313/classes-part-2/reading/instance-and-static/index.html</guid>
+      <description>We explored configuring data within classes with fields and properties. Now let’s turn our attention back to class behavior (methods).&#xA;Quick Method Review In the previous chapter , we learned that:&#xA;A method belongs to a class and performs an action.&#xA;Methods cannot stand on their own—they must be part of a class.&#xA;To call a method on an object, use dot notation:&#xA;objectName.MethodName(arguments); Access modifiers apply to methods:&#xA;private methods are those that are NOT useful outside of the class but contribute internally to helping the class behave as desired or expected.</description>
+    </item>
+    <item>
+      <title>Special Methods</title>
+      <link>http://localhost:1313/classes-part-2/reading/special-methods/index.html</link>
+      <pubDate>Mon, 30 Jan 2023 09:32:46 -0600</pubDate>
+      <guid>http://localhost:1313/classes-part-2/reading/special-methods/index.html</guid>
+      <description>Every class has a few special methods that belong to it, regardless of whether or not we define them. Exactly how every class obtains these methods will be explored in a future lesson. For now, let’s look at two important examples of these methods.&#xA;ToString The ToString method returns a string representation of a class. Calling ToString on a class that you’ve written will result in something like this:&#xA;Example 1 2 Student person = new Student(&#34;Violet&#34;); Console.</description>
+    </item>
+    <item>
+      <title>Visual Studio Generation Shortcut</title>
+      <link>http://localhost:1313/classes-part-2/reading/vs-generator/index.html</link>
+      <pubDate>Mon, 30 Jan 2023 09:32:46 -0600</pubDate>
+      <guid>http://localhost:1313/classes-part-2/reading/vs-generator/index.html</guid>
+      <description>Instead of cutting, pasting, and refactoring old code to ensure that you create a well-structured GetHashCode() method whenever you define your own Equals() method, you can use Visual Studio’s code generation tool! Just right-click in your class file on the class name and follow these prompts.&#xA;Let’s use a Course class to demonstrate:&#xA;public class Course { public string Topic { get; set; } public Teacher Instructor { get; set; } public List&lt;Student&gt; EnrolledStudents { get; set; } } In Visual Studio, right-click on the class name and select Quick Fix for Mac users or Quick Actions and Refactorings for Windows users from the menu.</description>
+    </item>
+  </channel>
+</rss>

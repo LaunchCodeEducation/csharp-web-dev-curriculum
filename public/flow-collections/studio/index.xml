@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Studio :: C# Web Development</title>
+    <link>http://localhost:1313/flow-collections/studio/index.html</link>
+    <description>Counting Characters In this studio, you will write a program to count the number of times each character occurs in a string and then print the results to the console&#xA;Getting Started Create your own project from scratch. Review Creating a C# Project if you need to.&#xA;Some Items to Ponder Before Coding There are multiple ways to approach this task, but one way involves the following steps:&#xA;Loop through the string one character at a time, Store and/or update the count for a given character using an appropriate data structure.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/flow-collections/studio/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

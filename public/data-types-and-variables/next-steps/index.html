@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.130.0">
+    <meta name="generator" content="Relearn 6.1.1+tip">
+    <meta name="description" content="After learning more about data types in C#, you are ready to read up on control flow and collections. If you need some additional resources on data types before going on to the next chapter, check out the following:
+Microsoft Reference Sheet on all Built-In C# Types W3Schools Tutorial on C# Types GeeksforGeeks Article on C# Types ">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Next Steps :: C# Web Development">
+    <meta name="twitter:description" content="After learning more about data types in C#, you are ready to read up on control flow and collections. If you need some additional resources on data types before going on to the next chapter, check out the following:
+Microsoft Reference Sheet on all Built-In C# Types W3Schools Tutorial on C# Types GeeksforGeeks Article on C# Types ">
+    <meta property="og:url" content="http://localhost:1313/data-types-and-variables/next-steps/index.html">
+    <meta property="og:site_name" content="C# Web Development">
+    <meta property="og:title" content="Next Steps :: C# Web Development">
+    <meta property="og:description" content="After learning more about data types in C#, you are ready to read up on control flow and collections. If you need some additional resources on data types before going on to the next chapter, check out the following:
+Microsoft Reference Sheet on all Built-In C# Types W3Schools Tutorial on C# Types GeeksforGeeks Article on C# Types ">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Chapter 2: Data Types">
+    <meta property="article:published_time" content="2023-01-17T16:28:22-06:00">
+    <meta property="article:modified_time" content="2023-01-17T16:28:22-06:00">
+    <meta itemprop="name" content="Next Steps :: C# Web Development">
+    <meta itemprop="description" content="After learning more about data types in C#, you are ready to read up on control flow and collections. If you need some additional resources on data types before going on to the next chapter, check out the following:
+Microsoft Reference Sheet on all Built-In C# Types W3Schools Tutorial on C# Types GeeksforGeeks Article on C# Types ">
+    <meta itemprop="datePublished" content="2023-01-17T16:28:22-06:00">
+    <meta itemprop="dateModified" content="2023-01-17T16:28:22-06:00">
+    <meta itemprop="wordCount" content="57">
+    <title>Next Steps :: C# Web Development</title>
+    <link href="http://localhost:1313/css/fontawesome-all.min.css?1724273397" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="http://localhost:1313/css/fontawesome-all.min.css?1724273397" rel="stylesheet"></noscript>
+    <link href="http://localhost:1313/css/nucleus.css?1724273397" rel="stylesheet">
+    <link href="http://localhost:1313/css/auto-complete.css?1724273397" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="http://localhost:1313/css/auto-complete.css?1724273397" rel="stylesheet"></noscript>
+    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1724273397" rel="stylesheet">
+    <link href="http://localhost:1313/css/fonts.css?1724273397" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="http://localhost:1313/css/fonts.css?1724273397" rel="stylesheet"></noscript>
+    <link href="http://localhost:1313/css/theme.css?1724273397" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme-lc-light.css?1724273397" rel="stylesheet" id="R-variant-style">
+    <link href="http://localhost:1313/css/chroma-relearn-light.css?1724273397" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="http://localhost:1313/css/variant.css?1724273397" rel="stylesheet">
+    <link href="http://localhost:1313/css/print.css?1724273397" rel="stylesheet" media="print">
+    <script src="http://localhost:1313/js/variant.js?1724273397"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.index_js_url="http://localhost:1313/index.search.js?1724273397";
+      // variant stuff
+      window.variants && variants.init( [ 'lc-light', 'lc-dark-blue', 'lc-dark-blue-two' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="http://localhost:1313/data-types-and-variables/next-steps/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="http://localhost:1313/index.html"><span itemprop="name">C# Web Development</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="http://localhost:1313/data-types-and-variables/index.html"><span itemprop="name">Chapter 2: Data Types</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Next Steps</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="http://localhost:1313/data-types-and-variables/studio/index.html" title="Studio: Area of a Circle (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="http://localhost:1313/flow-collections/index.html" title="Chapter 3: Control Flow &amp; Collections (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+
+<h1 id="next-steps">Next Steps</h1>
+
+<p>After learning more about data types in C#, you are ready to read up on control flow and collections. If you need some additional resources on data types before going on to the next chapter, check out the following:</p>
+<ol>
+<li><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types" rel="external" target="_blank">Microsoft Reference Sheet on all Built-In C# Types</a>
+</li>
+<li><a href="https://www.w3schools.com/cs/cs_data_types.php" rel="external" target="_blank">W3Schools Tutorial on C# Types</a>
+</li>
+<li><a href="https://www.geeksforgeeks.org/c-sharp-data-types/" rel="external" target="_blank">GeeksforGeeks Article on C# Types</a>
+</li>
+</ol>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="http://localhost:1313/"><img src="http://localhost:1313/images/LaunchCode_white.png" alt="LaunchCode" /></a>
+
+
+        </div>
+
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="http://localhost:1313/js/auto-complete.js?1724273397" defer></script>
+        <script src="http://localhost:1313/js/lunr/lunr.min.js?1724273397" defer></script>
+        <script src="http://localhost:1313/js/lunr/lunr.stemmer.support.min.js?1724273397" defer></script>
+        <script src="http://localhost:1313/js/lunr/lunr.multi.min.js?1724273397" defer></script>
+        <script src="http://localhost:1313/js/lunr/lunr.en.min.js?1724273397" defer></script>
+        <script src="http://localhost:1313/js/search.js?1724273397" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="http://localhost:1313/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/introduction-and-setup/index.html" class=""><a class="padding" href="http://localhost:1313/introduction-and-setup/index.html">Chapter 1: Introduction and Setup</a><ul id="R-subsections-cd7a96cc5d1e098f8c47358d56c067d5" class="morespace collapsible-menu">
+          <li data-nav-id="/introduction-and-setup/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/introduction-and-setup/reading/index.html">Setup for C#</a><ul id="R-subsections-1f1cf32bbbfbfc30c35d2c4609b24902" class="morespace collapsible-menu">
+          <li data-nav-id="/introduction-and-setup/reading/windows-install/index.html" class=""><a class="padding" href="http://localhost:1313/introduction-and-setup/reading/windows-install/index.html">Windows Users: Visual Studio Community Edition</a></li>
+          <li data-nav-id="/introduction-and-setup/reading/mac-install/index.html" class=""><a class="padding" href="http://localhost:1313/introduction-and-setup/reading/mac-install/index.html">Mac Users: C# Dev Kit for Visual Studio Code</a></li>
+          <li data-nav-id="/introduction-and-setup/reading/creating-a-project/index.html" class=""><a class="padding" href="http://localhost:1313/introduction-and-setup/reading/creating-a-project/index.html">Creating a C# Project</a></li>
+          <li data-nav-id="/introduction-and-setup/reading/cloning-a-project/index.html" class=""><a class="padding" href="http://localhost:1313/introduction-and-setup/reading/cloning-a-project/index.html">Cloning a C# Project</a></li></ul></li>
+          <li data-nav-id="/introduction-and-setup/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/introduction-and-setup/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/data-types-and-variables/index.html" class="parent "><a class="padding" href="http://localhost:1313/data-types-and-variables/index.html">Chapter 2: Data Types</a><ul id="R-subsections-1a92043bcb2ea8225235d6c2467e7502" class="morespace collapsible-menu">
+          <li data-nav-id="/data-types-and-variables/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/data-types-and-variables/reading/index.html">Reading</a><ul id="R-subsections-f8979a3340ca5fb375d9bc8908531a16" class="morespace collapsible-menu">
+          <li data-nav-id="/data-types-and-variables/reading/data-types/index.html" class=""><a class="padding" href="http://localhost:1313/data-types-and-variables/reading/data-types/index.html">Data Types</a></li>
+          <li data-nav-id="/data-types-and-variables/reading/some-csharp-practice/index.html" class=""><a class="padding" href="http://localhost:1313/data-types-and-variables/reading/some-csharp-practice/index.html">Some C# Practice</a></li>
+          <li data-nav-id="/data-types-and-variables/reading/strings-chars-and-arrays/index.html" class=""><a class="padding" href="http://localhost:1313/data-types-and-variables/reading/strings-chars-and-arrays/index.html">Strings, Characters, and Arrays</a></li>
+          <li data-nav-id="/data-types-and-variables/reading/objects-primer/index.html" class=""><a class="padding" href="http://localhost:1313/data-types-and-variables/reading/objects-primer/index.html">Objects and Methods, a Primer</a></li></ul></li>
+          <li data-nav-id="/data-types-and-variables/exercises/index.html" class=""><a class="padding" href="http://localhost:1313/data-types-and-variables/exercises/index.html">Exercises</a></li>
+          <li data-nav-id="/data-types-and-variables/studio/index.html" class=""><a class="padding" href="http://localhost:1313/data-types-and-variables/studio/index.html">Studio: Area of a Circle</a></li>
+          <li data-nav-id="/data-types-and-variables/next-steps/index.html" class="active"><a class="padding" href="http://localhost:1313/data-types-and-variables/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/flow-collections/index.html" class=""><a class="padding" href="http://localhost:1313/flow-collections/index.html">Chapter 3: Control Flow &amp; Collections</a><ul id="R-subsections-3fcd7a2d293ae26d9e45f1d1120fd724" class="morespace collapsible-menu">
+          <li data-nav-id="/flow-collections/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/flow-collections/reading/index.html">Reading</a><ul id="R-subsections-93fa042fbeac818434a9be74ef7faee5" class="morespace collapsible-menu">
+          <li data-nav-id="/flow-collections/reading/conditionals/index.html" class=""><a class="padding" href="http://localhost:1313/flow-collections/reading/conditionals/index.html">Conditionals</a></li>
+          <li data-nav-id="/flow-collections/reading/loops/index.html" class=""><a class="padding" href="http://localhost:1313/flow-collections/reading/loops/index.html">Loops</a></li>
+          <li data-nav-id="/flow-collections/reading/collections/index.html" class=""><a class="padding" href="http://localhost:1313/flow-collections/reading/collections/index.html">Collections</a></li>
+          <li data-nav-id="/flow-collections/reading/list/index.html" class=""><a class="padding" href="http://localhost:1313/flow-collections/reading/list/index.html">List</a></li>
+          <li data-nav-id="/flow-collections/reading/array/index.html" class=""><a class="padding" href="http://localhost:1313/flow-collections/reading/array/index.html">Array</a></li>
+          <li data-nav-id="/flow-collections/reading/dictionary/index.html" class=""><a class="padding" href="http://localhost:1313/flow-collections/reading/dictionary/index.html">Dictionary</a></li></ul></li>
+          <li data-nav-id="/flow-collections/exercises/index.html" class=""><a class="padding" href="http://localhost:1313/flow-collections/exercises/index.html">Exercises</a></li>
+          <li data-nav-id="/flow-collections/studio/index.html" class=""><a class="padding" href="http://localhost:1313/flow-collections/studio/index.html">Studio</a></li>
+          <li data-nav-id="/flow-collections/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/flow-collections/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/classes/index.html" class=""><a class="padding" href="http://localhost:1313/classes/index.html">Chapter 4: Classes</a><ul id="R-subsections-0b0cacde8a4e9970b227851692cc4392" class="morespace collapsible-menu">
+          <li data-nav-id="/classes/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/classes/reading/index.html">Reading</a><ul id="R-subsections-5351516f5c13b92664ea994855398098" class="morespace collapsible-menu">
+          <li data-nav-id="/classes/reading/background/index.html" class=""><a class="padding" href="http://localhost:1313/classes/reading/background/index.html">Classes for C#</a></li>
+          <li data-nav-id="/classes/reading/modifiers/index.html" class=""><a class="padding" href="http://localhost:1313/classes/reading/modifiers/index.html">Modifiers in C#</a></li>
+          <li data-nav-id="/classes/reading/encapsulation/index.html" class=""><a class="padding" href="http://localhost:1313/classes/reading/encapsulation/index.html">Encapsulation</a></li>
+          <li data-nav-id="/classes/reading/constructors/index.html" class=""><a class="padding" href="http://localhost:1313/classes/reading/constructors/index.html">Constructors</a></li>
+          <li data-nav-id="/classes/reading/methods/index.html" class=""><a class="padding" href="http://localhost:1313/classes/reading/methods/index.html">Methods</a></li>
+          <li data-nav-id="/classes/reading/srp/index.html" class=""><a class="padding" href="http://localhost:1313/classes/reading/srp/index.html">Single Responsibility Principle</a></li></ul></li>
+          <li data-nav-id="/classes/exercises/index.html" class=""><a class="padding" href="http://localhost:1313/classes/exercises/index.html">Exercises</a></li>
+          <li data-nav-id="/classes/studio/index.html" class=""><a class="padding" href="http://localhost:1313/classes/studio/index.html">Studio: Restaurant Menu</a></li>
+          <li data-nav-id="/classes/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/classes/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/classes-part-2/index.html" class=""><a class="padding" href="http://localhost:1313/classes-part-2/index.html">Chapter 5: Classes Part 2</a><ul id="R-subsections-eb794f8ad5cdaf028c38962b8ee979c2" class="morespace collapsible-menu">
+          <li data-nav-id="/classes-part-2/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/classes-part-2/reading/index.html">Reading: Classes Part 2</a><ul id="R-subsections-98891f511818aeb4fbacfaaad9477fa3" class="morespace collapsible-menu">
+          <li data-nav-id="/classes-part-2/reading/custom-fields/index.html" class=""><a class="padding" href="http://localhost:1313/classes-part-2/reading/custom-fields/index.html">Customizing Fields</a></li>
+          <li data-nav-id="/classes-part-2/reading/instance-and-static/index.html" class=""><a class="padding" href="http://localhost:1313/classes-part-2/reading/instance-and-static/index.html">Instance and Static Methods</a></li>
+          <li data-nav-id="/classes-part-2/reading/special-methods/index.html" class=""><a class="padding" href="http://localhost:1313/classes-part-2/reading/special-methods/index.html">Special Methods</a></li>
+          <li data-nav-id="/classes-part-2/reading/vs-generator/index.html" class=""><a class="padding" href="http://localhost:1313/classes-part-2/reading/vs-generator/index.html">Visual Studio Generation Shortcut</a></li></ul></li>
+          <li data-nav-id="/classes-part-2/exercises/index.html" class=""><a class="padding" href="http://localhost:1313/classes-part-2/exercises/index.html">Exercises: Objects and Classes, Part 2</a></li>
+          <li data-nav-id="/classes-part-2/studio/index.html" class=""><a class="padding" href="http://localhost:1313/classes-part-2/studio/index.html">Studio: Restaurant Menu Continued </a></li>
+          <li data-nav-id="/classes-part-2/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/classes-part-2/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/unit-testing/index.html" class=""><a class="padding" href="http://localhost:1313/unit-testing/index.html">Chapter 6: Unit Testing</a><ul id="R-subsections-3bc848ae4ad1b63821b742e20049724d" class="morespace collapsible-menu">
+          <li data-nav-id="/unit-testing/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/unit-testing/reading/index.html">Reading</a><ul id="R-subsections-33c30be509a93475c0cfd6456fd11949" class="morespace collapsible-menu">
+          <li data-nav-id="/unit-testing/reading/testing-in-csharp/index.html" class=""><a class="padding" href="http://localhost:1313/unit-testing/reading/testing-in-csharp/index.html">Testing in C#</a></li>
+          <li data-nav-id="/unit-testing/reading/mstest/index.html" class=""><a class="padding" href="http://localhost:1313/unit-testing/reading/mstest/index.html">MSTest</a></li></ul></li>
+          <li data-nav-id="/unit-testing/exercises/index.html" class=""><a class="padding" href="http://localhost:1313/unit-testing/exercises/index.html">Exercises</a></li>
+          <li data-nav-id="/unit-testing/studio/index.html" class=""><a class="padding" href="http://localhost:1313/unit-testing/studio/index.html">Studio</a></li>
+          <li data-nav-id="/unit-testing/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/unit-testing/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/inheritance/index.html" class=""><a class="padding" href="http://localhost:1313/inheritance/index.html">Chapter 7: Inheritance</a><ul id="R-subsections-f76bb91cb47b43b6c8406073622c8626" class="morespace collapsible-menu">
+          <li data-nav-id="/inheritance/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/inheritance/reading/index.html">Reading</a><ul id="R-subsections-b913ce714c3c990c6ebc66a363cc4cc5" class="morespace collapsible-menu">
+          <li data-nav-id="/inheritance/reading/inheritance-oop/index.html" class=""><a class="padding" href="http://localhost:1313/inheritance/reading/inheritance-oop/index.html">Inheritance</a></li>
+          <li data-nav-id="/inheritance/reading/csharp-inheritance/index.html" class=""><a class="padding" href="http://localhost:1313/inheritance/reading/csharp-inheritance/index.html">Inheritance in C#</a></li>
+          <li data-nav-id="/inheritance/reading/cats-inheritance/index.html" class=""><a class="padding" href="http://localhost:1313/inheritance/reading/cats-inheritance/index.html">A Tale of Two Cats</a></li>
+          <li data-nav-id="/inheritance/reading/abstract-inheritance/index.html" class=""><a class="padding" href="http://localhost:1313/inheritance/reading/abstract-inheritance/index.html">Inheriting from Abstraction</a></li>
+          <li data-nav-id="/inheritance/reading/casting/index.html" class=""><a class="padding" href="http://localhost:1313/inheritance/reading/casting/index.html">Casting</a></li>
+          <li data-nav-id="/inheritance/reading/testing-inheritance/index.html" class=""><a class="padding" href="http://localhost:1313/inheritance/reading/testing-inheritance/index.html">Testing Inheritance</a></li>
+          <li data-nav-id="/inheritance/reading/class-diagrams/index.html" class=""><a class="padding" href="http://localhost:1313/inheritance/reading/class-diagrams/index.html">Class Diagrams</a></li></ul></li>
+          <li data-nav-id="/inheritance/exercises/index.html" class=""><a class="padding" href="http://localhost:1313/inheritance/exercises/index.html">Exercises: Inheritance</a></li>
+          <li data-nav-id="/inheritance/studio/index.html" class=""><a class="padding" href="http://localhost:1313/inheritance/studio/index.html">Studio: Fun With Quizzes</a></li>
+          <li data-nav-id="/inheritance/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/inheritance/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/interfaces-and-polymorphism/index.html" class=""><a class="padding" href="http://localhost:1313/interfaces-and-polymorphism/index.html">Chapter 8: Interfaces and Polymorphism</a><ul id="R-subsections-0f5e94be306a17414ecd5bab07504a33" class="morespace collapsible-menu">
+          <li data-nav-id="/interfaces-and-polymorphism/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/interfaces-and-polymorphism/reading/index.html">Reading</a><ul id="R-subsections-86529e2afafc6ce007eb33aff57bba59" class="morespace collapsible-menu">
+          <li data-nav-id="/interfaces-and-polymorphism/reading/introduction/index.html" class=""><a class="padding" href="http://localhost:1313/interfaces-and-polymorphism/reading/introduction/index.html">Introduction</a></li>
+          <li data-nav-id="/interfaces-and-polymorphism/reading/interfaces/index.html" class=""><a class="padding" href="http://localhost:1313/interfaces-and-polymorphism/reading/interfaces/index.html">Interfaces</a></li>
+          <li data-nav-id="/interfaces-and-polymorphism/reading/interfaces-and-abstract-classes/index.html" class=""><a class="padding" href="http://localhost:1313/interfaces-and-polymorphism/reading/interfaces-and-abstract-classes/index.html">Interfaces and Abstract Classes</a></li>
+          <li data-nav-id="/interfaces-and-polymorphism/reading/given-interfaces/index.html" class=""><a class="padding" href="http://localhost:1313/interfaces-and-polymorphism/reading/given-interfaces/index.html">Interfaces in the Wild</a></li>
+          <li data-nav-id="/interfaces-and-polymorphism/reading/testing-interfaces/index.html" class=""><a class="padding" href="http://localhost:1313/interfaces-and-polymorphism/reading/testing-interfaces/index.html">Unit Testing and Interfaces</a></li></ul></li>
+          <li data-nav-id="/interfaces-and-polymorphism/exercises/index.html" class=""><a class="padding" href="http://localhost:1313/interfaces-and-polymorphism/exercises/index.html">Exercises</a></li>
+          <li data-nav-id="/interfaces-and-polymorphism/studio/index.html" class=""><a class="padding" href="http://localhost:1313/interfaces-and-polymorphism/studio/index.html">Studio: Spinning Discs</a></li>
+          <li data-nav-id="/interfaces-and-polymorphism/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/interfaces-and-polymorphism/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/asp-net-intro/index.html" class=""><a class="padding" href="http://localhost:1313/asp-net-intro/index.html">Chapter 9: Introduction to ASP.NET</a><ul id="R-subsections-50666bccdf6ea23749bac465f672ed1a" class="morespace collapsible-menu">
+          <li data-nav-id="/asp-net-intro/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/asp-net-intro/reading/index.html">Reading</a><ul id="R-subsections-a4baabe48d0bdf1e61034422ca6e5755" class="morespace collapsible-menu">
+          <li data-nav-id="/asp-net-intro/reading/asp-dotnet-intro/index.html" class=""><a class="padding" href="http://localhost:1313/asp-net-intro/reading/asp-dotnet-intro/index.html">Design Patterns, MVC, and ASP.NET, Oh My!</a></li>
+          <li data-nav-id="/asp-net-intro/reading/create-asp-project/index.html" class=""><a class="padding" href="http://localhost:1313/asp-net-intro/reading/create-asp-project/index.html">Create a New ASP.NET Project</a></li></ul></li>
+          <li data-nav-id="/asp-net-intro/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/asp-net-intro/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/aspdotnet-controllers-and-routes/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-controllers-and-routes/index.html">Chapter 10: Controllers and Routing</a><ul id="R-subsections-1e37a5fa081521256a0e4a1f1cbbe9f1" class="morespace collapsible-menu">
+          <li data-nav-id="/aspdotnet-controllers-and-routes/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/aspdotnet-controllers-and-routes/reading/index.html">Reading</a><ul id="R-subsections-01acdf2484c5f25fa28e0aaa41f36b6b" class="morespace collapsible-menu">
+          <li data-nav-id="/aspdotnet-controllers-and-routes/reading/controllers-simple/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-controllers-and-routes/reading/controllers-simple/index.html">Simple Controllers</a></li>
+          <li data-nav-id="/aspdotnet-controllers-and-routes/reading/controllers-parameters/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-controllers-and-routes/reading/controllers-parameters/index.html">Controllers with Parameters</a></li>
+          <li data-nav-id="/aspdotnet-controllers-and-routes/reading/controllers-forms/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-controllers-and-routes/reading/controllers-forms/index.html">Controllers with Forms</a></li>
+          <li data-nav-id="/aspdotnet-controllers-and-routes/reading/controllers-attributes/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-controllers-and-routes/reading/controllers-attributes/index.html">Cleaning Up Your Controllers</a></li>
+          <li data-nav-id="/aspdotnet-controllers-and-routes/reading/video-walkthrough/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-controllers-and-routes/reading/video-walkthrough/index.html">Video Walkthrough</a></li></ul></li>
+          <li data-nav-id="/aspdotnet-controllers-and-routes/exercises/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-controllers-and-routes/exercises/index.html">Exercises</a></li>
+          <li data-nav-id="/aspdotnet-controllers-and-routes/studio/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-controllers-and-routes/studio/index.html">Studio</a></li>
+          <li data-nav-id="/aspdotnet-controllers-and-routes/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-controllers-and-routes/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/exceptions/index.html" class=""><a class="padding" href="http://localhost:1313/exceptions/index.html">Chapter 11: Exceptions</a><ul id="R-subsections-8eec131254d454a0b50c147e55396a4d" class="morespace collapsible-menu">
+          <li data-nav-id="/exceptions/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/exceptions/reading/index.html">Reading</a><ul id="R-subsections-1e6043265d0493fde6c17672620c53fa" class="morespace collapsible-menu">
+          <li data-nav-id="/exceptions/reading/exceptions-intro/index.html" class=""><a class="padding" href="http://localhost:1313/exceptions/reading/exceptions-intro/index.html">Introduction to Exceptions</a></li>
+          <li data-nav-id="/exceptions/reading/handling-exceptions/index.html" class=""><a class="padding" href="http://localhost:1313/exceptions/reading/handling-exceptions/index.html">Handling Exceptions</a></li>
+          <li data-nav-id="/exceptions/reading/common-exceptions/index.html" class=""><a class="padding" href="http://localhost:1313/exceptions/reading/common-exceptions/index.html">Common Exception Objects</a></li></ul></li>
+          <li data-nav-id="/exceptions/exercises/index.html" class=""><a class="padding" href="http://localhost:1313/exceptions/exercises/index.html">Exercises: Exceptions</a></li>
+          <li data-nav-id="/exceptions/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/exceptions/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/vstools/index.html" class=""><a class="padding" href="http://localhost:1313/vstools/index.html">Chapter 12: Tools in Visual Studio</a><ul id="R-subsections-6a3f2931c010a4ea298ca8585567d7a5" class="morespace collapsible-menu">
+          <li data-nav-id="/vstools/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/vstools/reading/index.html">Reading</a><ul id="R-subsections-54ff49102757422ae6649eba25698501" class="morespace collapsible-menu">
+          <li data-nav-id="/vstools/reading/msbuild/index.html" class=""><a class="padding" href="http://localhost:1313/vstools/reading/msbuild/index.html">MSBuild</a></li>
+          <li data-nav-id="/vstools/reading/nuget/index.html" class=""><a class="padding" href="http://localhost:1313/vstools/reading/nuget/index.html">NuGet</a></li>
+          <li data-nav-id="/vstools/reading/debugger/index.html" class=""><a class="padding" href="http://localhost:1313/vstools/reading/debugger/index.html">Debugger</a></li></ul></li>
+          <li data-nav-id="/vstools/studio/index.html" class=""><a class="padding" href="http://localhost:1313/vstools/studio/index.html">Studio: If It Ain&#39;t Broke, Add a Breakpoint!</a></li>
+          <li data-nav-id="/vstools/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/vstools/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/razor-views/index.html" class=""><a class="padding" href="http://localhost:1313/razor-views/index.html">Chapter 13: Razor Views</a><ul id="R-subsections-3dd426991568c809e2695b78fbbd0ab4" class="morespace collapsible-menu">
+          <li data-nav-id="/razor-views/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/razor-views/reading/index.html">Reading</a><ul id="R-subsections-6dfa101f07c037a827105cc2974ec97e" class="morespace collapsible-menu">
+          <li data-nav-id="/razor-views/reading/templates/index.html" class=""><a class="padding" href="http://localhost:1313/razor-views/reading/templates/index.html">Templates</a></li>
+          <li data-nav-id="/razor-views/reading/creating-templates/index.html" class=""><a class="padding" href="http://localhost:1313/razor-views/reading/creating-templates/index.html">Creating a Template</a></li>
+          <li data-nav-id="/razor-views/reading/using-templates/index.html" class=""><a class="padding" href="http://localhost:1313/razor-views/reading/using-templates/index.html">Using a Template</a></li>
+          <li data-nav-id="/razor-views/reading/iterating-templates/index.html" class=""><a class="padding" href="http://localhost:1313/razor-views/reading/iterating-templates/index.html">Iterating in a Template</a></li>
+          <li data-nav-id="/razor-views/reading/conditionals-templates/index.html" class=""><a class="padding" href="http://localhost:1313/razor-views/reading/conditionals-templates/index.html">Conditionals in a Template</a></li>
+          <li data-nav-id="/razor-views/reading/views-walkthrough/index.html" class=""><a class="padding" href="http://localhost:1313/razor-views/reading/views-walkthrough/index.html">Walkthrough: Wrapping up HelloASPDotNET</a></li>
+          <li data-nav-id="/razor-views/reading/razor-forms/index.html" class=""><a class="padding" href="http://localhost:1313/razor-views/reading/razor-forms/index.html">Razor Forms</a></li>
+          <li data-nav-id="/razor-views/reading/shared-directory/index.html" class=""><a class="padding" href="http://localhost:1313/razor-views/reading/shared-directory/index.html">The Shared Directory</a></li>
+          <li data-nav-id="/razor-views/reading/static-resources/index.html" class=""><a class="padding" href="http://localhost:1313/razor-views/reading/static-resources/index.html">Static Resources</a></li>
+          <li data-nav-id="/razor-views/reading/bootstrap/index.html" class=""><a class="padding" href="http://localhost:1313/razor-views/reading/bootstrap/index.html">Bootstrap</a></li>
+          <li data-nav-id="/razor-views/reading/view-form-walkthrough/index.html" class=""><a class="padding" href="http://localhost:1313/razor-views/reading/view-form-walkthrough/index.html">Walkthrough: Begin CodingEvents</a></li></ul></li>
+          <li data-nav-id="/razor-views/exercises/index.html" class=""><a class="padding" href="http://localhost:1313/razor-views/exercises/index.html">Exercises: Razor Views</a></li>
+          <li data-nav-id="/razor-views/studio/index.html" class=""><a class="padding" href="http://localhost:1313/razor-views/studio/index.html">Studio: Spa Day!</a></li>
+          <li data-nav-id="/razor-views/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/razor-views/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/aspdotnet-model-classes/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-model-classes/index.html">Chapter 14: Models and Model Binding</a><ul id="R-subsections-77df986f7d8aac66fc29d3643a825eed" class="morespace collapsible-menu">
+          <li data-nav-id="/aspdotnet-model-classes/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/aspdotnet-model-classes/reading/index.html">Reading</a><ul id="R-subsections-d0c4614bbb67b0072d68631723585a6a" class="morespace collapsible-menu">
+          <li data-nav-id="/aspdotnet-model-classes/reading/model-intro/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-model-classes/reading/model-intro/index.html">Models in MVC</a></li>
+          <li data-nav-id="/aspdotnet-model-classes/reading/model-class/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-model-classes/reading/model-class/index.html">Create a Model Class</a></li>
+          <li data-nav-id="/aspdotnet-model-classes/reading/data-layer/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-model-classes/reading/data-layer/index.html">Models and Data</a></li>
+          <li data-nav-id="/aspdotnet-model-classes/reading/model-binding/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-model-classes/reading/model-binding/index.html">Model Binding</a></li>
+          <li data-nav-id="/aspdotnet-model-classes/reading/video-walkthrough/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-model-classes/reading/video-walkthrough/index.html">Video Walkthrough</a></li></ul></li>
+          <li data-nav-id="/aspdotnet-model-classes/exercises/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-model-classes/exercises/index.html">Exercises: Edit Model Classes</a></li>
+          <li data-nav-id="/aspdotnet-model-classes/studio/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-model-classes/studio/index.html">Studio: Spa User Signup</a></li>
+          <li data-nav-id="/aspdotnet-model-classes/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/aspdotnet-model-classes/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/viewmodels/index.html" class=""><a class="padding" href="http://localhost:1313/viewmodels/index.html">Chapter 15: Viewmodels and Model Validation</a><ul id="R-subsections-8150d1d83dd5496895be00463bb65fd7" class="morespace collapsible-menu">
+          <li data-nav-id="/viewmodels/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/viewmodels/reading/index.html">Reading</a><ul id="R-subsections-bb873c5339aac2f0147e217f40a2e2e4" class="morespace collapsible-menu">
+          <li data-nav-id="/viewmodels/reading/viewmodels-intro/index.html" class=""><a class="padding" href="http://localhost:1313/viewmodels/reading/viewmodels-intro/index.html">ViewModels and Passing Data Between Views</a></li>
+          <li data-nav-id="/viewmodels/reading/side-server-validation/index.html" class=""><a class="padding" href="http://localhost:1313/viewmodels/reading/side-server-validation/index.html">Server-Side Validation</a></li>
+          <li data-nav-id="/viewmodels/reading/validation-attributes/index.html" class=""><a class="padding" href="http://localhost:1313/viewmodels/reading/validation-attributes/index.html">Validation Attributes</a></li>
+          <li data-nav-id="/viewmodels/reading/controller-validation/index.html" class=""><a class="padding" href="http://localhost:1313/viewmodels/reading/controller-validation/index.html">Validating Models in a Controller</a></li>
+          <li data-nav-id="/viewmodels/reading/view-validation/index.html" class=""><a class="padding" href="http://localhost:1313/viewmodels/reading/view-validation/index.html">Validation and Views</a></li>
+          <li data-nav-id="/viewmodels/reading/viewmodels-walkthrough/index.html" class=""><a class="padding" href="http://localhost:1313/viewmodels/reading/viewmodels-walkthrough/index.html">Walkthrough: Adding ViewModels and Validation to CodingEvents</a></li></ul></li>
+          <li data-nav-id="/viewmodels/exercises/index.html" class=""><a class="padding" href="http://localhost:1313/viewmodels/exercises/index.html">Exercises</a></li>
+          <li data-nav-id="/viewmodels/studio/index.html" class=""><a class="padding" href="http://localhost:1313/viewmodels/studio/index.html">Studio: Spa User Validation</a></li>
+          <li data-nav-id="/viewmodels/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/viewmodels/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/enums/index.html" class=""><a class="padding" href="http://localhost:1313/enums/index.html">Chapter 16: Enums</a><ul id="R-subsections-831b138d2e9a513438884233b2f221f2" class="morespace collapsible-menu">
+          <li data-nav-id="/enums/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/enums/reading/index.html">Reading</a><ul id="R-subsections-904b86ebee00756ee4747a4acbd69524" class="morespace collapsible-menu">
+          <li data-nav-id="/enums/reading/intro/index.html" class=""><a class="padding" href="http://localhost:1313/enums/reading/intro/index.html">Introduction to Enums</a></li>
+          <li data-nav-id="/enums/reading/enums-in-models/index.html" class=""><a class="padding" href="http://localhost:1313/enums/reading/enums-in-models/index.html">Enums in Model Classes</a></li></ul></li>
+          <li data-nav-id="/enums/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/enums/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/orm-part-1/index.html" class=""><a class="padding" href="http://localhost:1313/orm-part-1/index.html">Chapter 17: Introduction to Object-Relational Mapping</a><ul id="R-subsections-494024721ffc8bde0c6fe49b3255f7cf" class="morespace collapsible-menu">
+          <li data-nav-id="/orm-part-1/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/orm-part-1/reading/index.html">Reading</a><ul id="R-subsections-c62342bba37cbbdc0ce6aa7f5f512fdc" class="morespace collapsible-menu">
+          <li data-nav-id="/orm-part-1/reading/orm-intro/index.html" class=""><a class="padding" href="http://localhost:1313/orm-part-1/reading/orm-intro/index.html">Introduction to Object-Relational Mapping</a></li>
+          <li data-nav-id="/orm-part-1/reading/connecting-to-db/index.html" class=""><a class="padding" href="http://localhost:1313/orm-part-1/reading/connecting-to-db/index.html">Setting Up a Persistent Database</a></li>
+          <li data-nav-id="/orm-part-1/reading/accessing-data/index.html" class=""><a class="padding" href="http://localhost:1313/orm-part-1/reading/accessing-data/index.html">Accessing Data</a></li>
+          <li data-nav-id="/orm-part-1/reading/data-stores/index.html" class=""><a class="padding" href="http://localhost:1313/orm-part-1/reading/data-stores/index.html">Working with Data Stores</a></li>
+          <li data-nav-id="/orm-part-1/reading/walkthrough/index.html" class=""><a class="padding" href="http://localhost:1313/orm-part-1/reading/walkthrough/index.html">Walkthrough: Connecting to the Database</a></li></ul></li>
+          <li data-nav-id="/orm-part-1/exercises/index.html" class=""><a class="padding" href="http://localhost:1313/orm-part-1/exercises/index.html">Exercises: OMG the ORM!</a></li>
+          <li data-nav-id="/orm-part-1/studio/index.html" class=""><a class="padding" href="http://localhost:1313/orm-part-1/studio/index.html">Studio: OMG more ORM!</a></li>
+          <li data-nav-id="/orm-part-1/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/orm-part-1/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/relationships-or-mapping/index.html" class=""><a class="padding" href="http://localhost:1313/relationships-or-mapping/index.html">Chapter 18: Relationships in Object-Relational Mapping</a><ul id="R-subsections-fca33080ce0af87bfb27416e8de8ffb6" class="morespace collapsible-menu">
+          <li data-nav-id="/relationships-or-mapping/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/relationships-or-mapping/reading/index.html">Reading</a><ul id="R-subsections-3b8784ea79eca8a7594fc1a1b4ca5a08" class="morespace collapsible-menu">
+          <li data-nav-id="/relationships-or-mapping/reading/types-of-relationships/index.html" class=""><a class="padding" href="http://localhost:1313/relationships-or-mapping/reading/types-of-relationships/index.html">Types of Relationships</a></li>
+          <li data-nav-id="/relationships-or-mapping/reading/primer-on-lambda-expressions/index.html" class=""><a class="padding" href="http://localhost:1313/relationships-or-mapping/reading/primer-on-lambda-expressions/index.html">A Primer on Lambda Expressions</a></li>
+          <li data-nav-id="/relationships-or-mapping/reading/one-to-many/index.html" class=""><a class="padding" href="http://localhost:1313/relationships-or-mapping/reading/one-to-many/index.html">Creating a One-to-Many Relationship</a></li>
+          <li data-nav-id="/relationships-or-mapping/reading/o2m-walkthrough/index.html" class=""><a class="padding" href="http://localhost:1313/relationships-or-mapping/reading/o2m-walkthrough/index.html">Walkthrough: One-to-Many</a></li>
+          <li data-nav-id="/relationships-or-mapping/reading/some-setup/index.html" class=""><a class="padding" href="http://localhost:1313/relationships-or-mapping/reading/some-setup/index.html">Some Setup</a></li>
+          <li data-nav-id="/relationships-or-mapping/reading/many-to-many/index.html" class=""><a class="padding" href="http://localhost:1313/relationships-or-mapping/reading/many-to-many/index.html">Creating a Many-to-Many Relationship</a></li>
+          <li data-nav-id="/relationships-or-mapping/reading/m2m-walkthrough/index.html" class=""><a class="padding" href="http://localhost:1313/relationships-or-mapping/reading/m2m-walkthrough/index.html">Walkthrough: Many-to-Many</a></li></ul></li>
+          <li data-nav-id="/relationships-or-mapping/exercises/index.html" class=""><a class="padding" href="http://localhost:1313/relationships-or-mapping/exercises/index.html">Exercises</a></li>
+          <li data-nav-id="/relationships-or-mapping/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/relationships-or-mapping/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/authentication/index.html" class=""><a class="padding" href="http://localhost:1313/authentication/index.html">Chapter 19: Authentication</a><ul id="R-subsections-1345916ddf39bfe2b504bc524b69e938" class="morespace collapsible-menu">
+          <li data-nav-id="/authentication/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/authentication/reading/index.html">Reading</a><ul id="R-subsections-90b7ce6ead6e2e6c918d107a10c0c053" class="morespace collapsible-menu">
+          <li data-nav-id="/authentication/reading/intro-to-authentication/index.html" class=""><a class="padding" href="http://localhost:1313/authentication/reading/intro-to-authentication/index.html">Introduction to Authentication</a></li>
+          <li data-nav-id="/authentication/reading/hashing-passwords/index.html" class=""><a class="padding" href="http://localhost:1313/authentication/reading/hashing-passwords/index.html">Hashing Passwords</a></li>
+          <li data-nav-id="/authentication/reading/getting-starting-identity/index.html" class=""><a class="padding" href="http://localhost:1313/authentication/reading/getting-starting-identity/index.html">Getting Started with Identity</a></li>
+          <li data-nav-id="/authentication/reading/registrations-and-logins/index.html" class=""><a class="padding" href="http://localhost:1313/authentication/reading/registrations-and-logins/index.html">Registrations and Logins</a></li>
+          <li data-nav-id="/authentication/reading/configuring-identity/index.html" class=""><a class="padding" href="http://localhost:1313/authentication/reading/configuring-identity/index.html">Configuring Identity</a></li>
+          <li data-nav-id="/authentication/reading/identity-authorization/index.html" class=""><a class="padding" href="http://localhost:1313/authentication/reading/identity-authorization/index.html">Identity and Authorization</a></li></ul></li>
+          <li data-nav-id="/authentication/studio/index.html" class=""><a class="padding" href="http://localhost:1313/authentication/studio/index.html">Studio: TechJobs Authentication</a></li>
+          <li data-nav-id="/authentication/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/authentication/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/web-api-rest/index.html" class=""><a class="padding" href="http://localhost:1313/web-api-rest/index.html">Chapter 20: Introduction to Web APIs &amp; REST</a><ul id="R-subsections-42481ec37d6e5cf75cb79d369c79632a" class="morespace collapsible-menu">
+          <li data-nav-id="/web-api-rest/reading/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/web-api-rest/reading/index.html">Reading</a><ul id="R-subsections-c70e9a362888ae84c94682e8f5c6a772" class="morespace collapsible-menu">
+          <li data-nav-id="/web-api-rest/reading/web-api/index.html" class=""><a class="padding" href="http://localhost:1313/web-api-rest/reading/web-api/index.html">Web APIs</a></li>
+          <li data-nav-id="/web-api-rest/reading/what-is-rest/index.html" class=""><a class="padding" href="http://localhost:1313/web-api-rest/reading/what-is-rest/index.html">What is REST</a></li>
+          <li data-nav-id="/web-api-rest/reading/rest-fundamentals/index.html" class=""><a class="padding" href="http://localhost:1313/web-api-rest/reading/rest-fundamentals/index.html">REST: Practical Fundamentals</a></li></ul></li>
+          <li data-nav-id="/web-api-rest/exercises/index.html" class=""><a class="padding" href="http://localhost:1313/web-api-rest/exercises/index.html">Exercises: Web APIs and REST</a></li>
+          <li data-nav-id="/web-api-rest/studio/index.html" class=""><a class="padding" href="http://localhost:1313/web-api-rest/studio/index.html">Studio: Consuming the Coding Events API With Postman</a></li>
+          <li data-nav-id="/web-api-rest/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/web-api-rest/next-steps/index.html">Next Steps</a></li></ul></li>
+          <li data-nav-id="/appendices/index.html" class=""><a class="padding" href="http://localhost:1313/appendices/index.html">Appendices</a><ul id="R-subsections-b483d80bdb9b2ad6e87ce036148cc8e4" class="morespace collapsible-menu">
+          <li data-nav-id="/appendices/install-postman/index.html" class=""><a class="padding" href="http://localhost:1313/appendices/install-postman/index.html">Installing Postman</a></li></ul></li>
+          <li data-nav-id="/assignments/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/index.html">Assignments</a><ul id="R-subsections-ac1a358b456bc5017269265633799872" class="morespace collapsible-menu">
+          <li data-nav-id="/assignments/hello-world/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/assignments/hello-world/index.html">Assignment 0: Hello, World!</a><ul id="R-subsections-02d0ebf35b5ff3d48a26353c9b77ea46" class="morespace collapsible-menu">
+          <li data-nav-id="/assignments/hello-world/getting-started/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/hello-world/getting-started/index.html">Task 1: Getting Started</a></li>
+          <li data-nav-id="/assignments/hello-world/auto-grading-test/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/hello-world/auto-grading-test/index.html">Task 2: Running the Auto-grading Tests</a></li>
+          <li data-nav-id="/assignments/hello-world/start-coding/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/hello-world/start-coding/index.html">Task 3: Start Coding</a></li>
+          <li data-nav-id="/assignments/hello-world/submit-your-code/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/hello-world/submit-your-code/index.html">Task 4: Submitting Your Code</a></li></ul></li>
+          <li data-nav-id="/assignments/techjobs-console/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/assignments/techjobs-console/index.html">Assignment 1: Tech Jobs Console</a><ul id="R-subsections-4b66cf2d2fe44b7bc1aa5c015f2d63d1" class="morespace collapsible-menu">
+          <li data-nav-id="/assignments/techjobs-console/starter-code-review/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/techjobs-console/starter-code-review/index.html">Review the Starter Code</a></li>
+          <li data-nav-id="/assignments/techjobs-console/task-one/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/techjobs-console/task-one/index.html">Task One</a></li>
+          <li data-nav-id="/assignments/techjobs-console/task-two/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/techjobs-console/task-two/index.html">Task Two</a></li>
+          <li data-nav-id="/assignments/techjobs-console/task-three/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/techjobs-console/task-three/index.html">Task Three</a></li>
+          <li data-nav-id="/assignments/techjobs-console/submission/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/techjobs-console/submission/index.html">Submission and Bonus Missions</a></li></ul></li>
+          <li data-nav-id="/assignments/tech-jobs-oo/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/assignments/tech-jobs-oo/index.html">Assignment 2: TechJobs (Object-Oriented Edition)</a><ul id="R-subsections-6f69c0fd1b563e5ea5c6c087f02cbd79" class="morespace collapsible-menu">
+          <li data-nav-id="/assignments/tech-jobs-oo/task-1/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/tech-jobs-oo/task-1/index.html">Task 1: Explore the Employer Class</a></li>
+          <li data-nav-id="/assignments/tech-jobs-oo/task-2/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/tech-jobs-oo/task-2/index.html">Task 2: Complete the Support Classes</a></li>
+          <li data-nav-id="/assignments/tech-jobs-oo/task-3/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/tech-jobs-oo/task-3/index.html">Task 3: Complete the Job Class</a></li>
+          <li data-nav-id="/assignments/tech-jobs-oo/task-4/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/tech-jobs-oo/task-4/index.html">Task 4: Use Unit Testing to Verify Parts of the Job Class</a></li>
+          <li data-nav-id="/assignments/tech-jobs-oo/task-5/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/tech-jobs-oo/task-5/index.html">Task 5: Use TDD to Build The ToString() Method</a></li>
+          <li data-nav-id="/assignments/tech-jobs-oo/task-6/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/tech-jobs-oo/task-6/index.html">Task 6: Refactor to DRY the Support Classes</a></li>
+          <li data-nav-id="/assignments/tech-jobs-oo/final-steps/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/tech-jobs-oo/final-steps/index.html">Final Steps</a></li></ul></li>
+          <li data-nav-id="/assignments/techjobs-mvc/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/assignments/techjobs-mvc/index.html">Assignment 3: TechJobs MVC</a><ul id="R-subsections-e5504cec6daa245b0ddb75d60003ef1b" class="morespace collapsible-menu">
+          <li data-nav-id="/assignments/techjobs-mvc/starter-code-review/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/techjobs-mvc/starter-code-review/index.html">Task 1: Review the Starter Code</a></li>
+          <li data-nav-id="/assignments/techjobs-mvc/task-two/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/techjobs-mvc/task-two/index.html">Task 2: Complete ListController</a></li>
+          <li data-nav-id="/assignments/techjobs-mvc/task-three/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/techjobs-mvc/task-three/index.html">Task 3: Complete SearchController</a></li>
+          <li data-nav-id="/assignments/techjobs-mvc/task-four/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/techjobs-mvc/task-four/index.html">Task 4: Display Search Results</a></li>
+          <li data-nav-id="/assignments/techjobs-mvc/submit-your-code/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/techjobs-mvc/submit-your-code/index.html">Task 5: Submit Your Code and Bonus Missions</a></li></ul></li>
+          <li data-nav-id="/assignments/techjobs-persist/index.html" class="alwaysopen"><a class="padding" href="http://localhost:1313/assignments/techjobs-persist/index.html">Assignment 4: Tech Jobs Persistent</a><ul id="R-subsections-04f0d44655de729e469f77cfb1e5564f" class="morespace collapsible-menu">
+          <li data-nav-id="/assignments/techjobs-persist/task-1/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/techjobs-persist/task-1/index.html">Task 1: Connect a Database to an ASP.NET App</a></li>
+          <li data-nav-id="/assignments/techjobs-persist/task-2/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/techjobs-persist/task-2/index.html">Task 2: Adding Employers</a></li>
+          <li data-nav-id="/assignments/techjobs-persist/task-3/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/techjobs-persist/task-3/index.html">Task 3: Creating a Many-To-Many Relationship</a></li></ul></li>
+          <li data-nav-id="/assignments/next-steps/index.html" class=""><a class="padding" href="http://localhost:1313/assignments/next-steps/index.html">Next Steps</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="http://localhost:1313/data-types-and-variables/next-steps/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-lc-light" value="lc-light" selected>Lc Light</option>
+                      <option id="R-select-variant-lc-dark-blue" value="lc-dark-blue">Lc Dark Blue</option>
+                      <option id="R-select-variant-lc-dark-blue-two" value="lc-dark-blue-two">Lc Dark Blue Two</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="http://localhost:1313/js/clipboard.min.js?1724273397" defer></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1724273397" defer></script>
+    <script src="http://localhost:1313/js/theme.js?1724273397" defer></script>
+  </body>
+</html>

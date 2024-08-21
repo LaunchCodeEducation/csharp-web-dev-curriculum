@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chapter 11: Exceptions :: C# Web Development</title>
+    <link>http://localhost:1313/exceptions/index.html</link>
+    <description>Learning Objectives After completing this chapter, you should understand:&#xA;How to handle an exception in C# Common exceptions in C# Key Terminology Introduction to Exceptions Exceptions, Null pointer Handling Exceptions Exception swallowing Handling Exceptions Checked exceptions, Unchecked exceptions, try/catch/finally Content Links Reading Exercises: Exceptions Next Steps </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Feb 2023 10:27:25 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/exceptions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reading</title>
+      <link>http://localhost:1313/exceptions/reading/index.html</link>
+      <pubDate>Wed, 08 Feb 2023 10:27:25 -0600</pubDate>
+      <guid>http://localhost:1313/exceptions/reading/index.html</guid>
+      <description>Content Links Introduction to Exceptions Handling Exceptions Common Exception Objects </description>
+    </item>
+    <item>
+      <title>Exercises: Exceptions</title>
+      <link>http://localhost:1313/exceptions/exercises/index.html</link>
+      <pubDate>Wed, 08 Feb 2023 10:27:25 -0600</pubDate>
+      <guid>http://localhost:1313/exceptions/exercises/index.html</guid>
+      <description>You will find the starter code for the exercises in the csharp-web-dev-exercises repo in the Exceptions project.&#xA;Divide By Zero! The professor you TA for, Professor Jackson, shared with you the code she uses to auto-grade students’ work. She and the other TAs have encountered some problems with the code in the past when they enter the total possible point value for an assignment. Occasionally, they accidentally enter 0 for the total number of possible points and the program encounters a fatal error when trying to divide by 0.</description>
+    </item>
+    <item>
+      <title>Next Steps</title>
+      <link>http://localhost:1313/exceptions/next-steps/index.html</link>
+      <pubDate>Wed, 08 Feb 2023 10:27:25 -0600</pubDate>
+      <guid>http://localhost:1313/exceptions/next-steps/index.html</guid>
+      <description>Next Steps Now that you have created a few exceptions, here are some resources to explore.&#xA;Replace Error Code with Exception Exception messages are for programmers Exceptions and Exception Handling </description>
+    </item>
+  </channel>
+</rss>

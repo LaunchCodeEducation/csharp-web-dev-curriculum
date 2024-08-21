@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading :: C# Web Development</title>
+    <link>http://localhost:1313/exceptions/reading/index.html</link>
+    <description>Content Links Introduction to Exceptions Handling Exceptions Common Exception Objects </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Feb 2023 10:27:25 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/exceptions/reading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Exceptions</title>
+      <link>http://localhost:1313/exceptions/reading/exceptions-intro/index.html</link>
+      <pubDate>Wed, 08 Feb 2023 10:27:25 -0600</pubDate>
+      <guid>http://localhost:1313/exceptions/reading/exceptions-intro/index.html</guid>
+      <description>Like most programming languages, C# includes exceptions and exception handling tooling. Some exception objects are provided by .NET itself. Other exception objects we may get from external C# libraries. We may even write these objects ourselves.&#xA;Exceptions in C# are objects derived from the System.Exception class. You see exception objects at runtime when some event takes place outside of the expected flow of our code. When you want to explicitly call an exception in your code, you do so with the throw keyword.</description>
+    </item>
+    <item>
+      <title>Handling Exceptions</title>
+      <link>http://localhost:1313/exceptions/reading/handling-exceptions/index.html</link>
+      <pubDate>Wed, 08 Feb 2023 10:27:25 -0600</pubDate>
+      <guid>http://localhost:1313/exceptions/reading/handling-exceptions/index.html</guid>
+      <description>When you include exceptions in your C# programs, you must decide what should take place once one is thrown. Some languages, like Java, require exceptions to be handled at the time of compiling. These are checked exceptions. When an exception is not handled in compiling, it is passed to runtime and called an unchecked exception. All exceptions in C# are unchecked. Therefore it is up to you, the programmer, to decide what to do to handle one when the need arises in runtime.</description>
+    </item>
+    <item>
+      <title>Common Exception Objects</title>
+      <link>http://localhost:1313/exceptions/reading/common-exceptions/index.html</link>
+      <pubDate>Wed, 08 Feb 2023 10:27:25 -0600</pubDate>
+      <guid>http://localhost:1313/exceptions/reading/common-exceptions/index.html</guid>
+      <description>Below is a summary of some of the more commonly used exception types in C#. As we mention before, all exceptions extend the System.Exception class.&#xA;Note It is also possible to write your own exception type that inherits from System.Exception. You may find that your particular cause of error elicits a custom exception type. We won’t cover how to write custom exception objects in this book, but you can read about how to define your own exception here .</description>
+    </item>
+  </channel>
+</rss>

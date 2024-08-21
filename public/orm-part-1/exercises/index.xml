@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercises: OMG the ORM! :: C# Web Development</title>
+    <link>http://localhost:1313/orm-part-1/exercises/index.html</link>
+    <description>Exercises For the exercises, we are going to continue building on our CodingEvents application. The exercise instructions assume that your code resembles the orm1-with-db branch. Create a new branch in your own CodingEvents repo to get started on the exercises.&#xA;Note You will be making one model class and adding to DbContext. If you are not sure what these classes should look like, refer back to the section on data stores and DbContext.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/orm-part-1/exercises/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

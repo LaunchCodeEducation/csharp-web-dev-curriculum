@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercises: Objects and Classes, Part 2 :: C# Web Development</title>
+    <link>http://localhost:1313/classes-part-2/exercises/index.html</link>
+    <description>You will find these exercises in Classes-Part-2 project of the exercises repo. You will update your Student.cs file by implementing the AddGrade and GetGradeLevel methods that were sketched out in the Instance Methods section.&#xA;The GetGradeLevel Method This method returns the student’s level based on the number of credits they have earned: Freshman (0-29 credits), Sophomore (30-59 credits), Junior (60-89 credits), or Senior (90+ credits).&#xA;Check your solution public string GetGradeLevel(int credits) { if (credits &lt;= 29) { return &#34;Freshman&#34;; } else if (credits &lt;= 59) { return &#34;Sophomore&#34;; } else if (credits &lt;= 89) { return &#34;Junior&#34;; } else { return &#34;Senior&#34;; } } The AddGrade Method This method accepts two parameters—a number of course credits and a numerical grade (0.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/classes-part-2/exercises/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

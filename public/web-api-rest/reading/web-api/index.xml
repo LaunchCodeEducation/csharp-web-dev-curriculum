@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web APIs :: C# Web Development</title>
+    <link>http://localhost:1313/web-api-rest/reading/web-api/index.html</link>
+    <description>An API, or application programming interface, is a set of rules that allow one application to communicate with another application.&#xA;Web APIs are how applications communicate with other applications over a network. Throughout the remainder of this chapter, we will explore web APIs and a pattern for organizing them called REST.&#xA;REST is an application design pattern, not unlike MVC.&#xA;REST, however, relies on an abstract concept called application state that we’ll cover in more detail on the following pages.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/web-api-rest/reading/web-api/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

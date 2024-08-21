@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started with Identity :: C# Web Development</title>
+    <link>http://localhost:1313/authentication/reading/getting-starting-identity/index.html</link>
+    <description>As a developer, you may find yourself wanting to add Identity in one of the two following situations:&#xA;You are creating a new project and you know that you need Identity in the project. You are working with an existing project and need to add Identity to continue your work. For this chapter, we are going to focus on the second situation and how we might add Identity to CodingEvents. The process of adding Identity to an existing code base is called scaffolding.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/authentication/reading/getting-starting-identity/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

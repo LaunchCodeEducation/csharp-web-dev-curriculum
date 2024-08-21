@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercises: Web APIs and REST :: C# Web Development</title>
+    <link>http://localhost:1313/web-api-rest/exercises/index.html</link>
+    <description>We’ve created a CodingEvents API application here . Before we ask you to fork and clone this, let’s first think conceptually about the kinds of requests a client application could make to this API.&#xA;The API The coding-events-api starts by only exposing a single resource, CodingEvent, and four endpoints for interacting with it. The CodingEvent resource is analogous to the Event model class we created in our CodingEvents MVC application.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/web-api-rest/exercises/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
