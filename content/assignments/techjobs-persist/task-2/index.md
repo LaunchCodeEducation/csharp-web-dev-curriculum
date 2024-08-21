@@ -108,4 +108,4 @@ If everything seems to work – that is, you are able to submit the form without
 
 {{% /notice %}}
 
-You are ready to move onto [Task 3]({{< relref "../task-3/" >}}).
+You are ready to move onto [Task 3]({{% relref "../task-3/_index.md" %}}).

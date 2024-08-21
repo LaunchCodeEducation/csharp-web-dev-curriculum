@@ -18,7 +18,7 @@ At this point, all autograding tests should be passing. To be sure, run all the 
 
 ## How to Submit
 
-To turn in your assignment and get credit, follow the [submission instructions]({{< relref "../../hello-world/submit-your-code/" >}}).
+To turn in your assignment and get credit, follow the [submission instructions]({{% relref "../../hello-world/submit-your-code.md" %}}).
 
 ## Bonus Missions
 

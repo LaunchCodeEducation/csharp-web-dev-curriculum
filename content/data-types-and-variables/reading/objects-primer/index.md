@@ -26,12 +26,12 @@ As we've said several times now, every variable in C# refers to an object.
 
 The `string` data type is an object. For
 `string language = "C#"`, the data would be the characters. The
-[String Manipulation]({{< relref "../strings-chars-and-arrays#string-manipulation" >}}) section gives several of the
+[String Manipulation]({{% relref "../strings-chars-and-arrays/index.md#string-manipulation" %}}) section gives several of the
 behaviors available to the `language` object. For example,
 `language.Length` is `2`, which tells us how many
 characters are present in the string.
 
-An [array]({{< relref "../strings-chars-and-arrays/#arrays" >}}) is also an example of an object. It contains *data*, which are the values
+An [array]({{% relref "../strings-chars-and-arrays/index.md#arrays" %}}) is also an example of an object. It contains *data*, which are the values
 stored as the individual elements. The *behaviors* are methods not unlike those listed in the 
 string manipulation table that perform actions related to the elements in the array. We haven't 
 provided an array methods table, but you can explore array methods in 

@@ -48,4 +48,4 @@ If you click through the application, you will see that not every page is functi
 
 {{% /notice %}}
 
-You are ready for [Task 2]({{< relref "../task-2/" >}}).
+You are ready for [Task 2]({{% relref "../task-2/index.md" %}}).
