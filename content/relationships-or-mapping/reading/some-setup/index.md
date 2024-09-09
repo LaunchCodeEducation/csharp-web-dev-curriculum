@@ -129,4 +129,4 @@ The only remaining task is to create the view for the new event details. It shou
 </table>
 ```
 
-That wraps up this section. In the next chapter we will create the `many-to-many` relationship between the `Event` and `Tag` class.
+That wraps up this section. In the next section we will create the `many-to-many` relationship between the `Event` and `Tag` class.

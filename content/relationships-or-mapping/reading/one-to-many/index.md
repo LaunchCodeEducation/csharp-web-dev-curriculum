@@ -107,7 +107,7 @@ Additionally, within the `Views/Events/Index.cshtml` file, update the `Event Typ
 
 Finally, we have a reference to `EventType` in the `EventsController.Add` method that handles POST requests. This method creates a new `Event` object using data from the `AddEventViewModel` parameter.
 
-### `Controllers/EventController.cs`
+### `Controllers/EventsController.cs`
 
 ```csharp {linenos=table}
 [HttpPost]
