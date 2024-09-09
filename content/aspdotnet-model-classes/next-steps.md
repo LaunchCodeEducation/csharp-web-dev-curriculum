@@ -14,6 +14,8 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Next Steps
 
+Adding in content to play around with. Mispelllllling a word.
+
 The next chapter covers ViewModels. Before you continue your learning, if you need any additional resources on models and model binding, here are a few of our favorites:
 
 1. [Overview of ASP.NET Core MVC](https://learn.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-7.0#model-binding)
