@@ -53,7 +53,7 @@ Microsoft has created a [walkthrough](https://learn.microsoft.com/en-us/visualst
 
 ## Troubleshooting Your Install
 
-If you need to troubleshoot your install, first check out the [documentation](https://learn.microsoft.com/en-us/visualstudio/install/troubleshooting-installation-issues?view=vs-2022). If this does not help, check out the below sections and consult your TA if something is still off.
+If you need to troubleshoot your install, first check out the [documentation](https://learn.microsoft.com/en-us/visualstudio/install/troubleshooting-installation-issues?view=vs-2022). If this does not help, check out the below sections and consult your IA if something is still off.
 
 ### Missing or Wrong Components?
 

@@ -26,4 +26,4 @@ Continue working on your code until you have a green checkmark.
 
 You have successfully completed Graded Assignment 0 in C#!
 
-This process will be the same for all of your assignments in this unit. Revisit this page as needed to review instructions on running tests in C# projects. If you get stuck reach out to your TA or fellow students on slack.
+This process will be the same for all of your assignments in this unit. Revisit this page as needed to review instructions on running tests in C# projects. If you get stuck reach out to your IA or fellow students on slack.

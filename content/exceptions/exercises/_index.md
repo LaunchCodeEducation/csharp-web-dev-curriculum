@@ -16,7 +16,7 @@ You will find the starter code for the exercises in the [csharp-web-dev-exercise
 
 ## Divide By Zero!
 
-The professor you TA for, Professor Jackson, shared with you the code she uses to auto-grade students’ work. She and the other TAs have encountered some problems with the code in the past when they enter the total possible point value for an assignment. Occasionally, they accidentally enter `0` for the total number of possible points and the program encounters a fatal error when trying to divide by 0.
+The professor you IA for, Professor Jackson, shared with you the code she uses to auto-grade students’ work. She and the other IAs have encountered some problems with the code in the past when they enter the total possible point value for an assignment. Occasionally, they accidentally enter `0` for the total number of possible points and the program encounters a fatal error when trying to divide by 0.
 
 To help out with this issue, complete a function called `Divide()` in `Program.cs`.
 
