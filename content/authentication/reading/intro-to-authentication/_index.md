@@ -21,7 +21,7 @@ How surprised would you be if you logged into a website and saw a different user
 
 This is typically done by asking a user to provide a *secret* piece of data, which theoretically only they should know.
 Passwords are the most commonly used secrets, but there are others such as RSA keys and physical authentication tokens.
-Authentication relies on the ability of the user to keep their secret data, well, *secret*. If we are given as user's secret data, we assume that only one person could have provided it.
+Authentication relies on the ability of the user to keep their secret data, well, *secret*. If we are given a user's secret data, we assume that only one person could have provided it.
 
 A related, but different, concept is **authorization**. Authorization is the process of determining if a user is allowed to carry out a specific action.
 

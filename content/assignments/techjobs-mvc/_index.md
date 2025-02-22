@@ -43,7 +43,7 @@ project and left you some `TODO` tasks that she knows you can handle.
 In this project, you’ll show that you can:
 
 1. Read and understand code written by others.
-1. Work within the controller and view portions of a ASP.NET MVC application.
+1. Work within the controller and view portions of an ASP.NET MVC application.
 1. Use Razor syntax to display data within a view.
 1. Create new action methods to process form submission.
 

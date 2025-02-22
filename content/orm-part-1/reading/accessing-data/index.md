@@ -55,7 +55,7 @@ We are going to use the `DbContext` class.  [This class](https://learn.microsoft
    ```
    {{% /notice %}}   
 
-1. We want to the `EventDbContext` constructor to extend `DbContextOptions`.  This will configure the data store.  
+1. We want the `EventDbContext` constructor to extend `DbContextOptions`.  This will configure the data store.  
 
    {{% notice blue "Check Your Code" "rocket" %}}
    ```csharp{linenos=table,hl_lines=[10,11],linenostart=1}
@@ -168,7 +168,7 @@ In order to run a migration, we issue the command:
 This command will apply the changes to the database. To verify the changes, open MySQL Workbench and notice that there is now an `Events` table with columns corresponding to the properties of our class.
 
 {{% notice blue "Note" "rocket" %}}
-EntityFrameworkCore uses the `_EFMigrationsHistory` table in the database to keep track of which migrations have already been run. When we run `dotnet ef migrations update`, EF will reference this table and run all migrations that have not yet been applied, in the correct order.
+EntityFrameworkCore uses the `_EFMigrationsHistory` table in the database to keep track of which migrations have already been run. When we run `dotnet ef database update`, EF will reference this table and run all migrations that have not yet been applied, in the correct order.
 {{% /notice %}}
 
 The next section will look at how we can store and retrieve `Event` objects from within our controller.

@@ -14,7 +14,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 In the `Program.cs` file
 
-1. Start MySQL Workbench and create a new schema named `TechJobs`.
+1. Start MySQL Workbench and create a new schema named `techjobs`.
    1. In the administration tab, create a new user, `TechJobs` with the same settings described in the `CodingEvents` tutorial and set the password to `TechJobs`.
 1. Make sure that the `TechJobs6Persistent` project has all of its necessary dependencies.
    1. `Pomelo.EntityFrameworkCore.MySql`
